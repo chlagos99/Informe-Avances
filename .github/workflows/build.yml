@@ -1,0 +1,38 @@
+    name: build-pdf
+
+    on:
+      push:
+        branches: [ "master" ]   # cambiar a "main" si la rama fuera main
+        paths:
+          - "**.tex"
+          - "**.bib"
+          - "**.bst"
+          - "img/**"
+          - ".github/workflows/build.yml"
+
+    jobs:
+      build:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v4
+
+          - uses: wtfjoke/setup-tectonic@v2
+            with:
+              github-token: ${{ secrets.GITHUB_TOKEN }}
+
+          - uses: actions/cache@v4
+            with:
+              path: ~/.cache/Tectonic
+              key: tectonic-bundle
+
+          - name: Create outdir
+            run: mkdir -p _build
+
+          - name: Build PDF
+            run: tectonic --synctex --keep-logs --keep-intermediates --outdir _build main.tex
+
+          - name: Upload PDF artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: informe-pdf
+              path: _build/*.pdf
