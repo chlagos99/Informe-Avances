@@ -1116,34 +1116,34 @@ LaTeX Info: Redefining \% on input line 29.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 6
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 7.
 
 (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Info: Redefining \. on input line 67.
-LaTeX Info: Redefining \% on input line 67.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -1167,17 +1167,17 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 )
 \symgns@font=\mathgroup9
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 67.
-Package gensymb Info: Math companion symbols declared on input line 67.
-LaTeX Info: Redefining \degree on input line 67.
-LaTeX Info: Redefining \celsius on input line 67.
+(Font)                  TS1/lmr/m/n --> TS1/lmr/b/n on input line 57.
+Package gensymb Info: Math companion symbols declared on input line 57.
+LaTeX Info: Redefining \degree on input line 57.
+LaTeX Info: Redefining \celsius on input line 57.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 67.
-LaTeX Info: Redefining \ohm on input line 67.
-Package gensymb Info: Using \textohm for \ohm on input line 67.
-Package gensymb Info: Using \textmu for \micro on input line 67.
+erthousand on input line 57.
+LaTeX Info: Redefining \ohm on input line 57.
+Package gensymb Info: Using \textohm for \ohm on input line 57.
+Package gensymb Info: Using \textmu for \micro on input line 57.
 \c@lstlisting=\count430
-Package hyperref Info: Link coloring ON on input line 67.
+Package hyperref Info: Link coloring ON on input line 57.
  (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
@@ -1188,9 +1188,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count431
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1258,53 +1258,53 @@ LaTeX Info: Redefining \nameref on input line 67.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 6
 0.
 (ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
 0.
  (omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-70.
+60.
  (omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-70.
+60.
  (omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 70.
+(Font)              <12> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 70.
+(Font)              <8> on input line 60.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 70.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+(Font)              <6> on input line 60.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 60.
 
  (umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 60.
 
  (umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 70
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 60
 .
  (ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 70
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 60
 .
  (uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 7
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
 0.
  (Ustmry.fd)
 File: ./img/departamentos/dii.pdf Graphic file (type pdf)
@@ -1370,15 +1370,18 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- (main.lol)
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+ [2.3
+
+]
+(main.lol)
 \tf@lol=\write6
 \openout6 = `main.lol'.
 
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
- [2.3
-
-] (example
+LaTeX Info: Redefining \. on input line 77.
+LaTeX Info: Redefining \% on input line 77.
+ [3.4] (example
 LaTeX Font Info:    Calculating math sizes for size <20.73596> on input line 18
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1405,60 +1408,85 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 78.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 78.
- [1.4
+ [1.5
+
+]
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
+ [2.6
+
+]
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+ [3.7
+
+]
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
+ [4.8
+
+]
+LaTeX Info: Redefining \. on input line 90.
+LaTeX Info: Redefining \% on input line 90.
+ [5.9
+
+]
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+ [6.10
 
 ]
 File: ./img/ejemplos/test-image-wrap.jpg Graphic file (type bmp)
 <./img/ejemplos/test-image-wrap.jpg>
-LaTeX Info: Redefining \. on input line 113.
-LaTeX Info: Redefining \% on input line 113.
- [2.5
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
+ [7.11
 
 ]
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
- [3.6] (lstlang1.sty
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+ [8.12]
+(lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 LaTeX Font Info: \kern \lst@width \kern \lst@width \kern \lst@width Calculating
 \kern \lst@width math\kern \lst@width sizes\kern \lst@width for\kern \lst@width
- size\kern \lst@width <10.95007> on input line 153.
+ size\kern \lst@width <10.95007> on input line 169.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95007> on input line 153.
+(Font)              <10.95007> on input line 169.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.66501> on input line 153.
+(Font)              <7.66501> on input line 169.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.47504> on input line 153.
+(Font)              <5.47504> on input line 169.
  (lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+LaTeX Info: Redefining \. on input line 201.
+LaTeX Info: Redefining \% on input line 201.
+ [9.13] (lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) (lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
+) (lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) (lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
 )
 (lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
- [4.7] (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (lstlang2.sty
 File: lstlang2.sty 2020/03/24 1.8d listings language file
 ) (lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-) (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-) (lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-) (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-) (lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-(lstmisc.sty
+) (lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 File: ./img/ejemplos/test-image.png Graphic file (type bmp)
@@ -1467,41 +1495,42 @@ File: ./img/ejemplos/test-image-wrap.jpg Graphic file (type bmp)
 <./img/ejemplos/test-image-wrap.jpg>
 File: ./img/ejemplos/test-image.png Graphic file (type bmp)
 <./img/ejemplos/test-image.png>
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
- [5.8]
-LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 264
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+ [10.14]
+LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 280
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.00006> on input line 264.
+(Font)              <8.00006> on input line 280.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.6> on input line 264.
+(Font)              <5.6> on input line 280.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.00003> on input line 264.
-LaTeX Info: Redefining \. on input line 279.
-LaTeX Info: Redefining \% on input line 279.
- [6.9
+(Font)              <4.00003> on input line 280.
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+ [11.15
 
-] (main.bbl)
+]
+(main.bbl)
 File: ./img/ejemplos/test-image.png Graphic file (type bmp)
 <./img/ejemplos/test-image.png>
-LaTeX Info: Redefining \. on input line 298.
-LaTeX Info: Redefining \% on input line 298.
- [7.10
+LaTeX Info: Redefining \. on input line 314.
+LaTeX Info: Redefining \% on input line 314.
+ [12.16
 
 ]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-)
-(se-utf32be.def
+) (se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
-LaTeX Info: Redefining \. on input line 91.
-LaTeX Info: Redefining \% on input line 91.
- [8.11] (main.aux
+LaTeX Info: Redefining \. on input line 84.
+LaTeX Info: Redefining \% on input line 84.
+
+[13.17] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (11 pages, 109576 bytes).
+Output written on main.xdv (17 pages, 115636 bytes).
