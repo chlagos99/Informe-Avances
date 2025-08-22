@@ -17,5 +17,5 @@
     { "name": "tectonic", "tools": ["tectonic"] }
   ],
   "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latex.outDir": "_build"
+  "latex-workshop.latex.outDir": "_build",
 }

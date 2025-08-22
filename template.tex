@@ -6518,7 +6518,7 @@
 		\vfill
 		\begin{center}
 			\textcolor{\portraittitlecolor}{%
-				{\noindent \Huge{\documenttitle} \vspace{0.5cm}} ~ \\
+				{\noindent \large{\documenttitle} \vspace{0.9cm}} ~ \\
 				{\noindent \large{\documentsubject}}
 			}
 		\end{center}
@@ -6786,7 +6786,7 @@
 		\vfill
 		\begin{center}
 			\noindent \rule{\linewidth}{0.4mm} \\ \vspace{0.3cm}
-			{\huge \textcolor{\portraittitlecolor}{\documenttitle} \vspace{0.2cm} ~ \\}
+			{\large \textcolor{\portraittitlecolor}{\documenttitle} \vspace{0.2cm} ~ \\}
 			\noindent \rule{\linewidth}{0.4mm} ~ \\ \vspace{0cm}
 			{\large \textcolor{\portraittitlecolor}{\documentsubject} ~ \\}
 		\end{center}
@@ -7130,7 +7130,7 @@
 			\begin{tikzpicture}[remember picture,overlay]
 				\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{\portraitbackgroundimageB}};
 				\draw (current page.center) node [fill=\portraitbackgroundcolorB!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{%
-						\centering \textcolor{\portraittitlecolor}{\documenttitle} \\ [10pt]
+						\centering \textcolor{\portraittitlecolor}{\documenttitle} \\ [8pt]
 						{\Large \textcolor{\portraittitlecolor}{\documentsubject}} \\ [25pt]
 						{\huge \documentauthor}}};
 			\end{tikzpicture}
@@ -7512,25 +7512,23 @@
 	\renewcommand{\bibname}{\namereferences} % Nombre de las referencias (natbib)
 	\renewcommand{\tablename}{\nameltwtable} % Nombre de la leyenda de tablas
 	
-	% -------------------------------------------------------------------------
-	% Estilo de títulos
-	% -------------------------------------------------------------------------
+	% --- Estilo de títulos (tamaños exactos) ---
 	\sectionfont{%
-		\color{\sectioncolor} \sectionfontsize \sectionfontstyle \selectfont%
+	\color{\sectioncolor}\sectionfontstyle\fontsize{11.5pt}{13.8pt}\selectfont%
 	}
 	\subsectionfont{%
-		\color{\ssectioncolor} \ssectionfontsize \ssectionfontstyle \selectfont%
+	\color{\ssectioncolor}\ssectionfontstyle\fontsize{13pt}{15.6pt}\selectfont%
 	}
 	\subsubsectionfont{%
-		\color{\sssectioncolor} \sssectionfontsize \sssectionfontstyle \selectfont%
+	\color{\sssectioncolor}\sssectionfontstyle\fontsize{10.5pt}{12.6pt}\selectfont%
 	}
 	\titleformat{\subsubsubsection}{%
-		\color{\ssssectioncolor} \ssssectionfontsz \ssssectionfontstyle%
+	\color{\ssssectioncolor}\ssssectionfontstyle\fontsize{10pt}{12pt}\selectfont%
 	}{%
-		\GLOBALtitlepresubsubsubsectionstr\thesubsubsubsection\charaftersectionnum\spacingaftersection%
-		\corepatchaftersubsubsubsection%
-	}{0em}{%
-	}
+	\GLOBALtitlepresubsubsubsectionstr\thesubsubsubsection\charaftersectionnum\spacingaftersection%
+	\corepatchaftersubsubsubsection%
+	}{0em}{}
+
 	\def\bibfont {\fontsizerefbibl} % Tamaño de fuente de las referencias
 	
 	% -------------------------------------------------------------------------

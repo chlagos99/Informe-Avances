@@ -1356,169 +1356,12 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
- (main.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lof=\write4
-\openout4 = `main.lof'.
-
- (main.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@lot=\write5
-\openout5 = `main.lot'.
-
-LaTeX Info: Redefining \. on input line 74.
-LaTeX Info: Redefining \% on input line 74.
- [2.3
-
-]
-(main.lol)
-\tf@lol=\write6
-\openout6 = `main.lol'.
-
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [3.4] (example
-LaTeX Font Info:    Calculating math sizes for size <20.73596> on input line 18
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <20.73596> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.5151> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.36798> on input line 18.
-LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 27
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.00012> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.00005> on input line 27.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.00006> on input line 27.
-File: ./img/ejemplos/test-image.png Graphic file (type bmp)
-<./img/ejemplos/test-image.png>
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 78.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 78.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 78.
- [1.5
+ [2.3
 
-]
-LaTeX Info: Redefining \. on input line 81.
-LaTeX Info: Redefining \% on input line 81.
- [2.6
-
-]
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
- [3.7
-
-]
-LaTeX Info: Redefining \. on input line 87.
-LaTeX Info: Redefining \% on input line 87.
- [4.8
-
-]
-LaTeX Info: Redefining \. on input line 90.
-LaTeX Info: Redefining \% on input line 90.
- [5.9
-
-]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [6.10
-
-]
-File: ./img/ejemplos/test-image-wrap.jpg Graphic file (type bmp)
-<./img/ejemplos/test-image-wrap.jpg>
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
- [7.11
-
-]
-LaTeX Info: Redefining \. on input line 163.
-LaTeX Info: Redefining \% on input line 163.
- [8.12]
-(lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-LaTeX Font Info: \kern \lst@width \kern \lst@width \kern \lst@width Calculating
-\kern \lst@width math\kern \lst@width sizes\kern \lst@width for\kern \lst@width
- size\kern \lst@width <10.95007> on input line 169.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95007> on input line 169.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.66501> on input line 169.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.47504> on input line 169.
- (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-LaTeX Info: Redefining \. on input line 201.
-LaTeX Info: Redefining \% on input line 201.
- [9.13] (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-) (lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-) (lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-) (lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-(lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-) (lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-) (lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-File: ./img/ejemplos/test-image.png Graphic file (type bmp)
-<./img/ejemplos/test-image.png>
-File: ./img/ejemplos/test-image-wrap.jpg Graphic file (type bmp)
-<./img/ejemplos/test-image-wrap.jpg>
-File: ./img/ejemplos/test-image.png Graphic file (type bmp)
-<./img/ejemplos/test-image.png>
-LaTeX Info: Redefining \. on input line 228.
-LaTeX Info: Redefining \% on input line 228.
- [10.14]
-LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 280
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.00006> on input line 280.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.6> on input line 280.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.00003> on input line 280.
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
- [11.15
-
-]
-(main.bbl)
-File: ./img/ejemplos/test-image.png Graphic file (type bmp)
-<./img/ejemplos/test-image.png>
-LaTeX Info: Redefining \. on input line 314.
-LaTeX Info: Redefining \% on input line 314.
- [12.16
-
-]) (babel-spanish.tex
+] (cuerpo_informe.tex)
+(babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
@@ -1528,9 +1371,10 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
+ [1.4
 
-[13.17] (main.aux
+] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (17 pages, 115636 bytes).
+Output written on main.xdv (4 pages, 44260 bytes).
