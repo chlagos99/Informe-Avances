@@ -1356,11 +1356,19 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
+ (main.lof
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lof=\write4
+\openout4 = `main.lof'.
+
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
  [2.3
 
-] (cuerpo_informe.tex
+]
+(cuerpo_informe.tex
 LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 23
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1379,28 +1387,34 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.00003> on input line 30.
 LaTeX Info: Redefining \. on input line 38.
 LaTeX Info: Redefining \% on input line 38.
-
-[1.4
+ [1.4
 
 ]
 LaTeX Info: Redefining \. on input line 56.
 LaTeX Info: Redefining \% on input line 56.
  [2.5]
-LaTeX Info: Redefining \. on input line 82.
-LaTeX Info: Redefining \% on input line 82.
- [3.6]) (babel-spanish.tex
+File: ./img/imagenes/organigrama.png Graphic file (type bmp)
+<./img/imagenes/organigrama.png>
+LaTeX Info: Redefining \. on input line 69.
+LaTeX Info: Redefining \% on input line 69.
+ [3.6]
+File: ./img/imagenes/proceso.png Graphic file (type bmp)
+<./img/imagenes/proceso.png>
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+ [4.7]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
-) (se-utf32be.def
+)
+(se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
-
-[4.7] (main.aux
+ [5.8] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (7 pages, 60248 bytes).
+Output written on main.xdv (8 pages, 65596 bytes).
