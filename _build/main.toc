@@ -2,32 +2,39 @@
 \contentsline {section}{\numberline {1}Antecedentes generales}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Industria y ambiente competitivo}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Características de la empresa u organización}{2}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Relevancia de los antecedentes para el proyecto}{4}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Descripción del problema u oportunidad}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Problema u oportunidad identificada}{5}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Causas Fundamentales del Problema}{7}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Causas Primarias}{7}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Causas Secundarias}{8}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Contexto Específico en el Ciclo de Vida del Cliente}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Consecuencias del Problema}{8}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Impactos Financieros Directos}{9}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Impactos Operacionales}{9}{subsubsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.3}Impactos Estratégicos a Largo Plazo}{9}{subsubsection.2.4.3}%
-\contentsline {section}{\numberline {3}Descripción y justificación del proyecto}{10}{section.3}%
-\contentsline {subsection}{\numberline {3.1}En qué consiste el proyecto}{10}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Por qué se hace el proyecto}{10}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Cómo se planea abordar (visión general)}{10}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Objetivos del proyecto}{10}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Objetivo general}{10}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Objetivos específicos}{10}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Rol del estudiante}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Responsabilidad principal}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Contribución al proyecto global}{10}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Cronograma}{10}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Actividades principales}{10}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Tiempos estimados}{10}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Metodología (opcional)}{10}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Enfoque general y fases}{10}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Herramientas de investigación}{10}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Recursos e insumos}{10}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Referencias y bibliografía principal}{10}{section.8}%
+\contentsline {section}{\numberline {2}Descripción del problema u oportunidad}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Problema u oportunidad identificada}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Problema identificado}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Causas Fundamentales del Problema}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Causas Primarias}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Causas Secundarias}{6}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Contexto Específico en el Ciclo de Vida del Cliente}{6}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Consecuencias del Problema}{6}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Impactos Financieros Directos}{6}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Impactos Operacionales}{7}{subsubsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.3}Impactos Estratégicos a Largo Plazo}{7}{subsubsection.2.5.3}%
+\contentsline {section}{\numberline {3}Descripción y justificación del proyecto}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}En qué consiste el proyecto}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Por qué se hace el proyecto}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Cómo se planea abordar}{8}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Por qué se hace el proyecto}{8}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Cómo se planea abordar (visión general)}{8}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Objetivos del proyecto}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Objetivo general}{9}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Objetivos específicos}{9}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Rol del estudiante}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Responsabilidad principal}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Contribución al proyecto global}{9}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Cronograma}{9}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Actividades principales}{9}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Tiempos estimados}{9}{subsection.6.2}%
+\contentsline {section}{\numberline {7}Metodología (opcional)}{9}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Enfoque general y fases}{9}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Herramientas de investigación}{9}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Recursos e insumos}{9}{subsection.7.3}%
+\contentsline {section}{\numberline {8}Referencias y bibliografía principal}{9}{section.8}%
+\contentsline {section}{Anexo \numberline {A}Estados del cliente}{9}{appendix.1.Alph1}%
+\contentsline {subsection}{\numberline {A.1}}{9}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}}{10}{subsection.1.Alph1.2}%
+\contentsline {subsection}{\numberline {A.3}}{10}{subsection.1.Alph1.3}%
+\contentsline {subsection}{\numberline {A.4}}{11}{subsection.1.Alph1.4}%
