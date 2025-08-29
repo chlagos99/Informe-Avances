@@ -75,13 +75,20 @@ La Figura \ref{img:proceso} muestra un diagrama del flujo general que sigue un c
 \insertimage[\label{img:proceso}]{imagenes/proceso.png}{scale=0.65}{Flujo General del Cliente por Área}
 
 %Estados del cliente / Ciclo de vida del cliente en reservo
-En el anexo \ref{img:etapa_adquisicion} se tiene la figura que muestra el comienzo del ciclo de vida del cliente y potenciales clientes en Reservo. El potencial cliente encuentra Reservo gracias al equipo de marketing, pasando de un estado inicial \textbf{desconocido} a través de una \textit{interacción con marketing} que lo convierte en un \textbf{lead}. Este proceso marca la transición del área de \textit{Marketing} al área de \textit{Ventas SDR}, donde el lead es sometido a un proceso de \textit{calificación SDR} para evaluar su ajuste, interés y potencial de compra. Los leads que superan exitosamente esta calificación se convierten en \textbf{leads calificados}, los cuales son transferidos a la \textbf{Etapa de Venta} para continuar con el proceso de cierre comercial.
+En la figura \ref{img:etapa_adquisicion} se tiene la figura que muestra el comienzo del ciclo de vida del cliente y potenciales clientes en Reservo. El potencial cliente encuentra Reservo gracias al equipo de marketing, pasando de un estado inicial \textbf{desconocido} a través de una \textit{interacción con marketing} que lo convierte en un \textbf{lead}. Este proceso marca la transición del área de \textit{Marketing} al área de \textit{Ventas SDR}, donde el lead es sometido a un proceso de \textit{calificación SDR} para evaluar su ajuste, interés y potencial de compra. Los leads que superan exitosamente esta calificación se convierten en \textbf{leads calificados}, los cuales son transferidos a la \textbf{Etapa de Venta} para continuar con el proceso de cierre comercial.
+\insertimage[\label{img:etapa_adquisicion}]{bizagi/captacion.png}{scale=0.25}{Etapa de Adquisición en Reservo}
 
-En el anexo \ref{img:etapa_venta} se presenta la \textbf{Etapa de Venta}, donde los leads calificados provenientes de la etapa anterior son gestionados por los \textit{Ejecutivos de Venta}. El proceso inicia con una \textbf{demo + propuesta} que genera una \textbf{oportunidad de venta}. Posteriormente, se evalúa si \textbf{¿se cierra el contrato?}: en caso afirmativo (\textit{Sí}), el lead se convierte en un \textbf{contrato cerrado} y avanza a la \textbf{Etapa de Onboarding}; en caso negativo (\textit{No}), el lead retorna al estado de \textbf{lead calificado} para futuras oportunidades de conversión.
+En la figura \ref{img:etapa_venta} se presenta la \textbf{Etapa de Venta}, donde los leads calificados provenientes de la etapa anterior son gestionados por los \textit{Ejecutivos de Venta}. El proceso inicia con una \textbf{demo + propuesta} que genera una \textbf{oportunidad de venta}. Posteriormente, se evalúa si \textbf{¿se cierra el contrato?}: en caso afirmativo (\textit{Sí}), el lead se convierte en un \textbf{contrato cerrado} y avanza a la \textbf{Etapa de Onboarding}; en caso negativo (\textit{No}), el lead retorna al estado de \textbf{lead calificado} para futuras oportunidades de conversión.
+\insertimage[\label{img:etapa_venta}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de Venta en Reservo}
 
-En el anexo \ref{img:etapa_onboarding} se muestra la \textbf{Etapa de Onboarding}, gestionada por el equipo de \textit{Customer Success}. El proceso comienza con un \textbf{cliente nuevo} que procede al \textbf{alta y primera configuración} del sistema. Posteriormente, el cliente ingresa al período de \textbf{onboarding (0-90 días)}, durante el cual recibe acompañamiento y capacitación para la adopción efectiva de la plataforma. Una vez completado este período, el cliente transita al \textbf{Ciclo de Vida del Cliente Activo}, donde continúa su relación con Reservo como usuario establecido.
+En la figura \ref{img:etapa_onboarding} se muestra la \textbf{Etapa de Onboarding}, gestionada por el equipo de \textit{Customer Success}. El proceso comienza con un \textbf{cliente nuevo} que procede al \textbf{alta y primera configuración} del sistema. Posteriormente, el cliente ingresa al período de \textbf{onboarding (0-90 días)}, durante el cual recibe acompañamiento y capacitación para la adopción efectiva de la plataforma. Una vez completado este período, el cliente transita al \textbf{Ciclo de Vida del Cliente Activo}, donde continúa su relación con Reservo como usuario establecido.
+\insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.15}{Etapa de Onboarding del cliente en Reservo}
 
-En el anexo \ref{img:etapa_cliente_activo} se presenta el \textbf{Ciclo de Vida del Cliente Activo}, gestionado por los equipos de \textit{Customer Success} y \textit{Soporte}. El proceso se centra en un \textbf{cliente activo} que puede seguir múltiples trayectorias: mediante estrategias de \textit{upsell/cross-sell} puede convertirse en \textbf{cliente en expansión} y retornar al ciclo activo; a través de procesos de \textit{renovación} transita a \textbf{cliente retenido}; o mediante \textit{alertas} por bajo uso, quejas o impago puede pasar a \textbf{cliente en riesgo}. Desde el estado de riesgo, se evalúa \textbf{¿se recupera?}: si la respuesta es afirmativa (\textit{Sí}), regresa a cliente retenido; si es negativa (\textit{No}), se convierte en \textbf{cliente churn (pérdida)}. Finalmente, se determina \textbf{¿se reactiva?}: en caso positivo (\textit{Sí}), el cliente retorna al ciclo activo; en caso negativo (\textit{No}), permanece como cliente perdido.
+En la figura \ref{img:etapa_cliente_activo} se presenta la \textbf{Etapa de Cliente Activo}, gestionado por los equipos de \textit{Customer Success} y \textit{Soporte}. El proceso se centra en un \textbf{cliente activo} que puede seguir múltiples trayectorias: mediante estrategias de \textit{upsell/cross-sell} puede convertirse en \textbf{cliente en expansión} y retornar al ciclo activo; a través de procesos de \textit{renovación} transita a \textbf{cliente retenido}; o mediante \textit{alertas} por bajo uso, quejas o impago puede pasar a \textbf{cliente en riesgo}. Desde el estado de riesgo, se evalúa \textbf{¿se recupera?}: si la respuesta es afirmativa (\textit{Sí}), regresa a cliente retenido; si es negativa (\textit{No}), se convierte en \textbf{cliente churn (pérdida)}. Finalmente, se determina \textbf{¿se reactiva?}: en caso positivo (\textit{Sí}), el cliente retorna al ciclo activo; en caso negativo (\textit{No}), permanece como cliente perdido.
+\insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo}
+
+En la figura \ref{img:etapa_cliente_activo} se presenta la \textbf{Etapa de Cliente Inactivo}
+\insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo}
 
 \subsection{Problema identificado}
 
@@ -215,19 +222,7 @@ El detalle metodológico (herramientas, técnicas estadísticas y arquitectura d
 
 	% Imagen, se numerará automáticamente con la letra del anexo según
 	% la configuración \appendixindepobjnum
-	\insertimage[\label{img:etapa_adquisicion}]{imagenes/etapa_adquisicion.png}{scale=0.70}{Etapa de Adquisición en Reservo}
-
-    \subsection{}
-    \insertimage[\label{img:etapa_venta}]{imagenes/etapa_venta.png}{scale=0.70}{Etapa de Venta en Reservo}
-
-    \subsection{}
-    %insertar imagen onboarding
-    \insertimage[\label{img:etapa_onboarding}]{imagenes/etapa_onboarding.png}{scale=0.70}{Etapa de Onboarding del cliente en Reservo}
-
-    \subsection{}
-    %insertar imagen cliente activo
-    \insertimage[\label{img:etapa_cliente_activo}]{imagenes/etapa_cliente_activo.png}{scale=0.80}{Ciclo de cliente activo en Reservo}
-
+	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.1}{Proceso completo de cliente en Reservo}
 
 
 \end{appendixd}
