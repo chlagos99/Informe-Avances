@@ -4,34 +4,28 @@
 \contentsline {subsection}{\numberline {1.2}Características de la empresa u organización}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Descripción del problema u oportunidad}{4}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Problema u oportunidad identificada}{4}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Problema identificado}{9}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Causas Fundamentales del Problema}{9}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}Causas Primarias}{9}{subsubsection.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.3.2}Causas Secundarias}{10}{subsubsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.4}Contexto Específico en el Ciclo de Vida del Cliente}{10}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Consecuencias del Problema}{11}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Impactos Financieros Directos}{11}{subsubsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.2}Impactos Operacionales}{11}{subsubsection.2.5.2}%
-\contentsline {subsubsection}{\numberline {2.5.3}Impactos Estratégicos a Largo Plazo}{11}{subsubsection.2.5.3}%
-\contentsline {section}{\numberline {3}Descripción y justificación del proyecto}{12}{section.3}%
-\contentsline {subsection}{\numberline {3.1}En qué consiste el proyecto}{12}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Por qué se hace el proyecto}{12}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Cómo se planea abordar}{12}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Por qué se hace el proyecto}{13}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Cómo se planea abordar (visión general)}{13}{subsection.3.5}%
-\contentsline {section}{\numberline {4}Objetivos del proyecto}{13}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Objetivo general}{13}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Objetivos específicos}{13}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Rol del estudiante}{13}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Responsabilidad principal}{13}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Contribución al proyecto global}{13}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Cronograma}{13}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Actividades principales}{13}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Tiempos estimados}{13}{subsection.6.2}%
-\contentsline {section}{\numberline {7}Metodología (opcional)}{13}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Enfoque general y fases}{13}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Herramientas de investigación}{13}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Recursos e insumos}{13}{subsection.7.3}%
-\contentsline {section}{\numberline {8}Referencias y bibliografía principal}{13}{section.8}%
+\contentsline {subsection}{\numberline {2.2}Problema encontrado}{5}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Efectos y consecuencias observadas}{6}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}Análisis y Elección del Problema Central}{6}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}Causas del Problema Central}{6}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}Descripción y Justificación del Proyecto}{7}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Definición y Alcance del Proyecto (\textquestiondown En qué consiste?)}{7}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Justificación Estratégica (\textquestiondown Por qué se hace?)}{7}{subsubsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3}Enfoque Metodológico General (\textquestiondown Cómo se hará?)}{8}{subsubsection.2.3.3}%
+\contentsline {section}{\numberline {3}Objetivos del proyecto}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Objetivo general}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Objetivos específicos}{9}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Rol del estudiante}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Responsabilidad principal}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Contribución al proyecto global}{10}{subsection.4.2}%
+\contentsline {section}{\numberline {5}Cronograma}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Actividades principales}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Tiempos estimados}{11}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Referencias y bibliografía principal}{13}{section.6}%
 \contentsline {section}{Anexo \numberline {A}Estados del cliente}{13}{appendix.1.Alph1}%
-\contentsline {subsection}{\numberline {A.1}}{14}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.1}}{13}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}}{14}{subsection.1.Alph1.2}%
+\contentsline {subsection}{\numberline {A.3}}{15}{subsection.1.Alph1.3}%
+\contentsline {subsection}{\numberline {A.4}}{16}{subsection.1.Alph1.4}%
+\contentsline {subsection}{\numberline {A.5}}{17}{subsection.1.Alph1.5}%
+\contentsline {section}{Anexo \numberline {B}Indicadores del proceso}{18}{appendix.1.Alph2}%

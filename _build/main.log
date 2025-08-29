@@ -1352,25 +1352,32 @@ File: ./img/departamentos/dii.pdf Graphic file (type pdf)
 ] (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 37.
-LaTeX Info: Redefining \% on input line 37.
- [2.3
-
-])
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ [2.3
+
+])
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
+ (main.lot
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+\tf@lot=\write5
+\openout5 = `main.lot'.
+
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [3.4]
-(cuerpo_informe.tex
+
+[3.4] (cuerpo_informe.tex
 LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 23
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1402,54 +1409,77 @@ LaTeX Info: Redefining \% on input line 65.
  [3.7]
 File: ./img/imagenes/proceso.png Graphic file (type bmp)
 <./img/imagenes/proceso.png>
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
+ [4.8]
+LaTeX Info: Redefining \. on input line 99.
+LaTeX Info: Redefining \% on input line 99.
+ [5.9]
+LaTeX Info: Redefining \. on input line 120.
+LaTeX Info: Redefining \% on input line 120.
+ [6.10]
+LaTeX Info: Redefining \. on input line 141.
+LaTeX Info: Redefining \% on input line 141.
+ [7.11]
+LaTeX Info: Redefining \. on input line 169.
+LaTeX Info: Redefining \% on input line 169.
+ [8.12]
+LaTeX Info: Redefining \. on input line 185.
+LaTeX Info: Redefining \% on input line 185.
+
+[9.13]
+File: ./img/imagenes/organigrama_practicante.png Graphic file (type bmp)
+<./img/imagenes/organigrama_practicante.png>
+LaTeX Info: Redefining \. on input line 215.
+LaTeX Info: Redefining \% on input line 215.
+ [10.14]
+Overfull \hbox (33.84392pt too wide) in paragraph at lines 237--274
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+[11.15]
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
+ [12.16]
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
- [4.8]
-File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
-<./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [5.9]
-File: ./img/bizagi/onboarding.png Graphic file (type bmp)
-<./img/bizagi/onboarding.png>
-LaTeX Info: Redefining \. on input line 86.
-LaTeX Info: Redefining \% on input line 86.
- [6.10]
-File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
-<./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
- [7.11]
-File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
-<./img/bizagi/cliente_inactivo.png>
-LaTeX Info: Redefining \. on input line 92.
-LaTeX Info: Redefining \% on input line 92.
- [8.12]
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
- [9.13]
-LaTeX Info: Redefining \. on input line 124.
-LaTeX Info: Redefining \% on input line 124.
 
-[10.14]
-LaTeX Info: Redefining \. on input line 148.
-LaTeX Info: Redefining \% on input line 148.
- [11.15]
-LaTeX Info: Redefining \. on input line 172.
-LaTeX Info: Redefining \% on input line 172.
- [12.16]
-File: ./img/bizagi/proceso_completo.png Graphic file (type bmp)
-<./img/bizagi/proceso_completo.png>
-
-Overfull \hbox (437.7141pt too wide) in paragraph at lines 225--225
+Overfull \hbox (10.4167pt too wide) in paragraph at lines 290--290
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
-[13.17]) (babel-spanish.tex
+File: ./img/bizagi/venta.png Graphic file (type bmp)
+<./img/bizagi/venta.png>
+LaTeX Info: Redefining \. on input line 293.
+LaTeX Info: Redefining \% on input line 293.
+[13.17]
+File: ./img/bizagi/onboarding.png Graphic file (type bmp)
+<./img/bizagi/onboarding.png>
+LaTeX Info: Redefining \. on input line 295.
+LaTeX Info: Redefining \% on input line 295.
+ [14.18]
+File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
+<./img/bizagi/cliente_activo.png>
+LaTeX Info: Redefining \. on input line 297.
+LaTeX Info: Redefining \% on input line 297.
+ [15.19]
+File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
+<./img/bizagi/cliente_inactivo.png>
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
+ [16.20]
+File: ./img/bizagi/proceso_completo.png Graphic file (type bmp)
+<./img/bizagi/proceso_completo.png>
+
+Overfull \hbox (47.15036pt too wide) in paragraph at lines 309--363
+ [] 
+ []
+
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
+[17.21]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
@@ -1459,8 +1489,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
- [14.18] (main.aux
+ [18.22] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (18 pages, 103664 bytes).
+Output written on main.xdv (22 pages, 127736 bytes).

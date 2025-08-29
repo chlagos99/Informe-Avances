@@ -75,154 +75,293 @@ La Figura \ref{img:proceso} muestra un diagrama del flujo general que sigue un c
 \insertimage[\label{img:proceso}]{imagenes/proceso.png}{scale=0.65}{Flujo General del Cliente por Área}
 
 %Estados del cliente / Ciclo de vida del cliente en reservo
-En la figura \ref{img:etapa_adquisicion} se tiene la figura que muestra el comienzo del ciclo de vida del cliente y potenciales clientes en Reservo. El potencial cliente encuentra Reservo gracias al equipo de marketing, pasando de un estado inicial \textbf{desconocido} a través de una \textit{interacción con marketing} que lo convierte en un \textbf{lead}. Este proceso marca la transición del área de \textit{Marketing} al área de \textit{Ventas SDR}, donde el lead es sometido a un proceso de \textit{calificación SDR} para evaluar su ajuste, interés y potencial de compra. Los leads que superan exitosamente esta calificación se convierten en \textbf{leads calificados}, los cuales son transferidos a la \textbf{Etapa de Venta} para continuar con el proceso de cierre comercial.
-\insertimage[\label{img:etapa_adquisicion}]{bizagi/captacion.png}{scale=0.25}{Etapa de Adquisición en Reservo}
+El proceso de captación, ilustrado en el anexo~\ref{img:captacion}, es iniciado por el área de \textbf{Marketing}, que ejecuta una acción específica para atraer el interés de potenciales clientes. Un \textbf{cliente} potencial encuentra esta acción de marketing y procede a registrar su información en la plataforma de Reservo. Este registro representa la primera transición crucial, cambiando el estado del \textbf{cliente} de un anónimo \textbf{`Desconocido'} a un \textbf{`Lead'} conocido dentro del sistema de Reservo.
 
-En la figura \ref{img:etapa_venta} se presenta la \textbf{Etapa de Venta}, donde los leads calificados provenientes de la etapa anterior son gestionados por los \textit{Ejecutivos de Venta}. El proceso inicia con una \textbf{demo + propuesta} que genera una \textbf{oportunidad de venta}. Posteriormente, se evalúa si \textbf{¿se cierra el contrato?}: en caso afirmativo (\textit{Sí}), el lead se convierte en un \textbf{contrato cerrado} y avanza a la \textbf{Etapa de Onboarding}; en caso negativo (\textit{No}), el lead retorna al estado de \textbf{lead calificado} para futuras oportunidades de conversión.
-\insertimage[\label{img:etapa_venta}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de Venta en Reservo}
+Una vez enviados los datos, estos son recibidos por el equipo de \textbf{Ventas SDR} (Sales Development Representative), que realiza la tarea inicial de configurar el lead para su posterior contacto. El \textbf{SDR} procede a contactar al prospecto; en este punto, el flujo depende de la respuesta del \textbf{cliente}, ya que el proceso solo continúa si este contesta y acepta seguir adelante. Tras una interacción exitosa, el \textbf{SDR} ejecuta la tarea de `Calificar Lead' para determinar si el prospecto encaja con el perfil de cliente ideal de la empresa. Si la calificación es positiva, el \textbf{cliente} experimenta su segundo cambio de estado importante, convirtiéndose en un \textbf{`Lead calificado'}.
 
-En la figura \ref{img:etapa_onboarding} se muestra la \textbf{Etapa de Onboarding}, gestionada por el equipo de \textit{Customer Success}. El proceso comienza con un \textbf{cliente nuevo} que procede al \textbf{alta y primera configuración} del sistema. Posteriormente, el cliente ingresa al período de \textbf{onboarding (0-90 días)}, durante el cual recibe acompañamiento y capacitación para la adopción efectiva de la plataforma. Una vez completado este período, el cliente transita al \textbf{Ciclo de Vida del Cliente Activo}, donde continúa su relación con Reservo como usuario establecido.
-\insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.15}{Etapa de Onboarding del cliente en Reservo}
+Para concluir esta fase, el equipo \textbf{SDR} se encarga de agendar una demostración con un \textbf{ejecutivo de ventas} y de enviar una cotización formal. La programación exitosa de esta demo marca la tercera y última transición de estado en este diagrama, elevando al prospecto a una \textbf{`Oportunidad de Venta'}. Con esto finaliza oficialmente el proceso de captación inicial y se transfiere al \textbf{cliente} a la siguiente etapa del embudo de ventas.
 
-En la figura \ref{img:etapa_cliente_activo} se presenta la \textbf{Etapa de Cliente Activo}, gestionado por los equipos de \textit{Customer Success} y \textit{Soporte}. El proceso se centra en un \textbf{cliente activo} que puede seguir múltiples trayectorias: mediante estrategias de \textit{upsell/cross-sell} puede convertirse en \textbf{cliente en expansión} y retornar al ciclo activo; a través de procesos de \textit{renovación} transita a \textbf{cliente retenido}; o mediante \textit{alertas} por bajo uso, quejas o impago puede pasar a \textbf{cliente en riesgo}. Desde el estado de riesgo, se evalúa \textbf{¿se recupera?}: si la respuesta es afirmativa (\textit{Sí}), regresa a cliente retenido; si es negativa (\textit{No}), se convierte en \textbf{cliente churn (pérdida)}. Finalmente, se determina \textbf{¿se reactiva?}: en caso positivo (\textit{Sí}), el cliente retorna al ciclo activo; en caso negativo (\textit{No}), permanece como cliente perdido.
-\insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo}
+El proceso de Venta, detallado en el anexo~\ref{img:etapa_venta}, comienza cuando un \textbf{cliente} en estado de `Oportunidad de Venta' asiste a una demostración del producto. Una vez finalizada la demo, si el \textbf{cliente} decide contratar el servicio, el \textbf{Ejecutivo de Venta} procede a configurar al prospecto en el sistema, momento en el cual se produce la primera transición de estado importante, actualizando su condición a \textbf{`Precliente'}. A continuación, el \textbf{Ejecutivo de Venta} envía las instrucciones de pago y, una vez que el \textbf{cliente} completa dicha transacción, se realiza el cambio de estado final: el prospecto es convertido oficialmente en un \textbf{`Cliente'}. Finalmente, el \textbf{Ejecutivo de Venta} transfiere al nuevo \textbf{cliente} al área de \textbf{Customer Success}, dando inicio al `Proceso de Onboarding' y concluyendo así la etapa comercial.
 
-En la figura \ref{img:etapa_cliente_activo} se presenta la \textbf{Etapa de Cliente Inactivo}
-\insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo}
+El proceso de Onboarding, como se detalla en el anexo~\ref{img:etapa_onboarding}, comienza inmediatamente después de que finaliza la venta, con el equipo de \textbf{Customer Success} preparando la cuenta e invitando al nuevo \textbf{cliente} a una primera capacitación. Una vez realizada esta sesión inicial, inicia una fase de seguimiento para monitorear si el \textbf{cliente} utiliza activamente la plataforma. Durante este período, ocurren las transiciones más relevantes, ya que, basándose en el nivel de riesgo detectado, un \textbf{cliente} puede ser clasificado como de \textbf{`riesgo alto'} o \textbf{`riesgo medio'}. Esta clasificación desencadena acciones de contacto proactivo por parte del equipo de \textbf{Customer Success}. Si el \textbf{cliente} no presenta riesgos y transcurre un período determinado, el proceso de Onboarding se da por finalizado, marcando la transición del \textbf{cliente} a un estado de uso regular de la herramienta.
 
-\subsection{Problema identificado}
+La etapa de \textbf{`Cliente Activo'}, ilustrada en el anexo~\ref{img:etapa_cliente_activo}, representa el ciclo de vida del \textbf{cliente} una vez finalizado el proceso de Onboarding, centrándose en la retención y expansión. En esta fase, el equipo de \textbf{Customer Success} realiza un monitoreo constante de la salud de la cuenta. Si se detecta un uso deficiente, se activan acciones de seguimiento, lo que implícitamente clasifica al \textbf{cliente} como un perfil \textbf{`en riesgo'} para mitigar una posible baja. Por el contrario, si la salud de la cuenta es buena, el equipo busca oportunidades de expansión (upselling); si el \textbf{cliente} acepta y completa el pago, su condición se actualiza, reafirmándolo como un \textbf{`cliente vigente'}. Paralelamente, el proceso gestiona las interacciones del \textbf{cliente} con el área de \textbf{Soporte} y los ciclos de facturación, donde un fallo recurrente en el pago puede culminar con la \textbf{pérdida del cliente (churn)}.
 
-En la actualidad, RESERVO se encuentra en una posición crítica dentro del competitivo mercado SaaS de salud en Chile y Latinoamérica. A pesar de contar con más de 3 500 clientes activos —entre especialistas independientes, clínicas medianas y otros profesionales de la salud—, \textbf{la empresa no aprovecha de forma profunda la información de uso y comportamiento disponible}, limitándose a indicadores superficiales que impiden identificar con antelación señales de riesgo (bajo uso, quejas o impago) y oportunidades de expansión (upsell/cross-sell). Esta \textbf{falta de análisis detallado y segmentación avanzada} fuerza al equipo de Customer Success a actuar de manera reactiva, provocando la pérdida de suscripciones retenibles, el desaprovechamiento de oportunidades de aumento de ingresos por cliente y la ineficiente asignación de recursos operativos.
+El proceso de \textbf{`Cliente Inactivo'}, detallado en el anexo~\ref{img:etapa_cliente_inactivo}, gestiona tanto la baja de un \textbf{cliente} como su posible reactivación. El flujo se inicia cuando un \textbf{cliente} solicita cancelar su servicio, ya sea durante el Onboarding o en su ciclo de vida activo. El equipo de \textbf{Customer Success} procesa esta solicitud, formalizando la transición del \textbf{cliente} a un estado \textbf{`dado de baja'}. Posteriormente, se registran las razones de la pérdida y se informa al \textbf{cliente} para cerrar el ciclo. El diagrama también contempla un camino para la recuperación; si un \textbf{cliente} inactivo decide volver a contratar, el equipo de \textbf{Customer Success} gestiona el nuevo contrato y la reactivación de la cuenta. Esta acción revierte el estado del \textbf{cliente}, devolviéndolo a la condición de \textbf{`cliente activo'} y reintegrándolo al ciclo de vida principal.
 
+\subsection{Problema encontrado}
+Para asegurar su crecimiento en el competitivo mercado SaaS, Reservo debe optimizar continuamente el valor que extrae de su base de clientes. Actualmente, la organización enfrenta desafíos que limitan su capacidad para retener y expandir cuentas de manera eficiente. Estos desafíos se manifiestan en una serie de efectos observables que impactan directamente la rentabilidad y la sostenibilidad del negocio.
 
-\subsection{Causas Fundamentales del Problema}
+\subsubsection{Efectos y consecuencias observadas}
+Los resultados de la gestión actual del ciclo de vida del cliente presentan tres consecuencias principales:
 
-\subsubsection{Causas Primarias}
-
-\textbf{Ausencia de un modelo integral de análisis comportamental}: La empresa carece de un sistema estructurado para analizar y segmentar a sus clientes basándose en patrones de uso, adopción de funcionalidades y comportamiento a lo largo del ciclo de vida. Esta deficiencia se manifiesta en múltiples niveles: no existe claridad sobre qué características poseen los clientes que realizan upgrades exitosos, no se identifican patrones de subutilización de funcionalidades pagadas (como clientes con planes de boletas que no las integran), y no se detectan tempranamente las señales de deterioro en la actividad que preceden al churn.
-
-\textbf{Desconexión entre datos disponibles y decisiones estratégicas}: A pesar de contar con información valiosa sobre el comportamiento de los clientes, RESERVO no ha logrado traducir estos datos en políticas de marketing diferenciadas y acciones proactivas. La empresa identifica que tiene clientes que facturan 100 millones de pesos pero pagan solo 40 mil pesos de mensualidad, evidenciando una desalineación entre el valor percibido por el cliente y el precio cobrado, pero no cuenta con los mecanismos para abordar sistemáticamente estas asimetrías.
-
-\textbf{Enfoque reactivo en la gestión de clientes}: El área de Customer Success opera principalmente de manera reactiva, respondiendo a problemas cuando ya se han manifestado (bloqueos, quejas, cancelaciones) en lugar de anticiparlos mediante el análisis predictivo de comportamientos. Esta aproximación resulta en una mayor tasa de churn evitable y en la pérdida de oportunidades de expansión que podrían haberse identificado mediante el análisis proactivo de patrones de uso.
-
-\subsubsection{Causas Secundarias}
-
-\textbf{Segmentación limitada y genérica}: La empresa maneja a sus 3{,}500 clientes con estrategias de marketing y retención relativamente homogéneas, sin considerar las diferencias significativas en comportamiento, necesidades y potencial de crecimiento entre distintos segmentos. Esta aproximación ``talla única'' resulta ineficiente en un mercado SaaS donde la personalización y el enfoque diferenciado son factores críticos de éxito.
-
-\textbf{Visibilidad fragmentada del cliente}: La falta de unificación de estadísticas para clientes grandes con múltiples sedes impide una comprensión holística del valor y comportamiento de estos accounts de alto valor. Esta fragmentación dificulta la toma de decisiones estratégicas sobre pricing, soporte especializado y estrategias de expansión.
-
-\subsection{Contexto Específico en el Ciclo de Vida del Cliente}
-
-El problema se manifiesta de manera diferente en cada etapa del ciclo de vida del cliente desarrollado por RESERVO:
-
-\textbf{En la Etapa de Onboarding (0-90 días)}: La falta de segmentación comportamental impide personalizar el proceso de onboarding según el perfil y necesidades específicas del cliente, resultando en tasas de adopción subóptimas y un mayor tiempo hasta el ``first value''.
-
-\textbf{En el Ciclo de Vida del Cliente Activo}: La ausencia de un modelo predictivo impide la identificación temprana de clientes en riesgo de churn, la detección oportuna de oportunidades de expansión, y la optimización de las estrategias de retención según el comportamiento específico de cada segmento.
-
-\textbf{En los procesos de Renovación}: Sin insights sobre los patrones de uso que correlacionan con alta satisfacción y propensión a renovar, el equipo de Customer Success carece de argumentos basados en datos para las conversaciones de renovación y no puede anticipar adecuadamente qué clientes requieren atención especial durante este proceso crítico.
-
-Esta problemática multifacética requiere una solución integral que combine análisis avanzado de datos, segmentación comportamental, desarrollo de políticas de marketing diferenciadas, y la implementación de procesos automatizados que permitan escalar las intervenciones personalizadas a través de toda la base de clientes de RESERVO.
-
-\subsection{Consecuencias del Problema}
-
-\subsubsection{Impactos Financieros Directos}
-
-\textbf{Pérdida de ingresos por churn evitable}: La incapacidad de identificar y actuar sobre patrones de comportamiento que preceden al churn resulta en la pérdida de clientes que podrían haberse retenido mediante intervenciones oportunas. En el modelo SaaS, donde el costo de adquirir un nuevo cliente es significativamente mayor que retener uno existente, cada cliente perdido representa no solo la pérdida de ingresos recurrentes sino también el desperdicio de la inversión inicial en adquisición.
-
-\textbf{Oportunidades de upselling y cross-selling desaprovechadas}: Sin un entendimiento claro de qué características y comportamientos predicen la propensión al upgrade, la empresa pierde oportunidades sistemáticas de incrementar el valor promedio por cliente. Esto es particularmente crítico en el contexto de clientes que demuestran alto uso pero pagan tarifas relativamente bajas.
-
-\textbf{Ineficiencia en la asignación de recursos de Customer Success}: La falta de priorización basada en datos resulta en que los recursos limitados del equipo de Customer Success se distribuyan de manera subóptima, dedicando tiempo similar a clientes con muy diferentes potenciales de retención y crecimiento.
-
-\subsubsection{Impactos Operacionales}
-
-\textbf{Sobrecarga del equipo de soporte}: La gestión reactiva genera un volumen mayor de tickets de soporte y consultas que podrían prevenirse mediante la identificación temprana de problemas de adopción y el desarrollo de intervenciones proactivas personalizadas por segmento.
-
-\textbf{Deterioro en la experiencia del cliente}: Los clientes que no reciben el nivel adecuado de atención o las comunicaciones relevantes para su etapa del ciclo de vida y patrón de uso experimentan una menor satisfacción, lo que se traduce en menor engagement, menor likelihood de renovación y menor propensión a recomendar el producto.
-
-\subsubsection{Impactos Estratégicos a Largo Plazo}
-
-\textbf{Pérdida de ventaja competitiva}: En el dinámico mercado HealthTech latinoamericano, donde la competencia incluye tanto startups ágiles como actores internacionales con recursos sustanciales, la incapacidad de optimizar la relación con la base de clientes existente puede resultar en pérdida de participación de mercado frente a competidores que sí implementen estrategias de customer success basadas en datos.
-
-
-\section{Descripción y justificación del proyecto}
-\subsection{En qué consiste el proyecto}
-% Explicar el contenido del proyecto en el que participa el estudiante.
-
-El proyecto titulado \emph{“Generar políticas de marketing para los clientes de RESERVO.cl, basado en el análisis de su comportamiento”} consiste en diseñar e implementar un marco de trabajo que permita:
-\begin{enumerate}
-  \item Recopilar y unificar datos de uso de funcionalidades, actividad de agendamiento, respuestas NPS y métricas financieras de cada cliente.
-  \item Aplicar técnicas de segmentación avanzada y análisis predictivo para clasificar a los clientes según riesgo de churn, nivel de adopción y propensión a migrar de plan.
-  \item Definir y validar un conjunto de políticas de marketing automatizadas (campañas de reenganche, ofertas de upsell, comunicaciones personalizadas) adaptadas a cada segmento y etapa del ciclo de vida.
-\end{enumerate}
-
-\subsection{Por qué se hace el proyecto}
-La iniciativa responde directamente al problema identificado de \textbf{aprovechamiento insuficiente de la información de comportamiento}, que impide acciones proactivas de retención y expansión. Las razones clave son:
 \begin{itemize}
-  \item \textbf{Impacto financiero:} Retener clientes en riesgo reduce el churn evitable y mejora el ingreso recurrente; aprovechar oportunidades de upsell aumenta el valor promedio por contrato.
-  \item \textbf{Estrategia de diferenciación:} En un mercado HealthTech competitivo, las empresas que ofrezcan comunicaciones y ofertas altamente personalizadas ganan ventaja frente a quienes aplican tácticas genéricas.
-  \item \textbf{Eficiencia operativa:} Automatizar la segmentación y las campañas libera recursos del equipo de Customer Success y Marketing, permitiéndoles enfocarse en intervenciones de alto impacto.
-  \item \textbf{Alineación con políticas internas:} Las directrices de RESERVO para impulsar la adopción y engagement de funcionalidades requieren un respaldo analítico que integre datos de uso, satisfacción y finanzas, tal como plantea la estrategia de la gerencia de Customer Success y el CEO.
+    \item \textbf{Pérdida recurrente de clientes e ingresos:} La empresa experimenta una \textbf{`Tasa de Churn'} mensual del \textbf{2.46\%}, lo que se ha traducido en \textbf{70 bajas} en lo que va del año 2025\footnote{La \textbf{Tasa de Churn} se define en la tabla~\ref{tab:estados-cliente}. El valor y el número de bajas corresponden a los datos internos de la empresa para el año 2025. Fuente: Base de datos de Reservo.}. Esta fuga constante de clientes impacta directamente los ingresos recurrentes y frena el crecimiento neto del negocio. Para que la empresa pueda expandirse, los ingresos de nuevos clientes deben superar consistentemente el valor perdido por las bajas, lo que representa un desafío significativo para la escalabilidad.
+
+    \item \textbf{Expansión y reactivación no sistemáticas:} Aunque la empresa logra generar valor adicional, los resultados no muestran un crecimiento acelerado. Durante 2024 se lograron \textbf{57 upsellings}, mientras que en 2025 se han conseguido \textbf{60} hasta la fecha. En cuanto a la reactivación, en 2024 se recuperaron \textbf{100 clientes}, mientras que en 2025 van \textbf{89}\footnote{Los datos de upsellings y clientes reactivados corresponden a los registros internos de la empresa. Fuente: Base de datos de Reservo.}. Estas cifras sugieren un crecimiento modesto en la expansión y una posible disminución en la capacidad de reactivar cuentas, indicando la falta de una estrategia proactiva y sistemática.
+
+    \item \textbf{Asignación ineficiente de recursos de postventa:} El equipo de Customer Success opera sin una priorización clara de su cartera. Los esfuerzos se distribuyen de manera uniforme, sin distinguir entre clientes con alto riesgo de abandono y aquellos con alto potencial de expansión, lo que diluye el impacto de las acciones de retención.
 \end{itemize}
 
-\subsection{Cómo se planea abordar}
-De forma general, el proyecto se desarrollará en tres fases:
-\begin{enumerate}
-  \item \textbf{Preparación de datos y modelado:} Extracción, limpieza y consolidación de fuentes internas (base de usuarios, logs de uso, tickets de soporte, NPS y facturación) en un data warehouse.
-  \item \textbf{Análisis y segmentación:} Implementación de algoritmos de clustering y modelos de scoring predictivo para generar segmentos de riesgo y de oportunidad de upsell.
-  \item \textbf{Definición de políticas y prueba piloto:} Diseño de plantillas de campañas y protocolos de contacto basados en los segmentos; ejecución de pilotos controlados para validar efectividad antes de la automatización completa.
-\end{enumerate}
+\subsubsection{Análisis y Elección del Problema Central}
+Los efectos descritos (pérdida de clientes, expansión no optimizada e ineficiencia) son síntomas de varios problemas subyacentes. Para seleccionar el problema central, se utiliza como base teórica el marco de \textbf{Gestión del Ciclo de Vida del Cliente (Customer Lifecycle Management)}, que postula que las acciones de una empresa deben adaptarse a la etapa y al comportamiento específico de cada cliente para ser efectivas.
 
-El detalle metodológico (herramientas, técnicas estadísticas y arquitectura de datos) se presenta en la sección de Metodología.
+Bajo esta óptica, la elevada tasa de abandono y el bajo crecimiento del valor no son problemas raíz, sino consecuencias directas de un problema más profundo y operativo. Se elige como problema central aquel que, de ser solucionado, tendría el mayor impacto en mitigar los demás. Por lo tanto, se descartan los síntomas y se selecciona la causa operativa fundamental que los origina. El problema central es:
 
-\subsection{Por qué se hace el proyecto}
-% Justificar con razones de la organización (fuentes internas, estrategias, políticas). 
-% Ir más allá de argumentos jerárquicos.
-\subsection{Cómo se planea abordar (visión general)}
-% Describir de forma general el enfoque; el detalle quedará para Metodología.
+\begin{center}
+    \textit{Tratamiento no diferenciado de la cartera de clientes en la etapa de postventa.}
+\end{center}
+
+\subsubsection{Causas del Problema Central}
+Este problema no se debe a una falta de datos, sino a la forma en que la empresa los interpreta y los utiliza para guiar sus acciones. Las causas fundamentales son:
+
+\begin{itemize}
+    \item \textbf{Toma de decisiones basada en indicadores de resultado:} Las estrategias se activan a partir de métricas retrospectivas, como la \textbf{`Tasa de Churn'} o un \textbf{`NPS'} de \textbf{52}\footnote{El \textbf{NPS} se define en la tabla~\ref{tab:estados-cliente}. El valor de 52 es el último resultado medido por la empresa. Fuente: Base de datos de Reservo.}. Estos indicadores miden un resultado que ya ocurrió, pero no permiten diferenciar el tratamiento entre clientes \textit{antes} de que el riesgo se materialice.
+
+    \item \textbf{Análisis estático de la información:} La empresa analiza datos de manera estática, observando el estado actual de un cliente, pero no su evolución en el tiempo. Se carece de una visión longitudinal del comportamiento, lo que impide identificar tendencias, como una disminución gradual del uso de la plataforma, que son señales tempranas de un posible abandono.
+
+    \item \textbf{Ausencia de criterios conductuales para la segmentación:} No se ha definido formalmente qué patrones de uso se correlacionan con un cliente saludable, en riesgo o con potencial de expansión. Sin estos criterios, es imposible segmentar la cartera de manera dinámica para aplicar acciones diferenciadas.
+
+    \item \textbf{Enfoque operativo centrado en la reacción a eventos:} El flujo de trabajo del equipo de Customer Success está estructurado para reaccionar a eventos negativos (quejas, impagos) en lugar de estar diseñado para segmentar proactivamente la base de clientes y ejecutar acciones personalizadas.
+\end{itemize}
+
+\subsection{Descripción y Justificación del Proyecto}
+
+La sección anterior definió como problema central el tratamiento no diferenciado de la cartera de clientes en la etapa de postventa, lo que genera consecuencias negativas en la retención, expansión y eficiencia operativa de Reservo. A continuación, se presenta un proyecto diseñado para abordar directamente las causas de este problema, sentando las bases para una gestión del cliente más estratégica y proactiva basada en evidencia teórica y mejores prácticas gerenciales.
+
+\subsubsection{Definición y Alcance del Proyecto (¿En qué consiste?)}
+
+El presente proyecto, titulado \textbf{“Diseño de Políticas de Clientes de Reservo.cl, Basado en el Análisis de su Comportamiento”}, consiste en la creación de un marco analítico fundamentado en el análisis del comportamiento de los usuarios y el ciclo de vida del cliente.  
+
+El entregable final no será la implementación de una herramienta de software, sino el diseño, la validación y la propuesta de dicho modelo analítico, junto con un conjunto de políticas y acciones recomendadas para que el equipo de Customer Success pueda aplicarlas a cada segmento identificado.
+
+\subsubsection{Justificación Estratégica (¿Por qué se hace?)}
+
+La realización de este proyecto se justifica por su alineación directa con la necesidad de la empresa de optimizar la rentabilidad de su cartera y asegurar un crecimiento sostenible. Diversos estudios señalan que la gestión proactiva del cliente basada en datos es un eslabón crítico para la competitividad y la rentabilidad en mercados digitales\footnote{Reinartz, W., Krafft, M., \& Hoyer, W. D. (2004). The Customer Relationship Management Process: Its Measurement and Impact on Performance. \textit{Journal of Marketing Research}, 41(3), 293-305.}.  
+
+Las razones estratégicas se basan en tres pilares principales:  
+
+\begin{itemize}
+    \item \textbf{Mitigar la pérdida de ingresos por churn:} La tasa de churn es uno de los indicadores más relevantes para la salud financiera de empresas con modelos de suscripción. Reducirla suele ser más rentable que adquirir nuevos clientes, como destacan Gupta et al.\footnote{Gupta, S., Lehmann, D. R., \& Stuart, J. A. (2006). Valuing Customers. \textit{Journal of Marketing Research}, 43(1), 7–18.}. Actualmente, la tasa de abandono mensual del \textbf{2.46\%} afecta directamente los ingresos recurrentes. Un modelo predictivo permitiría anticipar señales de deserción y activar acciones de retención personalizadas, en línea con la teoría del ciclo de vida del cliente\footnote{Lemmens, A., \& Croux, C. (2008). Bagging and Boosting Classification Trees to Predict Churn. \textit{Journal of Marketing Research}, 45(3), 276–286.}.
+    
+    \item \textbf{Capitalizar oportunidades de expansión:} Más allá de la retención, es fundamental aumentar el valor de vida del cliente (CLV). Estrategias de upselling y cross-selling aplicadas de manera segmentada permiten sistematizar la expansión en lugar de dejarla como práctica reactiva\footnote{Kumar, V., \& Reinartz, W. (2010). \textit{Customer Relationship Management: Concept, Strategy, and Tools}. Springer.}. Actualmente, la evolución modesta en upsellings (57 en 2024 frente a 60 en 2025) muestra un potencial poco explotado.  
+
+    \item \textbf{Optimizar el esfuerzo del equipo de Customer Success:} El trato homogéneo de la cartera genera sobrecostos y baja efectividad. Una segmentación basada en datos permitirá focalizar los recursos en clientes de mayor riesgo o mayor potencial, elevando la eficiencia y alineándose con las prácticas recomendadas en CRM estratégico\footnote{Reinartz, Krafft \& Hoyer (2004). Op. cit.}.
+\end{itemize}
+
+\subsubsection{Enfoque Metodológico General (¿Cómo se hará?)}
+
+El proyecto se desarrollará en tres fases principales:  
+
+Primero, la fase de \textbf{Análisis de Datos}, en la que se procesarán los datos históricos de la plataforma para identificar variables críticas de comportamiento.  
+
+En segundo lugar, una fase de \textbf{Desarrollo del Modelo}, aplicando técnicas de segmentación y modelos predictivos de churn\footnote{Lemmens \& Croux (2008). Op. cit.}.  
+
+Finalmente, la fase de \textbf{Diseño de Políticas}, con la propuesta de estrategias y acciones diferenciadas de retención y expansión para cada segmento detectado. Esto permitirá a Reservo transitar hacia una gestión del cliente más proactiva y sostenible.
+
 
 \section{Objetivos del proyecto}
+
 \subsection{Objetivo general}
 % Formular con verbo en infinitivo. Debe comunicar: propósito, producto generado y solicitante/beneficiarios.
+
+Diseñar un modelo analítico de segmentación conductual para la cartera de clientes de Reservo, que permita a la empresa diferenciar y gestionar de manera proactiva las estrategias de retención y expansión para cada tipo de cliente. Este enfoque se basa en los principios de segmentación conductual, que se centran en el conocimiento, la actitud y el uso que un cliente hace de un producto para definir las acciones de marketing\footnote{Kotler, P., \& Keller, K. L. (2016). \textit{Marketing Management} (15th Ed.). Pearson.}.
+
 \subsection{Objetivos específicos}
 % Listar resultados/entregables parciales relevantes. No describir etapas ni actividades.
+
+Para alcanzar el objetivo general, se deben generar los siguientes resultados específicos, cada uno de los cuales aborda una de las causas del problema central:
+
+\begin{itemize}
+    \item \textbf{Identificar y validar un conjunto de indicadores de comportamiento} que sirvan como señales tempranas (leading indicators) para predecir el riesgo de abandono y las oportunidades de expansión, superando la dependencia actual de métricas de resultado (lagging indicators).
+
+    \item \textbf{Definir y caracterizar al menos tres segmentos de clientes} basados en sus patrones de comportamiento dinámicos y su evolución en el tiempo, proporcionando así los criterios conductuales estandarizados que actualmente no existen.
+
+    \item \textbf{Analizar la evolución temporal del comportamiento de los clientes} para identificar las trayectorias típicas que siguen los clientes antes de un evento crítico (como el churn o un upselling), abordando así la limitación del análisis estático actual.
+    
+    \item \textbf{Proponer un conjunto de políticas de negocio personalizadas} para cada segmento identificado, que guíen las acciones proactivas de los equipos de Marketing y Customer Success y permitan superar el actual enfoque operativo centrado en la reacción.
+\end{itemize}
+
+\newpage
 
 \section{Rol del estudiante}
 \subsection{Responsabilidad principal}
 % Describir el subproyecto o responsabilidad específica del estudiante.
+
+La responsabilidad principal del estudiante dentro de este proyecto es liderar y ejecutar el diseño completo del modelo analítico. Esto abarca desde la fase inicial de exploración y preparación de los datos de comportamiento del cliente, hasta la aplicación de técnicas de segmentación para la creación de los distintos perfiles. \\
+
+\insertimageleft[\label{img:organigrama_practicante}]{imagenes/organigrama_practicante.png}{0.35}{Ubicación del practicante en Reservo}
+
+	~ El estudiante es el encargado de definir los criterios conductuales, validar la coherencia de los segmentos generados y, finalmente, traducir los hallazgos analíticos en un conjunto de políticas y acciones recomendadas. En su rol, actúa como el analista de negocio principal, siendo el puente entre los datos brutos de la empresa y la solución estratégica propuesta, tal como se observa en su ubicación dentro de la organización en la figura~\ref{img:organigrama_practicante}, el estudiante está en el área de customer success, a cargo de el se encuentra la Jefa de Customer Success y el CEO.\\
+
+
+% El siguiente código usa el paquete 'wrapfig' para la imagen a la izquierda.
+% Asegúrate de tener \usepackage{wrapfig} en el preámbulo.
+
 \subsection{Contribución al proyecto global}
 % Explicar por qué su rol es necesario para resolver el problema o desarrollar la oportunidad.
 
-\section{Cronograma}
-\subsection{Actividades principales}
-% Definir actividades del proyecto (no tareas menores).
-\subsection{Tiempos estimados}
-% Indicar duración/fechas. Puede representarse luego como tabla o carta Gantt.
+La contribución del estudiante es fundamental para resolver el problema central del \textit{tratamiento no diferenciado de la cartera de clientes}. Sin el modelo analítico que el estudiante debe diseñar, la empresa continuaría operando bajo un enfoque reactivo, basando sus decisiones en indicadores de resultado y sin la capacidad de anticipar el comportamiento del cliente.
 
-\section{Metodología (opcional)}
-\subsection{Enfoque general y fases}
-% Describir cómo se realizará/realiza el proyecto y sus grandes fases o procesos.
-\subsection{Herramientas de investigación}
-% Principales herramientas; ventajas y desventajas. Detallar solo si son novedosas o poco comunes.
-\subsection{Recursos e insumos}
-% Datos existentes, soluciones previas o paralelas e insumos usados; explicar su rol.
+El rol del estudiante es, por lo tanto, el catalizador que permite a Reservo pasar de la simple observación de datos a la generación de inteligencia de negocio accionable. Al definir los segmentos de clientes basados en comportamiento y proponer políticas personalizadas, su trabajo proporciona la base analítica necesaria para que el equipo de Customer Success pueda:
+
+\begin{itemize}
+    \item \textbf{Identificar proactivamente a los clientes en riesgo} antes de que muestren señales obvias de abandono, permitiendo intervenciones tempranas para reducir el churn.
+    \item \textbf{Detectar sistemáticamente las oportunidades de expansión}, dirigiendo los esfuerzos de upselling y cross-selling a los clientes con mayor probabilidad de adopción.
+    \item \textbf{Optimizar la asignación de recursos}, enfocando los esfuerzos del equipo en las cuentas de mayor impacto.
+\end{itemize}
+
+En definitiva, la labor del estudiante es la pieza clave que habilita la solución al problema, transformando los datos en una herramienta estratégica para la retención y el crecimiento.
+
+\section{Cronograma}
+El plan de trabajo del proyecto se ha estructurado en un horizonte temporal de 18 semanas, abarcando el período comprendido entre agosto y diciembre de 2025. Para asegurar una ejecución metódica y el cumplimiento de los objetivos, el proyecto se ha dividido en cuatro fases secuenciales, cada una con entregables y actividades específicas.
+
+\subsection{Actividades principales}
+La división del proyecto en fases permite una gestión estructurada del alcance y facilita el seguimiento de los avances. A continuación, se describen las actividades fundamentales de cada etapa:
+
+\begin{itemize}
+    \item \textbf{Fase 1: Planificación y Fundamentos.} Esta etapa inicial establece las bases conceptuales y operativas del proyecto. Comprende el levantamiento de requerimientos con los \textit{stakeholders}, la formalización del árbol de problemas, y la definición del alcance y los objetivos. Esta fase culmina con la validación de la línea base sobre la cual se medirá el éxito del proyecto.
+
+    \item \textbf{Fase 2: Análisis de Datos y Desarrollo del Modelo.} Corresponde al núcleo analítico del trabajo. Se inicia con la recopilación, limpieza y pre-procesamiento de los datos históricos de la empresa. Posteriormente, se ejecuta un análisis exploratorio para identificar variables de comportamiento relevantes y, finalmente, se procede con el desarrollo y la validación iterativa del modelo de segmentación.
+
+    \item \textbf{Fase 3: Diseño de la Propuesta Estratégica.} En esta fase, los resultados del modelo analítico se traducen en valor de negocio. Se realiza una caracterización detallada de cada segmento de cliente identificado y se diseña un portafolio de políticas de retención y expansión personalizadas. El trabajo concluye con la consolidación de todos los hallazgos en el informe final.
+
+    \item \textbf{Fase 4: Cierre y Presentación Final.} La última etapa se dedica a la comunicación de los resultados. Se prepara el material de apoyo y se realiza la presentación final del proyecto, sus conclusiones y recomendaciones a la organización, junto con la entrega de toda la documentación y artefactos generados.
+\end{itemize}
+
+\subsection{Tiempos estimados}
+La siguiente tabla presenta la distribución de las actividades en el tiempo, detallando las tareas específicas de cada fase y su duración estimada en semanas.
+
+\begin{table}[H]
+  \begin{threeparttable}
+    \centering
+    \scriptsize
+    \caption{Cronograma Detallado de Fases y Actividades del Proyecto}
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|l|p{9cm}|c|}
+      \hline
+      \textbf{Fase} & \textbf{Actividades Detalladas} & \textbf{Duración (Semanas)} \\
+      \hline
+      \textbf{1. Planificación} & 
+      - Levantamiento y validación de requerimientos. \newline
+      - Definición del problema, objetivos y alcance. \newline
+      - Elaboración del primer informe de avance. & 
+      \textbf{4} \\
+      \hline
+      \textbf{2. Desarrollo del Modelo} & 
+      - Recopilación y pre-procesamiento de datos. \newline
+      - Análisis exploratorio de datos (EDA). \newline
+      - Desarrollo y entrenamiento del modelo. \newline
+      - Validación y ajuste de métricas de rendimiento. & 
+      \textbf{9} \\
+      \hline
+      \textbf{3. Propuesta Final} & 
+      - Caracterización de segmentos de clientes. \newline
+      - Diseño de políticas de negocio personalizadas. \newline
+      - Redacción del informe final. & 
+      \textbf{4} \\
+      \hline
+      \textbf{4. Cierre} & 
+      - Preparación del material de apoyo. \newline
+      - Presentación final de resultados. & 
+      \textbf{1} \\
+      \hline
+      \multicolumn{2}{|r|}{\textbf{Duración Total Estimada}} & \textbf{18} \\
+      \hline
+    \end{tabular}
+    \label{tab:cronograma}
+  \end{threeparttable}
+\end{table}
+
+\newpage
 
 \section{Referencias y bibliografía principal}
 % Listar fuentes usadas en Antecedentes y Justificación, y referencias científicas del informe.
 % Usar formato APA 7 para citas y bibliografía.
 
-
 % ------------------------------------------------------------------------------
 % ANEXO
 % ------------------------------------------------------------------------------
-\begin{appendixd}
+\begin{appendixd}{Anexo}
 
 	\section{Estados del cliente}
 
     \subsection{}
+    \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo}
+    \subsection{}
+    \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo}
+    \subsection{}
+    \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo}
+    \subsection{}
+    \insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo}
+    \subsection{}
+    \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo}
 
-	% Imagen, se numerará automáticamente con la letra del anexo según
+    	% Imagen, se numerará automáticamente con la letra del anexo según
 	% la configuración \appendixindepobjnum
-	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.1}{Proceso completo de cliente en Reservo}
+	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.05}{Proceso completo de cliente en Reservo}
+
+%Tabla con indicadores
+
+  \section{Indicadores del proceso}
+\begin{table}[H]
+  \begin{threeparttable}
+    \centering
+    \scriptsize
+    \caption{Estados del cliente, métricas y cálculos asociados en Reservo}
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabular}{|l|C{3.5cm}|C{3.3cm}|C{5.5cm}|}
+      \hline
+      \textbf{Estado} & \textbf{Definición} & \textbf{Métricas asociadas} & \textbf{Fórmula / Cálculo} \\
+      \hline
+      Desconocido & Persona que aún no ha interactuado con la marca. & Visitas al sitio web. &
+      Visitas web: nº de sesiones únicas registradas en la web. \\
+      \hline
+      Lead & Persona que mostró interés inicial y dejó sus datos de contacto. &
+      Costo por Lead (CPL). &
+      CPL = $\tfrac{\text{Gasto en marketing}}{\text{Nº leads generados}}$ \\
+      \hline
+      Lead calificado & Lead que ha sido validado por el equipo SDR como un cliente potencial. &
+      Tasa de conversión a SQL (Sales Qualified Lead). &
+      SQL rate = $\tfrac{\text{Nº leads calificados}}{\text{Nº leads totales}} \times 100$ \\
+      \hline
+      Oportunidad de venta & Lead calificado que ha aceptado una demostración o propuesta formal. &
+      Win Rate. &
+      Win rate = $\tfrac{\text{Nº ventas cerradas}}{\text{Nº oportunidades}} \times 100$ \\
+      \hline
+      Cliente nuevo & Ha contratado el servicio y se ha completado su alta en el sistema. &
+      Costo de Adquisición de Cliente (CAC). &
+      CAC = $\tfrac{\text{Costo total de Marketing y Ventas}}{\text{Nº clientes nuevos adquiridos}}$ \\
+      \hline
+      Onboarding (0--90 días) & Cliente nuevo en el proceso de implementación y capacitación inicial. &
+      Tasa de Activación. &
+      Activación = $\tfrac{\text{Nº clientes que completan onboarding}}{\text{Nº clientes nuevos}} \times 100$ \\
+      \hline
+      Cliente activo & Cliente que ha completado el onboarding y usa la plataforma regularmente. &
+      Engagement Score. &
+      Engagement = Frecuencia y profundidad de uso de funciones clave. \\
+      \hline
+      Cliente en riesgo & Cliente con bajo uso, quejas recurrentes o problemas de pago. &
+      \% de Clientes en Riesgo. &
+      \% en riesgo = $\tfrac{\text{Nº clientes en riesgo}}{\text{Nº clientes activos}} \times 100$ \\
+      \hline
+      Cliente en expansión & Cliente activo que contrata nuevas funcionalidades, módulos o sedes. &
+      Net Dollar Retention (NDR). &
+      NDR = $\tfrac{\text{MRR inicial + Expansión - Churn}}{\text{MRR inicial}} \times 100$ \\
+      \hline
+      Cliente Churn & Cliente que ha cancelado su suscripción y no renueva. &
+      Tasa de Churn. &
+      Churn Rate = $\tfrac{\text{Nº clientes perdidos}}{\text{Nº clientes al inicio del período}} \times 100$ \\
+      \hline
+      Valor de Vida del Cliente & Predicción del beneficio neto atribuido a toda la relación futura con un cliente. &
+      Lifetime Value (LTV). &
+      LTV = (Ticket promedio $\times$ Recurrencia) $\times$ Vida del cliente \\
+      \hline
+    \end{tabular}
+    \label{tab:estados-cliente}
+  \end{threeparttable}
+\end{table}
+
 
 
 \end{appendixd}
