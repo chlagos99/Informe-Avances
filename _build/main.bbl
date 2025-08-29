@@ -1,43 +1,72 @@
-\begin{thebibliography}{1}
-  \providecommand\backrefparscanfalse{}
-  \providecommand\backrefparscantrue{}
-  \providecommand\backrefprint{}
+\begin{thebibliography}{}
 
-\backrefparscanfalse
-\bibitem{template}
-Pizarro, P., ``Template informe en \latex'', 2016-2024,
-  \href{https://latex.ppizarror.com/informe}
-  {\nolinkurl{\detokenize{https://latex.ppizarror.com/informe}}}.
-\backrefprint\backrefparscantrue
+\bibitem[{Biblioteca del Congreso Nacional de Chile}, 2012]{Ley20584}
+{Biblioteca del Congreso Nacional de Chile} (2012).
+\newblock {\em Ley N° 20.584: Regula los derechos y deberes que tienen las
+  personas en relación con acciones vinculadas a su atención en salud}.
+\newblock Biblioteca del Congreso Nacional de Chile.
+\newblock Accedido en agosto de 2025.
 
-\backrefparscanfalse
-\bibitem{overleaf}
-Overleaf, ``Uno de los mejores editores online para \latex, renovado con su
-  versión 2.0'', Agosto 2024, \href{https://es.overleaf.com/}
-  {\nolinkurl{\detokenize{https://es.overleaf.com/}}}.
-\backrefprint\backrefparscantrue
+\bibitem[{Grand View Research}, 2024]{GrandViewResearch2024}
+{Grand View Research} (2024).
+\newblock {\em Latin America Digital Health Market Size \& Outlook, 2030}.
 
-\backrefparscanfalse
-\bibitem{excel2latex}
-Excel2Latex, ``Plugin para hacer tablas con excel'', 2017,
-  \href{https://www.ctan.org/tex-archive/support/excel2latex/}
-  {\nolinkurl{\detokenize{https://www.ctan.org/tex-archive/support/excel2latex/}}}.
-\backrefprint\backrefparscantrue
+\bibitem[Gupta et~al., 2006]{Gupta2006}
+Gupta, S., Lehmann, D.~R., and Stuart, J.~A. (2006).
+\newblock {\em Valuing Customers}, volume~43.
+\newblock Journal of Marketing Research.
+\newblock APA 7.
 
-\backrefparscanfalse
-\bibitem{tablesgenerator}
-Generator, T., ``Creador de tablas online para \latex'', 2024,
-  \href{https://www.tablesgenerator.com}
-  {\nolinkurl{\detokenize{https://www.tablesgenerator.com}}}.
-\backrefprint\backrefparscantrue
+\bibitem[Kumar and Reinartz, 2010]{Kumar2010}
+Kumar, V. and Reinartz, W. (2010).
+\newblock {\em Customer Relationship Management: Concept, Strategy, and Tools}.
+\newblock Springer.
+\newblock APA 7.
 
-\backrefparscanfalse
-\bibitem{einstein}
-Einstein, A., ``{Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies]'', {Annalen der Physik}, vol.~322, no.~10,
-  pp.~891--921, 1905,
-  \href{https://dx.doi.org/https://dx.doi.org/10.1002/andp.19053221004}
-  {\nolinkurl{doi:\detokenize{https://dx.doi.org/10.1002/andp.19053221004}}}.
-\backrefprint\backrefparscantrue
+\bibitem[Lemmens and Croux, 2008]{Lemmens2008}
+Lemmens, A. and Croux, C. (2008).
+\newblock {\em Bagging and Boosting Classification Trees to Predict Churn},
+  volume~45.
+\newblock Journal of Marketing Research.
+\newblock APA 7.
+
+\bibitem[{Mordor Intelligence}, 2025]{MordorIntelligence2025}
+{Mordor Intelligence} (2025).
+\newblock {\em Latin America Digital Transformation Market Size \& Share
+  Analysis – Growth Trends \& Forecasts (2025–2030)}.
+
+\bibitem[{Pan American Journal of Public Health}, 2024]{PanAmPubHealth2024}
+{Pan American Journal of Public Health} (2024).
+\newblock {\em Telesalud: una estrategia digital para la gestión de la demanda
+  en APS en Chile}.
+\newblock Pan American Health Organization.
+
+\bibitem[Reinartz et~al., 2004]{Reinartz2004}
+Reinartz, W., Krafft, M., and Hoyer, W.~D. (2004).
+\newblock {\em The Customer Relationship Management Process: Its Measurement
+  and Impact on Performance}, volume~41.
+\newblock Journal of Marketing Research.
+\newblock APA 7.
+
+\bibitem[{RESERVO}, 2025]{ReservoQuienesSomos2025}
+{RESERVO} (2025).
+\newblock {\em Quiénes Somos}.
+\newblock RESERVO.
+\newblock Consultado en agosto de 2025.
+
+\bibitem[{Revista Chilena de Salud Pública (Universidad de Chile)},
+  2025]{RevChilSalud2025}
+{Revista Chilena de Salud Pública (Universidad de Chile)} (2025).
+\newblock {\em Telemedicina en Chile: uso, desarrollo y controversias en una
+  red de salud pública del sur de Chile}.
+\newblock Universidad de Chile.
+\newblock Estudio cualitativo.
+
+\bibitem[{Superintendencia de Salud de Chile}, 2025]{SuperSalud2025}
+{Superintendencia de Salud de Chile} (2025).
+\newblock {\em Telemedicina y Salud Mental en Chile}.
+\newblock Superintendencia de Salud de Chile.
+\newblock Documento de trabajo; Ley N.\,21.541 formaliza directrices para la
+  práctica, seguridad de datos e interoperabilidad.
 
 \end{thebibliography}

@@ -1065,18 +1065,18 @@ File: csquotes.cfg
 \coregluevarcm=\skip149
 \corefontwidth=\skip150
 \coreimageshspace=\skip151
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 5770.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 5773.
  (se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5770.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5773.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 577
-0.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 5770.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 5770.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 5770.
-Package hyperref Info: Option `colorlinks' set `true' on input line 5829.
+3.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 5773.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 5773.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 5773.
+Package hyperref Info: Option `colorlinks' set `true' on input line 5832.
 \cftbeforelistingsskip=\skip152
 \cftlistingsindent=\skip153
 \cftlistingsnumwidth=\skip154
@@ -1094,7 +1094,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 5829.
 \cftafterequtitleskip=\skip164
 \c@totalcount@templateIndexEquations=\count421
 LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 
-6115.
+6118.
  (t1lmvtt.fd
 File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1352,18 +1352,18 @@ File: ./img/departamentos/dii.pdf Graphic file (type pdf)
 ] (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+ [2.3
+
+])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
- [2.3
-
-])
+)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
@@ -1378,14 +1378,6 @@ LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
 
 [3.4] (cuerpo_informe.tex
-LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 23
-.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.00012> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.00005> on input line 23.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.00006> on input line 23.
 LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 31.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1394,92 +1386,107 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5.6> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <4.00003> on input line 31.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
  [1.5
 
 ]
-LaTeX Info: Redefining \. on input line 52.
-LaTeX Info: Redefining \% on input line 52.
+LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 45
+.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.00012> on input line 45.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7.00005> on input line 45.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5.00006> on input line 45.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
  [2.6]
 File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 <./img/imagenes/organigrama.png>
-LaTeX Info: Redefining \. on input line 65.
-LaTeX Info: Redefining \% on input line 65.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
  [3.7]
 File: ./img/imagenes/proceso.png Graphic file (type bmp)
 <./img/imagenes/proceso.png>
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
  [4.8]
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
  [5.9]
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
  [6.10]
-LaTeX Info: Redefining \. on input line 141.
-LaTeX Info: Redefining \% on input line 141.
+LaTeX Info: Redefining \. on input line 151.
+LaTeX Info: Redefining \% on input line 151.
  [7.11]
-LaTeX Info: Redefining \. on input line 169.
-LaTeX Info: Redefining \% on input line 169.
+LaTeX Info: Redefining \. on input line 181.
+LaTeX Info: Redefining \% on input line 181.
  [8.12]
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 
 [9.13]
 File: ./img/imagenes/organigrama_practicante.png Graphic file (type bmp)
 <./img/imagenes/organigrama_practicante.png>
-LaTeX Info: Redefining \. on input line 215.
-LaTeX Info: Redefining \% on input line 215.
+LaTeX Info: Redefining \. on input line 223.
+LaTeX Info: Redefining \% on input line 223.
  [10.14]
-Overfull \hbox (33.84392pt too wide) in paragraph at lines 237--274
+Overfull \hbox (33.84392pt too wide) in paragraph at lines 245--282
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
 [11.15]
-LaTeX Info: Redefining \. on input line 276.
-LaTeX Info: Redefining \% on input line 276.
- [12.16]
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
+ [12.16] (main.bbl)
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
+ [13.17
+
+]
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (10.4167pt too wide) in paragraph at lines 290--290
+Overfull \hbox (10.4167pt too wide) in paragraph at lines 306--306
  [][] 
  []
 
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
-LaTeX Info: Redefining \. on input line 293.
-LaTeX Info: Redefining \% on input line 293.
-[13.17]
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+[14.18]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
-LaTeX Info: Redefining \. on input line 295.
-LaTeX Info: Redefining \% on input line 295.
- [14.18]
+LaTeX Info: Redefining \. on input line 311.
+LaTeX Info: Redefining \% on input line 311.
+ [15.19]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 297.
-LaTeX Info: Redefining \% on input line 297.
- [15.19]
+LaTeX Info: Redefining \. on input line 313.
+LaTeX Info: Redefining \% on input line 313.
+ [16.20]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
-LaTeX Info: Redefining \. on input line 299.
-LaTeX Info: Redefining \% on input line 299.
- [16.20]
+LaTeX Info: Redefining \. on input line 315.
+LaTeX Info: Redefining \% on input line 315.
+ [17.21]
 File: ./img/bizagi/proceso_completo.png Graphic file (type bmp)
 <./img/bizagi/proceso_completo.png>
-
-Overfull \hbox (47.15036pt too wide) in paragraph at lines 309--363
+LaTeX Info: Redefining \. on input line 319.
+LaTeX Info: Redefining \% on input line 319.
+ [18.22]
+Overfull \hbox (47.15036pt too wide) in paragraph at lines 325--379
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 364.
-LaTeX Info: Redefining \% on input line 364.
-[17.21]) (babel-spanish.tex
+LaTeX Info: Redefining \. on input line 380.
+LaTeX Info: Redefining \% on input line 380.
+[19.23]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
@@ -1489,8 +1496,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
- [18.22] (main.aux
+ [20.24] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (22 pages, 127736 bytes).
+Output written on main.xdv (24 pages, 134472 bytes).

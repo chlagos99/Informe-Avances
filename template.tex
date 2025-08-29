@@ -81,15 +81,18 @@
 	\fi\fi
 \fi
 
+
 % Carga el idioma
 \usepackage{tracklang}
 \ifthenelse{\equal{\stylecitereferences}{natbib}}{% Formato citas natbib
-	\usepackage[nottoc,notlof,notlot]{tocbibind}
-	\ifthenelse{\equal{\natbibrefcitecompress}{true}}{
-		\usepackage[sort&compress]{natbib}
-	}{
-		\usepackage{natbib}
-	}
+    \usepackage[nottoc,notlof,notlot]{tocbibind}
+    \ifthenelse{\equal{\natbibrefcitecompress}{true}}{
+        % Opciones añadidas aquí
+        \usepackage[round, authoryear, longnamesfirst, sort&compress]{natbib}
+    }{
+        % Opciones añadidas también aquí
+        \usepackage[round, authoryear, longnamesfirst]{natbib}
+    }
 }{}% Fin carga natbib
 \IfTrackedLanguage{spanish}{
 	\usepackage[es-nosectiondot,es-lcroman,es-noquoting]{babel}
@@ -7514,13 +7517,13 @@
 	
 	% --- Estilo de títulos (tamaños exactos) ---
 	\sectionfont{%
-	\color{\sectioncolor}\sectionfontstyle\fontsize{11.5pt}{13.8pt}\selectfont%
+	\color{\sectioncolor}\sectionfontstyle\fontsize{10.5pt}{12.3pt}\selectfont%
 	}
 	\subsectionfont{%
-	\color{\ssectioncolor}\ssectionfontstyle\fontsize{13pt}{15.6pt}\selectfont%
+	\color{\ssectioncolor}\ssectionfontstyle\fontsize{13.5pt}{16.6pt}\selectfont%
 	}
 	\subsubsectionfont{%
-	\color{\sssectioncolor}\sssectionfontstyle\fontsize{10.5pt}{12.6pt}\selectfont%
+	\color{\sssectioncolor}\sssectionfontstyle\fontsize{12pt}{14.2pt}\selectfont%
 	}
 	\titleformat{\subsubsubsection}{%
 	\color{\ssssectioncolor}\ssssectionfontstyle\fontsize{10pt}{12pt}\selectfont%

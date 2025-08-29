@@ -1,5 +1,5 @@
 % Template:     Informe LaTeX
-% Documento:    Archivo de ejemplo
+% Documento:    Cuerpo de Informe
 % Versión:      8.3.8 (07/02/2025)
 % Codificación: UTF-8
 %
@@ -20,10 +20,10 @@
 \subsection{Industria y ambiente competitivo}
 
 
-El sector de la salud en Chile y en toda Latinoamérica está experimentando una transformación digital irreversible. Este mercado, conocido como HealthTech o salud digital, alcanzó una valoración de \textbf{\$17 mil millones de dólares en 2024} en toda la región y se proyecta que su crecimiento se acelere. Las estimaciones indican que el mercado podría alcanzar los \textbf{\$58 mil millones de dólares para 2030}, lo que representa una \textbf{tasa de crecimiento anual compuesta (CAGR) del 23.2\%} durante este periodo\footnote{Grand View Research. ``Latin America Digital Health Market Size \& Outlook, 2030''.}. Este dinamismo no es casual, sino que es impulsado por la creciente adopción de tecnologías digitales, el aumento de la demanda de telemedicina y la necesidad de mejorar la eficiencia en la atención sanitaria\footnote{Mordor Intelligence. ``Latin America Digital Transformation Market Size \& Share Analysis - Growth Trends \& Forecasts (2025 - 2030)''.}.
+El sector de la salud en Chile y en toda Latinoamérica está experimentando una transformación digital irreversible. Este mercado, conocido como HealthTech o salud digital, alcanzó una valoración de \textbf{\$17\,mil millones de dólares en 2024} en toda la región y se proyecta que su crecimiento se acelere. Las estimaciones indican que el mercado podría alcanzar los \textbf{\$58\,mil millones de dólares para 2030}, lo que representa una \textbf{tasa de crecimiento anual compuesta (CAGR) del 23.2\,\%} durante este periodo \citep{GrandViewResearch2024}. Este dinamismo no es casual, sino que es impulsado por la creciente adopción de tecnologías digitales, el aumento de la demanda de telemedicina y la necesidad de mejorar la eficiencia en la atención sanitaria \citep{MordorIntelligence2025}.
 
-El principal catalizador de este cambio en Latinoamérica y Chile ha sido la aceleración digital impulsada por la pandemia, que expandió rápidamente la telemedicina y sentó las bases de un modelo híbrido de atención.\footnote{Superintendencia de Salud de Chile. ``Telemedicina y Salud Mental en Chile'' (Documento de trabajo, 2025). Ley N.\,21.541 formaliza directrices para la práctica, seguridad de datos e interoperabilidad.} El impulso post COVID-19 redefinió expectativas: pacientes y equipos valoran la continuidad de cuidados, el acceso a especialistas a distancia y la coordinación entre niveles, pero también se observan asimetrías de recursos y brechas de adopción que condicionan el uso sostenido.\footnote{Revista Chilena de Salud Pública (U. de Chile). ``Telemedicina en Chile: uso, desarrollo y controversias en una red de salud pública del sur de Chile'' (estudio cualitativo).} En atención primaria, la estrategia de telesalud se ha usado para gestionar demanda y acceso, apoyando la resolución oportuna y la articulación con especialidades.\footnote{Pan American Journal of Public Health. ``Telesalud: una estrategia digital para la gestión de la demanda en APS en Chile'' (2024).} Con este contexto, para prestadores y clínicas en Chile, la adopción efectiva de tecnologías —desde teleconsulta hasta autogestión de citas y canales asincrónicos— deja de ser ventaja y se vuelve condición para mantener relevancia y calidad asistencial.\footnote{Superintendencia de Salud de Chile. ``Telemedicina y Salud Mental en Chile'' (2025).}
 
+El principal catalizador de este cambio en Latinoamérica y Chile ha sido la aceleración digital impulsada por la pandemia, que expandió rápidamente la telemedicina y sentó las bases de un modelo híbrido de atención \citep{SuperSalud2025}. El impulso post COVID-19 redefinió expectativas: pacientes y equipos valoran la continuidad de cuidados, el acceso a especialistas a distancia y la coordinación entre niveles, pero también se observan asimetrías de recursos y brechas de adopción que condicionan el uso sostenido \citep{RevChilSalud2025}. En atención primaria, la estrategia de telesalud se ha usado para gestionar demanda y acceso, apoyando la resolución oportuna y la articulación con especialidades \citep{PanAmPubHealth2024}. Con este contexto, para prestadores y clínicas en Chile, la adopción efectiva de tecnologías —desde teleconsulta hasta autogestión de citas y canales asincrónicos— deja de ser ventaja y se vuelve condición para mantener relevancia y calidad asistencial \citep{SuperSalud2025}.
 
 Este entorno de alta demanda ha generado un ecosistema de proveedores de software sumamente competitivo y diverso. Se pueden identificar tres perfiles principales de actores en el mercado:
 
@@ -32,16 +32,17 @@ Este entorno de alta demanda ha generado un ecosistema de proveedores de softwar
     
     \item \textbf{Empresas Locales Consolidadas:} Poseen un profundo conocimiento del mercado chileno, incluyendo sus complejidades regulatorias y culturales. Suelen tener una base de clientes estable, aunque pueden ser más lentas en la adopción de nuevas tecnologías.
     
-    \item \textbf{Actores Internacionales:} Cuentan con enormes recursos, tecnología avanzada y marcas reconocidas globalmente. Su principal desafío es adaptar sus soluciones estandarizadas a las particularidades del sistema de salud y las normativas chilenas, como la Ley de Derechos y Deberes del Paciente\footnote{Ley N° 20.584, que regula los derechos y deberes que tienen las personas en relación con acciones vinculadas a su atención en salud. Fuente: Biblioteca del Congreso Nacional de Chile. \url{https://www.bcn.cl/leychile/navegar?idNorma=1039348}}, que impone estrictos requisitos sobre la seguridad y privacidad de la ficha clínica.
+    \item \textbf{Actores Internacionales:} Cuentan con enormes recursos, tecnología avanzada y marcas reconocidas globalmente. Su principal desafío es adaptar sus soluciones estandarizadas a las particularidades del sistema de salud y las normativas chilenas, como la Ley de Derechos y Deberes del Paciente \citep{Ley20584}, que impone estrictos requisitos sobre la seguridad y privacidad de la ficha clínica.
+
 \end{itemize}
 
 En este escenario, el éxito no depende únicamente de la tecnología, sino de la capacidad de una empresa para navegar estos desafíos. La diferenciación se logra a través de la hiper-especialización (ofrecer una solución perfecta para un tipo de especialista), la usabilidad (crear plataformas intuitivas que requieran una mínima capacitación) y, fundamentalmente, la calidad del soporte al cliente. Las empresas que logran combinar estos elementos son las que consiguen posicionarse sólidamente, convirtiendo el software de una simple herramienta a un socio estratégico para el crecimiento del profesional de la salud.
 
 \subsection{Características de la empresa u organización}
 
-RESERVO es una empresa chilena de tecnología SaaS\footnote{Software as a Service} cuyo rol en la industria es ser un \textbf{socio tecnológico integral para profesionales y centros de salud de tamaño pequeño y mediano}\footnote{Información obtenida del sitio web oficial de la empresa, sección "Quiénes Somos". Consultado en agosto de 2025. \url{https://www.reservo.cl/quienes-somos}}. Su modelo de negocio se centra en un nicho de mercado que históricamente ha sido desatendido por las grandes corporaciones de software, las cuales se enfocan en hospitales y grandes cadenas de clínicas. RESERVO atiende específicamente a especialistas independientes, dentistas, kinesiólogos, psicólogos y clínicas medianas, describiendo así las características de la organización.
+RESERVO es una empresa chilena de tecnología SaaS cuyo rol en la industria es ser un \textbf{socio tecnológico integral para profesionales y centros de salud de tamaño pequeño y mediano} \citep{ReservoQuienesSomos2025}. Su modelo de negocio se centra en un nicho de mercado que históricamente ha sido desatendido por las grandes corporaciones de software, las cuales se enfocan en hospitales y grandes cadenas de clínicas. RESERVO atiende específicamente a especialistas independientes, dentistas, kinesiólogos, psicólogos y clínicas medianas, describiendo así las características de la organización.
 
-La oportunidad que la empresa busca introducir se basa en un problema claro que enfrentan sus potenciales clientes: estos profesionales a menudo invierten una cantidad desproporcionada de su tiempo en tareas administrativas (gestión de agendas, recordatorios de citas, cobros) en lugar de en la atención al paciente. Además, muchos carecen de las herramientas y el conocimiento para competir digitalmente y atraer nuevos pacientes, lo que representa una oportunidad de mejora\footnote{Análisis basado en una entrevista con el Gerente de Producto de RESERVO, realizada el 15 de agosto de 2025.}.
+La oportunidad que la empresa busca introducir se basa en un problema claro que enfrentan sus potenciales clientes: estos profesionales a menudo invierten una cantidad desproporcionada de su tiempo en tareas administrativas (gestión de agendas, recordatorios de citas, cobros) en lugar de en la atención al paciente. Además, muchos carecen de las herramientas y el conocimiento para competir digitalmente y atraer nuevos pacientes, lo que representa una oportunidad de mejora\footnote{Análisis basado en una entrevista con la Customer Success Manager de RESERVO, realizada el 15 de agosto de 2025.}.
 
 Para resolver estos problemas, el producto principal de RESERVO es una \textbf{plataforma centralizada y modular} que ofrece una solución completa\footnote{Descripción de funcionalidades basada en la información pública disponible en la sección "Características" del sitio web oficial de RESERVO. \url{https://www.reservo.cl/caracteristicas}}:
 
@@ -60,32 +61,44 @@ La estructura organizacional de la empresa, detallada en el Organigrama General 
 A su vez, cada líder supervisa a sus respectivos equipos operativos. El área de Desarrollo es la de mayor tamaño, con un equipo de 11 trabajadores, seguida por el área Comercial con 8 trabajadores. Por su parte, el equipo de Customer Success está compuesto por 5 personas, y el de Marketing por 2. Es de notar que el departamento de Post-venta presenta una sub-estructura, en la cual el Gerente supervisa a una Jefa de Soporte, Daniela Contreras, quien lidera un equipo de 5 trabajadores.
 
 %insertar imagen aqui
-\insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.34}{Organigrama de Reservo, Agosto 2025}
+\insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.34}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
 
 \section{Descripción del problema u oportunidad}
 
-\subsection{Problema u oportunidad identificada}
+\subsection{Antecedentes}
 % Describir el problema que se enfrenta o la oportunidad de mejora que se desea introducir.
 
 %Flujo General del Cliente por Área
 
+\subsubsection{Proceso general}
 La Figura \ref{img:proceso} muestra un diagrama del flujo general que sigue un cliente a lo largo de su ciclo de vida dentro de Reservo, visto desde la perspectiva de las áreas funcionales involucradas. El recorrido inicia con el primer contacto a través de Marketing, continúa con el proceso de calificación y venta por parte de los equipos SDR y Ejecutivos, y sigue con la etapa de incorporación (Onboarding) gestionada por Customer Success. Finalmente, el cliente interactúa con Soporte y entra en un ciclo de Retención, que culmina con su continuidad o su eventual pérdida (churn)
 
 %insertar imagen aqui
-\insertimage[\label{img:proceso}]{imagenes/proceso.png}{scale=0.65}{Flujo General del Cliente por Área}
+\insertimage[\label{img:proceso}]{imagenes/proceso.png}{scale=0.65}{Flujo General del Cliente por Área. Fuente: elaboración propia}
 
 %Estados del cliente / Ciclo de vida del cliente en reservo
+
+\subsubsection{Etapa de Captación}
+
 El proceso de captación, ilustrado en el anexo~\ref{img:captacion}, es iniciado por el área de \textbf{Marketing}, que ejecuta una acción específica para atraer el interés de potenciales clientes. Un \textbf{cliente} potencial encuentra esta acción de marketing y procede a registrar su información en la plataforma de Reservo. Este registro representa la primera transición crucial, cambiando el estado del \textbf{cliente} de un anónimo \textbf{`Desconocido'} a un \textbf{`Lead'} conocido dentro del sistema de Reservo.
 
 Una vez enviados los datos, estos son recibidos por el equipo de \textbf{Ventas SDR} (Sales Development Representative), que realiza la tarea inicial de configurar el lead para su posterior contacto. El \textbf{SDR} procede a contactar al prospecto; en este punto, el flujo depende de la respuesta del \textbf{cliente}, ya que el proceso solo continúa si este contesta y acepta seguir adelante. Tras una interacción exitosa, el \textbf{SDR} ejecuta la tarea de `Calificar Lead' para determinar si el prospecto encaja con el perfil de cliente ideal de la empresa. Si la calificación es positiva, el \textbf{cliente} experimenta su segundo cambio de estado importante, convirtiéndose en un \textbf{`Lead calificado'}.
 
 Para concluir esta fase, el equipo \textbf{SDR} se encarga de agendar una demostración con un \textbf{ejecutivo de ventas} y de enviar una cotización formal. La programación exitosa de esta demo marca la tercera y última transición de estado en este diagrama, elevando al prospecto a una \textbf{`Oportunidad de Venta'}. Con esto finaliza oficialmente el proceso de captación inicial y se transfiere al \textbf{cliente} a la siguiente etapa del embudo de ventas.
 
+\subsubsection{Etapa de Ventas}
+
 El proceso de Venta, detallado en el anexo~\ref{img:etapa_venta}, comienza cuando un \textbf{cliente} en estado de `Oportunidad de Venta' asiste a una demostración del producto. Una vez finalizada la demo, si el \textbf{cliente} decide contratar el servicio, el \textbf{Ejecutivo de Venta} procede a configurar al prospecto en el sistema, momento en el cual se produce la primera transición de estado importante, actualizando su condición a \textbf{`Precliente'}. A continuación, el \textbf{Ejecutivo de Venta} envía las instrucciones de pago y, una vez que el \textbf{cliente} completa dicha transacción, se realiza el cambio de estado final: el prospecto es convertido oficialmente en un \textbf{`Cliente'}. Finalmente, el \textbf{Ejecutivo de Venta} transfiere al nuevo \textbf{cliente} al área de \textbf{Customer Success}, dando inicio al `Proceso de Onboarding' y concluyendo así la etapa comercial.
+
+\subsubsection{Etapa de Onboarding}
 
 El proceso de Onboarding, como se detalla en el anexo~\ref{img:etapa_onboarding}, comienza inmediatamente después de que finaliza la venta, con el equipo de \textbf{Customer Success} preparando la cuenta e invitando al nuevo \textbf{cliente} a una primera capacitación. Una vez realizada esta sesión inicial, inicia una fase de seguimiento para monitorear si el \textbf{cliente} utiliza activamente la plataforma. Durante este período, ocurren las transiciones más relevantes, ya que, basándose en el nivel de riesgo detectado, un \textbf{cliente} puede ser clasificado como de \textbf{`riesgo alto'} o \textbf{`riesgo medio'}. Esta clasificación desencadena acciones de contacto proactivo por parte del equipo de \textbf{Customer Success}. Si el \textbf{cliente} no presenta riesgos y transcurre un período determinado, el proceso de Onboarding se da por finalizado, marcando la transición del \textbf{cliente} a un estado de uso regular de la herramienta.
 
+\subsubsection{Etapa de Cliente Activo}
+
 La etapa de \textbf{`Cliente Activo'}, ilustrada en el anexo~\ref{img:etapa_cliente_activo}, representa el ciclo de vida del \textbf{cliente} una vez finalizado el proceso de Onboarding, centrándose en la retención y expansión. En esta fase, el equipo de \textbf{Customer Success} realiza un monitoreo constante de la salud de la cuenta. Si se detecta un uso deficiente, se activan acciones de seguimiento, lo que implícitamente clasifica al \textbf{cliente} como un perfil \textbf{`en riesgo'} para mitigar una posible baja. Por el contrario, si la salud de la cuenta es buena, el equipo busca oportunidades de expansión (upselling); si el \textbf{cliente} acepta y completa el pago, su condición se actualiza, reafirmándolo como un \textbf{`cliente vigente'}. Paralelamente, el proceso gestiona las interacciones del \textbf{cliente} con el área de \textbf{Soporte} y los ciclos de facturación, donde un fallo recurrente en el pago puede culminar con la \textbf{pérdida del cliente (churn)}.
+
+\subsubsection{Etapa de Cliente Inactivo}
 
 El proceso de \textbf{`Cliente Inactivo'}, detallado en el anexo~\ref{img:etapa_cliente_inactivo}, gestiona tanto la baja de un \textbf{cliente} como su posible reactivación. El flujo se inicia cuando un \textbf{cliente} solicita cancelar su servicio, ya sea durante el Onboarding o en su ciclo de vida activo. El equipo de \textbf{Customer Success} procesa esta solicitud, formalizando la transición del \textbf{cliente} a un estado \textbf{`dado de baja'}. Posteriormente, se registran las razones de la pérdida y se informa al \textbf{cliente} para cerrar el ciclo. El diagrama también contempla un camino para la recuperación; si un \textbf{cliente} inactivo decide volver a contratar, el equipo de \textbf{Customer Success} gestiona el nuevo contrato y la reactivación de la cuenta. Esta acción revierte el estado del \textbf{cliente}, devolviéndolo a la condición de \textbf{`cliente activo'} y reintegrándolo al ciclo de vida principal.
 
@@ -125,31 +138,31 @@ Este problema no se debe a una falta de datos, sino a la forma en que la empresa
     \item \textbf{Enfoque operativo centrado en la reacción a eventos:} El flujo de trabajo del equipo de Customer Success está estructurado para reaccionar a eventos negativos (quejas, impagos) en lugar de estar diseñado para segmentar proactivamente la base de clientes y ejecutar acciones personalizadas.
 \end{itemize}
 
-\subsection{Descripción y Justificación del Proyecto}
+\section{Descripción y Justificación del Proyecto}
 
 La sección anterior definió como problema central el tratamiento no diferenciado de la cartera de clientes en la etapa de postventa, lo que genera consecuencias negativas en la retención, expansión y eficiencia operativa de Reservo. A continuación, se presenta un proyecto diseñado para abordar directamente las causas de este problema, sentando las bases para una gestión del cliente más estratégica y proactiva basada en evidencia teórica y mejores prácticas gerenciales.
 
-\subsubsection{Definición y Alcance del Proyecto (¿En qué consiste?)}
+\subsection{Definición y Alcance del Proyecto}
 
 El presente proyecto, titulado \textbf{“Diseño de Políticas de Clientes de Reservo.cl, Basado en el Análisis de su Comportamiento”}, consiste en la creación de un marco analítico fundamentado en el análisis del comportamiento de los usuarios y el ciclo de vida del cliente.  
 
 El entregable final no será la implementación de una herramienta de software, sino el diseño, la validación y la propuesta de dicho modelo analítico, junto con un conjunto de políticas y acciones recomendadas para que el equipo de Customer Success pueda aplicarlas a cada segmento identificado.
 
-\subsubsection{Justificación Estratégica (¿Por qué se hace?)}
+\subsection{Justificación Estratégica}
 
-La realización de este proyecto se justifica por su alineación directa con la necesidad de la empresa de optimizar la rentabilidad de su cartera y asegurar un crecimiento sostenible. Diversos estudios señalan que la gestión proactiva del cliente basada en datos es un eslabón crítico para la competitividad y la rentabilidad en mercados digitales\footnote{Reinartz, W., Krafft, M., \& Hoyer, W. D. (2004). The Customer Relationship Management Process: Its Measurement and Impact on Performance. \textit{Journal of Marketing Research}, 41(3), 293-305.}.  
+La realización de este proyecto se justifica por su alineación directa con la necesidad de la empresa de optimizar la rentabilidad de su cartera y asegurar un crecimiento sostenible. Diversos estudios señalan que la gestión proactiva del cliente basada en datos es un eslabón crítico para la competitividad y la rentabilidad en mercados digitales \citep{Reinartz2004}.
 
 Las razones estratégicas se basan en tres pilares principales:  
 
 \begin{itemize}
-    \item \textbf{Mitigar la pérdida de ingresos por churn:} La tasa de churn es uno de los indicadores más relevantes para la salud financiera de empresas con modelos de suscripción. Reducirla suele ser más rentable que adquirir nuevos clientes, como destacan Gupta et al.\footnote{Gupta, S., Lehmann, D. R., \& Stuart, J. A. (2006). Valuing Customers. \textit{Journal of Marketing Research}, 43(1), 7–18.}. Actualmente, la tasa de abandono mensual del \textbf{2.46\%} afecta directamente los ingresos recurrentes. Un modelo predictivo permitiría anticipar señales de deserción y activar acciones de retención personalizadas, en línea con la teoría del ciclo de vida del cliente\footnote{Lemmens, A., \& Croux, C. (2008). Bagging and Boosting Classification Trees to Predict Churn. \textit{Journal of Marketing Research}, 45(3), 276–286.}.
-    
-    \item \textbf{Capitalizar oportunidades de expansión:} Más allá de la retención, es fundamental aumentar el valor de vida del cliente (CLV). Estrategias de upselling y cross-selling aplicadas de manera segmentada permiten sistematizar la expansión en lugar de dejarla como práctica reactiva\footnote{Kumar, V., \& Reinartz, W. (2010). \textit{Customer Relationship Management: Concept, Strategy, and Tools}. Springer.}. Actualmente, la evolución modesta en upsellings (57 en 2024 frente a 60 en 2025) muestra un potencial poco explotado.  
+    \item \textbf{Mitigar la pérdida de ingresos por churn:} La tasa de churn es uno de los indicadores más relevantes para la salud financiera de empresas con modelos de suscripción. Reducirla suele ser más rentable que adquirir nuevos clientes, como destacan Gupta et al.\citep{Gupta2006}. Actualmente, la tasa de abandono mensual del \textbf{2.46\%} afecta directamente los ingresos recurrentes. Un modelo predictivo permitiría anticipar señales de deserción y activar acciones de retención personalizadas, en línea con la teoría del ciclo de vida del cliente\citep{Lemmens2008}.
+
+    \item \textbf{Capitalizar oportunidades de expansión:} Más allá de la retención, es fundamental aumentar el valor de vida del cliente (CLV). Estrategias de upselling y cross-selling aplicadas de manera segmentada permiten sistematizar la expansión en lugar de dejarla como práctica reactiva \citep{Kumar2010}. Actualmente, la evolución modesta en upsellings (57 en 2024 frente a 60 en 2025) muestra un potencial poco explotado.
 
     \item \textbf{Optimizar el esfuerzo del equipo de Customer Success:} El trato homogéneo de la cartera genera sobrecostos y baja efectividad. Una segmentación basada en datos permitirá focalizar los recursos en clientes de mayor riesgo o mayor potencial, elevando la eficiencia y alineándose con las prácticas recomendadas en CRM estratégico\footnote{Reinartz, Krafft \& Hoyer (2004). Op. cit.}.
 \end{itemize}
 
-\subsubsection{Enfoque Metodológico General (¿Cómo se hará?)}
+\subsection{Enfoque Metodológico General}
 
 El proyecto se desarrollará en tres fases principales:  
 
@@ -158,8 +171,7 @@ Primero, la fase de \textbf{Análisis de Datos}, en la que se procesarán los da
 En segundo lugar, una fase de \textbf{Desarrollo del Modelo}, aplicando técnicas de segmentación y modelos predictivos de churn\footnote{Lemmens \& Croux (2008). Op. cit.}.  
 
 Finalmente, la fase de \textbf{Diseño de Políticas}, con la propuesta de estrategias y acciones diferenciadas de retención y expansión para cada segmento detectado. Esto permitirá a Reservo transitar hacia una gestión del cliente más proactiva y sostenible.
-
-
+ 
 \section{Objetivos del proyecto}
 
 \subsection{Objetivo general}
@@ -193,10 +205,6 @@ La responsabilidad principal del estudiante dentro de este proyecto es liderar y
 \insertimageleft[\label{img:organigrama_practicante}]{imagenes/organigrama_practicante.png}{0.35}{Ubicación del practicante en Reservo}
 
 	~ El estudiante es el encargado de definir los criterios conductuales, validar la coherencia de los segmentos generados y, finalmente, traducir los hallazgos analíticos en un conjunto de políticas y acciones recomendadas. En su rol, actúa como el analista de negocio principal, siendo el puente entre los datos brutos de la empresa y la solución estratégica propuesta, tal como se observa en su ubicación dentro de la organización en la figura~\ref{img:organigrama_practicante}, el estudiante está en el área de customer success, a cargo de el se encuentra la Jefa de Customer Success y el CEO.\\
-
-
-% El siguiente código usa el paquete 'wrapfig' para la imagen a la izquierda.
-% Asegúrate de tener \usepackage{wrapfig} en el preámbulo.
 
 \subsection{Contribución al proyecto global}
 % Explicar por qué su rol es necesario para resolver el problema o desarrollar la oportunidad.
@@ -275,31 +283,39 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
 
 \newpage
 
-\section{Referencias y bibliografía principal}
+% ------------------------------------------------------------------------------
+% REFERENCIAS, revisar configuración \stylecitereferences \def\stylecitereferences {natbib} 
+% ------------------------------------------------------------------------------
+\clearpage
+\bibliographystyle{apalike}
+\bibliography{library}
 % Listar fuentes usadas en Antecedentes y Justificación, y referencias científicas del informe.
 % Usar formato APA 7 para citas y bibliografía.
+
 
 % ------------------------------------------------------------------------------
 % ANEXO
 % ------------------------------------------------------------------------------
-\begin{appendixd}{Anexo}
+\newpage
+
+\begin{appendixd}
 
 	\section{Estados del cliente}
 
     \subsection{}
-    \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo}
+    \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo. Fuente: elaboración propia}
     \subsection{}
-    \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo}
+    \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo. Fuente: elaboración propia}
     \subsection{}
-    \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo}
+    \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
     \subsection{}
-    \insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo}
+    \insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
     \subsection{}
-    \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo}
+    \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
 
     	% Imagen, se numerará automáticamente con la letra del anexo según
 	% la configuración \appendixindepobjnum
-	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.05}{Proceso completo de cliente en Reservo}
+	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.05}{Proceso completo de cliente en Reservo. Fuente: elaboración propia}
 
 %Tabla con indicadores
 
@@ -308,7 +324,7 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
   \begin{threeparttable}
     \centering
     \scriptsize
-    \caption{Estados del cliente, métricas y cálculos asociados en Reservo}
+    \caption{Métricas asociadas a clientes. Fuente: Elaboración propia}
     \renewcommand{\arraystretch}{1.3}
     \begin{tabular}{|l|C{3.5cm}|C{3.3cm}|C{5.5cm}|}
       \hline
@@ -361,8 +377,6 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
     \label{tab:estados-cliente}
   \end{threeparttable}
 \end{table}
-
-
 
 \end{appendixd}
 
