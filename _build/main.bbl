@@ -17,6 +17,12 @@ Gupta, S., Lehmann, D.~R., and Stuart, J.~A. (2006).
 \newblock Journal of Marketing Research.
 \newblock APA 7.
 
+\bibitem[Kotler and Keller, 2016]{Kotler2016}
+Kotler, P. and Keller, K.~L. (2016).
+\newblock {\em Marketing Management}.
+\newblock Pearson, 15th edition.
+\newblock APA 7.
+
 \bibitem[Kumar and Reinartz, 2010]{Kumar2010}
 Kumar, V. and Reinartz, W. (2010).
 \newblock {\em Customer Relationship Management: Concept, Strategy, and Tools}.
@@ -41,11 +47,18 @@ Lemmens, A. and Croux, C. (2008).
   en APS en Chile}.
 \newblock Pan American Health Organization.
 
-\bibitem[Reinartz et~al., 2004]{Reinartz2004}
-Reinartz, W., Krafft, M., and Hoyer, W.~D. (2004).
+\bibitem[Reinartz et~al., 2004a]{Reinartz2004}
+Reinartz, W., Krafft, M., and Hoyer, W.~D. (2004a).
 \newblock {\em The Customer Relationship Management Process: Its Measurement
   and Impact on Performance}, volume~41.
 \newblock Journal of Marketing Research.
+\newblock APA 7.
+
+\bibitem[Reinartz et~al., 2004b]{Reinartz2004b}
+Reinartz, W., Krafft, M., and Hoyer, W.~D. (2004b).
+\newblock {\em The Customer Relationship Management Process: Its Measurement
+  and Impact on Performance}.
+\newblock Springer.
 \newblock APA 7.
 
 \bibitem[{RESERVO}, 2025]{ReservoQuienesSomos2025}
