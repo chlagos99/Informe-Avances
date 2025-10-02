@@ -17,21 +17,18 @@
 \contentsline {section}{\numberline {3}Descripción y Justificación del Proyecto}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Definición y Alcance del Proyecto}{7}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Justificación Estratégica}{8}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Enfoque Metodológico General}{8}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Objetivos del proyecto}{9}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Objetivo general}{9}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Objetivos específicos}{9}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Rol del estudiante}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Responsabilidad principal}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Contribución al proyecto global}{10}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Cronograma}{11}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Actividades principales}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Tiempos estimados}{11}{subsection.6.2}%
-\contentsline {section}{Referencias}{13}{table.caption.6}%
-\contentsline {section}{Anexo \numberline {A}Estados del cliente}{14}{appendix.1.Alph1}%
-\contentsline {subsection}{\numberline {A.1}}{14}{subsection.1.Alph1.1}%
-\contentsline {subsection}{\numberline {A.2}}{15}{subsection.1.Alph1.2}%
-\contentsline {subsection}{\numberline {A.3}}{16}{subsection.1.Alph1.3}%
-\contentsline {subsection}{\numberline {A.4}}{17}{subsection.1.Alph1.4}%
-\contentsline {subsection}{\numberline {A.5}}{18}{subsection.1.Alph1.5}%
-\contentsline {section}{Anexo \numberline {B}Indicadores del proceso}{20}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {5}Cronograma}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Actividades principales}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Tiempos estimados}{10}{subsection.5.2}%
+\contentsline {section}{\numberline {6}}{11}{section.6}%
+\contentsline {section}{Referencias}{12}{section.6}%
+\contentsline {section}{Anexo \numberline {A}Estados del cliente}{13}{appendix.1.Alph1}%
+\contentsline {subsection}{\numberline {A.1}}{13}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}}{14}{subsection.1.Alph1.2}%
+\contentsline {subsection}{\numberline {A.3}}{15}{subsection.1.Alph1.3}%
+\contentsline {subsection}{\numberline {A.4}}{16}{subsection.1.Alph1.4}%
+\contentsline {subsection}{\numberline {A.5}}{17}{subsection.1.Alph1.5}%
+\contentsline {section}{Anexo \numberline {B}Indicadores del proceso}{19}{appendix.1.Alph2}%
