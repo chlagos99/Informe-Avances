@@ -1352,8 +1352,8 @@ File: ./img/departamentos/dii.pdf Graphic file (type pdf)
 ] (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
  [2.3
 
 ])
@@ -1436,63 +1436,92 @@ LaTeX Info: Redefining \% on input line 230.
 LaTeX Info: Redefining \. on input line 250.
 LaTeX Info: Redefining \% on input line 250.
  [11.15]
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
+LaTeX Info: Redefining \. on input line 270.
+LaTeX Info: Redefining \% on input line 270.
  [12.16]
-Overfull \hbox (33.84392pt too wide) in paragraph at lines 289--326
+
+Package natbib Warning: Citation `Kumar2018' on page 13 undefined on input line
+ 279.
+
+
+Package natbib Warning: Citation `Kumar2018' on page 13 undefined on input line
+ 282.
+
+
+Package natbib Warning: Citation `DAMA2013' on page 13 undefined on input line 
+285.
+
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+[13.17]
+
+Package natbib Warning: Citation `Kumar2018' on page 14 undefined on input line
+ 294.
+
+LaTeX Info: Redefining \. on input line 299.
+LaTeX Info: Redefining \% on input line 299.
+[14.18]
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
+ [15.19]
+Overfull \hbox (33.84392pt too wide) in paragraph at lines 340--377
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 328.
-LaTeX Info: Redefining \% on input line 328.
-[13.17] [14.18] (main.bbl
+LaTeX Info: Redefining \. on input line 379.
+LaTeX Info: Redefining \% on input line 379.
+[16.20] (main.bbl
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
- [15.19
+ [17.21
 
 ])
-LaTeX Info: Redefining \. on input line 344.
-LaTeX Info: Redefining \% on input line 344.
- [16.20]
+LaTeX Info: Redefining \. on input line 395.
+LaTeX Info: Redefining \% on input line 395.
+ [18.22]
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (10.4167pt too wide) in paragraph at lines 351--351
+Overfull \hbox (10.4167pt too wide) in paragraph at lines 402--402
  [][] 
  []
 
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
-LaTeX Info: Redefining \. on input line 354.
-LaTeX Info: Redefining \% on input line 354.
-[17.21]
+LaTeX Info: Redefining \. on input line 405.
+LaTeX Info: Redefining \% on input line 405.
+[19.23]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
-LaTeX Info: Redefining \. on input line 356.
-LaTeX Info: Redefining \% on input line 356.
- [18.22]
+LaTeX Info: Redefining \. on input line 407.
+LaTeX Info: Redefining \% on input line 407.
+ [20.24]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 358.
-LaTeX Info: Redefining \% on input line 358.
- [19.23]
+LaTeX Info: Redefining \. on input line 409.
+LaTeX Info: Redefining \% on input line 409.
+ [21.25]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
-LaTeX Info: Redefining \. on input line 360.
-LaTeX Info: Redefining \% on input line 360.
- [20.24]
+LaTeX Info: Redefining \. on input line 411.
+LaTeX Info: Redefining \% on input line 411.
+ [22.26]
 File: ./img/bizagi/proceso_completo.png Graphic file (type bmp)
 <./img/bizagi/proceso_completo.png>
-LaTeX Info: Redefining \. on input line 364.
-LaTeX Info: Redefining \% on input line 364.
- [21.25]
-Overfull \hbox (47.15036pt too wide) in paragraph at lines 370--424
+LaTeX Info: Redefining \. on input line 415.
+LaTeX Info: Redefining \% on input line 415.
+ [23.27]
+Overfull \hbox (47.15036pt too wide) in paragraph at lines 421--475
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 425.
-LaTeX Info: Redefining \% on input line 425.
-[22.26]) (babel-spanish.tex
+LaTeX Info: Redefining \. on input line 476.
+LaTeX Info: Redefining \% on input line 476.
+[24.28])
+
+Package natbib Warning: There were undefined citations.
+
+(babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
@@ -1502,8 +1531,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
- [23.27] (main.aux
+ [25.29] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (27 pages, 154784 bytes).
+Output written on main.xdv (29 pages, 181256 bytes).

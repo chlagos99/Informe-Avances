@@ -259,11 +259,62 @@ Para alcanzar el objetivo general, se deben generar los siguientes resultados es
 
 \end{itemize}
 
-\section{Marco conceptual}
+\section{Marco Conceptual}
+
+\subsection{Fundamentos de CRM orientado a valor}
+El marco conceptual se apoya en la gestión de relaciones con clientes (CRM) con enfoque estratégico y analítico. La empresa organiza datos, procesos y decisiones para priorizar retención y expansión según el valor económico del cliente y su probabilidad de respuesta. El objetivo es alinear acciones de postventa con segmentos definidos por comportamiento y riesgo. Este enfoque dialoga con el problema global: caracterización y segmentación conductual insuficientes en postventa que impiden un tratamiento diferenciado \citep{Kumar2010}.
+
+\subsection{Herramientas de ingeniería y analítica aplicadas}
+En proyectos de este tipo se utilizan herramientas propias de la ingeniería industrial y del análisis de datos. Datamart con ventanas temporales y reglas de etiquetado de churn. Análisis de uso y actividad por cohortes. Modelos de propensión (por ejemplo, regresión logística) para estimar probabilidad de abandono. Segmentación conductual combinando score de riesgo, valor (ARPA o CLV) y patrones de uso. Reglas de decisión para asignar acciones de Customer Success. La metodología de trabajo corresponde a \textbf{CRISP-DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación, modelado, evaluación y despliegue \citep{Chapman2000}. Ventajas: interpretabilidad, trazabilidad de supuestos y priorización por riesgo/valor. Desventajas: dependencia de la calidad de datos, sensibilidad a definiciones operativas y a cambios en el comportamiento \citep{Kumar2010}.
+
+\subsection{Evaluación económica y métricas de desempeño}
+La evaluación económica se sustenta en métricas de valor de cliente y en resultados incrementales. CLV para valorar el flujo esperado por cliente. MRR retenido y MRR por expansión para cuantificar impacto directo. Indicadores operativos para seguimiento: churn mensual, ARPA, net dollar retention y tasa de aceptación de ofertas. Indicadores de modelo para priorización: AUC para medir discriminación y porcentaje de churn capturado en el 20\% superior del ranking de riesgo para medir capacidad de focalización. Estas mediciones se integran con las fases de evaluación y despliegue de CRISP-DM para cerrar el ciclo analítica–negocio \citep{Kumar2010,Chapman2000}.
+
+\subsection{Elección metodológica para el caso de la empresa}
+La empresa adopta segmentación conductual con scoring y el proceso \textbf{CRISP-DM} por su uso extendido en la industria y por su ajuste a los recursos disponibles. El método favorece decisiones claras para el estado de Cliente Activo y para el equipo de Customer Success. La elección prioriza interpretabilidad y rapidez de implementación analítica frente a alternativas más complejas. Las referencias más antiguas del informe aportan contexto sobre satisfacción y calidad del servicio; el marco de \citep{Kumar2010} ofrece la formalización actual para medir valor, estimar propensiones y diseñar políticas accionables, mientras que CRISP-DM entrega la estructura de fases y entregables para ejecutar el proyecto \citep{Chapman2000}.
+
 
 \section{Metodología}
 
+La metodología del proyecto se basa en el proceso \textbf{CRISP–DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. El proyecto ya completó la fase de comprensión del negocio y actualmente se encuentra en comprensión de los datos. El entregable de este informe es el \textbf{análisis exploratorio de datos (EDA)} y la \textbf{estructuración de la base analítica} que se utilizará en las fases siguientes \citep{Chapman2000}. El enfoque es consistente con CRM orientado a valor y con la priorización de retención y expansión \citep{Kumar2018}.
+
+\subsection{Fase 1: Comprensión del Negocio (completada)}
+Se definió el problema, los objetivos y el alcance en el estado de \textit{Cliente Activo} en postventa. Se establecieron criterios de éxito operativos y de modelo. Se definieron indicadores para medir impacto: churn mensual, ARPA, MRR retenido, MRR por expansión, NDR y tasa de aceptación de ofertas. Se acordó que el resultado final es un diseño validado de segmentación conductual con \textit{scoring} y un portafolio de políticas de negocio aplicables por Customer Success \citep{Chapman2000,Kumar2018}.
+
+\subsection{Fase 2: Comprensión de los Datos (en curso)}
+Se ejecuta un inventario de fuentes y estructuras. Datos de clientes, suscripciones y facturación. Datos de uso de la plataforma. Tickets de soporte y eventos de postventa. Se realiza EDA para caracterizar cobertura, consistencia, unicidad y vigencia. Se identifican outliers, valores faltantes y cambios de esquema. Se documentan definiciones operativas: cliente activo, churn y reactivación. Se arma un diccionario de datos con trazabilidad. Se reportan hallazgos de calidad de datos y sus implicancias analíticas, siguiendo dimensiones de calidad reconocidas \citep{DAMA2013,Chapman2000}.
+
+\subsection{Fase 3: Preparación de los Datos (planificada)}
+Se construirá un \textbf{datamart temporal} con \textit{snapshot} mensual. Se aplicarán reglas de limpieza y normalización. Se definirán ventanas de observación y predicción. Se generarán variables de comportamiento: recencia, frecuencia e intensidad de uso. Tendencias y variaciones. Señales de soporte y cobro. Variables de valor: ARPA, MRR y margen cuando corresponda. Se codificarán planes y segmentos comerciales. Se evitará \textit{data leakage} con cortes temporales. Se documentarán supuestos y se validará la reproducibilidad del flujo \citep{Chapman2000}.
+
+\subsection{Fase 4: Modelado (planificada)}
+Se entrenará un modelo base de \textbf{regresión logística} para probabilidad de churn. Se usarán particiones temporales para entrenamiento y prueba. Se aplicarán pesos de clase si es necesario. Se revisará la importancia de variables y la estabilidad por tiempo. Se calibrará el \textit{score} para interpretación de probabilidades. Se fijarán umbrales de decisión con criterio económico. Se evaluará rendimiento con AUC y con \textbf{porcentaje de churn capturado en el 20\% superior} del ranking de riesgo \citep{Chapman2000}. El \textit{score} alimentará la segmentación conductual.
+
+\subsection{Fase 5: Evaluación (planificada)}
+Se validará que el modelo cumple los criterios de negocio y de desempeño. Se medirá AUC en datos de prueba. Se calculará el porcentaje de churn capturado en el 20\% superior. Se contrastará estabilidad de métricas por periodos. Se estimará impacto potencial en \textit{MRR} retenido y expansión, con supuestos explícitos. Se definirá la estrategia de monitoreo del \textit{score} y de las variables críticas \citep{Chapman2000,Kumar2018}.
+
+\subsection{Fase 6: Despliegue y Políticas de Negocio (planificada)}
+Se operará un \textbf{scoring mensual} sobre el \textit{snapshot}. Se entregará un tablero con priorización de cuentas por riesgo y valor. Se propondrán \textbf{políticas de negocio} por segmento. Paquetes de ofertas para clientes en alto riesgo y alto valor. Beneficios de permanencia. Acciones de activación de uso. Guiones de contacto y frecuencias sugeridas. Se definirán criterios de éxito para el piloto operativo: aceptación de ofertas, variación de churn y MRR retenido. Se dejarán lineamientos de adopción por Customer Success y un protocolo de actualización del modelo \citep{Chapman2000}.
+
+\subsection{Recursos e Insumos}
+\textbf{Datos existentes.} Tablas de clientes, planes y suscripciones. Facturación e impuestos excluidos cuando se calcule MRR. Eventos de uso por cliente. Tickets de soporte y eventos de postventa. Historial de bajas y reactivaciones. \textbf{Soluciones y procesos previos.} Dashboards de BI. Reglas operativas de estado del cliente. \textbf{Rol de cada insumo.} Los datos de suscripción y facturación sostienen MRR, ARPA y NDR. Los datos de uso sostienen variables conductuales. Los tickets y eventos sostienen señales de riesgo. Los dashboards sostienen visibilidad y control. \textbf{Restricciones.} Horizonte de ejecución de dos meses. Se priorizarán entregables reproducibles y medibles.
+
+\subsection{Plan de Trabajo para las Semanas Restantes}
+\textbf{Semanas 1–2.} Cierre de EDA y diagnóstico de calidad. Definición final de variables y reglas de etiquetado. Construcción de la primera versión del datamart. \textbf{Semanas 3–4.} Entrenamiento y validación del modelo base. Calibración y selección de umbrales. \textbf{Semanas 5–6.} Evaluación económica con escenarios. Segmentación riesgo–valor. Diseño de políticas tipo paquetes de ofertas por segmento. \textbf{Semanas 7–8.} Preparación del scoring mensual y del tablero de priorización. Redacción de guía operativa y protocolo de actualización.
+
+
 \section{Desarrollo y Resultados}
+
+
+
+
+
+
+
+
+
+
+
 
 \section{Cronograma}
 El plan de trabajo del proyecto se ha estructurado en un horizonte temporal de 18 semanas, abarcando el período comprendido entre agosto y diciembre de 2025. Para asegurar una ejecución metódica y el cumplimiento de los objetivos, el proyecto se ha dividido en cuatro fases secuenciales, cada una con entregables y actividades específicas.
@@ -327,7 +378,7 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
 
 \newpage
 
-\section{}
+
 % ------------------------------------------------------------------------------
 % REFERENCIAS, revisar configuración \stylecitereferences \def\stylecitereferences {natbib} 
 % ------------------------------------------------------------------------------

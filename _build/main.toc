@@ -25,18 +25,29 @@
 \contentsline {section}{\numberline {4}Objetivos del proyecto}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Objetivo general}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Objetivos específicos}{12}{subsection.4.2}%
-\contentsline {section}{\numberline {5}Marco conceptual}{12}{section.5}%
-\contentsline {section}{\numberline {6}Metodología}{12}{section.6}%
-\contentsline {section}{\numberline {7}Desarrollo y Resultados}{12}{section.7}%
-\contentsline {section}{\numberline {8}Cronograma}{12}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Actividades principales}{12}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Tiempos estimados}{13}{subsection.8.2}%
-\contentsline {section}{\numberline {9}}{14}{section.9}%
-\contentsline {section}{Referencias}{15}{section.9}%
-\contentsline {section}{Anexo \numberline {A}Estados del cliente}{17}{appendix.1.Alph1}%
-\contentsline {subsection}{\numberline {A.1}}{17}{subsection.1.Alph1.1}%
-\contentsline {subsection}{\numberline {A.2}}{18}{subsection.1.Alph1.2}%
-\contentsline {subsection}{\numberline {A.3}}{19}{subsection.1.Alph1.3}%
-\contentsline {subsection}{\numberline {A.4}}{20}{subsection.1.Alph1.4}%
-\contentsline {subsection}{\numberline {A.5}}{21}{subsection.1.Alph1.5}%
-\contentsline {section}{Anexo \numberline {B}Indicadores del proceso}{23}{appendix.1.Alph2}%
+\contentsline {section}{\numberline {5}Marco Conceptual}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Fundamentos de CRM orientado a valor}{12}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Herramientas de ingeniería y analítica aplicadas}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Evaluación económica y métricas de desempeño}{13}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Elección metodológica para el caso de la empresa}{13}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Metodología}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Fase 1: Comprensión del Negocio (completada)}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Fase 2: Comprensión de los Datos (en curso)}{14}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Fase 3: Preparación de los Datos (planificada)}{14}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Fase 4: Modelado (planificada)}{14}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Fase 5: Evaluación (planificada)}{14}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Fase 6: Despliegue y Políticas de Negocio (planificada)}{14}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.7}Recursos e Insumos}{15}{subsection.6.7}%
+\contentsline {subsection}{\numberline {6.8}Plan de Trabajo para las Semanas Restantes}{15}{subsection.6.8}%
+\contentsline {section}{\numberline {7}Desarrollo y Resultados}{15}{section.7}%
+\contentsline {section}{\numberline {8}Cronograma}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Actividades principales}{15}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Tiempos estimados}{16}{subsection.8.2}%
+\contentsline {section}{Referencias}{17}{table.caption.6}%
+\contentsline {section}{Anexo \numberline {A}Estados del cliente}{19}{appendix.1.Alph1}%
+\contentsline {subsection}{\numberline {A.1}}{19}{subsection.1.Alph1.1}%
+\contentsline {subsection}{\numberline {A.2}}{20}{subsection.1.Alph1.2}%
+\contentsline {subsection}{\numberline {A.3}}{21}{subsection.1.Alph1.3}%
+\contentsline {subsection}{\numberline {A.4}}{22}{subsection.1.Alph1.4}%
+\contentsline {subsection}{\numberline {A.5}}{23}{subsection.1.Alph1.5}%
+\contentsline {section}{Anexo \numberline {B}Indicadores del proceso}{25}{appendix.1.Alph2}%
