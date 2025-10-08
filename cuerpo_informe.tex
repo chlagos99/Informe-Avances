@@ -137,7 +137,7 @@ Los resultados de la gestión actual del ciclo de vida del cliente presentan tre
 \end{itemize}
 
 %insertar imagen aqui
-\insertimage[\label{img:churn3anios}]{imagenes/churn-3-anios.png}{scale=0.75}{Churn 3 años (ene-2022 a jul-2025) y tendencia. Fuente: elaboración propia}
+\insertimage[\label{img:churn3anios}]{imagenes/churn-3-anios.png}{scale=0.75}{Churn 3 años (ene-2023 a jul-2025) y tendencia. Fuente: elaboración propia}
 
 \subsubsection{Análisis y Elección del Problema Central}
 Los efectos descritos (pérdida de clientes, expansión no optimizada e ineficiencia) son síntomas de varios problemas subyacentes. Para seleccionar el problema central, se utiliza como base teórica el marco de \textbf{Gestión del Ciclo de Vida del Cliente (Customer Lifecycle Management)}, que postula que las acciones de una empresa deben adaptarse a la etapa y al comportamiento específico de cada cliente para ser efectivas.
@@ -145,7 +145,7 @@ Los efectos descritos (pérdida de clientes, expansión no optimizada e ineficie
 Bajo esta óptica, la elevada tasa de abandono y el bajo crecimiento del valor no son problemas raíz, sino consecuencias directas de un problema más profundo y operativo. Se elige como problema central aquel que, de ser solucionado, tendría el mayor impacto en mitigar los demás. Por lo tanto, se descartan los síntomas y se selecciona la causa operativa fundamental que los origina. El problema central es:
 
 \begin{center}
-    \textit{Insuficiente caracterización y segmentación conductual de la cartera activa en postventa}
+    \textbf{\textit{Insuficiente caracterización y segmentación conductual de la cartera activa en postventa}}
 \end{center}
 
 \subsubsection{Causas del Problema Central}
@@ -165,11 +165,14 @@ Este problema no se debe a una falta de datos, sino a la forma en que la empresa
 
 La sección anterior definió como problema central la \textbf{insuficiente caracterización y segmentación conductual de la cartera activa en postventa}. A continuación, se presenta un proyecto diseñado para abordar directamente las causas de este problema, sentando las bases para una gestión del cliente más estratégica y proactiva basada en evidencia teórica y mejores prácticas gerenciales.
 
+El proyecto se titula \textbf{"Diseño de políticas de clientes de la empresa Reservo, basado en el análisis de su comportamiento"}.
+
 \subsection{Definición y Alcance del Proyecto}
 
 El proyecto se acota explícitamente a la \textbf{etapa de Cliente Activo en postventa}, con foco en el \textbf{equipo de Customer Success}. El alcance contempla: (i) diseño y validación de un \textit{modelo analítico de segmentación conductual} de la cartera activa; (ii) definición de \textit{políticas de retención y expansión} por segmento; y (iii) lineamientos operativos para su aplicación por Customer Success. \textbf{No} incluye la implementación productiva en sistema ni desarrollos de software a medida: el entregable final es el \textit{diseño, la validación y la propuesta} del modelo y políticas asociadas. El estudiante desarrollará el modelo, documentará criterios y supuestos, construirá el datamart analítico y entregará guías de uso para el equipo.
 
 \textit{Delimitación del estado de cliente (sólo “Cliente Activo”).} La decisión de trabajar únicamente con clientes activos responde a criterios de impacto, factibilidad y gobernabilidad. Impacto: la retención del cliente activo incide de forma directa en MRR y flujo de caja [\textit{espacio para insertar cifras internas}]. Factibilidad: este estado concentra datos de uso y eventos suficientes para segmentación conductual y \textit{scoring} mensual. Gobernabilidad: las palancas de intervención dependen del equipo de Customer Success y pueden ejecutarse sin cambios en adquisición, producto o pricing. El horizonte de \textbf{4 meses} exige foco en una fase con datos disponibles y capacidad de acción inmediata.
+
 
 \subsection{Justificación Estratégica}
 
@@ -223,15 +226,15 @@ Las métricas se medirán al cierre del proyecto (mes 4) y se realizará un segu
 
 \subsection{Razones Prácticas y Técnicas}
 
-El enfoque propuesto considera tiempo disponible de aproximadamente 4 meses, recursos existentes en la empresa (bases de datos, infraestructura para analítica y BI) y capacidad del estudiante para construir un flujo reproducible de trabajo. La segmentación conductual permite resultados accionables en el corto plazo y se alinea con prácticas de CRM analítico y gestión del ciclo de vida del cliente \citep{Kumar2010}. El estudiante priorizará entregables con trazabilidad metodológica y guía operativa para el equipo de Customer Success.
+El enfoque considera un tiempo disponible de aproximadamente 4 meses. Este plazo exige foco en Cliente Activo y en el equipo de Customer Success. La empresa cuenta con bases de datos históricas de uso de plataforma, estados de cliente, planes, facturación y tickets de soporte. Existe infraestructura para analítica y BI. El estudiante puede construir un flujo reproducible con extracción, depuración, datamart, segmentación y reglas de acción. La segmentación conductual permite definir riesgos y oportunidades con variables observables y actualizables. Los modelos elegidos favorecen interpretabilidad, trazabilidad y control de supuestos. El resultado esperado es un diseño validado en datos históricos y un conjunto de políticas aplicables por el equipo. Este enfoque es coherente con la gestión de clientes basada en valor y con el uso de analítica para priorizar retención y expansión \citep{Kumar2010}.
 
 \subsection{Aspectos Fuera del Alcance}
 
-Quedan fuera del proyecto: (i) etapas distintas de “Cliente Activo” (captación, evaluación/trial, onboarding, moroso/inactivo); (ii) campañas de marketing y su creatividad; (iii) implementación productiva en tiempo real o integraciones de software; (iv) cambios de pricing o facturación; (v) definición de gobierno de datos y seguridad más allá de lo necesario para el análisis; (vi) experimentación A/B a gran escala. El estudiante dejará pautas metodológicas y criterios para una futura ejecución por las áreas correspondientes.
+Quedan fuera del proyecto: (i) estados distintos de Cliente Activo (captación, evaluación o trial, onboarding, moroso o inactivo); (ii) campañas de marketing y su contenido, compra de medios y automatizaciones de comunicación; (iii) implementación productiva en tiempo real, orquestación de jobs, APIs o integraciones con sistemas externos; (iv) cambios de pricing, diseño de planes comerciales o políticas de descuento; (v) procesos de facturación, cobranza y medios de pago; (vi) definición de gobierno de datos, seguridad y cumplimiento regulatorio más allá de lo mínimo para ejecutar el análisis; (vii) A/B testing a gran escala, modelos causales de uplift y atribución multicanal; (viii) desarrollo de interfaces de usuario o front-end para explotación en tiempo real; (ix) programas de formación extensiva y certificaciones internas.
 
 \subsection{Elección del Enfoque}
 
-Se elige un \textbf{modelo analítico de segmentación conductual} con \textit{scoring} y reglas de acción por sobre alternativas comunes. Reportes descriptivos generales no entregan prioridad operativa. Reglas heurísticas estáticas presentan menor poder predictivo y adaptabilidad. Despliegues de automatización o ML en tiempo real no son viables en el horizonte definido. El enfoque propuesto balancea impacto, interpretabilidad y factibilidad con los recursos disponibles, y se alinea con la literatura de CRM y gestión de clientes \citep{Kumar2010}.
+Se elige un modelo analítico de segmentación conductual con \textit{scoring} y reglas de acción. La razón principal es impacto directo en retención y expansión, con métricas medibles en el corto plazo. La segunda razón es interpretabilidad: reglas y variables comprensibles por negocio. La tercera razón es factibilidad técnica con los datos disponibles y con la infraestructura actual. Alternativas descartadas: reportes descriptivos generales, porque no entregan prioridad operativa; reglas heurísticas estáticas, porque pierden poder ante cambios de comportamiento; automatización o aprendizaje en tiempo real, porque excede el plazo y requiere integraciones adicionales. Este enfoque balancea impacto, claridad y esfuerzo, y se alinea con la literatura de CRM y gestión del ciclo de vida del cliente \citep{Kumar2010}.
 
 \section{Objetivos del proyecto}
 

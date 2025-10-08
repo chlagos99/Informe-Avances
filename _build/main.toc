@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.7}Elección del Enfoque}{11}{subsection.3.7}%
 \contentsline {section}{\numberline {4}Objetivos del proyecto}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Objetivo general}{11}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Objetivos específicos}{11}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Objetivos específicos}{12}{subsection.4.2}%
 \contentsline {section}{\numberline {5}Marco conceptual}{12}{section.5}%
 \contentsline {section}{\numberline {6}Metodología}{12}{section.6}%
 \contentsline {section}{\numberline {7}Desarrollo y Resultados}{12}{section.7}%
