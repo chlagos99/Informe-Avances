@@ -82,6 +82,12 @@ Kumar, V. and Reinartz, W. (2018).
 \newblock {\em Customer Relationship Management: Concept, Strategy, and Tools}.
 \newblock Springer.
 
+\bibitem[Lema{\^\i}tre et~al., 2017]{Lemaitre2017}
+Lema{\^\i}tre, G., Nogueira, F., and Aridas, C.~K. (2017).
+\newblock {\em Imbalanced-learn: A Python Toolbox to Tackle the Curse of
+  Imbalanced Datasets in Machine Learning}.
+\newblock Journal of Machine Learning Research, 18(17).
+
 \bibitem[Lemmens and Croux, 2008]{Lemmens2008}
 Lemmens, A. and Croux, C. (2008).
 \newblock {\em Bagging and Boosting Classification Trees to Predict Churn},
@@ -94,10 +100,30 @@ Munar, N. (2023).
   salud}.
 \newblock Emol — Portal Pyme.
 
+\bibitem[Niculescu-Mizil and Caruana, 2005]{NiculescuMizil2005}
+Niculescu-Mizil, A. and Caruana, R. (2005).
+\newblock {\em Predicting Good Probabilities with Supervised Learning}.
+\newblock Proceedings of the 22nd International Conference on Machine Learning
+  (ICML).
+
 \bibitem[Paredes, 2025]{StartUpChile2025}
 Paredes, A. (2025).
 \newblock {\em Start-Up Chile welcomes a new generation!}
 \newblock Start-Up Chile.
+
+\bibitem[Pedregosa et~al., 2011]{Pedregosa2011}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
+  O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
+  Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, {\'E}.
+  (2011).
+\newblock {\em Scikit-learn: Machine Learning in Python}.
+\newblock Journal of Machine Learning Research, 12, 2825--2830.
+
+\bibitem[Platt, 2000]{Platt2000}
+Platt, J.~C. (2000).
+\newblock {\em Probabilistic Outputs for Support Vector Machines and
+  Comparisons to Regularized Likelihood Methods}.
+\newblock In: Advances in Large Margin Classifiers, MIT Press.
 
 \bibitem[{RESERVO}, 2025]{ReservoQuienesSomos2025}
 {RESERVO} (2025).
@@ -112,6 +138,21 @@ Paredes, A. (2025).
   red de salud pública del sur de Chile}.
 \newblock Universidad de Chile.
 \newblock Estudio cualitativo.
+
+\bibitem[scikit-learn developers, 2025a]{SklearnPipelineDoc}
+scikit-learn developers (2025a).
+\newblock {\em Pipeline: chaining estimators (scikit-learn documentation)}.
+\newblock scikit-learn.
+
+\bibitem[scikit-learn developers, 2025b]{SklearnRobustScalerDoc}
+scikit-learn developers (2025b).
+\newblock {\em RobustScaler (scikit-learn documentation)}.
+\newblock scikit-learn.
+
+\bibitem[scikit-learn developers, 2025c]{SklearnTimeSeriesSplitDoc}
+scikit-learn developers (2025c).
+\newblock {\em TimeSeriesSplit (scikit-learn documentation)}.
+\newblock scikit-learn.
 
 \bibitem[{Superintendencia de Salud de Chile}, 2025]{SuperSalud2025}
 {Superintendencia de Salud de Chile} (2025).

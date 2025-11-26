@@ -27,7 +27,6 @@
 \section{Antecedentes generales}
 \subsection{Industria y ambiente competitivo}
 
-
 El sector de la salud en Chile y en toda Latinoamérica está experimentando una transformación digital irreversible. En 2024 la CEPAL lanzó el Observatorio de Desarrollo Digital, que reúne \textbf{100+ indicadores en 12 áreas} y evidencia brechas: \textbf{más del 60\,\%} de las empresas que usan Internet mantienen presencia pasiva y cerca del \textbf{70\,\%} de las MIPYMES no tiene presencia en línea, reforzando la urgencia de digitalizar procesos de salud y servicios conexos \citep{CepalDDO2024}. En paralelo, el ecosistema regional de innovación en salud ya mapea un \textbf{universo de 1{,}000+ empresas/startups} —con focos relevantes en \textbf{prevención (232)} y \textbf{sistemas (225)}— según el reporte conjunto IDB Lab–HolonIQ \citep{IDBLabHolonIQ2024}. En Chile, el dinamismo del pipeline emprendedor se observa en Start-Up Chile: la cohorte BIG 4 incorporó \textbf{87 startups} (\textbf{20\,\%} en Health \& Biotech) y destina \textbf{más de \$2{,}5 mil millones CLP} en apoyos; desde 2010 la aceleradora ha respaldado \textbf{2{,}200+ startups}, con \textbf{\$5{,}8 mil millones USD} de valoración de portafolio y \textbf{\$2{,}1 mil millones USD} en ventas acumuladas \citep{StartUpChile2025}. El flujo de capital de riesgo hacia \textit{healthtech} en América Latina también creció con fuerza: de \textbf{\$16 millones USD (2019)} a \textbf{\$99 millones USD (2020)} y superando \textbf{\$1{,}000 millones USD en 2021} \citep{EmolHealthtech2023}. En este contexto, y siguiendo la \textit{Classification of Digital Health Interventions} de la OMS, la salud digital abarca intervenciones para \textit{clientes}, \textit{proveedores} y \textit{gestores del sistema}, cubriendo desde teleconsulta y autogestión hasta analítica y soporte a decisiones, lo que delimita el alcance de las soluciones consideradas en esta memoria \citep{WHOCDHI2018}.
 
 
@@ -53,6 +52,8 @@ El espacio competitivo local y regional muestra escala medible. \textbf{AgendaPr
 \subsection{Características de la empresa u organización}
 
 RESERVO es una empresa chilena de tecnología SaaS cuyo rol en la industria es ser un \textbf{socio tecnológico integral para profesionales y centros de salud de tamaño pequeño y mediano} \citep{ReservoQuienesSomos2025}. Su modelo de negocio se centra en un nicho de mercado que históricamente ha sido desatendido por las grandes corporaciones de software, las cuales se enfocan en hospitales y grandes cadenas de clínicas. RESERVO atiende específicamente a especialistas independientes, dentistas, kinesiólogos, psicólogos y clínicas medianas, describiendo así las características de la organización.
+
+RESERVO ofrece \textbf{planes escalonados} (Individual, Básico, Reservo y Enterprise) que se diferencian por alcance funcional, cantidad de usuarios y nivel de soporte, cubriendo desde profesionales independientes hasta centros multiusuario y multisucursal. En términos generales, todos los planes incluyen agenda y reservas en línea con recordatorios, ficha clínica electrónica, reportes y módulo financiero; los planes superiores agregan control de permisos, automatizaciones, centros y usuarios ilimitados, y soporte prioritario. La plataforma dispone de \textbf{integraciones} con medios de pago en línea y POS, emisión de documentos tributarios, conectores de marketing y redes sociales, e-commerce, receta electrónica y servicios de exámenes a domicilio, además de integraciones contables y financieras. Como \textbf{extras} se consideran, entre otros, consentimiento informado con firma electrónica, ampliación de cupos de comunicaciones, dominios o sitio web y habilitación de conectores avanzados según necesidad del centro.
 
 La oportunidad que la empresa busca introducir se basa en un problema claro que enfrentan sus potenciales clientes: estos profesionales a menudo invierten una cantidad desproporcionada de su tiempo en tareas administrativas (gestión de agendas, recordatorios de citas, cobros) en lugar de en la atención al paciente. Además, muchos carecen de las herramientas y el conocimiento para competir digitalmente y atraer nuevos pacientes, lo que representa una oportunidad de mejora\footnote{Análisis basado en una entrevista con la Customer Success Manager de RESERVO, realizada el 15 de agosto de 2025.}.
 
@@ -112,7 +113,7 @@ El proceso de Onboarding, como se detalla en el anexo~\ref{img:etapa_onboarding}
 
 \subsubsection{Etapa de Cliente Activo}
 
-La etapa de \textbf{`Cliente Activo'}, ilustrada en el anexo~\ref{img:etapa_cliente_activo}, representa el ciclo de vida del \textbf{cliente} una vez finalizado el proceso de Onboarding, centrándose en la retención y expansión. En esta fase, el equipo de \textbf{Customer Success} realiza un monitoreo constante de la salud de la cuenta. Si se detecta un uso deficiente, se activan acciones de seguimiento, lo que implícitamente clasifica al \textbf{cliente} como un perfil \textbf{`en riesgo'} para mitigar una posible baja. Por el contrario, si la salud de la cuenta es buena, el equipo busca oportunidades de expansión (upselling); si el \textbf{cliente} acepta y completa el pago, su condición se actualiza, reafirmándolo como un \textbf{`cliente vigente'}. Paralelamente, el proceso gestiona las interacciones del \textbf{cliente} con el área de \textbf{Soporte} y los ciclos de facturación, donde un fallo recurrente en el pago puede culminar con la \textbf{pérdida del cliente (churn)}.
+La etapa de \textbf{`Cliente Activo'}, ilustrada en el anexo~\ref{img:etapa_cliente_activo1}, representa el ciclo de vida del \textbf{cliente} una vez finalizado el proceso de Onboarding, centrándose en la retención y expansión. En esta fase, el equipo de \textbf{Customer Success} realiza un monitoreo constante de la salud de la cuenta. Si se detecta un uso deficiente, se activan acciones de seguimiento, lo que implícitamente clasifica al \textbf{cliente} como un perfil \textbf{`en riesgo'} para mitigar una posible baja. Por el contrario, si la salud de la cuenta es buena, el equipo busca oportunidades de expansión (upselling); si el \textbf{cliente} acepta y completa el pago, su condición se actualiza, reafirmándolo como un \textbf{`cliente vigente'}. Paralelamente, el proceso gestiona las interacciones del \textbf{cliente} con el área de \textbf{Soporte} y los ciclos de facturación, donde un fallo recurrente en el pago puede culminar con la \textbf{pérdida del cliente (churn)}.
 
 \subsubsection{Etapa de Cliente Inactivo}
 
@@ -125,7 +126,7 @@ Para asegurar su crecimiento en el competitivo mercado SaaS, Reservo debe optimi
 Los resultados de la gestión actual del ciclo de vida del cliente presentan tres consecuencias principales:
 
 \begin{itemize}
-    \item \textbf{Pérdida recurrente de clientes e ingresos:} La empresa experimenta una \textbf{Tasa de Churn} mensual de \textbf{2,46\,\%}, lo que se ha traducido en \textbf{70 bajas} en lo que va de 2025\footnote{La \textbf{Tasa de Churn} se define en la tabla~\ref{tab:estados-cliente}. El valor y el número de bajas corresponden a los datos internos de la empresa para el año 2025. Fuente: Base de datos de Reservo.}. Desde enero de 2022, el churn mensual promedia \textbf{2,77\,\%}; aunque la serie exhibe una \textit{tendencia} decreciente, el comportamiento histórico y reciente se aprecia en la Figura~\ref{img:churn3anios}.
+    \item \textbf{Pérdida recurrente de clientes e ingresos:} La empresa experimenta una \textbf{Tasa de Churn} mensual de \textbf{2,46\,\%}, lo que se ha traducido en \textbf{70 bajas} en lo que va de 2025\footnote{La \textbf{Tasa de Churn} se define en la tabla~\ref{tab:estados-cliente}. El valor y el número de bajas corresponden a los datos internos de la empresa para el año 2025. Fuente: Base de datos de Reservo.}. Desde enero de 2022, el churn mensual promedia \textbf{2,77\,\%}; aunque la serie exhibe una \textit{tendencia} decreciente, el comportamiento histórico y reciente se aprecia en la Figura~\ref{img:churn3anios}, junto a la que se encuentra la evolución de número de clientes por cada mes (Figura~\ref{img:clientes_por_mes})
 
     No obstante, el indicador acumula aproximadamente \textbf{dos años sin perforar el 2\,\%}, evidenciando un \textbf{estancamiento} en el rango 2–3\,\%. Esto es relevante porque los principales \textit{benchmarks} para empresas de suscripción (SaaS) recomiendan apuntar a \textbf{menos de 2\,\% de churn mensual} para situarse entre las mejores prácticas del mercado \citep{ChartMogul2023ChurnRate}. Mientras el churn permanezca por encima de ese umbral, la fuga de clientes seguirá impactando los ingresos recurrentes y condicionando el crecimiento neto.
 
@@ -138,6 +139,8 @@ Los resultados de la gestión actual del ciclo de vida del cliente presentan tre
 
 %insertar imagen aqui
 \insertimage[\label{img:churn3anios}]{imagenes/churn-3-anios.png}{scale=0.75}{Churn 3 años (ene-2023 a jul-2025) y tendencia. Fuente: elaboración propia}
+
+\insertimage[\label{img:clientes_por_mes}]{imagenes/clientes_por_mes.png}{scale=0.75}{Número de clientes al inicio de cada mes (ene-2023 a jul-2025). Fuente: elaboración propia}
 
 \subsubsection{Análisis y Elección del Problema Central}
 Los efectos descritos (pérdida de clientes, expansión no optimizada e ineficiencia) son síntomas de varios problemas subyacentes. Para seleccionar el problema central, se utiliza como base teórica el marco de \textbf{Gestión del Ciclo de Vida del Cliente (Customer Lifecycle Management)}, que postula que las acciones de una empresa deben adaptarse a la etapa y al comportamiento específico de cada cliente para ser efectivas.
@@ -165,11 +168,13 @@ Este problema no se debe a una falta de datos, sino a la forma en que la empresa
 
 La sección anterior definió como problema central la \textbf{insuficiente caracterización y segmentación conductual de la cartera activa en postventa}. A continuación, se presenta un proyecto diseñado para abordar directamente las causas de este problema, sentando las bases para una gestión del cliente más estratégica y proactiva basada en evidencia teórica y mejores prácticas gerenciales.
 
-El proyecto se titula \textbf{"Diseño de políticas de clientes de la empresa Reservo, basado en el análisis de su comportamiento"}.
+El proyecto se titula \textbf{"Diseño de políticas comerciales para una empresa de tecnología para servicios de salud basado en el comportamiento de sus clientes"}.
 
 \subsection{Definición y Alcance del Proyecto}
 
-El proyecto se acota explícitamente a la \textbf{etapa de Cliente Activo en postventa}, con foco en el \textbf{equipo de Customer Success}. El alcance contempla: (i) diseño y validación de un \textit{modelo analítico de segmentación conductual} de la cartera activa; (ii) definición de \textit{políticas de retención y expansión} por segmento; y (iii) lineamientos operativos para su aplicación por Customer Success. \textbf{No} incluye la implementación productiva en sistema ni desarrollos de software a medida: el entregable final es el \textit{diseño, la validación y la propuesta} del modelo y políticas asociadas. El estudiante desarrollará el modelo, documentará criterios y supuestos, construirá el datamart analítico y entregará guías de uso para el equipo.
+El proyecto se acota explícitamente a la \textbf{etapa de Cliente Activo en postventa}, con foco en el \textbf{equipo de Customer Success}, esta etapa se puede observar en la Figura~\ref{img:etapa_cliente_activo2}. El alcance contempla: (i) diseño y validación de un \textit{modelo analítico de segmentación conductual} de la cartera activa; (ii) definición de \textit{políticas de retención y expansión} por segmento; y (iii) lineamientos operativos para su aplicación por Customer Success. \textbf{No} incluye la implementación productiva en sistema ni desarrollos de software a medida: el entregable final es el \textit{diseño, la validación y la propuesta} del modelo y políticas asociadas. El estudiante desarrollará el modelo, documentará criterios y supuestos, construirá el datamart analítico y entregará guías de uso para el equipo.
+
+\insertimage[\label{img:etapa_cliente_activo2}]{bizagi/cliente_activo.png}{scale=0.17}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
 
 \textit{Delimitación del estado de cliente (sólo “Cliente Activo”).} La decisión de trabajar únicamente con clientes activos responde a criterios de impacto, factibilidad y gobernabilidad. Impacto: la retención del cliente activo incide de forma directa en MRR y flujo de caja [\textit{espacio para insertar cifras internas}]. Factibilidad: este estado concentra datos de uso y eventos suficientes para segmentación conductual y \textit{scoring} mensual. Gobernabilidad: las palancas de intervención dependen del equipo de Customer Success y pueden ejecutarse sin cambios en adquisición, producto o pricing. El horizonte de \textbf{4 meses} exige foco en una fase con datos disponibles y capacidad de acción inmediata.
 
@@ -276,35 +281,147 @@ La empresa adopta segmentación conductual con scoring y el proceso \textbf{CRIS
 
 \section{Metodología}
 
-La metodología del proyecto se basa en el proceso \textbf{CRISP–DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. El proyecto ya completó la fase de comprensión del negocio y actualmente se encuentra en comprensión de los datos. El entregable de este informe es el \textbf{análisis exploratorio de datos (EDA)} y la \textbf{estructuración de la base analítica} que se utilizará en las fases siguientes \citep{Chapman2000}. El enfoque es consistente con CRM orientado a valor y con la priorización de retención y expansión \citep{Kumar2018}.
+La metodología del proyecto se basa en el proceso \textbf{CRISP–DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. El proyecto ya completó la fase de comprensión del negocio y actualmente se encuentra en comprensión de los datos. El entregable de este informe es el \textbf{análisis exploratorio de datos (EDA)} y la \textbf{estructuración de la base analítica} que se utilizará en las fases siguientes \citep{Chapman2000}. El enfoque es consistente con CRM orientado a valor y con la priorización de retención y expansión \citep{Kumar2010}.
 
 \subsection{Fase 1: Comprensión del Negocio (completada)}
-Se definió el problema, los objetivos y el alcance en el estado de \textit{Cliente Activo} en postventa. Se establecieron criterios de éxito operativos y de modelo. Se definieron indicadores para medir impacto: churn mensual, ARPA, MRR retenido, MRR por expansión, NDR y tasa de aceptación de ofertas. Se acordó que el resultado final es un diseño validado de segmentación conductual con \textit{scoring} y un portafolio de políticas de negocio aplicables por Customer Success \citep{Chapman2000,Kumar2018}.
+Se definió el problema, los objetivos y el alcance en el estado de \textit{Cliente Activo} en postventa. Se establecieron criterios de éxito operativos y de modelo. Se definieron indicadores para medir impacto: churn mensual, ARPA, MRR retenido, MRR por expansión, NDR y tasa de aceptación de ofertas. Se acordó que el resultado final es un diseño validado de segmentación conductual con \textit{scoring} y un portafolio de políticas de negocio aplicables por Customer Success \citep{Chapman2000,Kumar2010}.
 
 \subsection{Fase 2: Comprensión de los Datos (en curso)}
-Se ejecuta un inventario de fuentes y estructuras. Datos de clientes, suscripciones y facturación. Datos de uso de la plataforma. Tickets de soporte y eventos de postventa. Se realiza EDA para caracterizar cobertura, consistencia, unicidad y vigencia. Se identifican outliers, valores faltantes y cambios de esquema. Se documentan definiciones operativas: cliente activo, churn y reactivación. Se arma un diccionario de datos con trazabilidad. Se reportan hallazgos de calidad de datos y sus implicancias analíticas, siguiendo dimensiones de calidad reconocidas \citep{DAMA2013,Chapman2000}.
+Se levanta el inventario de fuentes con foco manejable y suficiente para alcanzar los objetivos. Tabla \texttt{cliente\_\hspace{0pt}cliente} como base del \textit{snapshot}. Tabla \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} para etiquetas y señales de fricción. Tabla \texttt{appointment\_\hspace{0pt}ticket} para uso de plataforma. Tabla \texttt{cliente\_\hspace{0pt}planreservo} para plan y precio cuando sea necesario. Tabla \texttt{cliente\_\hspace{0pt}rubro} (opcional) si se requiere análisis por rubro.
+
+Se ejecuta la \textbf{integración de datos} previa al EDA con un diseño de \textbf{mínimos joins}:
+\begin{itemize}
+  \item \textit{Join 1}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} para crear la \textbf{etiqueta} y derivar señales de fricción.
+  \item \textit{Join 2}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{appointment\_\hspace{0pt}ticket} para variables de uso.
+  \item \textit{Join 3 (opcional)}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{cliente\_\hspace{0pt}planreservo} (\(\rightarrow\) \texttt{cliente\_\hspace{0pt}rubro} si aplica) para plan y rubro.
+\end{itemize}
+
+Se construye un \textbf{datamart temporal} con clave \textit{id\_\hspace{0pt}cliente} y \textit{mes\_\hspace{0pt}corte}, y se definen ventanas simples y reproducibles. Con este esquema se genera el conjunto mínimo de variables:
+\begin{itemize}
+  \item \textbf{Identificación y contexto}:\; \textit{id\_\hspace{0pt}cliente}, \textit{mes\_\hspace{0pt}corte}, país; \textit{plan\_\hspace{0pt}reservo\_\hspace{0pt}id} o \textit{plan\_\hspace{0pt}nombre} (si se requiere); \textit{rubro} (opcional).
+  \item \textbf{Valor}:\; \textit{arpa\_\hspace{0pt}proxy} desde \texttt{mensualidad} de \texttt{cliente\_\hspace{0pt}cliente} o precio normalizado del plan; \textit{tenure\_\hspace{0pt}meses} desde \texttt{paga\_\hspace{0pt}desde} o \texttt{fecha\_\hspace{0pt}creacion}.
+  \item \textbf{Uso}:\; \textit{citas\_\hspace{0pt}30d}, \textit{citas\_\hspace{0pt}60d}, \textit{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} y \textit{tendencia\_\hspace{0pt}90d} desde \texttt{appointment\_\hspace{0pt}ticket}.
+  \item \textbf{Fricción}:\; \textit{bloqueos\_\hspace{0pt}90d}, \textit{dias\_\hspace{0pt}desde\_\hspace{0pt}ultimo\_\hspace{0pt}bloqueo}, \textit{cambios\_\hspace{0pt}estado\_\hspace{0pt}90d}, \textit{baja\_\hspace{0pt}previa} desde \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente}.
+  \item \textbf{Etiqueta (target)}:\; \textit{churn\_\hspace{0pt}T+1} = 1 si existe evento de \texttt{Baja} en el mes siguiente al corte y no se revierte en ese mismo mes; 0 en caso contrario.
+\end{itemize}
+
+Con los datos ya integrados, se realiza el \textbf{EDA}: cobertura y consistencia por campo (país, mensualidad, fechas, llaves); distribuciones de \textit{tenure\_\hspace{0pt}meses}, \textit{citas\_\hspace{0pt}30d}, \textit{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}; tasas de churn por cuantiles de uso y por \textit{bloqueos\_\hspace{0pt}90d}; revisión de eventos por ventanas de 30, 60 y 90 días. Se documentan definiciones operativas de \textit{cliente activo}, \textit{baja}, \textit{bloqueo} y \textit{reactivación}. Se prioriza legibilidad y bajo número de uniones entre tablas \citep{Chapman2000}.
 
 \subsection{Fase 3: Preparación de los Datos (planificada)}
-Se construirá un \textbf{datamart temporal} con \textit{snapshot} mensual. Se aplicarán reglas de limpieza y normalización. Se definirán ventanas de observación y predicción. Se generarán variables de comportamiento: recencia, frecuencia e intensidad de uso. Tendencias y variaciones. Señales de soporte y cobro. Variables de valor: ARPA, MRR y margen cuando corresponda. Se codificarán planes y segmentos comerciales. Se evitará \textit{data leakage} con cortes temporales. Se documentarán supuestos y se validará la reproducibilidad del flujo \citep{Chapman2000}.
+Se ejecutan transformaciones de \textbf{minería de datos} sobre la matriz de características resultante del datamart:
+\begin{itemize}
+  \item \textbf{Imputación de faltantes} con estrategias simples en variables numéricas y categóricas (media/mediana/más frecuente/constante) \citep{Pedregosa2011}.
+  \item \textbf{Codificación de variables categóricas} mediante \textit{one-hot encoding} para uso en modelos lineales \citep{Pedregosa2011,SklearnPipelineDoc}.
+  \item \textbf{Escalado de variables numéricas}: estandarización y, cuando existan atípicos, \textit{robust scaling} basado en IQR \citep{SklearnRobustScalerDoc}.
+  \item \textbf{Control de desbalance}: uso de \textit{class\_weight='balanced'} en el modelo base; si es necesario, evaluación de \textit{resampling} (over/under) en experimentos controlados \citep{Pedregosa2011,Lemaitre2017}.
+  \item \textbf{Prevención de \textit{data leakage}}: encapsular imputación, codificación y escalado en un \textit{pipeline} que se ajusta solo con \textit{train} y se aplica con \textit{transform} en \textit{test} \citep{SklearnPipelineDoc}.
+  \item \textbf{Validación temporal}: particionado respetando el orden temporal para comparar métricas entre cortes \citep{SklearnTimeSeriesSplitDoc}.
+\end{itemize}
 
 \subsection{Fase 4: Modelado (planificada)}
-Se entrenará un modelo base de \textbf{regresión logística} para probabilidad de churn. Se usarán particiones temporales para entrenamiento y prueba. Se aplicarán pesos de clase si es necesario. Se revisará la importancia de variables y la estabilidad por tiempo. Se calibrará el \textit{score} para interpretación de probabilidades. Se fijarán umbrales de decisión con criterio económico. Se evaluará rendimiento con AUC y con \textbf{porcentaje de churn capturado en el 20\% superior} del ranking de riesgo \citep{Chapman2000}. El \textit{score} alimentará la segmentación conductual.
+Se entrenará un modelo base de \textbf{regresión logística} para probabilidad de churn, con regularización. Entrenamiento y prueba por particiones temporales. Pesos de clase si hay desbalance. Revisión de importancia de variables y estabilidad por mes. Calibración del \textit{score} para interpretación como probabilidad (calibración isotónica o Platt) \citep{NiculescuMizil2005,Platt2000}. Umbrales de decisión con criterio económico. Evaluación con AUC y con \textbf{porcentaje de churn capturado en el 20\% superior} del ranking de riesgo \citep{Chapman2000}. El \textit{score} alimentará la segmentación conductual por riesgo y valor.
 
 \subsection{Fase 5: Evaluación (planificada)}
-Se validará que el modelo cumple los criterios de negocio y de desempeño. Se medirá AUC en datos de prueba. Se calculará el porcentaje de churn capturado en el 20\% superior. Se contrastará estabilidad de métricas por periodos. Se estimará impacto potencial en \textit{MRR} retenido y expansión, con supuestos explícitos. Se definirá la estrategia de monitoreo del \textit{score} y de las variables críticas \citep{Chapman2000,Kumar2018}.
+Validación contra criterios de negocio y desempeño. AUC en datos de prueba. Porcentaje de churn capturado en el 20\% superior. Estabilidad de métricas por periodos. Estimación de impacto potencial en MRR retenido y expansión con supuestos explícitos. Definición de monitoreo del \textit{score} y de variables críticas \citep{Chapman2000,Kumar2010}.
 
 \subsection{Fase 6: Despliegue y Políticas de Negocio (planificada)}
-Se operará un \textbf{scoring mensual} sobre el \textit{snapshot}. Se entregará un tablero con priorización de cuentas por riesgo y valor. Se propondrán \textbf{políticas de negocio} por segmento. Paquetes de ofertas para clientes en alto riesgo y alto valor. Beneficios de permanencia. Acciones de activación de uso. Guiones de contacto y frecuencias sugeridas. Se definirán criterios de éxito para el piloto operativo: aceptación de ofertas, variación de churn y MRR retenido. Se dejarán lineamientos de adopción por Customer Success y un protocolo de actualización del modelo \citep{Chapman2000}.
+Operación de un \textbf{scoring mensual} sobre el \textit{snapshot}. Tablero con priorización por riesgo y valor. \textbf{Políticas por segmento} con foco en paquetes de ofertas para clientes de alto riesgo y alto valor, beneficios de permanencia, acciones de activación de uso y guiones de contacto. Criterios de éxito para un piloto: aceptación de ofertas, variación de churn y MRR retenido \citep{Chapman2000}.
 
 \subsection{Recursos e Insumos}
-\textbf{Datos existentes.} Tablas de clientes, planes y suscripciones. Facturación e impuestos excluidos cuando se calcule MRR. Eventos de uso por cliente. Tickets de soporte y eventos de postventa. Historial de bajas y reactivaciones. \textbf{Soluciones y procesos previos.} Dashboards de BI. Reglas operativas de estado del cliente. \textbf{Rol de cada insumo.} Los datos de suscripción y facturación sostienen MRR, ARPA y NDR. Los datos de uso sostienen variables conductuales. Los tickets y eventos sostienen señales de riesgo. Los dashboards sostienen visibilidad y control. \textbf{Restricciones.} Horizonte de ejecución de dos meses. Se priorizarán entregables reproducibles y medibles.
-
-\subsection{Plan de Trabajo para las Semanas Restantes}
-\textbf{Semanas 1–2.} Cierre de EDA y diagnóstico de calidad. Definición final de variables y reglas de etiquetado. Construcción de la primera versión del datamart. \textbf{Semanas 3–4.} Entrenamiento y validación del modelo base. Calibración y selección de umbrales. \textbf{Semanas 5–6.} Evaluación económica con escenarios. Segmentación riesgo–valor. Diseño de políticas tipo paquetes de ofertas por segmento. \textbf{Semanas 7–8.} Preparación del scoring mensual y del tablero de priorización. Redacción de guía operativa y protocolo de actualización.
+\textbf{Tablas principales.} \texttt{cliente\_\hspace{0pt}cliente} (snapshot y atributos base), \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} (bajas, bloqueos, reactivaciones), \texttt{appointment\_\hspace{0pt}ticket} (uso), \texttt{cliente\_\hspace{0pt}planreservo} (plan y precio), \texttt{cliente\_\hspace{0pt}rubro} (opcional). \textbf{Lógica existente.} Identificación de activos al corte, bloqueados, bajas históricas y reactivaciones; consultas de citas por cliente y fecha. \textbf{Rol de cada insumo.} Suscripción y plan sostienen ARPA y MRR; uso sostiene señales conductuales; cambios de estado sostienen la etiqueta y señales de fricción; el \textit{snapshot} asegura consistencia mensual. \textbf{Restricciones.} Horizonte de dos meses; se prioriza bajo número de \textit{joins} y consultas legibles.
 
 
 \section{Desarrollo y Resultados}
 
+En esta sección se presentan los resultados alcanzados hasta la fecha y se discute su capacidad para responder a los objetivos del proyecto, identificando ajustes cuando corresponda. El desarrollo se organiza en dos bloques complementarios: (i) una caracterización del cliente a partir de tablas y gráficos descriptivos, y (ii) un análisis exploratorio de la base analítica consolidada que alimentará el modelado. Esta organización se alinea con el marco CRISP–DM, situando el trabajo en la fase de entendimiento del negocio y de los datos, y preparando la transición hacia preparación y modelado.
+
+La caracterización abordará cobertura y calidad de variables, distribuciones y relaciones clave, así como heterogeneidades por segmentos y patrones temporales relevantes para la definición operativa del problema. El EDA documentará la construcción del dataset, las reglas de depuración y estandarización aplicadas, y la etiqueta de salida utilizada para la evaluación posterior. A partir de estos hallazgos se conectarán resultados con los objetivos del proyecto y se propondrán ajustes concretos (p.\,ej., redefiniciones de variables, enriquecimiento de fuentes, ventanas temporales y métricas de éxito) para robustecer las siguientes iteraciones.
+
+\subsection{Composición por rubro}
+La Figura \ref{img:porc_clientes_por_rubro} muestra la distribución de clientes por rubro. La cartera se concentra en \textbf{Medicina/Salud (70\,\%)}. \textbf{Centro de estética (13\,\%)} y \textbf{Psicología/Psiquiatría (9\,\%)} aportan participaciones secundarias. \textbf{Odontología (6\,\%)} y \textbf{Salón de belleza/Barbería (3\,\%)} presentan baja presencia. La concentración indica foco en servicios clínicos tradicionales. La menor participación de rubros no clínicos abre espacio de crecimiento con propuestas específicas.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
+
+\subsection{Distribución por país}
+La Figura \ref{img:porc_clientes_por_pais} resume la presencia geográfica. \textbf{Chile concentra 86\,\%} de la base. \textbf{México 6\,\%} y \textbf{Colombia 4\,\%} constituyen mercados secundarios. \textbf{Argentina 1\,\%} y \textbf{Otros 2\,\%}. La dependencia de un solo país implica exposición a shocks locales. La expansión regional aparece como palanca de diversificación y crecimiento.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_pais}]{informe2/porc_clientes_por_pais.png}{scale=0.80}{Porcentaje de clientes por país. Fuente: elaboración propia}
+
+\subsection{Distribución por plan}
+La Figura \ref{img:porc_clientes_por_plan} presenta la mezcla de planes. \textbf{Básico 46\,\%} lidera la adopción. \textbf{Reservo 31\,\%} e \textbf{Individual 20\,\%} conforman el grueso restante. \textbf{Enterprise 3\,\%} mantiene presencia acotada. La composición refleja predominio de \textbf{Básico} y \textbf{Reservo}, con participación relevante de \textbf{Individual}. La baja penetración de \textbf{Enterprise} sugiere oportunidad de \textit{upselling} hacia cuentas multiusuario con funcionalidades avanzadas.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_plan}]{informe2/porc_clientes_por_plan.png}{scale=0.80}{Porcentaje de clientes por plan. Fuente: elaboración propia}
+
+\subsection{Proporción de planes por rubro}
+La Figura \ref{img:prop_plan_por_rubro} muestra la mezcla de planes dentro de cada rubro. \textbf{Básico} predomina en \textbf{Centro de estética (58\,\%)}, \textbf{Odontología (63\,\%)} y \textbf{Salón de belleza/Barbería (81\,\%)}. \textbf{Individual} lidera en \textbf{Psicología/Psiquiatría (57\,\%)}. \textbf{Reservo} alcanza su mayor participación en \textbf{Medicina/Salud (35\,\%)}, con presencias intermedias en \textbf{Centro de estética (28\,\%)} y \textbf{Psicología/Psiquiatría (26\,\%)}. \textbf{Enterprise} es marginal \mbox{(0\,\%–3\,\%)}, con \textbf{0\,\%} en \textbf{Salón de belleza/Barbería}. El mix refleja predominio de \textbf{planes de precio intermedio} (Básico, Reservo) y \textbf{bajo} (Individual), con baja participación de \textbf{planes de alto precio} (Enterprise).
+
+% insertar imagen aqui
+\insertimage[\label{img:prop_plan_por_rubro}]{informe2/prop_plan_por_rubro.png}{scale=0.80}{Proporción de planes por rubro. Fuente: elaboración propia}
+
+\subsection{Proporción de rubros por plan}
+La Figura \ref{img:prop_rubro_por_plan} presenta la composición de rubros dentro de cada plan. \textbf{Medicina/Salud} domina en todos los planes \mbox{(63–78\,\%)}. En \textbf{Individual} destaca el peso de \textbf{Psicología/Psiquiatría (25\,\%)}. En \textbf{Básico} y \textbf{Reservo} se observan aportes complementarios de \textbf{Centro de estética (16\,\% y 11\,\%)} y \textbf{Odontología (8\,\% y 4\,\%)}. En \textbf{Enterprise} la base permanece concentrada en \textbf{Medicina/Salud (78\,\%)} y no incluye \textbf{Salón de belleza/Barbería (0\,\%)}. La composición confirma que los planes superiores se apalancan principalmente en especialidades clínicas.
+
+% insertar imagen aqui
+\insertimage[\label{img:prop_rubro_por_plan}]{informe2/prop_rubro_por_plan.png}{scale=0.80}{Proporción de rubros por plan. Fuente: elaboración propia}
+
+\subsection{Promedio de mensualidad por rubro}
+La tabla del anexo \ref{tab:mensualidad_por_rubro} resume el promedio de mensualidad por rubro. \textbf{Medicina/Salud} presenta el mayor valor (\$ 62.566), seguida de \textbf{Psicología/Psiquiatría} (\$ 54.731) y \textbf{Centro de estética} (\$ 51.366). \textbf{Salón de belleza/Barbería} (\$ 44.906) y \textbf{Odontología} (\$ 40.950) muestran niveles inferiores. El promedio general alcanza \textbf{\$ 58.700}.
+
+\subsection{Comparativa activos vs bloqueados por rubro}
+La Figura \ref{img:act_vs_bloq_rubro} compara la participación de clientes activos y bloqueados por rubro. \textbf{Medicina/Salud} concentra la mayor fracción en ambos grupos (\(\sim\)70\,\% activos; \(\sim\)60\,\% bloqueados). \textbf{Psicología/Psiquiatría} aparece \textbf{sobre–representado} entre bloqueados respecto de su peso en activos. \textbf{Centro de estética} mantiene proporciones similares. \textbf{Salón de belleza/Barbería} muestra mayor participación relativa en bloqueados. \textbf{Odontología} se observa \textbf{sub–representado} entre bloqueados.
+
+% insertar imagen aqui
+\insertimage[\label{img:act_vs_bloq_rubro}]{informe2/act_vs_bloq_rubro.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia}
+
+\subsection{Comparativa activos vs bloqueados por plan}
+La Figura \ref{img:act_vs_bloq_plan} compara la participación por plan. \textbf{Individual} aporta \textbf{20\,\%} de los activos y \textbf{38\,\%} de los bloqueados (\textbf{sobre–representación}). \textbf{Básico} mantiene proporciones cercanas (\textbf{46\,\%} activos; \textbf{41\,\%} bloqueados). \textbf{Reservo} muestra \textbf{sub–representación} en bloqueados (\textbf{31\,\%} activos; \textbf{17\,\%} bloqueados). \textbf{Enterprise} conserva peso marginal en ambos casos.
+
+% insertar imagen aqui
+\insertimage[\label{img:act_vs_bloq_plan}]{informe2/act_vs_bloq_plan.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia}
+
+\subsection{Actividad histórica de bloqueados y activos por rubro}
+La tabla del anexo \ref{tab:citas_bloq_act_rubro} compara volumen y uso promedio. \textbf{Medicina/Salud} concentra el mayor número de bloqueados (\textbf{54}). Entre bloqueados, destacan promedios altos de citas recientes en \textbf{Salón de belleza/Barbería (53)} y \textbf{Odontología (39)}; \textbf{Psicología/Psiquiatría} muestra el menor (\textbf{6}). Entre activos del último año, lideran \textbf{Medicina/Salud (564)} y \textbf{Salón de belleza/Barbería (544)}.
+
+\subsection{Actividad histórica de bloqueados y activos por plan}
+La tabla del anexo \ref{tab:citas_bloq_act_plan} muestra la comparación por plan. Los bloqueados se concentran en \textbf{Básico (39)} e \textbf{Individual (36)}. Los bloqueados de \textbf{Reservo (35)} y \textbf{Enterprise (49)} exhiben mayor uso reciente. En activos del último año, \textbf{Enterprise} presenta el mayor promedio (\textbf{2.524}), seguido por \textbf{Reservo (575)} y \textbf{Básico (470)}; \textbf{Individual} queda rezagado (\textbf{79}).
+
+\subsection{EDA}
+La Figura \ref{img:nulos} en anexos presenta el perfil de valores nulos por variable. Predominan los faltantes en \textbf{días\_desde\_ultimo\_bloqueo (95\,\%)}, seguidos por \textbf{recencia\_uso\_dias (46\,\%)}, \textbf{rubro (37\,\%)}, \textbf{plan\_reservo\_id (33\,\%)} y \textbf{plan\_nombre (33\,\%)}. \textbf{arpa\_proxy} registra \textbf{5\,\%}. El resto no presenta nulos relevantes.
+
+La Figura \ref{img:tipodata} en anexos detalla los tipos de datos. \textbf{id\_cliente} es entero; \textbf{mes\_corte} es fecha; \textbf{pais}, \textbf{plan\_nombre} y \textbf{rubro} son categóricas (texto). \textbf{plan\_reservo\_id} y \textbf{arpa\_proxy} están en \textit{float}; \textbf{recencia\_uso\_dias} y \textbf{dias\_desde\_ultimo\_bloqueo} también en \textit{float}. El resto corresponde a enteros. \textbf{baja\_previa} y \textbf{churn\_T1} son variables binarias.
+
+La Figura \ref{img:estadistic} en anexos resume las estadísticas descriptivas. \textbf{tenure\_meses} muestra mediana \textbf{35} y p75 \textbf{54}. La actividad presenta alta dispersión: \textbf{citas\_30d} con mediana \textbf{2} y máximo \textbf{13{,}164}; \textbf{citas\_60d} con mediana \textbf{5} y máximo \textbf{25{,}716}. \textbf{recencia\_uso\_dias} concentra valores bajos (mediana \textbf{1}). \textbf{bloqueos\_90d} es casi nula (mediana \textbf{0}). \textbf{tendencia\_90d} exhibe amplitud y valores extremos. \textbf{arpa\_proxy} presenta cola larga (mediana \textbf{40{,}000}; p75 \textbf{60{,}000}; máximo \textbf{2{,}370{,}000}). La tasa promedio de \textbf{churn\_T1} es \textbf{1\,\%}; \textbf{baja\_previa} también \textbf{1\,\%}.
+
+\subsection{Distribución de \textit{tenure\_meses}}
+La Figura \ref{img:tenure} muestra el histograma y el boxplot de \textit{tenure\_meses}. \textbf{Definición:} \textit{tenure\_meses} corresponde al número de meses transcurridos desde el inicio del servicio del cliente hasta el mes de corte; esta definición explica la concentración entre \textbf{15–55} meses, la cola derecha asociada a relaciones antiguas y los valores atípicos altos (\(>\)\,\textbf{100}). La distribución es asimétrica a la derecha, con mediana cercana a \textbf{35} y p75 en torno a \textbf{54}; también se observan cohortes recientes con valores \textbf{0–6} meses.
+
+% insertar imagen aqui
+\insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
+
+\subsection{Matriz de correlaciones}
+La Figura \ref{img:correlacion} resume las asociaciones entre variables numéricas. \textbf{citas\_30d} y \textbf{citas\_60d} muestran correlación casi perfecta \textbf{(1{.}00)}. \textbf{cambios\_estado\_90d} se asocia de forma positiva con \textbf{bloqueos\_90d} \textbf{(0{.}43)}. \textbf{días\_desde\_ultimo\_bloqueo} presenta correlaciones negativas con \textbf{tendencia\_90d} \textbf{(-0{.}56)} y con \textbf{bloqueos\_90d} \textbf{(-0{.}40)}. \textbf{tenure\_meses} mantiene relaciones débiles a moderadas con \textbf{citas\_30d/60d} \textbf{(0{.}29)} y negativas con \textbf{recencia\_uso\_dias} \textbf{(-0{.}14)} y \textbf{cambios\_estado\_90d} \textbf{(-0{.}16)}. \textbf{churn\_T1} exhibe asociaciones bajas; destaca una correlación positiva leve con \textbf{citas\_30d} \textbf{(0{.}24)}. \textbf{id\_cliente} registra una correlación fuerte con \textbf{tenure\_meses} \textbf{(-0{.}96)} y se considerará solo como identificador.
+
+% insertar imagen aqui
+\insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
+
+En relación con la capacidad del estudiante para responder a los objetivos, el avance actual demuestra factibilidad técnica y operativa. Ya se cuenta con un marco metodológico claro (CRISP–DM), un EDA inicial que caracteriza datos críticos y una base analítica en construcción con variables de identificación, valor, uso y fricción. Según el cronograma, se dispone de las fuentes necesarias para entrenar y validar el modelo; existen además criterios de éxito definidos y métricas de evaluación consistentes. Con estos insumos, el estudiante está en posición de completar la preparación de datos, entrenar un modelo base interpretable y diseñar la segmentación y políticas asociadas.
+
+Se identifican ajustes necesarios y manejables. Primero, fortalecer la estructuración de datos: estandarizar llaves y catálogos (plan, rubro, país), documentar reglas de imputación y tratamiento de atípicos, y asegurar definiciones operativas robustas para etiqueta y ventanas temporales. Segundo, reforzar calidad y gobernanza: controles de cobertura por corte, prevención de \textit{data leakage} con validación temporal y \textit{pipelines} reproducibles. Tercero, alinear el modelado con uso real: priorizar variables con alta cobertura, mantener interpretabilidad para implementación en Customer Success y planificar iteraciones cortas con revisión de métricas. Con estas acciones, las limitaciones de origen (datos no completamente estructurados) no impiden el logro de los objetivos; permiten una aproximación fiel a la realidad y una entrega utilizable por la empresa.
+
+
+\section{Discusiones}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus, consequat sapien vitae, auctor turpis. In at fermentum ante, volutpat suscipit quam. Donec blandit nulla quis auctor interdum. Integer in mi orci. Vivamus mollis maximus consectetur. In nec finibus neque, non varius justo. Maecenas aliquet, erat laoreet efficitur lobortis, turpis purus sagittis lorem, eget pulvinar tortor lectus at ante. Ut sollicitudin, magna sed bibendum viverra, massa nisi congue libero, eu viverra eros velit et libero. Cras varius dictum turpis, molestie pretium ex finibus nec. Quisque quam velit, ultricies id consequat nec, vestibulum id odio. Phasellus ultricies lobortis accumsan. Integer semper mauris libero, ac finibus purus dignissim vitae. Nam in egestas odio, vitae tempus leo. Duis dictum dui bibendum fermentum porta.
+
+Nam nec aliquet diam. Praesent mauris metus, dapibus eu nibh sit amet, molestie rutrum lectus. Sed eget lacus eu justo hendrerit posuere vitae ut odio. Donec ac orci sollicitudin, lacinia lorem eget, sodales erat. Nam dictum efficitur ipsum, vestibulum gravida elit congue non. Pellentesque euismod purus ornare nunc tincidunt feugiat. Mauris consectetur ligula vitae nisi rhoncus eleifend. Pellentesque euismod elementum ex, nec blandit metus venenatis sed. Donec tempus odio quis convallis sagittis. Nullam vel orci sit amet risus dictum interdum. Suspendisse dapibus pellentesque justo vel dignissim. Mauris nibh erat, elementum vitae rhoncus vel, mollis ac metus. Sed arcu erat, sodales sed mi ac, ultrices sodales justo. Vestibulum tellus ligula, volutpat at cursus in, eleifend ut arcu.
+
+
+\section{Conclusiones}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus, consequat sapien vitae, auctor turpis. In at fermentum ante, volutpat suscipit quam. Donec blandit nulla quis auctor interdum. Integer in mi orci. Vivamus mollis maximus consectetur. In nec finibus neque, non varius justo. Maecenas aliquet, erat laoreet efficitur lobortis, turpis purus sagittis lorem, eget pulvinar tortor lectus at ante. Ut sollicitudin, magna sed bibendum viverra, massa nisi congue libero, eu viverra eros velit et libero. Cras varius dictum turpis, molestie pretium ex finibus nec. Quisque quam velit, ultricies id consequat nec, vestibulum id odio. Phasellus ultricies lobortis accumsan. Integer semper mauris libero, ac finibus purus dignissim vitae. Nam in egestas odio, vitae tempus leo. Duis dictum dui bibendum fermentum porta.
+
+Nam nec aliquet diam. Praesent mauris metus, dapibus eu nibh sit amet, molestie rutrum lectus. Sed eget lacus eu justo hendrerit posuere vitae ut odio. Donec ac orci sollicitudin, lacinia lorem eget, sodales erat. Nam dictum efficitur ipsum, vestibulum gravida elit congue non. Pellentesque euismod purus ornare nunc tincidunt feugiat. Mauris consectetur ligula vitae nisi rhoncus eleifend. Pellentesque euismod elementum ex, nec blandit metus venenatis sed. Donec tempus odio quis convallis sagittis. Nullam vel orci sit amet risus dictum interdum. Suspendisse dapibus pellentesque justo vel dignissim. Mauris nibh erat, elementum vitae rhoncus vel, mollis ac metus. Sed arcu erat, sodales sed mi ac, ultrices sodales justo. Vestibulum tellus ligula, volutpat at cursus in, eleifend ut arcu.
 
 
 
@@ -313,68 +430,6 @@ Se operará un \textbf{scoring mensual} sobre el \textit{snapshot}. Se entregar�
 
 
 
-
-
-
-\section{Cronograma}
-El plan de trabajo del proyecto se ha estructurado en un horizonte temporal de 18 semanas, abarcando el período comprendido entre agosto y diciembre de 2025. Para asegurar una ejecución metódica y el cumplimiento de los objetivos, el proyecto se ha dividido en cuatro fases secuenciales, cada una con entregables y actividades específicas.
-
-\subsection{Actividades principales} %Ver si se puede agregar cosas del CRISP DM
-La división del proyecto en fases permite una gestión estructurada del alcance y facilita el seguimiento de los avances. A continuación, se describen las actividades fundamentales de cada etapa:
-
-\begin{itemize}
-    \item \textbf{Fase 1: Planificación y Fundamentos.} Esta etapa inicial establece las bases conceptuales y operativas del proyecto. Comprende el levantamiento de requerimientos con los \textit{stakeholders}, la formalización del árbol de problemas, y la definición del alcance y los objetivos. Esta fase culmina con la validación de la línea base sobre la cual se medirá el éxito del proyecto.
-
-    \item \textbf{Fase 2: Análisis de Datos y Desarrollo del Modelo.} Corresponde al núcleo analítico del trabajo. Se inicia con la recopilación, limpieza y pre-procesamiento de los datos históricos de la empresa. Posteriormente, se ejecuta un análisis exploratorio para identificar variables de comportamiento relevantes y, finalmente, se procede con el desarrollo y la validación iterativa del modelo de segmentación.
-
-    \item \textbf{Fase 3: Diseño de la Propuesta Estratégica.} En esta fase, los resultados del modelo analítico se traducen en valor de negocio. Se realiza una caracterización detallada de cada segmento de cliente identificado y se diseña un portafolio de políticas de retención y expansión personalizadas. El trabajo concluye con la consolidación de todos los hallazgos en el informe final.
-
-    \item \textbf{Fase 4: Cierre y Presentación Final.} La última etapa se dedica a la comunicación de los resultados. Se prepara el material de apoyo y se realiza la presentación final del proyecto, sus conclusiones y recomendaciones a la organización, junto con la entrega de toda la documentación y artefactos generados.
-\end{itemize}
-
-\subsection{Tiempos estimados}
-La siguiente tabla presenta la distribución de las actividades en el tiempo, detallando las tareas específicas de cada fase y su duración estimada en semanas.
-
-\begin{table}[H]
-  \begin{threeparttable}
-    \centering
-    \scriptsize
-    \caption{Cronograma Detallado de Fases y Actividades del Proyecto}
-    \renewcommand{\arraystretch}{1.5}
-    \begin{tabular}{|l|p{9cm}|c|}
-      \hline
-      \textbf{Fase} & \textbf{Actividades Detalladas} & \textbf{Duración (Semanas)} \\
-      \hline
-      \textbf{1. Planificación} & 
-      - Levantamiento y validación de requerimientos. \newline
-      - Definición del problema, objetivos y alcance. \newline
-      - Elaboración del primer informe de avance. & 
-      \textbf{4} \\
-      \hline
-      \textbf{2. Desarrollo del Modelo} & 
-      - Recopilación y pre-procesamiento de datos. \newline
-      - Análisis exploratorio de datos (EDA). \newline
-      - Desarrollo y entrenamiento del modelo. \newline
-      - Validación y ajuste de métricas de rendimiento. & 
-      \textbf{9} \\
-      \hline
-      \textbf{3. Propuesta Final} & 
-      - Caracterización de segmentos de clientes. \newline
-      - Diseño de políticas de negocio personalizadas. \newline
-      - Redacción del informe final. & 
-      \textbf{4} \\
-      \hline
-      \textbf{4. Cierre} & 
-      - Preparación del material de apoyo. \newline
-      - Presentación final de resultados. & 
-      \textbf{1} \\
-      \hline
-      \multicolumn{2}{|r|}{\textbf{Duración Total Estimada}} & \textbf{18} \\
-      \hline
-    \end{tabular}
-    \label{tab:cronograma}
-  \end{threeparttable}
-\end{table}
 
 \newpage
 
@@ -395,6 +450,65 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
 \newpage
 
 \begin{appendixd}
+  \section{Cronograma}
+  El plan de trabajo del proyecto se ha estructurado en un horizonte temporal de 18 semanas, abarcando el período comprendido entre agosto y diciembre de 2025. Para asegurar una ejecución metódica y el cumplimiento de los objetivos, el proyecto se ha dividido en cuatro fases secuenciales, cada una con entregables y actividades específicas.
+
+  \subsection{Actividades principales} %Ver si se puede agregar cosas del CRISP DM
+  La división del proyecto en fases permite una gestión estructurada del alcance y facilita el seguimiento de los avances. A continuación, se describen las actividades fundamentales de cada etapa:
+
+  \begin{itemize}
+      \item \textbf{Fase 1: Planificación y Fundamentos.} Esta etapa inicial establece las bases conceptuales y operativas del proyecto. Comprende el levantamiento de requerimientos con los \textit{stakeholders}, la formalización del árbol de problemas, y la definición del alcance y los objetivos. Esta fase culmina con la validación de la línea base sobre la cual se medirá el éxito del proyecto.
+
+      \item \textbf{Fase 2: Análisis de Datos y Desarrollo del Modelo.} Corresponde al núcleo analítico del trabajo. Se inicia con la recopilación, limpieza y pre-procesamiento de los datos históricos de la empresa. Posteriormente, se ejecuta un análisis exploratorio para identificar variables de comportamiento relevantes y, finalmente, se procede con el desarrollo y la validación iterativa del modelo de segmentación.
+
+      \item \textbf{Fase 3: Diseño de la Propuesta Estratégica.} En esta fase, los resultados del modelo analítico se traducen en valor de negocio. Se realiza una caracterización detallada de cada segmento de cliente identificado y se diseña un portafolio de políticas de retención y expansión personalizadas. El trabajo concluye con la consolidación de todos los hallazgos en el informe final.
+
+      \item \textbf{Fase 4: Cierre y Presentación Final.} La última etapa se dedica a la comunicación de los resultados. Se prepara el material de apoyo y se realiza la presentación final del proyecto, sus conclusiones y recomendaciones a la organización, junto con la entrega de toda la documentación y artefactos generados.
+  \end{itemize}
+
+  \subsection{Tiempos estimados}
+  La siguiente tabla presenta la distribución de las actividades en el tiempo, detallando las tareas específicas de cada fase y su duración estimada en semanas.
+
+  \begin{table}[H]
+    \begin{threeparttable}
+      \centering
+      \scriptsize
+      \caption{Cronograma Detallado de Fases y Actividades del Proyecto}
+      \renewcommand{\arraystretch}{1.5}
+      \begin{tabular}{|l|p{9cm}|c|}
+        \hline
+        \textbf{Fase} & \textbf{Actividades Detalladas} & \textbf{Duración (Semanas)} \\
+        \hline
+        \textbf{1. Planificación} & 
+        - Levantamiento y validación de requerimientos. \newline
+        - Definición del problema, objetivos y alcance. \newline
+        - Elaboración del primer informe de avance. & 
+        \textbf{4} \\
+        \hline
+        \textbf{2. Desarrollo del Modelo} & 
+        - Recopilación y pre-procesamiento de datos. \newline
+        - Análisis exploratorio de datos (EDA). \newline
+        - Desarrollo y entrenamiento del modelo. \newline
+        - Validación y ajuste de métricas de rendimiento. & 
+        \textbf{9} \\
+        \hline
+        \textbf{3. Propuesta Final} & 
+        - Caracterización de segmentos de clientes. \newline
+        - Diseño de políticas de negocio personalizadas. \newline
+        - Redacción del informe final. & 
+        \textbf{4} \\
+        \hline
+        \textbf{4. Cierre} & 
+        - Preparación del material de apoyo. \newline
+        - Presentación final de resultados. & 
+        \textbf{1} \\
+        \hline
+        \multicolumn{2}{|r|}{\textbf{Duración Total Estimada}} & \textbf{18} \\
+        \hline
+      \end{tabular}
+      \label{tab:cronograma}
+    \end{threeparttable}
+  \end{table}
 
 	\section{Estados del cliente}
 
@@ -405,7 +519,7 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
     \subsection{}
     \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
     \subsection{}
-    \insertimage[\label{img:etapa_cliente_activo}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
+    \insertimage[\label{img:etapa_cliente_activo1}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
     \subsection{}
     \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
 
@@ -473,6 +587,80 @@ La siguiente tabla presenta la distribución de las actividades en el tiempo, de
     \label{tab:estados-cliente}
   \end{threeparttable}
 \end{table}
+
+
+\section{Tablas de Desarrollo}
+
+\subsection{}
+\begin{table}[H]
+    \centering
+    \caption{Bloqueados y actividad de citas por rubro. Fuente: elaboración propia}
+    \begin{tabular}{|l|C{3.2cm}|C{3.3cm}|C{3.5cm}|}
+        \hline
+        \textbf{Rubro} & \textbf{Número de bloqueados} & \textbf{Prom. citas últimos 3 meses (bloq.)} & \textbf{Prom. citas último año (act.)} \bigstrut\\
+        \hline
+        Centro de estética & 9  & 16 & 449 \bigstrut[t]\\
+        Medicina / Salud & 54 & 20 & 564 \\
+        Odontología & 2 & 39 & 286 \\
+        Psicología / Psiquiatría & 18 & 6 & 208 \\
+        Salón de belleza / Barbería & 6 & 53 & 544 \bigstrut[b]\\
+        \hline
+    \end{tabular}
+    \label{tab:citas_bloq_act_rubro}
+\end{table}
+
+\subsection{}
+\begin{table}[H]
+    \centering
+    \caption{Bloqueados y actividad de citas por plan. Fuente: elaboración propia}
+    \begin{tabular}{|l|C{3.5cm}|C{3.3cm}|C{5.5cm}|}
+        \hline
+        \textbf{Plan} & \textbf{Número de bloqueados} & \textbf{Prom. citas últimos 3 meses (bloq.)} & \textbf{Prom. citas último año (act.)} \bigstrut\\
+        \hline
+        Individual & 36 & 11 & 79 \bigstrut[t]\\
+        Básico & 39 & 16 & 470 \\
+        Reservo & 16 & 35 & 575 \\
+        Enterprise & 3 & 49 & 2\,524 \bigstrut[b]\\
+        \hline
+    \end{tabular}
+    \label{tab:citas_bloq_act_plan}
+\end{table}
+
+\subsection{}
+\begin{table}[H]
+    \centering
+    \caption{Promedio de mensualidad por rubro (CLP). Fuente: elaboración propia}
+    \begin{tabular}{l r}
+        \hline
+        \textbf{Rubro} & \textbf{Promedio de mensualidad} \bigstrut\\
+        \hline
+        Medicina / Salud & \$ 62.566 \bigstrut[t]\\
+        Psicología / Psiquiatría & \$ 54.731 \\
+        Centro de estética & \$ 51.366 \\
+        Salón de belleza / Barbería & \$ 44.906 \\
+        Odontología & \$ 40.950 \\
+        \hline
+        \textbf{Total general} & \textbf{\$ 58.700} \bigstrut[b]\\
+        \hline
+    \end{tabular}
+    \label{tab:mensualidad_por_rubro}
+\end{table}
+
+\subsection{}
+
+% insertar imagen aqui
+\insertimage[\label{img:nulos}]{informe2/nulos.png}{scale=0.80}{Porcentaje de nulos por variable. Fuente: elaboración propia}
+
+
+\subsection{}
+% insertar imagen aqui
+\insertimage[\label{img:tipodata}]{informe2/tipodata.png}{scale=0.80}{Tipos de datos de las variables. Fuente: elaboración propia}
+
+\subsection{}
+% insertar imagen aqui
+\insertimage[\label{img:estadistic}]{informe2/estadistic.png}{scale=0.80}{Estadísticas descriptivas de variables numéricas. Fuente: elaboración propia}
+
+
 
 \end{appendixd}
 
