@@ -195,11 +195,18 @@ Las razones estratégicas se basan en tres pilares principales:
     \item \textbf{Optimizar el esfuerzo de Customer Success:} El trato homogéneo de la cartera genera sobrecostos y baja efectividad. La segmentación basada en datos permite focalizar recursos en clientes de mayor riesgo o mayor potencial y se alinea con prácticas de CRM estratégico \citep{Kumar2010}.
 \end{itemize}
 
-\subsection{Evaluación Económica}
+\subsection{Evaluación económica}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus, consequat sapien vitae, auctor turpis. In at fermentum ante, volutpat suscipit quam. Donec blandit nulla quis auctor interdum. Integer in mi orci. Vivamus mollis maximus consectetur. In nec finibus neque, non varius justo. Maecenas aliquet, erat laoreet efficitur lobortis, turpis purus sagittis lorem, eget pulvinar tortor lectus at ante. Ut sollicitudin, magna sed bibendum viverra, massa nisi congue libero, eu viverra eros velit et libero. Cras varius dictum turpis, molestie pretium ex finibus nec. Quisque quam velit, ultricies id consequat nec, vestibulum id odio. Phasellus ultricies lobortis accumsan. Integer semper mauris libero, ac finibus purus dignissim vitae. Nam in egestas odio, vitae tempus leo. Duis dictum dui bibendum fermentum porta.
+La cartera actual de Reservo está compuesta por cerca de 3.500 clientes activos distribuidos en cuatro planes de suscripción mensual, con valores que van desde \$30.000 hasta \$150.000 por cliente. Con esta estructura de precios, el ingreso mensual por suscripciones se sitúa en torno a \$205.450.000 y el ingreso anual aproximado alcanza los \$2.465.400.000 pesos chilenos, según la base de datos utilizada en esta memoria. Esto implica un pago promedio cercano a \$58.700 mensuales por cliente.
 
-Nam nec aliquet diam. Praesent mauris metus, dapibus eu nibh sit amet, molestie rutrum lectus. Sed eget lacus eu justo hendrerit posuere vitae ut odio. Donec ac orci sollicitudin, lacinia lorem eget, sodales erat. Nam dictum efficitur ipsum, vestibulum gravida elit congue non. Pellentesque euismod purus ornare nunc tincidunt feugiat. Mauris consectetur ligula vitae nisi rhoncus eleifend. Pellentesque euismod elementum ex, nec blandit metus venenatis sed. Donec tempus odio quis convallis sagittis. Nullam vel orci sit amet risus dictum interdum. Suspendisse dapibus pellentesque justo vel dignissim. Mauris nibh erat, elementum vitae rhoncus vel, mollis ac metus. Sed arcu erat, sodales sed mi ac, ultrices sodales justo. Vestibulum tellus ligula, volutpat at cursus in, eleifend ut arcu.
+La tasa de bajas mensuales se estima en torno a 2{,}4\,\%. Con este nivel, la empresa pierde alrededor de 80 clientes al mes, lo que equivale a cerca de 1.000 clientes en un año. En términos de ingresos, esta dinámica se traduce en una pérdida anual cercana a \$59.000.000 de pesos en suscripciones que dejan de cobrarse. Cada décima de punto porcentual de reducción en la tasa de bajas, es decir 0{,}1\,puntos, representa del orden de \$2.500.000 de pesos anuales en ingresos conservados. Esta cifra entrega una referencia directa sobre cuánto vale económicamente mejorar la retención.
+
+El proyecto busca reducir estas pérdidas mediante un uso más focalizado de los recursos comerciales. El modelo permite ordenar la cartera según probabilidad de baja y entregar al equipo de Customer Success un listado de clientes priorizados. Así se facilita concentrar los esfuerzos en quienes generan mayor riesgo económico. Si el uso del modelo y de las políticas asociadas permitiera reducir la tasa mensual desde 2{,}4\,\% a 2{,}0\,\%, la empresa dejaría de perder cerca de \$10.000.000 de pesos al año en ingresos por suscripciones, solo por efecto de una menor cantidad de clientes que se dan de baja.
+
+La segmentación por comportamiento también abre espacio para acciones de expansión comercial. Un subconjunto de clientes puede estar en condiciones de aumentar de plan o contratar servicios adicionales. Si una fracción pequeña de la cartera incrementa su pago mensual, el ingreso adicional anual puede ser comparable al monto ahorrado por una mejor retención, lo que refuerza el impacto económico combinado de ambas palancas.
+
+Los detalles de las métricas, las fórmulas y los supuestos que permiten cuantificar el valor económico por cliente y proyectar escenarios más completos de ingresos se desarrollan en el marco conceptual y en el capítulo metodológico, siguiendo la literatura de analítica de clientes y gestión basada en valor \citep{Kumar2010,Gupta2006,Chapman2000}.
+
 
 
 \subsection{Razones Prácticas y Técnicas}
@@ -284,7 +291,6 @@ La evaluación estimará el impacto incremental en ingresos y margen. Se calcula
 \mathrm{CLV}_{\mathrm{descontado}} = \frac{\mathrm{ARPA} \times \mathrm{Margen}}{\mathrm{Churn}_{\mathrm{base}} + i}
 \]
 donde \(i\) es la tasa de descuento mensual. La \textbf{pérdida económica por baja} se aproximará al CLV remanente del cliente y servirá para dimensionar el impacto de una reducción marginal del churn. \textbf{[Espacio para ARPA, margen e \(i\)].}
-
 
 \subsection{Elección metodológica para el caso de la empresa}
 La empresa adopta segmentación conductual con scoring y el proceso \textbf{CRISP-DM} por su uso extendido en la industria y por su ajuste a los recursos disponibles. El método favorece decisiones claras para el estado de Cliente Activo y para el equipo de Customer Success. La elección prioriza interpretabilidad y rapidez de implementación analítica frente a alternativas más complejas. Las referencias más antiguas del informe aportan contexto sobre satisfacción y calidad del servicio; el marco de \citep{Kumar2010} ofrece la formalización actual para medir valor, estimar propensiones y diseñar políticas accionables, mientras que CRISP-DM entrega la estructura de fases y entregables para ejecutar el proyecto \citep{Chapman2000}.
