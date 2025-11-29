@@ -183,17 +183,19 @@ Para hacer operable este enfoque, el proyecto entrega varios artefactos concreto
 
 El resultado final es un puente entre la capa analítica y la operación diaria. Cada ciclo de uso del modelo genera archivos con la lista de clientes, su nivel de riesgo y la información necesaria para planificar acciones. A partir de estos insumos se definen políticas comerciales prácticas, entendidas como reglas y recomendaciones de acción diferenciadas por tipo de cliente y nivel de riesgo. De esta forma, el proyecto no solo describe un modelo, sino que entrega una forma concreta de usarlo en la gestión cotidiana de la empresa.
 
+\subsection{Justificación estratégica}
 
-\subsection{Justificación Estratégica}
-
-La realización de este proyecto se justifica por su alineación directa con la necesidad de la empresa de optimizar la rentabilidad de su cartera y asegurar un crecimiento sostenible. La gestión proactiva del cliente basada en datos es un eslabón crítico para la competitividad y la rentabilidad en mercados digitales \citep{Kumar2010}.
+La realización de este proyecto se justifica por su alineación directa con la necesidad de la empresa de optimizar la rentabilidad de su cartera y asegurar un crecimiento sostenible. La gestión proactiva del cliente basada en datos es un elemento clave para la competitividad y la rentabilidad en mercados digitales \citep{Kumar2010}.
 
 Las razones estratégicas se basan en tres pilares principales:  
 \begin{itemize}
-    \item \textbf{Mitigar la pérdida de ingresos por churn:} La tasa de churn es un indicador central en modelos de suscripción. Reducirla suele ser más rentable que adquirir nuevos clientes \citep{Gupta2006}. La tasa de abandono mensual de \textbf{2.46\,\%} afecta los ingresos recurrentes. La serie histórica se muestra en la Figura~\ref{img:churn3anios}. Un modelo predictivo permitiría anticipar señales de deserción y activar acciones de retención personalizadas, en línea con la teoría del ciclo de vida del cliente \citep{Lemmens2008}.
-    \item \textbf{Capitalizar oportunidades de expansión:} El aumento del valor de vida del cliente (CLV) mediante \textit{upselling} y \textit{cross-selling} segmentado permite sistematizar la expansión \citep{Kumar2010}. La evolución observada (57 en 2024 frente a 60 en 2025) sugiere potencial por capturar.
-    \item \textbf{Optimizar el esfuerzo de Customer Success:} El trato homogéneo de la cartera genera sobrecostos y baja efectividad. La segmentación basada en datos permite focalizar recursos en clientes de mayor riesgo o mayor potencial y se alinea con prácticas de CRM estratégico \citep{Kumar2010}.
+    \item Mitigar la pérdida de ingresos por bajas de clientes. La tasa mensual de bajas se estima en torno a 2{,}46\,\% y afecta de manera directa los ingresos recurrentes. La evolución histórica se muestra en la Figura~\ref{img:churn3anios}. Un modelo predictivo permite anticipar señales de deserción y entregar al equipo comercial una lista de clientes con mayor riesgo, de modo que se puedan activar acciones de retención más oportunas, en línea con la literatura de ciclo de vida del cliente \citep{Lemmens2008}.
+    
+    \item Capitalizar oportunidades de expansión. Aumentar el valor económico de cada cliente mediante ventas adicionales y aumento de plan permite aprovechar mejor la base instalada \citep{Kumar2010}. La evolución observada en los indicadores internos (57 en 2024 frente a 60 en 2025) sugiere que existe espacio para sistematizar estas oportunidades y convertirlas en una fuente más estable de crecimiento.
+    
+    \item Optimizar el esfuerzo de Customer Success. Un trato homogéneo de toda la cartera genera sobrecostos y baja efectividad. La segmentación basada en datos permite distinguir clientes de mayor riesgo o mayor potencial y asignar prioridades claras de trabajo. Esto facilita organizar la agenda del equipo, concentrar los esfuerzos donde el impacto esperado es mayor y se alinea con prácticas de gestión de relaciones con clientes \citep{Kumar2010}.
 \end{itemize}
+
 
 \subsection{Evaluación económica}
 
@@ -207,20 +209,34 @@ La segmentación por comportamiento también abre espacio para acciones de expan
 
 Los detalles de las métricas, las fórmulas y los supuestos que permiten cuantificar el valor económico por cliente y proyectar escenarios más completos de ingresos se desarrollan en el marco conceptual y en el capítulo metodológico, siguiendo la literatura de analítica de clientes y gestión basada en valor \citep{Kumar2010,Gupta2006,Chapman2000}.
 
+\subsection{Razones prácticas y técnicas}
+
+El enfoque elegido se apoya en las capacidades y recursos que ya existen en Reservo. La empresa cuenta con bases de datos históricas de uso de la plataforma, estados de cliente, planes, facturación y tickets de soporte, además de una infraestructura básica para analítica y herramientas de BI. Sobre esta base es posible construir un flujo reproducible que incluye extracción de datos, depuración, construcción de un datamart, segmentación de clientes y definición de reglas de acción conectadas con la operación diaria.
+
+La segmentación conductual permite definir riesgos y oportunidades a partir de variables observables y actualizables en el tiempo, como patrones de uso y comportamiento de pago. Los modelos utilizados privilegian interpretabilidad, trazabilidad y control de supuestos, de modo que sus resultados puedan ser revisados y entendidos por los equipos de negocio. Esto facilita que el modelo no sea una caja negra, sino una herramienta de apoyo a la decisión integrada al lenguaje cotidiano de la empresa.
+
+A lo largo del desarrollo del proyecto se prepara material práctico para el uso del modelo. El estudiante deja al equipo una carpeta estructurada con los scripts de generación del datamart, el notebook de scoring en Google Colab y los archivos de Excel que presentan los resultados en formatos conocidos para Customer Success. Esta carpeta se complementa con tutoriales escritos y sesiones de capacitación realizadas con el equipo, aprovechando su experiencia previa en el uso de hojas de cálculo y paneles de BI. El resultado esperado es un diseño validado en datos históricos y un conjunto de políticas comerciales que el equipo puede aplicar de manera autónoma, en línea con la gestión de clientes basada en valor y con el uso de analítica para priorizar esfuerzos de retención y expansión \citep{Kumar2010}.
 
 
-\subsection{Razones Prácticas y Técnicas}
+\subsection{Elección del enfoque}
 
-El enfoque considera un tiempo disponible de aproximadamente 4 meses. Este plazo exige foco en Cliente Activo y en el equipo de Customer Success. La empresa cuenta con bases de datos históricas de uso de plataforma, estados de cliente, planes, facturación y tickets de soporte. Existe infraestructura para analítica y BI. El estudiante puede construir un flujo reproducible con extracción, depuración, datamart, segmentación y reglas de acción. La segmentación conductual permite definir riesgos y oportunidades con variables observables y actualizables. Los modelos elegidos favorecen interpretabilidad, trazabilidad y control de supuestos. El resultado esperado es un diseño validado en datos históricos y un conjunto de políticas aplicables por el equipo. Este enfoque es coherente con la gestión de clientes basada en valor y con el uso de analítica para priorizar retención y expansión \citep{Kumar2010}.
+Se elige un modelo analítico de segmentación conductual con scoring y reglas de acción. La motivación principal es que permite identificar grupos de clientes según su comportamiento y asignar a cada grupo un nivel de prioridad comercial concreto. Esto facilita orientar los esfuerzos del equipo hacia quienes presentan mayor probabilidad de baja o mayor potencial de crecimiento, utilizando la información disponible en la base de datos de la empresa.
 
-\subsection{Aspectos Fuera del Alcance}
+Frente a alternativas centradas solo en reportes descriptivos, este enfoque agrega una capa de predicción y ordenamiento que entrega listas accionables. Frente a reglas puramente heurísticas, aporta criterios construidos a partir de datos históricos y actualizables en el tiempo. Al mismo tiempo, mantiene una estructura sencilla: variables comprensibles para el negocio, reglas claras de interpretación y resultados que se pueden revisar en herramientas habituales como hojas de cálculo. De este modo, el enfoque combina impacto esperado en retención y expansión, interpretabilidad para los equipos comerciales y compatibilidad con la infraestructura actual, en línea con la literatura de CRM y gestión del ciclo de vida del cliente \citep{Kumar2010}.
 
-Quedan fuera del proyecto: (i) estados distintos de Cliente Activo (captación, evaluación o trial, onboarding, moroso o inactivo); (ii) campañas de marketing y su contenido, compra de medios y automatizaciones de comunicación; (iii) implementación productiva en tiempo real, orquestación de jobs, APIs o integraciones con sistemas externos; (iv) cambios de pricing, diseño de planes comerciales o políticas de descuento; (v) procesos de facturación, cobranza y medios de pago; (vi) definición de gobierno de datos, seguridad y cumplimiento regulatorio más allá de lo mínimo para ejecutar el análisis; (vii) A/B testing a gran escala, modelos causales de uplift y atribución multicanal; (viii) desarrollo de interfaces de usuario o front-end para explotación en tiempo real; (ix) programas de formación extensiva y certificaciones internas.
-
-\subsection{Elección del Enfoque}
-
-Se elige un modelo analítico de segmentación conductual con \textit{scoring} y reglas de acción. La razón principal es impacto directo en retención y expansión, con métricas medibles en el corto plazo. La segunda razón es interpretabilidad: reglas y variables comprensibles por negocio. La tercera razón es factibilidad técnica con los datos disponibles y con la infraestructura actual. Alternativas descartadas: reportes descriptivos generales, porque no entregan prioridad operativa; reglas heurísticas estáticas, porque pierden poder ante cambios de comportamiento; automatización o aprendizaje en tiempo real, porque excede el plazo y requiere integraciones adicionales. Este enfoque balancea impacto, claridad y esfuerzo, y se alinea con la literatura de CRM y gestión del ciclo de vida del cliente \citep{Kumar2010}.
 \newpage
+
+\section{Alcance}
+
+El alcance del proyecto se define desde la primera facturación del cliente y su incorporación a la plataforma hasta su estado de uso activo. El modelo y las políticas se aplican a clientes que se encuentran en proceso de onboarding o en estado activo, utilizando como referencia el comportamiento histórico registrado en las bases de datos. Como parte del alcance, el estudiante entrega un prototipo analítico, una carpeta de uso con los scripts de generación del datamart, el notebook de scoring en Google Colab y los archivos de Excel. Este material se complementa con tutoriales escritos y sesiones de traspaso de conocimiento para el equipo de Customer Success y Post-venta, de modo que estos puedan continuar la operación y avanzar en la futura implementación del modelo.
+
+Quedan fuera del alcance del proyecto los clientes que ya se encuentran dados de baja, quienes se utilizan solo como historial para el entrenamiento del modelo y para mediciones agregadas, pero no son objeto de políticas directas. También quedan fuera los potenciales clientes o leads en las etapas de captación y venta, la implementación productiva completa en los sistemas de la empresa, la automatización en tiempo real, la orquestación de procesos y las integraciones con herramientas externas. No se abordan el diseño y la ejecución de campañas de marketing, la compra de medios ni las automatizaciones de comunicación asociadas, ni tampoco cambios de precios, diseño de nuevos planes comerciales o definición de políticas de descuento. Los procesos de facturación, cobranza y medios de pago solo se consideran como fuente de información para el análisis, sin rediseñar su operación.
+
+Tampoco forman parte del alcance la definición formal de gobierno de datos, seguridad y cumplimiento regulatorio más allá de lo necesario para realizar el proyecto con datos internos. No se desarrollan experimentos a gran escala, como pruebas A/B, modelos causales de impacto o esquemas de atribución multicanal, ni nuevas interfaces de usuario para la explotación en tiempo real del modelo. La capacitación se limita a las sesiones de traspaso realizadas con el equipo de Customer Success y Post-venta, sin programas de formación extensiva ni certificaciones internas. El uso operativo del modelo se restringe a estos equipos y no se considera su adopción por otras áreas de la empresa en esta etapa.
+
+
+\newpage
+
 \section{Objetivos del proyecto}
 
 \subsection{Objetivo general}
@@ -244,56 +260,128 @@ Para alcanzar el objetivo general, se deben generar los siguientes resultados es
 
 \end{itemize}
 
-\subsection{Indicadores de Éxito}
+\subsection{Indicadores de éxito}
 
 \begin{itemize}
-    \item \textbf{Objetivo 1 — Conjunto validado de variables de comportamiento:} AUC del modelo baseline construido con dichas variables \(\geq 0{,}70\) en test temporal. Este umbral se considera aceptable para discriminar eventos frente a no eventos en modelos de clasificación binaria \citep{Hosmer2013}.
-    \item \textbf{Objetivo 2 — Datamart estructurado:} Cobertura del snapshot mensual \(\geq 90\%\) de la cartera activa (clientes con todas las variables requeridas disponibles en la ventana de cierre). Este criterio asegura suficiencia de datos para la operación de CRM analítico y reduce sesgos por datos faltantes \citep{Kumar2010}.
-    \item \textbf{Objetivo 3 — Segmentos definidos y caracterizados:} \textbf{Porcentaje de churn capturado en el 20\% superior del ranking de riesgo} \(\geq 40\%\) en test temporal; esto equivale a que el 20\% de cuentas con mayor score concentra al menos el 40\% de los abandonos esperados, conforme a curvas de \textit{gains} acumulados utilizadas en marketing analítico \citep{SAS41683}.
-    \item \textbf{Objetivo 4 — Portafolio de políticas por segmento:} Tasa de aceptación de ofertas o acciones en clientes de alto riesgo \(\geq 25\%\) durante el piloto inicial. Meta operativa coherente con principios de segmentación y personalización del CRM \citep{Kumar2010}.
+    \item Para el objetivo de definir el conjunto de variables de comportamiento, se usará como indicador la capacidad del modelo para distinguir entre clientes que se dan de baja y clientes que se mantienen. Esta capacidad se medirá con la métrica AUC y se considerará aceptable un valor igual o superior a 0{,}70 en un periodo de prueba independiente \citep{Hosmer2013}.
+    
+    \item Para el objetivo de construir el datamart de clientes, el indicador será la cobertura de la cartera activa. En cada corte mensual se espera que al menos un 90\,\% de los clientes activos tenga disponibles todas las variables necesarias para aplicar el modelo y generar segmentaciones \citep{Kumar2010}.
+    
+    \item Para el objetivo de definir y caracterizar segmentos según comportamiento, se evaluará la capacidad de priorización del modelo. Se espera que el 20\,\% de los clientes con mayor riesgo estimado concentre al menos un 40\,\% de las bajas observadas en el periodo de prueba, lo que muestra que el ranking permite focalizar acciones en un grupo reducido con alto impacto \citep{SAS41683}.
+    
+    \item Para el objetivo de diseñar un portafolio de políticas comerciales, el indicador será la existencia de una matriz que relacione cada segmento con acciones concretas para Customer Success y Post-venta. Esta matriz debe cubrir al menos un 80\,\% de la cartera activa y haber sido revisada y validada en sesiones de trabajo con los equipos involucrados \citep{Kumar2010}.
+    
+    \item Para el objetivo de implementar un prototipo operativo, el indicador será la capacidad del equipo para ejecutar el flujo completo sin apoyo del estudiante. Al menos una persona de Customer Success debe ser capaz de generar el datamart, correr el notebook de scoring, obtener los archivos de salida y actualizar el Excel de resultados siguiendo los tutoriales entregados, procesando sin errores un corte mensual completo.
 \end{itemize}
-Las métricas se medirán al cierre del proyecto (mes 4) y se realizará un seguimiento de verificación a 90 días posteriores. Criterio de aceptación: el proyecto se considerará exitoso si se cumplen al menos 3 de los 4 indicadores y se entrega el datamart y el portafolio de políticas documentado.
+
+Las métricas se medirán al cierre del proyecto y, cuando sea posible, se revisarán en un corte posterior para verificar su estabilidad. El proyecto se considerará exitoso si se cumplen al menos cuatro de los cinco indicadores y se entregan el datamart, el portafolio de políticas y el prototipo operativo documentados.
+
+
 \newpage
 \section{Marco Conceptual}
 
 \subsection{Fundamentos de CRM orientado a valor}
-El marco conceptual se apoya en la gestión de relaciones con clientes (CRM) con enfoque estratégico y analítico. La empresa organiza datos, procesos y decisiones para priorizar retención y expansión según el valor económico del cliente y su probabilidad de respuesta. El objetivo es alinear acciones de postventa con segmentos definidos por comportamiento y riesgo. Este enfoque dialoga con el problema global: caracterización y segmentación conductual insuficientes en postventa que impiden un tratamiento diferenciado \citep{Kumar2010}.
+
+El marco conceptual se apoya en la gestión de relaciones con clientes, entendida como un enfoque que combina estrategia, procesos y analítica de datos. La empresa organiza su información comercial y de uso del servicio para tomar decisiones que priorizan la retención y la expansión según el valor económico de cada cliente y su comportamiento observado en el tiempo. El foco se desplaza desde una mirada centrada en transacciones aisladas hacia una visión de ciclo de vida, en la que interesa cuánto aporta cada cliente durante toda su relación con la empresa y cómo es posible influir en esa trayectoria \citep{Kumar2010}.
+
+En un CRM orientado a valor, los clientes no se tratan como un conjunto homogéneo. Se agrupan según variables como frecuencia de uso, nivel de pago, respuesta a las acciones comerciales y riesgo de baja. Estos grupos permiten diseñar estrategias diferentes: algunos segmentos se priorizan por su alto aporte actual, otros por su potencial de crecimiento y otros porque presentan alta probabilidad de pérdida. La combinación de valor económico y probabilidad de respuesta se convierte en un criterio central para decidir dónde concentrar los recursos de postventa y atención.
+
+Este enfoque es especialmente relevante en modelos de suscripción y servicios recurrentes, donde pequeñas variaciones en la tasa de baja o en la tasa de expansión generan cambios importantes en los ingresos futuros. La literatura de CRM analítico indica que suele ser más eficiente invertir en retener y desarrollar clientes existentes que en adquirir nuevos clientes de manera indiscriminada, siempre que se cuente con métricas claras de valor y con herramientas que permitan identificar a los clientes más relevantes \citep{Kumar2010,Gupta2006}. En este contexto, la caracterización conductual de la cartera y su segmentación en función de riesgo y valor se conectan de forma directa con el problema de postventa, ya que permiten avanzar desde un trato uniforme hacia un tratamiento diferenciado y basado en datos.
 
 \subsection{Herramientas de ingeniería y analítica aplicadas}
-En proyectos de este tipo se utilizan herramientas propias de la ingeniería industrial y del análisis de datos. Datamart con ventanas temporales y reglas de etiquetado de churn. Análisis de uso y actividad por cohortes. Modelos de propensión (por ejemplo, regresión logística) para estimar probabilidad de abandono. Segmentación conductual combinando score de riesgo, valor (ARPA o CLV) y patrones de uso. Reglas de decisión para asignar acciones de Customer Success. La metodología de trabajo corresponde a \textbf{CRISP-DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación, modelado, evaluación y despliegue \citep{Chapman2000}. Ventajas: interpretabilidad, trazabilidad de supuestos y priorización por riesgo/valor. Desventajas: dependencia de la calidad de datos, sensibilidad a definiciones operativas y a cambios en el comportamiento \citep{Kumar2010}.
+
+Las herramientas utilizadas en el proyecto pertenecen al marco de la ingeniería de datos y de la analítica de clientes. En primer lugar se encuentra el concepto de datamart, que proviene de la disciplina de inteligencia de negocios y del diseño de almacenes de datos. Un datamart corresponde a una vista temática de la información de la empresa, organizada en torno a un dominio específico, en este caso la relación con los clientes. Su propósito es ofrecer una base consistente y estable sobre la cual se puedan formular indicadores, análisis y modelos sin depender de los detalles técnicos de los sistemas operacionales \citep{Kumar2010}.
+
+Sobre esta base se sitúan las herramientas de análisis descriptivo y de exploración de datos, que forman parte de la analítica de negocios tradicional. Estas herramientas tienen como función resumir el comportamiento de la cartera mediante indicadores, curvas de evolución y comparaciones entre grupos. Desde el punto de vista conceptual, su aporte es transformar registros dispersos en una representación comprensible de cómo evolucionan los clientes, qué patrones de uso predominan y dónde aparecen diferencias relevantes entre segmentos \citep{Kumar2010,Gupta2006}.
+
+En un nivel posterior se ubican los modelos de propensión, que pertenecen al campo de la estadística aplicada y de la minería de datos. Su objetivo teórico es relacionar un conjunto de características de los clientes con la probabilidad de que ocurra un evento de interés, como la baja o la respuesta a una oferta. La regresión logística es uno de los modelos canónicos en este ámbito, ya que permite estimar probabilidades a partir de variables explicativas y ofrece interpretaciones claras sobre el efecto de cada factor \citep{Hosmer2013}. En el contexto de gestión de clientes, estos modelos se usan para generar scores que ordenan la cartera según nivel de riesgo o probabilidad de respuesta.
+
+La segmentación conductual combina la tradición del marketing analítico con técnicas de clasificación y agrupamiento. En lugar de tratar a todos los clientes por igual, se construyen segmentos que reflejan diferencias en patrones de uso, nivel de ingreso generado y riesgo de baja. Este enfoque se apoya en marcos como las matrices valor versus riesgo, que permiten identificar grupos como clientes de alto valor y alto riesgo o clientes de bajo valor y bajo riesgo. La justificación teórica es que estos segmentos tienen respuestas distintas a las acciones comerciales y, por lo tanto, requieren tratamientos diferenciados \citep{Kumar2010,Gupta2006,SAS41683}.
+
+Finalmente, las reglas de decisión y las políticas comerciales derivadas de la analítica pertenecen al ámbito de la ingeniería de decisiones. Su función es traducir scores, segmentos e indicadores en acciones concretas para los equipos de contacto con clientes. Desde el marco conceptual de CRM orientado a valor, estas reglas actúan como un puente entre el análisis cuantitativo y la gestión diaria, al establecer de forma explícita qué tipo de intervención corresponde a cada grupo de clientes y bajo qué condiciones se recomienda su aplicación \citep{Kumar2010}.
+
+
 
 \subsection{Evaluación económica y métricas de desempeño}
 
-La evaluación económica se sustenta en métricas de valor de cliente y en resultados incrementales. CLV para valorar el flujo esperado por cliente. MRR retenido y MRR por expansión para cuantificar impacto directo. Indicadores operativos para seguimiento: churn mensual, ARPA, net dollar retention y tasa de aceptación de ofertas. Indicadores de modelo para priorización: AUC para medir discriminación y porcentaje de churn capturado en el 20\% superior del ranking de riesgo para medir capacidad de focalización. Estas mediciones se integran con las fases de evaluación y despliegue de CRISP-DM para cerrar el ciclo analítica–negocio \citep{Kumar2010,Chapman2000}.
-
-La evaluación estimará el impacto incremental en ingresos y margen. Se calculará el MRR retenido incremental por reducción de churn y el MRR incremental por expansión, descontando costos directos del proyecto. Este marco sigue el enfoque de CRM orientado a valor económico del cliente y uso de CLV para guiar decisiones \citep{Kumar2010}:
+La evaluación económica del proyecto se apoya en métricas que relacionan el tamaño de la base de clientes, los ingresos recurrentes y el valor económico asociado a cada cuenta. En primer lugar se define el número de clientes activos como \(N_{\mathrm{activos}}\), que corresponde al total de cuentas con suscripción vigente en un mes determinado. A partir de esta base se calcula el ingreso mensual recurrente o \(\mathrm{MRR}_{\mathrm{base}}\), que es la suma de las mensualidades pagadas por todos los clientes activos. El ingreso promedio por cuenta se resume mediante el indicador \(\mathrm{ARPA}\) (Average Revenue per Account), definido como
 
 \[
-\Delta \mathrm{MRR}_{\mathrm{retenido}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{Churn}_{\mathrm{base}} - \mathrm{Churn}_{\mathrm{post}})
-\]
-\[
-\Delta \mathrm{MRR}_{\mathrm{exp}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{TasaExp}_{\mathrm{post}} - \mathrm{TasaExp}_{\mathrm{base}})
-\]
-\[
-\mathrm{Beneficio\ anual\ esperado} \approx (\Delta \mathrm{MRR}_{\mathrm{retenido}} + \Delta \mathrm{MRR}_{\mathrm{exp}}) \times \mathrm{Margen} \times 12 - \mathrm{Costo\ del\ proyecto}
+\mathrm{ARPA} = \frac{\mathrm{MRR}_{\mathrm{base}}}{N_{\mathrm{activos}}}.
 \]
 
-\textbf{Dimensionamiento de la base y piso económico.} Se establecerá un \textbf{piso económico} para comparar resultados al cierre del proyecto. Se cuantificarán \(N_{\mathrm{activos}}\), \(\mathrm{MRR}_{\mathrm{base}}\), \(\mathrm{ARPA} = \mathrm{MRR}_{\mathrm{base}}/N_{\mathrm{activos}}\), \(\mathrm{Churn}_{\mathrm{base}}\) y Margen. El piso exigirá que el beneficio anual esperado cubra el costo del proyecto y logre \textbf{payback} en el horizonte definido [\textit{espacio para metas internas}]. Se reportará el \textbf{MRR perdido por churn} como
+Con estas métricas se describe el tamaño económico de la cartera y se dispone de una línea base para evaluar cambios futuros. La tasa de baja mensual o \(\mathrm{Churn}_{\mathrm{base}}\) se define como la proporción de clientes activos que dejan de serlo entre dos meses consecutivos, según el criterio operativo de baja adoptado en el proyecto. De forma análoga, se puede definir una tasa de expansión que mide el porcentaje de clientes que aumentan su pago mensual en un periodo, ya sea por cambio de plan o por contratación de servicios adicionales. Se distinguen así una tasa de expansión de referencia \(\mathrm{TasaExp}_{\mathrm{base}}\) y una tasa posterior a la aplicación de políticas \(\mathrm{TasaExp}_{\mathrm{post}}\), lo que permite cuantificar el efecto de las acciones comerciales.
+
+El valor económico de un cliente se resume mediante el concepto de valor de vida del cliente o CLV (Customer Lifetime Value). Bajo supuestos de tasa de baja mensual constante y margen bruto estable, el CLV simple se puede aproximar como
+
+\[
+\mathrm{CLV}_{\mathrm{simple}} = \mathrm{ARPA} \times \mathrm{Margen} \times \frac{1}{\mathrm{Churn}_{\mathrm{base}}},
+\]
+
+donde \(\mathrm{Margen}\) corresponde al margen bruto promedio sobre los ingresos recurrentes. Esta expresión refleja que, mientras menor es la tasa de baja, mayor es el número esperado de meses en que el cliente seguirá generando ingresos. Si se incorpora una tasa de descuento mensual \(i\) para reflejar el valor temporal del dinero, se obtiene una versión descontada del CLV:
+
+\[
+\mathrm{CLV}_{\mathrm{descontado}} = \frac{\mathrm{ARPA} \times \mathrm{Margen}}{\mathrm{Churn}_{\mathrm{base}} + i}.
+\]
+
+En este marco, la salida de un cliente no solo implica dejar de recibir su pago mensual, sino perder el flujo de ingresos futuros asociados a su CLV.
+
+La pérdida económica ligada a las bajas se puede expresar a nivel agregado mediante el \(\mathrm{MRR}_{\mathrm{perdido}}\). Este indicador aproxima cuánto ingreso mensual se deja de percibir debido a la tasa de baja de la cartera y se define como
+
 \[
 \mathrm{MRR}_{\mathrm{perdido}} = \mathrm{MRR}_{\mathrm{base}} \times \mathrm{Churn}_{\mathrm{base}}.
 \]
 
-\textbf{Valor de cliente (CLV) y costo de una baja.} Se estimará el \textbf{CLV} bajo supuestos de tasa de churn mensual constante y margen bruto, siguiendo formulaciones estándar de la literatura de CLV \citep{Gupta2006}:
+Al combinar este valor con el CLV se puede estimar el costo económico de una baja típica y dimensionar el impacto de reducir marginalmente la tasa de salida.
+
+El beneficio incremental del proyecto se mide comparando la situación antes y después de aplicar el modelo y las políticas asociadas. Si la tasa de baja se reduce desde \(\mathrm{Churn}_{\mathrm{base}}\) a \(\mathrm{Churn}_{\mathrm{post}}\), el ingreso mensual retenido adicional se aproxima por
+
 \[
-\mathrm{CLV}_{\mathrm{simple}} = \mathrm{ARPA} \times \mathrm{Margen} \times \frac{1}{\mathrm{Churn}_{\mathrm{base}}}
+\Delta \mathrm{MRR}_{\mathrm{retenido}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{Churn}_{\mathrm{base}} - \mathrm{Churn}_{\mathrm{post}}).
 \]
+
+De manera similar, si la tasa de expansión aumenta desde \(\mathrm{TasaExp}_{\mathrm{base}}\) a \(\mathrm{TasaExp}_{\mathrm{post}}\), el ingreso mensual adicional por expansión se aproxima por
+
 \[
-\mathrm{CLV}_{\mathrm{descontado}} = \frac{\mathrm{ARPA} \times \mathrm{Margen}}{\mathrm{Churn}_{\mathrm{base}} + i}
+\Delta \mathrm{MRR}_{\mathrm{exp}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{TasaExp}_{\mathrm{post}} - \mathrm{TasaExp}_{\mathrm{base}}).
 \]
-donde \(i\) es la tasa de descuento mensual. La \textbf{pérdida económica por baja} se aproximará al CLV remanente del cliente y servirá para dimensionar el impacto de una reducción marginal del churn. \textbf{[Espacio para ARPA, margen e \(i\)].}
+
+La suma de ambos componentes entrega una estimación del ingreso incremental mensual asociado al proyecto. Para evaluar el efecto anual y su contribución al margen, se utiliza la siguiente expresión:
+
+\[
+\mathrm{Beneficio\ anual\ esperado} \approx (\Delta \mathrm{MRR}_{\mathrm{retenido}} + \Delta \mathrm{MRR}_{\mathrm{exp}}) \times \mathrm{Margen} \times 12 - \mathrm{Costo\ del\ proyecto}.
+\]
+
+Esta fórmula resume el aporte económico esperado del modelo y de las políticas de retención y expansión, descontando los costos directos de desarrollo e implementación.
+
+A partir de estas definiciones se establece un piso económico para evaluar el proyecto. Se cuantifican \(N_{\mathrm{activos}}\), \(\mathrm{MRR}_{\mathrm{base}}\), \(\mathrm{ARPA}\), \(\mathrm{Churn}_{\mathrm{base}}\) y \(\mathrm{Margen}\), y se exige que el beneficio anual esperado cubra al menos el costo del proyecto y permita recuperar la inversión en un plazo razonable. Estos criterios de payback y de relación beneficio-costo se utilizan como guía para decidir si el proyecto resulta atractivo desde el punto de vista económico. El conjunto de métricas descritas se alinea con la literatura de CRM orientado a valor económico del cliente y con el uso de CLV como eje para priorizar decisiones de retención y expansión \citep{Kumar2010,Gupta2006}.
+
 
 \subsection{Elección metodológica para el caso de la empresa}
-La empresa adopta segmentación conductual con scoring y el proceso \textbf{CRISP-DM} por su uso extendido en la industria y por su ajuste a los recursos disponibles. El método favorece decisiones claras para el estado de Cliente Activo y para el equipo de Customer Success. La elección prioriza interpretabilidad y rapidez de implementación analítica frente a alternativas más complejas. Las referencias más antiguas del informe aportan contexto sobre satisfacción y calidad del servicio; el marco de \citep{Kumar2010} ofrece la formalización actual para medir valor, estimar propensiones y diseñar políticas accionables, mientras que CRISP-DM entrega la estructura de fases y entregables para ejecutar el proyecto \citep{Chapman2000}.
+
+La elección metodológica se apoya en la necesidad de contar con un marco estándar que ordene el ciclo completo de trabajo analítico. En este contexto se adopta el proceso CRISP-DM (Cross Industry Standard Process for Data Mining), que se ha utilizado de forma amplia en proyectos de minería de datos y analítica de negocios en distintos sectores. Su objetivo es ofrecer una guía estructurada que conecte la comprensión del negocio, la preparación de datos, el modelamiento y el uso de los resultados en la organización \citep{Chapman2000}.
+
+CRISP-DM define seis fases principales, que se conciben como etapas iterativas y no como pasos rígidos. Cada fase tiene un propósito específico dentro del ciclo de descubrimiento de conocimiento y de construcción de modelos:
+
+\begin{itemize}
+    \item Comprensión del negocio. En esta fase se define el problema desde la perspectiva de la organización. Se clarifican los objetivos que se desean alcanzar, las preguntas clave que se quieren responder y las restricciones relevantes. El resultado es una formulación clara del problema de negocio que la analítica debe abordar, junto con criterios de éxito medibles.
+    
+    \item Comprensión de los datos. Esta fase se orienta a conocer en detalle las fuentes de información disponibles. Se identifican las tablas y sistemas que contienen datos relevantes, se revisan sus estructuras y se exploran sus contenidos. También se detectan problemas de calidad, como datos faltantes, inconsistencias o sesgos, y se formulan hipótesis iniciales sobre el comportamiento que muestran los datos.
+    
+    \item Preparación de los datos. En esta etapa se construye el conjunto de datos que se utilizará para el modelamiento. Se seleccionan las variables relevantes, se integran fuentes distintas, se limpian los registros y se aplican transformaciones necesarias para que los datos queden en un formato adecuado para los modelos. En muchos proyectos esta fase consume una parte importante del esfuerzo total, ya que define la base sobre la que se construirá todo el análisis posterior.
+    
+    \item Modelado. La fase de modelado consiste en elegir técnicas de análisis apropiadas y aplicarlas al conjunto de datos preparado. Esto puede incluir modelos de clasificación, regresión, segmentación u otros métodos de minería de datos. En esta etapa se ajustan parámetros, se prueban diferentes configuraciones y se evalúan resultados preliminares. La relación con la fase de preparación de datos es iterativa: los hallazgos en el modelado pueden requerir ajustes en la forma de preparar los datos.
+    
+    \item Evaluación. En esta fase se analiza el desempeño de los modelos desde dos ángulos complementarios. Por un lado se revisan métricas cuantitativas, como indicadores de discriminación, error o estabilidad. Por otro lado se evalúa si los modelos responden de forma adecuada a los objetivos de negocio definidos al inicio. Esto puede implicar revisar supuestos, interpretar coeficientes, analizar grupos de clientes específicos y considerar la viabilidad de uso de los resultados por parte de los equipos de la organización.
+    
+    \item Despliegue. La fase de despliegue aborda cómo se incorporan los resultados del proyecto en la operación. Puede incluir la generación periódica de reportes, la creación de flujos de scoring, la entrega de listados priorizados a usuarios de negocio o la integración con sistemas existentes. También contempla la planificación de actualizaciones de modelos, el monitoreo de su desempeño en el tiempo y la documentación necesaria para asegurar continuidad. El foco está en transformar los modelos en herramientas efectivas para la toma de decisiones \citep{Chapman2000,Kumar2010}.
+\end{itemize}
+
+Como marco alternativo se considera el proceso de descubrimiento de conocimiento en bases de datos, conocido como KDD (Knowledge Discovery in Databases). Este enfoque organiza el trabajo en etapas de selección, preprocesamiento, transformación, minería de datos y evaluación de patrones. Su origen está en la comunidad de minería de datos y se centra con fuerza en la extracción de estructuras interesantes desde grandes volúmenes de información. Conceptualmente pone el acento en las operaciones técnicas de preparación y en la aplicación de algoritmos de minería, con una visión más compacta de las etapas previas y posteriores al modelamiento.
+
+La decisión de adoptar CRISP-DM por sobre KDD responde a la naturaleza del problema y a las necesidades de gestión de la empresa. En un contexto de CRM orientado a valor, donde el objetivo es apoyar decisiones de retención y expansión en un equipo específico, resulta clave contar con un marco que otorgue un espacio explícito a la comprensión del negocio, a la definición de criterios de éxito y al despliegue operativo de los resultados. CRISP-DM ofrece una estructura más detallada en estas fases, lo que facilita la alineación con los objetivos de gestión de clientes, la comunicación con usuarios de negocio y la planificación de cómo se usarán los modelos en ciclos recurrentes. KDD aporta una visión sólida sobre las tareas de minería de datos, pero presenta un menor énfasis en la conexión sistemática con el negocio y en la etapa de despliegue, por lo que se considera menos adecuado como guía principal para un proyecto cuyo foco está en integrar la analítica en la operación de Customer Success y en la gestión de clientes de una empresa de servicios como Reservo \citep{Chapman2000,Kumar2010}.
+
+
 
 \newpage
 \section{Metodología}
