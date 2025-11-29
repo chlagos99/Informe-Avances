@@ -384,57 +384,89 @@ La decisión de adoptar CRISP-DM por sobre KDD responde a la naturaleza del prob
 
 
 \newpage
+
 \section{Metodología}
 
-La metodología del proyecto se basa en el proceso \textbf{CRISP–DM}, con seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. El proyecto ya completó la fase de comprensión del negocio y actualmente se encuentra en comprensión de los datos. El entregable de este informe es el \textbf{análisis exploratorio de datos (EDA)} y la \textbf{estructuración de la base analítica} que se utilizará en las fases siguientes \citep{Chapman2000}. El enfoque es consistente con CRM orientado a valor y con la priorización de retención y expansión \citep{Kumar2010}.
+La metodología del proyecto se basa en el proceso CRISP-DM, que organiza el trabajo en seis fases: comprensión del negocio, comprensión de los datos, preparación de los datos, modelado, evaluación y despliegue. Cada fase agrupa tareas que permiten avanzar desde la definición del problema de gestión hasta la entrega de un prototipo operativo de uso interno \citep{Chapman2000,Kumar2010}.
 
-\subsection{Fase 1: Comprensión del Negocio (completada)}
-Se definió el problema, los objetivos y el alcance en el estado de \textit{Cliente Activo} en postventa. Se establecieron criterios de éxito operativos y de modelo. Se definieron indicadores para medir impacto: churn mensual, ARPA, MRR retenido, MRR por expansión, NDR y tasa de aceptación de ofertas. Se acordó que el resultado final es un diseño validado de segmentación conductual con \textit{scoring} y un portafolio de políticas de negocio aplicables por Customer Success \citep{Chapman2000,Kumar2010}.
+\subsection{Fase 1: Comprensión del negocio}
 
-\subsection{Fase 2: Comprensión de los Datos (en curso)}
-Se levanta el inventario de fuentes con foco manejable y suficiente para alcanzar los objetivos. Tabla \texttt{cliente\_\hspace{0pt}cliente} como base del \textit{snapshot}. Tabla \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} para etiquetas y señales de fricción. Tabla \texttt{appointment\_\hspace{0pt}ticket} para uso de plataforma. Tabla \texttt{cliente\_\hspace{0pt}planreservo} para plan y precio cuando sea necesario. Tabla \texttt{cliente\_\hspace{0pt}rubro} (opcional) si se requiere análisis por rubro.
+En esta fase se define el problema desde la perspectiva de la empresa y se alinean las expectativas de los actores involucrados.
 
-Se ejecuta la \textbf{integración de datos} previa al EDA con un diseño de \textbf{mínimos joins}:
 \begin{itemize}
-  \item \textit{Join 1}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} para crear la \textbf{etiqueta} y derivar señales de fricción.
-  \item \textit{Join 2}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{appointment\_\hspace{0pt}ticket} para variables de uso.
-  \item \textit{Join 3 (opcional)}:\; \texttt{cliente\_\hspace{0pt}cliente} \(\rightarrow\) \texttt{cliente\_\hspace{0pt}planreservo} (\(\rightarrow\) \texttt{cliente\_\hspace{0pt}rubro} si aplica) para plan y rubro.
+    \item Levantar el contexto de Reservo, incluyendo el modelo de suscripción, el rol de Customer Success y Post-venta, y las principales características de la cartera actual.
+    \item Clarificar el problema de gestión asociado a la baja de clientes y a la necesidad de usar mejor la información disponible para prevenirla y aprovechar oportunidades de expansión.
+    \item Formular el objetivo general y los objetivos específicos del proyecto, asegurando su conexión con causas identificadas del problema de postventa y con necesidades concretas de gestión.
+    \item Definir indicadores de éxito para el modelo, el datamart, la segmentación y el prototipo operativo, y acordar con la empresa el formato de los entregables principales.
 \end{itemize}
 
-Se construye un \textbf{datamart temporal} con clave \textit{id\_\hspace{0pt}cliente} y \textit{mes\_\hspace{0pt}corte}, y se definen ventanas simples y reproducibles. Con este esquema se genera el conjunto mínimo de variables:
+\subsection{Fase 2: Comprensión de los datos}
+
+En esta fase se identifican y se analizan las fuentes de datos que sostendrán el modelo y las segmentaciones.
+
 \begin{itemize}
-  \item \textbf{Identificación y contexto}:\; \textit{id\_\hspace{0pt}cliente}, \textit{mes\_\hspace{0pt}corte}, país; \textit{plan\_\hspace{0pt}reservo\_\hspace{0pt}id} o \textit{plan\_\hspace{0pt}nombre} (si se requiere); \textit{rubro} (opcional).
-  \item \textbf{Valor}:\; \textit{arpa\_\hspace{0pt}proxy} desde \texttt{mensualidad} de \texttt{cliente\_\hspace{0pt}cliente} o precio normalizado del plan; \textit{tenure\_\hspace{0pt}meses} desde \texttt{paga\_\hspace{0pt}desde} o \texttt{fecha\_\hspace{0pt}creacion}.
-  \item \textbf{Uso}:\; \textit{citas\_\hspace{0pt}30d}, \textit{citas\_\hspace{0pt}60d}, \textit{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} y \textit{tendencia\_\hspace{0pt}90d} desde \texttt{appointment\_\hspace{0pt}ticket}.
-  \item \textbf{Fricción}:\; \textit{bloqueos\_\hspace{0pt}90d}, \textit{dias\_\hspace{0pt}desde\_\hspace{0pt}ultimo\_\hspace{0pt}bloqueo}, \textit{cambios\_\hspace{0pt}estado\_\hspace{0pt}90d}, \textit{baja\_\hspace{0pt}previa} desde \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente}.
-  \item \textbf{Etiqueta (target)}:\; \textit{churn\_\hspace{0pt}T+1} = 1 si existe evento de \texttt{Baja} en el mes siguiente al corte y no se revierte en ese mismo mes; 0 en caso contrario.
+    \item Elaborar un inventario de tablas relevantes en la base de datos de Reservo, considerando clientes, uso de la plataforma, cambios de estado administrativos, planes y rubros.
+    \item Revisar la estructura y calidad de cada tabla, analizando llaves, granularidad, cobertura temporal, presencia de datos faltantes, inconsistencias y valores atípicos.
+    \item Definir un calendario de cortes mensuales que represente el estado de la cartera en distintos momentos y sirva de base para la construcción del datamart y de la etiqueta de baja.
+    \item Establecer definiciones operativas de cliente activo, cliente en onboarding, cliente bloqueado y cliente dado de baja, y documentar criterios de inclusión y exclusión de registros.
 \end{itemize}
 
-Con los datos ya integrados, se realiza el \textbf{EDA}: cobertura y consistencia por campo (país, mensualidad, fechas, llaves); distribuciones de \textit{tenure\_\hspace{0pt}meses}, \textit{citas\_\hspace{0pt}30d}, \textit{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}; tasas de churn por cuantiles de uso y por \textit{bloqueos\_\hspace{0pt}90d}; revisión de eventos por ventanas de 30, 60 y 90 días. Se documentan definiciones operativas de \textit{cliente activo}, \textit{baja}, \textit{bloqueo} y \textit{reactivación}. Se prioriza legibilidad y bajo número de uniones entre tablas \citep{Chapman2000}.
+\subsection{Fase 3: Preparación de los datos}
 
-\subsection{Fase 3: Preparación de los Datos (planificada)}
-Se ejecutan transformaciones de \textbf{minería de datos} sobre la matriz de características resultante del datamart:
+En esta fase se construye el datamart analítico y se genera la matriz de características que se utilizará en los modelos.
+
 \begin{itemize}
-  \item \textbf{Imputación de faltantes} con estrategias simples en variables numéricas y categóricas (media/mediana/más frecuente/constante) \citep{Pedregosa2011}.
-  \item \textbf{Codificación de variables categóricas} mediante \textit{one-hot encoding} para uso en modelos lineales \citep{Pedregosa2011,SklearnPipelineDoc}.
-  \item \textbf{Escalado de variables numéricas}: estandarización y, cuando existan atípicos, \textit{robust scaling} basado en IQR \citep{SklearnRobustScalerDoc}.
-  \item \textbf{Control de desbalance}: uso de \textit{class\_weight='balanced'} en el modelo base; si es necesario, evaluación de \textit{resampling} (over/under) en experimentos controlados \citep{Pedregosa2011,Lemaitre2017}.
-  \item \textbf{Prevención de \textit{data leakage}}: encapsular imputación, codificación y escalado en un \textit{pipeline} que se ajusta solo con \textit{train} y se aplica con \textit{transform} en \textit{test} \citep{SklearnPipelineDoc}.
-  \item \textbf{Validación temporal}: particionado respetando el orden temporal para comparar métricas entre cortes \citep{SklearnTimeSeriesSplitDoc}.
+    \item Diseñar la estructura del datamart mensual con clave compuesta por identificador de cliente y mes de corte, y definir las uniones necesarias entre tablas de clientes, uso, cambios de estado, planes y rubros.
+    \item Calcular variables de contexto, valor, uso y fricción a partir de las tablas de origen, siguiendo reglas simples y reproducibles que faciliten la interpretación por parte del negocio.
+    \item Definir y construir la etiqueta de baja a horizonte mensual, garantizando que las variables explicativas solo utilicen información disponible hasta el mes de corte y que las bajas consideradas sean efectivas.
+    \item Tratar valores faltantes y valores extremos mediante reglas documentadas, y dejar el conjunto de datos en un formato adecuado para su uso en herramientas de modelamiento.
 \end{itemize}
 
-\subsection{Fase 4: Modelado (planificada)}
-Se entrenará un modelo base de \textbf{regresión logística} para probabilidad de churn, con regularización. Entrenamiento y prueba por particiones temporales. Pesos de clase si hay desbalance. Revisión de importancia de variables y estabilidad por mes. Calibración del \textit{score} para interpretación como probabilidad (calibración isotónica o Platt) \citep{NiculescuMizil2005,Platt2000}. Umbrales de decisión con criterio económico. Evaluación con AUC y con \textbf{porcentaje de churn capturado en el 20\% superior} del ranking de riesgo \citep{Chapman2000}. El \textit{score} alimentará la segmentación conductual por riesgo y valor.
+\subsection{Fase 4: Modelado}
 
-\subsection{Fase 5: Evaluación (planificada)}
-Validación contra criterios de negocio y desempeño. AUC en datos de prueba. Porcentaje de churn capturado en el 20\% superior. Estabilidad de métricas por periodos. Estimación de impacto potencial en MRR retenido y expansión con supuestos explícitos. Definición de monitoreo del \textit{score} y de variables críticas \citep{Chapman2000,Kumar2010}.
+En esta fase se construyen y se ajustan los modelos que estiman el riesgo de baja y que sirven de base para la segmentación conductual.
 
-\subsection{Fase 6: Despliegue y Políticas de Negocio (planificada)}
-Operación de un \textbf{scoring mensual} sobre el \textit{snapshot}. Tablero con priorización por riesgo y valor. \textbf{Políticas por segmento} con foco en paquetes de ofertas para clientes de alto riesgo y alto valor, beneficios de permanencia, acciones de activación de uso y guiones de contacto. Criterios de éxito para un piloto: aceptación de ofertas, variación de churn y MRR retenido \citep{Chapman2000}.
+\begin{itemize}
+    \item Seleccionar un algoritmo principal de clasificación supervisada, en este caso una regresión logística binaria, y justificar su elección por interpretabilidad y capacidad para producir probabilidades.
+    \item Definir una estrategia de partición temporal en conjuntos de entrenamiento, validación y prueba, que respete el orden de los meses y simule el uso futuro del modelo.
+    \item Implementar un flujo de preprocesamiento que incluya imputación, transformación y codificación de variables, preferentemente encapsulado en un pipeline reproducible.
+    \item Entrenar y ajustar la regresión logística con diferentes configuraciones de parámetros, incorporando técnicas de manejo de desbalance y calibración de probabilidades, y dejando documentadas las opciones evaluadas.
+\end{itemize}
 
-\subsection{Recursos e Insumos}
-\textbf{Tablas principales.} \texttt{cliente\_\hspace{0pt}cliente} (snapshot y atributos base), \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} (bajas, bloqueos, reactivaciones), \texttt{appointment\_\hspace{0pt}ticket} (uso), \texttt{cliente\_\hspace{0pt}planreservo} (plan y precio), \texttt{cliente\_\hspace{0pt}rubro} (opcional). \textbf{Lógica existente.} Identificación de activos al corte, bloqueados, bajas históricas y reactivaciones; consultas de citas por cliente y fecha. \textbf{Rol de cada insumo.} Suscripción y plan sostienen ARPA y MRR; uso sostiene señales conductuales; cambios de estado sostienen la etiqueta y señales de fricción; el \textit{snapshot} asegura consistencia mensual. \textbf{Restricciones.} Horizonte de dos meses; se prioriza bajo número de \textit{joins} y consultas legibles.
-\newpage
+\subsection{Fase 5: Evaluación}
+
+En esta fase se analiza el desempeño del modelo y se conecta con los indicadores de éxito definidos en la comprensión del negocio.
+
+\begin{itemize}
+    \item Evaluar el modelo en el conjunto de prueba utilizando métricas de discriminación y de focalización, como AUC y porcentaje de bajas capturadas en los grupos de mayor riesgo estimado.
+    \item Revisar la calibración de las probabilidades y el comportamiento del modelo en segmentos relevantes, como países, rubros o tipos de plan, para asegurar estabilidad y coherencia.
+    \item Comparar los resultados con los umbrales definidos en los indicadores de éxito y determinar si la calidad del modelo es suficiente para priorizar acciones de retención y expansión.
+    \item Documentar conclusiones y recomendaciones sobre el modelo final, incluyendo sugerencias de ajustes futuros y lineamientos para su monitoreo en uso operativo.
+\end{itemize}
+
+\subsection{Fase 6: Despliegue y políticas de negocio}
+
+En esta fase se define cómo se usarán los resultados del modelo en la operación y se diseña el prototipo operativo que articula analítica y gestión comercial.
+
+\begin{itemize}
+    \item Diseñar un flujo mensual de scoring que permita aplicar el modelo sobre la cartera actualizada, a partir del datamart mensual, y generar tablas con probabilidades de baja, rangos de riesgo y variables de contexto.
+    \item Especificar y construir los artefactos operativos necesarios para el uso del modelo por parte de Customer Success, incluyendo scripts de generación del datamart, un notebook de scoring y archivos de Excel para revisión de resultados.
+    \item Definir una propuesta de segmentación conductual que combine riesgo, valor económico y variables de uso, y asociar a cada segmento un conjunto preliminar de políticas comerciales recomendadas.
+    \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
+\end{itemize}
+
+\subsection{Recursos e insumos}
+
+La metodología requiere el uso coordinado de recursos de datos, herramientas tecnológicas y conocimiento de negocio.
+
+\begin{itemize}
+    \item Tablas principales de datos, que incluyen información de clientes, uso de la plataforma, cambios de estado administrativos, planes comerciales y rubros de actividad.
+    \item Herramientas de consulta y procesamiento de datos, tanto en la base transaccional como en los entornos utilizados para construir el datamart, el modelo y los artefactos operativos.
+    \item Conocimiento experto de Reservo sobre el funcionamiento del negocio, la interpretación de las variables y las particularidades de cada país y tipo de cliente.
+    \item Tiempo de dedicación del estudiante y de los referentes internos para entrevistas, validaciones de definiciones, revisión de avances y sesiones de traspaso del prototipo operativo.
+\end{itemize}
+
+
 
 \section{Desarrollo y Resultados}
 

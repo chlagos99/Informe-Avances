@@ -31,13 +31,13 @@
 \contentsline {subsection}{\numberline {6.3}Evaluación económica y métricas de desempeño}{17}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Elección metodológica para el caso de la empresa}{19}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Metodología}{21}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Fase 1: Comprensión del Negocio (completada)}{21}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Fase 2: Comprensión de los Datos (en curso)}{21}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Fase 3: Preparación de los Datos (planificada)}{22}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Fase 4: Modelado (planificada)}{22}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Fase 5: Evaluación (planificada)}{23}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Fase 6: Despliegue y Políticas de Negocio (planificada)}{23}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Recursos e Insumos}{23}{subsection.7.7}%
+\contentsline {subsection}{\numberline {7.1}Fase 1: Comprensión del negocio}{21}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Fase 2: Comprensión de los datos}{21}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Fase 3: Preparación de los datos}{22}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Fase 4: Modelado}{22}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Fase 5: Evaluación}{22}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Fase 6: Despliegue y políticas de negocio}{23}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Recursos e insumos}{23}{subsection.7.7}%
 \contentsline {section}{\numberline {8}Desarrollo y Resultados}{24}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Composición por rubro}{24}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Distribución por país}{25}{subsection.8.2}%
