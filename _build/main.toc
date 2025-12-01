@@ -39,34 +39,55 @@
 \contentsline {subsection}{\numberline {7.6}Fase 6: Despliegue y políticas de negocio}{23}{subsection.7.6}%
 \contentsline {subsection}{\numberline {7.7}Recursos e insumos}{23}{subsection.7.7}%
 \contentsline {section}{\numberline {8}Desarrollo y Resultados}{24}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Composición por rubro}{24}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Distribución por país}{25}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Distribución por plan}{25}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Proporción de planes por rubro}{26}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}Proporción de rubros por plan}{26}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}Promedio de mensualidad por rubro}{27}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Comparativa activos vs bloqueados por rubro}{27}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Comparativa activos vs bloqueados por plan}{28}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Actividad histórica de bloqueados y activos por rubro}{28}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}Actividad histórica de bloqueados y activos por plan}{29}{subsection.8.10}%
-\contentsline {subsection}{\numberline {8.11}EDA}{29}{subsection.8.11}%
-\contentsline {subsection}{\numberline {8.12}Distribución de \textit {tenure\_meses}}{29}{subsection.8.12}%
-\contentsline {subsection}{\numberline {8.13}Matriz de correlaciones}{30}{subsection.8.13}%
-\contentsline {section}{\numberline {9}Discusiones}{32}{section.9}%
-\contentsline {section}{\numberline {10}Conclusiones}{33}{section.10}%
-\contentsline {section}{Referencias}{34}{section.10}%
-\contentsline {section}{Anexo \numberline {A}Organigrama}{36}{appendix.1.Alph1}%
-\contentsline {section}{Anexo \numberline {B}Estados del cliente}{36}{appendix.1.Alph2}%
-\contentsline {subsection}{\numberline {B.1}}{37}{subsection.1.Alph2.1}%
-\contentsline {subsection}{\numberline {B.2}}{38}{subsection.1.Alph2.2}%
-\contentsline {subsection}{\numberline {B.3}}{39}{subsection.1.Alph2.3}%
-\contentsline {subsection}{\numberline {B.4}}{40}{subsection.1.Alph2.4}%
-\contentsline {subsection}{\numberline {B.5}}{41}{subsection.1.Alph2.5}%
-\contentsline {section}{Anexo \numberline {C}Indicadores del proceso}{43}{appendix.1.Alph3}%
-\contentsline {section}{Anexo \numberline {D}Tablas de Desarrollo}{44}{appendix.1.Alph4}%
-\contentsline {subsection}{\numberline {D.1}}{44}{subsection.1.Alph4.1}%
-\contentsline {subsection}{\numberline {D.2}}{44}{subsection.1.Alph4.2}%
-\contentsline {subsection}{\numberline {D.3}}{45}{subsection.1.Alph4.3}%
-\contentsline {subsection}{\numberline {D.4}}{45}{subsection.1.Alph4.4}%
-\contentsline {subsection}{\numberline {D.5}}{46}{subsection.1.Alph4.5}%
-\contentsline {subsection}{\numberline {D.6}}{46}{subsection.1.Alph4.6}%
+\contentsline {subsection}{\numberline {8.1}Fase 1: Comprensión del negocio}{24}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Contexto de Reservo y modelo de suscripción}{24}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Problema de gestión asociado a la baja de clientes}{24}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Definición del objetivo general y de los objetivos específicos}{24}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Indicadores de éxito y definición de entregables}{24}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Fase 2: Comprensión de los datos}{25}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}Inventario de fuentes y tablas principales}{25}{subsubsection.8.2.1}%
+\contentsline {subsubsection}{\numberline {8.2.2}Estructura y calidad de las tablas}{26}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.3}Calendario de cortes mensuales}{26}{subsubsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.4}Definiciones operativas de estados de cliente}{27}{subsubsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.3}Fase 3: Preparación de los datos}{27}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Diseño de la estructura del datamart mensual}{27}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.2}Construcción de variables de contexto, valor, uso y fricción}{28}{subsubsection.8.3.2}%
+\contentsline {subsubsection}{\numberline {8.3.3}Definición de la etiqueta de baja a horizonte mensual}{30}{subsubsection.8.3.3}%
+\contentsline {subsubsection}{\numberline {8.3.4}Tratamiento de valores faltantes y valores extremos}{30}{subsubsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.4}Fase 4: Modelado}{32}{subsection.8.4}%
+\contentsline {subsubsection}{\numberline {8.4.1}Selección del algoritmo y definición del problema de clasificación}{32}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Partición temporal y tamaño muestral para entrenamiento y calibración}{32}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.3}Implementación del flujo de preprocesamiento y del pipeline de modelado}{33}{subsubsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.4}Entrenamiento, calibración y elección del modelo final}{34}{subsubsection.8.4.4}%
+\contentsline {section}{\numberline {9}Antiguo desarrollo}{35}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Composición por rubro}{35}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Distribución por país}{36}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Distribución por plan}{36}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Proporción de planes por rubro}{37}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Proporción de rubros por plan}{37}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Promedio de mensualidad por rubro}{38}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Comparativa activos vs bloqueados por rubro}{38}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Comparativa activos vs bloqueados por plan}{39}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Actividad histórica de bloqueados y activos por rubro}{39}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Actividad histórica de bloqueados y activos por plan}{40}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}EDA}{40}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}Distribución de \textit {tenure\_meses}}{40}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}Matriz de correlaciones}{41}{subsection.9.13}%
+\contentsline {section}{\numberline {10}Discusiones}{43}{section.10}%
+\contentsline {section}{\numberline {11}Conclusiones}{44}{section.11}%
+\contentsline {section}{Referencias}{45}{section.11}%
+\contentsline {section}{Anexo \numberline {A}Organigrama}{47}{appendix.1.Alph1}%
+\contentsline {section}{Anexo \numberline {B}Estados del cliente}{47}{appendix.1.Alph2}%
+\contentsline {subsection}{\numberline {B.1}}{48}{subsection.1.Alph2.1}%
+\contentsline {subsection}{\numberline {B.2}}{49}{subsection.1.Alph2.2}%
+\contentsline {subsection}{\numberline {B.3}}{50}{subsection.1.Alph2.3}%
+\contentsline {subsection}{\numberline {B.4}}{51}{subsection.1.Alph2.4}%
+\contentsline {subsection}{\numberline {B.5}}{52}{subsection.1.Alph2.5}%
+\contentsline {section}{Anexo \numberline {C}Indicadores del proceso}{54}{appendix.1.Alph3}%
+\contentsline {section}{Anexo \numberline {D}Tablas de Desarrollo}{55}{appendix.1.Alph4}%
+\contentsline {subsection}{\numberline {D.1}}{55}{subsection.1.Alph4.1}%
+\contentsline {subsection}{\numberline {D.2}}{55}{subsection.1.Alph4.2}%
+\contentsline {subsection}{\numberline {D.3}}{56}{subsection.1.Alph4.3}%
+\contentsline {subsection}{\numberline {D.4}}{56}{subsection.1.Alph4.4}%
+\contentsline {subsection}{\numberline {D.5}}{57}{subsection.1.Alph4.5}%
+\contentsline {subsection}{\numberline {D.6}}{57}{subsection.1.Alph4.6}%

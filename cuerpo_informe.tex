@@ -381,8 +381,6 @@ Como marco alternativo se considera el proceso de descubrimiento de conocimiento
 
 La decisión de adoptar CRISP-DM por sobre KDD responde a la naturaleza del problema y a las necesidades de gestión de la empresa. En un contexto de CRM orientado a valor, donde el objetivo es apoyar decisiones de retención y expansión en un equipo específico, resulta clave contar con un marco que otorgue un espacio explícito a la comprensión del negocio, a la definición de criterios de éxito y al despliegue operativo de los resultados. CRISP-DM ofrece una estructura más detallada en estas fases, lo que facilita la alineación con los objetivos de gestión de clientes, la comunicación con usuarios de negocio y la planificación de cómo se usarán los modelos en ciclos recurrentes. KDD aporta una visión sólida sobre las tareas de minería de datos, pero presenta un menor énfasis en la conexión sistemática con el negocio y en la etapa de despliegue, por lo que se considera menos adecuado como guía principal para un proyecto cuyo foco está en integrar la analítica en la operación de Customer Success y en la gestión de clientes de una empresa de servicios como Reservo \citep{Chapman2000,Kumar2010}.
 
-
-
 \newpage
 
 \section{Metodología}
@@ -455,6 +453,8 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
     \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
 \end{itemize}
 
+
+
 \subsection{Recursos e insumos}
 
 La metodología requiere el uso coordinado de recursos de datos, herramientas tecnológicas y conocimiento de negocio.
@@ -469,6 +469,212 @@ La metodología requiere el uso coordinado de recursos de datos, herramientas te
 
 
 \section{Desarrollo y Resultados}
+
+\subsection{Fase 1: Comprensión del negocio}
+
+\subsubsection{Contexto de Reservo y modelo de suscripción}
+
+En la primera tarea se levantó el contexto del negocio de Reservo y su modelo de suscripción. Se revisaron los planes de servicio disponibles, los principales rubros atendidos y la presencia geográfica de la cartera. A partir de esta revisión se confirmó que la empresa opera como proveedor de software como servicio para profesionales y centros de salud pequeños y medianos en Chile, Argentina, Colombia y México, con una cartera cercana a 3.500 clientes activos distribuidos en cuatro planes de precio mensual. También se describió el rol de los equipos de Customer Success y Post-venta en la relación continua con los clientes, identificando sus responsabilidades en soporte, acompañamiento y retención.
+
+\subsubsection{Problema de gestión asociado a la baja de clientes}
+
+La segunda tarea consistió en clarificar el problema de gestión que motiva el proyecto. Se analizó el flujo completo del cliente desde la captación hasta la baja, distinguiendo las etapas de adquisición, venta, onboarding, cliente activo y cliente inactivo. Con apoyo de los diagramas de proceso incluidos en los anexos se describió cómo se produce hoy la baja y qué señales previas suelen aparecer. A partir de las métricas internas se constató una tasa de bajas mensuales cercana al 2,5 por ciento, un crecimiento moderado de las expansiones y esfuerzos de postventa concentrados en reaccionar cuando el cliente ya está cerca de abandonar. Este análisis llevó a formular el problema central como una falta de caracterización y segmentación conductual de la cartera activa, que impide diferenciar el trato según riesgo y potencial económico.
+
+\subsubsection{Definición del objetivo general y de los objetivos específicos}
+
+En la tercera tarea se tradujo el diagnóstico anterior en objetivos formales para el proyecto. Se definió un objetivo general orientado a diseñar y validar un modelo analítico que permita estimar el riesgo de baja a nivel de cliente y apoyar decisiones de retención y expansión. A partir de este objetivo se derivaron objetivos específicos relacionados con la identificación de variables de comportamiento relevantes, la construcción de un datamart estructurado, la definición de segmentos de clientes según riesgo y valor, el diseño de un portafolio de políticas comerciales diferenciadas y la implementación de un prototipo operativo que acerque el modelo al trabajo diario de Customer Success. Cada objetivo se vinculó explícitamente con una causa del problema de postventa identificada en la etapa anterior.
+
+\subsubsection{Indicadores de éxito y definición de entregables}
+
+La cuarta tarea se enfocó en definir cómo se medirá el éxito del proyecto y en acordar los entregables principales con la empresa. Se establecieron indicadores para la calidad del modelo, como su capacidad para distinguir entre clientes que se dan de baja y aquellos que se mantienen, y para la cobertura del datamart sobre la cartera activa. También se definieron métricas de focalización, como la concentración de bajas en el grupo de clientes con mayor riesgo estimado, y criterios de adopción del prototipo, como la capacidad del equipo de Customer Success para ejecutar el flujo de uso sin apoyo del estudiante. Finalmente se acordaron los entregables clave: el datamart mensual documentado, el modelo de riesgo ajustado, la propuesta de segmentación conductual, el portafolio de políticas comerciales asociado y la carpeta de uso con tutoriales y materiales de traspaso para los equipos internos.
+
+\subsection{Fase 2: Comprensión de los datos}
+
+\subsubsection{Inventario de fuentes y tablas principales}
+
+La comprensión de los datos comenzó con un inventario detallado de las tablas operacionales que contienen la información necesaria sobre los clientes, su uso de la plataforma y su contexto comercial. Se identificó como tabla central a \texttt{cliente\_\hspace{0pt}cliente}, que almacena la ficha maestra de cada cuenta. En esta tabla se revisaron las columnas \texttt{id} (identificador único del cliente), \texttt{fecha\_\hspace{0pt}creacion} (fecha de alta), \texttt{demo} (indicador de cuenta demo), \texttt{cuenta\_\hspace{0pt}lista} (indica si la cuenta se considera válida para análisis), \texttt{pais} (país del cliente), \texttt{mensualidad} (monto mensual asociado) y \texttt{plan\_\hspace{0pt}reservo\_\hspace{0pt}id} (referencia al plan contratado). Estas columnas se reconocen como la base para definir el universo de clientes reales, su localización y una primera aproximación a su aporte económico.
+
+Para reconstruir la historia de estados de cada cliente se consideró la tabla \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente}, que registra cada evento administrativo relevante. En ella se analizaron las columnas \texttt{cliente\_\hspace{0pt}id}, \texttt{fecha} y \texttt{tipo}, donde el tipo puede tomar valores como \texttt{'Baja'}, \texttt{'Bloqueo'} o \texttt{'Desbloqueo'}. Esta tabla se identificó como la fuente principal para entender en qué momento un cliente pasa de activo a inactivo, cuándo sufre bloqueos y cuándo se revierten decisiones anteriores.
+
+El uso de la plataforma se estudió a partir de dos tablas relacionadas: \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. La primera contiene las citas agendadas en el sistema, con columnas como \texttt{id} y \texttt{fecha}. La segunda permite asociar cada cita a un cliente mediante la relación \texttt{appointment\_\hspace{0pt}ticket.ofertante\_\hspace{0pt}id} → \texttt{cliente\_\hspace{0pt}servicio.id} → \texttt{cliente\_\hspace{0pt}servicio.cliente\_\hspace{0pt}id}. De esta forma se identificó el camino que permite pasar desde un registro de cita a la cuenta que efectivamente usa la plataforma.
+
+Para el contexto comercial se consideraron las tablas \texttt{cliente\_\hspace{0pt}planreservo} y \texttt{cliente\_\hspace{0pt}rubro}. En \texttt{cliente\_\hspace{0pt}planreservo} se revisaron las columnas \texttt{id}, \texttt{nombre} y \texttt{rubro\_\hspace{0pt}id}, que describen los planes comerciales ofrecidos y su asociación a rubros. En \texttt{cliente\_\hspace{0pt}rubro} se revisaron las columnas \texttt{id} y \texttt{nombre}, que entregan la clasificación sectorial del cliente. Además se consideró la tabla \texttt{Fichas\_\hspace{0pt}registroaccesoficha}, que registra accesos a fichas clínicas con columnas como \texttt{cliente\_\hspace{0pt}id} y \texttt{fecha}, y tablas de extras como \texttt{ReservoInterno\_\hspace{0pt}clientesextras} y \texttt{ReservoInterno\_\hspace{0pt}extras}, que permiten identificar contrataciones adicionales. Con este inventario se definió un conjunto de tablas que cubren identidad, valor, uso básico, uso avanzado y contexto de los clientes.
+
+\subsubsection{Estructura y calidad de las tablas}
+
+Una vez identificado el conjunto de tablas principales se analizó su estructura y calidad. En \texttt{cliente\_\hspace{0pt}cliente} se comprobó que \texttt{id} es único por registro y que los campos \texttt{demo} y \texttt{cuenta\_\hspace{0pt}lista} permiten separar las cuentas internas o de prueba de las cuentas que forman parte de la cartera comercial. Se revisó la distribución de \texttt{pais}, distinguiendo los principales mercados en que opera Reservo, y se examinó la columna \texttt{mensualidad}, donde se observaron casos con valores cero o nulos que corresponden a situaciones especiales, como promociones o ajustes. Estos casos se dejaron documentados porque afectan la calidad de las variables de valor económico.
+
+En la tabla \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} se verificó que cada fila representa un evento con fecha asociada para un \texttt{cliente\_\hspace{0pt}id} determinado. Se revisó la coherencia temporal de las secuencias de \texttt{tipo}, observando patrones con múltiples \texttt{'Bloqueo'} y \texttt{'Desbloqueo'} para un mismo cliente. También se identificaron casos de \texttt{'Baja'} seguidos de \texttt{'Desbloqueo'}, lo que sugiere que no todas las bajas registradas corresponden a salidas definitivas. Estas observaciones motivaron la necesidad de definir reglas claras para distinguir entre bajas efectivas y bajas revertidas.
+
+En las tablas de uso, \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}, se revisó la consistencia de la relación entre citas y clientes. Se comprobó que la cadena de llaves permite asignar cada cita a un \texttt{cliente\_\hspace{0pt}id} y se analizó la distribución temporal de \texttt{fecha} en las citas. Se detectaron periodos con alta concentración de actividad, coherentes con la expansión de la base, y también clientes con muy pocas citas, que actúan como posibles candidatos a patrones de bajo uso. En \texttt{cliente\_\hspace{0pt}planreservo} y \texttt{cliente\_\hspace{0pt}rubro} se revisó que las llaves \texttt{id} sean consistentes y que los nombres de planes y rubros reflejen las categorías comerciales vigentes. Se observó que algunos clientes no tienen rubro explícito o no están asociados a un plan estándar, lo que se registró como potencial fuente de datos faltantes en las variables de contexto. En las tablas de extras y de registros de fichas se constató una fuerte concentración en un subconjunto de clientes, lo que indica que estas fuentes entregan información valiosa sobre uso avanzado pero no están presentes en toda la cartera.
+
+\subsubsection{Calendario de cortes mensuales}
+
+Además de revisar tablas y columnas, la fase de comprensión de datos incluyó la decisión de trabajar con un esquema de cortes mensuales. La idea central es observar a los clientes en fechas de referencia regulares y reconstruir, para cada mes, su estado y su comportamiento reciente. Conceptualmente se definió un rango de meses de análisis y se estableció que cada mes calendario tendría un corte asociado, cercano al inicio del mes. En torno a cada corte se acordó la necesidad de disponer de historia suficiente hacia atrás para medir uso de la plataforma y eventos de fricción, por ejemplo ventanas de noventa días para contar citas o bloqueos.
+
+Este calendario mensual se concibió como eje temporal común para todas las vistas posteriores. En cada mes de corte se buscará responder preguntas como cuántos clientes están activos, cuánto utilizan el sistema, qué planes tienen contratados y qué eventos de cambio de estado presentan. También a partir de este calendario se definirá, en fases posteriores, cómo se calcula la ocurrencia de una baja en el mes siguiente al corte. La fase de comprensión de datos se centró en justificar este enfoque a nivel conceptual y en asegurar que la historia disponible en las tablas operacionales es suficiente para sostenerlo.
+
+\subsubsection{Definiciones operativas de estados de cliente}
+
+Finalmente se avanzó en la definición operativa de los estados de cliente que se utilizarán a lo largo del proyecto. A partir de \texttt{cliente\_\hspace{0pt}cliente} se acordó que el universo de análisis estará compuesto por los registros con \texttt{demo = 0}, \texttt{cuenta\_\hspace{0pt}lista = 1} y \texttt{fecha\_\hspace{0pt}creacion} válida, lo que excluye cuentas de prueba y registros internos. Sobre este universo se propuso una definición de cliente activo en un mes de referencia basada en la ausencia de bajas efectivas vigentes antes del corte. En términos prácticos, si un cliente no presenta ninguna baja registrada antes del corte, o si toda baja anterior fue seguida por un evento que la revierte, se considera que el cliente está activo en ese mes.
+
+En relación con la baja, se distinguió entre bajas registradas y bajas efectivas. Se definió baja registrada como cualquier evento de tipo \texttt{'Baja'} en \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente}. Para que una baja se considere efectiva se requiere que no exista, en un plazo razonable posterior, un evento de tipo \texttt{'Desbloqueo'} que indique reversión. Cuando una baja va seguida de un desbloqueo rápido, se interpreta como una interrupción temporal o como una corrección administrativa y no como una pérdida real de cliente. Esta distinción es clave, porque las tasas de baja que se usarán más adelante deben reflejar salidas definitivas.
+
+También se acordó una interpretación operacional de otros estados. El tramo de onboarding se asocia a los primeros meses a partir de \texttt{fecha\_\hspace{0pt}creacion} o de la primera facturación, y se consideró relevante para analizar comportamientos de clientes nuevos y su probabilidad de estabilizarse como activos. El estado de bloqueado se vincula a eventos de tipo \texttt{'Bloqueo'} y se entiende como una señal de fricción que puede preceder a una baja efectiva. Por último se documentaron criterios de inclusión y exclusión de casos especiales, como cuentas sin país definido, clientes con historia muy corta o planes atípicos. Estas definiciones no construyen aún las variables del modelo, pero fijan el marco conceptual que se utilizará en la fase siguiente para preparar el datamart y las etiquetas de baja.
+
+\subsection{Fase 3: Preparación de los datos}
+
+En esta fase se construye el datamart analítico a nivel cliente–mes y se generan las variables que alimentan la matriz de características. El trabajo se organiza en cuatro tareas: diseño del panel mensual, cálculo de variables de contexto, valor, uso y fricción, definición de la etiqueta de baja a horizonte mensual y tratamiento de valores faltantes y extremos.
+
+\subsubsection{Diseño de la estructura del datamart mensual}
+
+La preparación de los datos se basa en un script SQL principal que genera un panel con granularidad cliente por mes de corte, donde cada fila corresponde a una combinación \texttt{id\_\hspace{0pt}cliente} × \texttt{mes\_\hspace{0pt}corte}. El rango temporal se define mediante parámetros de inicio y fin:
+
+\begin{itemize}
+    \item \texttt{@inicio}: primer día del primer mes analizado.
+    \item \texttt{@fin}: primer día del último mes analizado.
+    \item \texttt{@hist\_\hspace{0pt}inicio}: fecha mínima para cambios de estado, definida como \texttt{@inicio} menos 90 días.
+    \item \texttt{@inicio\_\hspace{0pt}buf}: fecha mínima para uso de plataforma, también 90 días antes de \texttt{@inicio}.
+    \item \texttt{@fin\_\hspace{0pt}mas1}: fecha máxima para cambios de estado, extendida dos meses más allá de \texttt{@fin} para cubrir la etiqueta a horizonte T+1.
+\end{itemize}
+
+Con estos parámetros se construye un calendario de cortes mensuales mediante un CTE recursivo que genera una fila por cada fecha de corte entre \texttt{@inicio} y \texttt{@fin}. En paralelo se define el conjunto de clientes candidatos a partir de la tabla \texttt{cliente\_\hspace{0pt}cliente}. En este paso se filtran solo los clientes reales y válidos, usando las condiciones \texttt{demo = 0}, \texttt{cuenta\_\hspace{0pt}lista = 1} y \texttt{fecha\_\hspace{0pt}creacion} no nula. El resultado contiene las columnas \texttt{id\_\hspace{0pt}cliente} y \texttt{alta}, que corresponden al identificador del cliente y a su fecha de alta.
+
+Luego se extrae el historial de cambios de estado desde la tabla \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente}. Este paso selecciona los registros para los clientes definidos como candidatos dentro de la ventana temporal acotada por \texttt{@hist\_\hspace{0pt}inicio} y \texttt{@fin\_\hspace{0pt}mas1}. Cada fila contiene \texttt{id\_\hspace{0pt}cliente}, \texttt{fecha\_\hspace{0pt}cambio} y \texttt{tipo\_\hspace{0pt}cambio}, donde el tipo incluye eventos como \texttt{'Baja'}, \texttt{'Bloqueo'} o \texttt{'Desbloqueo'}.
+
+A partir del calendario de cortes y de los candidatos se genera una base intermedia que combina \texttt{mes\_\hspace{0pt}corte} e \texttt{id\_\hspace{0pt}cliente} solo cuando existe historia previa de cambios de estado para ese cliente. Sobre esta base se determina si un cliente está activo en un corte dado. Para cada combinación se busca la última fecha de cambio con \texttt{tipo\_\hspace{0pt}cambio = 'Baja'} anterior al corte. Si no existe baja previa, el cliente se considera activo. Si existe, se revisa si hay un evento de tipo \texttt{'Desbloqueo'} entre la fecha de baja y el corte. Si se encuentra un desbloqueo en ese intervalo, la baja se considera revertida y el cliente se mantiene activo; si no se encuentra, la baja se interpreta como vigente y el cliente se excluye del conjunto de activos en ese corte.
+
+Los pasos posteriores reutilizan esta estructura para incorporar información de uso, fricción, contexto y etiqueta. El cálculo de uso se basa en las tablas \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}; la fricción se resume a partir de los cambios de estado administrativos, y el contexto se obtiene desde \texttt{cliente\_\hspace{0pt}cliente}, \texttt{cliente\_\hspace{0pt}planreservo} y \texttt{cliente\_\hspace{0pt}rubro}. La consulta final combina estas vistas mediante uniones por \texttt{mes\_\hspace{0pt}corte} e \texttt{id\_\hspace{0pt}cliente} y produce el panel mensual que alimenta la matriz de características.
+
+\subsubsection{Construcción de variables de contexto, valor, uso y fricción}
+
+La segunda tarea consiste en definir las variables que describen a cada cliente en cada mes de corte. Estas variables se calculan en el script principal y se detallan en el documento de variables del datamart. El panel resultante contiene once columnas principales: \texttt{id\_\hspace{0pt}cliente}, \texttt{mes\_\hspace{0pt}corte}, \texttt{pais}, \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre}, \texttt{arpa\_\hspace{0pt}proxy}, \texttt{tenure\_\hspace{0pt}meses}, \texttt{citas\_\hspace{0pt}30d}, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, \texttt{bloqueos\_\hspace{0pt}90d} y \texttt{churn\_\hspace{0pt}T1}.
+
+Las variables de identificación y calendario son:
+
+\begin{itemize}
+    \item \texttt{id\_\hspace{0pt}cliente}: identificador único del cliente, tomado desde \texttt{cliente\_\hspace{0pt}cliente.id}.
+    \item \texttt{mes\_\hspace{0pt}corte}: primer día del mes de referencia.
+\end{itemize}
+
+Las variables de contexto se derivan de la información comercial:
+
+\begin{itemize}
+    \item \texttt{pais}: país del cliente, proveniente de \texttt{cliente\_\hspace{0pt}cliente.pais}.
+    \item \texttt{plan\_\hspace{0pt}nombre}: nombre del plan vigente, obtenido mediante la relación \texttt{cliente\_\hspace{0pt}cliente.plan\_\hspace{0pt}reservo\_\hspace{0pt}id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}planreservo.id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}planreservo.nombre}.
+    \item \texttt{rubro}: rubro asociado al plan, calculado como \texttt{cliente\_\hspace{0pt}planreservo.rubro\_\hspace{0pt}id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}rubro.id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}rubro.nombre}.
+\end{itemize}
+
+Las variables de valor económico son:
+
+\begin{itemize}
+    \item \texttt{arpa\_\hspace{0pt}proxy}: aproximación del ingreso mensual por cliente. Se toma desde \texttt{cliente\_\hspace{0pt}cliente.mensualidad} y se reemplazan los valores cero por nulos mediante \texttt{NULLIF(mensualidad, 0)} para evitar confundir promociones o ajustes con ingresos reales.
+    \item \texttt{tenure\_\hspace{0pt}meses}: antigüedad del cliente al mes de corte, medida en meses, calculada con \texttt{TIMESTAMPDIFF(MONTH, fecha\_\hspace{0pt}creacion, mes\_\hspace{0pt}corte)}.
+\end{itemize}
+
+Las variables de uso reciente de la plataforma se obtienen a partir de las tablas \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. Primero se agrupa el uso diario por cliente, y luego se calculan:
+
+\begin{itemize}
+    \item \texttt{citas\_\hspace{0pt}30d}: número de citas en los 30 días previos al corte. Para cada combinación \texttt{mes\_\hspace{0pt}corte}, \texttt{id\_\hspace{0pt}cliente} se suman las citas diarias en el intervalo de 30 días anteriores. Si no hay registros de uso en esa ventana, el resultado se define como cero.
+    \item \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}: días desde la última cita registrada antes del corte. Se calcula como la diferencia entre \texttt{mes\_\hspace{0pt}corte} y la máxima fecha de uso en los 90 días anteriores. Si no hubo uso en los 90 días previos, el valor queda nulo en esta etapa.
+\end{itemize}
+
+La fricción reciente se resume a partir de los cambios de estado administrativos:
+
+\begin{itemize}
+    \item \texttt{bloqueos\_\hspace{0pt}90d}: número de bloqueos en los 90 días previos al corte. Para cada cliente activo y corte se cuentan los eventos con \texttt{tipo\_\hspace{0pt}cambio = 'Bloqueo'} en la ventana de 90 días anteriores; si no existen bloqueos en ese periodo, se asigna cero.
+\end{itemize}
+
+La combinación de estas variables permite describir, para cada cliente y mes, su contexto comercial, su aporte económico aproximado, su nivel de uso reciente y sus eventos de fricción, manteniendo una estructura mensual uniforme.
+
+\subsubsection{Definición de la etiqueta de baja a horizonte mensual}
+
+La tercera tarea consiste en definir la etiqueta binaria que se usará como resultado en el modelamiento. Esta etiqueta, llamada \texttt{churn\_\hspace{0pt}T1}, indica si un cliente activo en un corte determinado presenta una baja efectiva en el mes siguiente.
+
+El cálculo se apoya en dos pasos conceptuales. Primero se identifican las bajas registradas en el mes siguiente a cada corte. Para cada cliente se revisan los eventos de tipo \texttt{'Baja'} en \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} cuya fecha cae entre \texttt{mes\_\hspace{0pt}corte} y el mismo día del mes siguiente. Si hay varias bajas en el periodo, se toma la primera fecha de baja del mes.
+
+En segundo lugar se distingue entre bajas registradas y bajas efectivas. Para cada baja registrada se verifica si existe un evento de tipo \texttt{'Desbloqueo'} para el mismo cliente con fecha posterior a la baja y anterior al término del mes. Si existe un desbloqueo en esa ventana, la baja se considera revertida y se descarta a efectos de la etiqueta. Si no existe, la baja se clasifica como efectiva.
+
+Con esta definición se construye la etiqueta \texttt{churn\_\hspace{0pt}T1}. Para cada cliente activo en un corte dado se pregunta si en el mes siguiente existe una baja efectiva según la regla anterior. Si la respuesta es afirmativa, \texttt{churn\_\hspace{0pt}T1} toma valor 1; en caso contrario, toma valor 0. Esta construcción asegura que todas las variables explicativas de un registro usan solo información observada hasta el mes de corte, mientras que el resultado se define con lo que ocurre en el mes siguiente, evitando fuga temporal.
+
+\subsubsection{Tratamiento de valores faltantes y valores extremos}
+
+La última tarea de la fase revisa la calidad del panel resultante y aplica transformaciones basadas en el análisis exploratorio de datos. El análisis mostró que las variables numéricas presentan distribuciones asimétricas y algunas tienen colas largas con valores extremos. También se detectaron proporciones moderadas de valores nulos en ciertas columnas.
+
+En cuanto a valores faltantes, la variable \texttt{rubro} presenta una fracción de nulos, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} muestra ausencia de datos para clientes sin uso reciente, \texttt{arpa\_\hspace{0pt}proxy} tiene algunos casos sin mensualidad válida y \texttt{plan\_\hspace{0pt}nombre} presenta un número menor de registros sin plan asociado. Para las variables categóricas \texttt{pais}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{rubro} se acordó imputar una categoría explícita que represente valor desconocido, de modo que la ausencia de información quede registrada y no se pierdan filas. Para \texttt{arpa\_\hspace{0pt}proxy} se definió imputar a una mediana coherente con el plan del cliente cuando se dispone de esa información, o a la mediana global cuando no es posible, y se creó un indicador binario que marca los casos imputados. En \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, los nulos corresponden a clientes sin uso en los últimos 90 días; en estos casos se decidió imputar el valor máximo operativo de la ventana, igual a 90 días, y mantener un indicador que señala la ausencia total de uso reciente.
+
+Respecto de los valores extremos, la variable \texttt{arpa\_\hspace{0pt}proxy} muestra una distribución con cola larga hacia la derecha, con pocos clientes que alcanzan valores muy superiores al resto. Para evitar que estos casos dominen los análisis se definió un recorte en percentiles altos y luego se aplicó una transformación logarítmica de tipo
+\[
+\log\bigl(1 + \texttt{arpa\_\hspace{0pt}proxy}\bigr),
+\]
+que comprime la cola y estabiliza la variabilidad. Se mantiene además un indicador que señala si el valor original fue recortado.
+
+La variable \texttt{tenure\_\hspace{0pt}meses} también presenta una cola larga, con clientes que superan varios años de antigüedad, mientras que la mayoría se concentra bajo los dos años. El análisis mostró que el riesgo de baja es alto en los primeros meses y disminuye de forma no lineal a medida que avanza la antigüedad. Por esta razón se capó \texttt{tenure\_\hspace{0pt}meses} en un percentil alto y se definieron bandas ordinales que representan tramos de antigüedad, además de considerar una transformación de raíz cuadrada sobre la versión continua capada, con el objetivo de suavizar diferencias extremas entre clientes muy antiguos y clientes de antigüedad media.
+
+La variable de uso \texttt{citas\_\hspace{0pt}30d} se caracteriza por una asimetría marcada, con muchos clientes en niveles bajos de actividad y un grupo reducido con cientos o miles de citas mensuales. Para hacer manejable esta distribución se aplicó un recorte en el percentil alto, seguido de la transformación
+\[
+\log\bigl(1 + \texttt{citas\_\hspace{0pt}30d}\bigr).
+\]
+Además se construyeron indicadores que reflejan situaciones relevantes para la gestión, como actividad muy baja o casos en los que el valor fue recortado por exceso.
+
+La variable \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} mostró una relación fuerte con la probabilidad de baja: clientes con pocos días desde la última cita presentan una tasa de baja muy baja, mientras que clientes con más días sin uso acumulan tasas de baja mucho mayores. Para capturar esta estructura se decidió capar la recencia en 90 días, imputar nulos a ese mismo valor y crear varias representaciones derivadas. Se definieron bandas operativas que permiten identificar umbrales naturales para alertas y se calculó un puntaje continuo de frescura del tipo
+\[
+\texttt{fresh} = \frac{1}{1 + \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}},
+\]
+que asigna mayor valor a clientes con uso muy reciente y valores cercanos a cero a clientes inactivos.
+
+En cuanto a la fricción, la variable \texttt{bloqueos\_\hspace{0pt}90d} presenta una fuerte inflación de ceros: la mayoría de los clientes no registra bloqueos en los últimos 90 días, mientras que un grupo pequeño acumula uno o más eventos. El análisis mostró que el salto de riesgo más marcado se produce al pasar de uno a dos bloqueos recientes. Por ello se decidió tratar esta variable como un conteo discreto pequeño, capando el número de bloqueos en un máximo de tres y generando indicadores que marcan la presencia de al menos un bloqueo y la presencia de dos o más bloqueos. Esta representación permite capturar el efecto umbral de la fricción sin introducir transformaciones continuas de difícil interpretación.
+
+Finalmente se revisó que todas las transformaciones respetaran el principio temporal del panel. Las imputaciones, recortes, bandas y variables derivadas se definen usando solo información disponible hasta \texttt{mes\_\hspace{0pt}corte} y no utilizan la etiqueta \texttt{churn\_\hspace{0pt}T1}. De este modo, la matriz de características resultante queda en un formato adecuado para su uso en las fases de modelado, sin fuga de información y con reglas de tratamiento documentadas que pueden reproducirse en futuros cortes mensuales.
+
+\subsection{Fase 4: Modelado}
+
+En esta fase se construyen y se ajustan los modelos que estiman el riesgo de baja mensual y que sirven de base para la segmentación conductual. El trabajo se organiza en cuatro tareas: selección del algoritmo de clasificación, definición del esquema de partición temporal y tamaño muestral, implementación del flujo de preprocesamiento en un pipeline reproducible y entrenamiento con calibración de probabilidades.
+
+\subsubsection{Selección del algoritmo y definición del problema de clasificación}
+
+El problema de modelamiento se formula como una clasificación binaria con horizonte mensual. Para cada fila del panel cliente–mes se busca estimar la probabilidad de que el cliente, estando activo en el mes de corte, presente una baja efectiva en el mes siguiente. La variable objetivo es la etiqueta construida en la fase anterior, denominada \texttt{churn\_\hspace{0pt}T1}, que toma valor 1 cuando ocurre una baja efectiva en el mes siguiente y 0 en caso contrario.
+
+Se elige como algoritmo principal una regresión logística binaria con regularización. Esta familia de modelos resulta adecuada por varias razones. Permite trabajar con variables numéricas transformadas y variables categóricas codificadas mediante indicadores, mantiene una relación lineal en el espacio de los logaritmos de las razones de probabilidad y entrega de manera directa una probabilidad entre 0 y 1 para cada observación. La forma funcional simple facilita la interpretación de los coeficientes y la identificación de direcciones de efecto de cada grupo de variables, lo que es relevante para un proyecto orientado a decisiones de gestión y no solo a predicción.
+
+La regresión logística se implementa con regularización de tipo L2 para controlar la complejidad del modelo y reducir el riesgo de sobreajuste, especialmente en presencia de variables derivadas y dummies. El modelo incluye la opción de ponderar las clases mediante el parámetro \texttt{class\_\hspace{0pt}weight='balanced'}, que ajusta automáticamente los pesos de la clase minoritaria y de la clase mayoritaria en función de la prevalencia observada de bajas. De esta forma se busca que el algoritmo no ignore los eventos de churn pese a que representan una proporción pequeña del total de observaciones.
+
+Otros algoritmos más complejos, como métodos de ensamble basados en árboles de decisión, se consideran como alternativas posibles para una etapa futura, pero no se adoptan en esta versión del prototipo. La prioridad es contar con un modelo interpretable, estable y fácil de explicar a las áreas de negocio, con un desempeño suficiente para ordenar a los clientes según su riesgo y servir como base para políticas comerciales diferenciadas.
+
+\subsubsection{Partición temporal y tamaño muestral para entrenamiento y calibración}
+
+La construcción del modelo se realiza respetando la estructura temporal de la información. El panel cliente–mes generado en la fase anterior contiene 43\,965 observaciones y 1\,073 eventos de baja, con una prevalencia global cercana a 2{,}44\,\%, coherente con el análisis exploratorio. Sobre esta base se define una partición en tres conjuntos: entrenamiento, desarrollo para calibración y prueba final.
+
+El conjunto de entrenamiento agrupa 19\,485 observaciones, con cerca de 497 eventos de baja y una tasa en torno a 2{,}55\,\%. El conjunto de desarrollo o calibración incluye 7\,821 observaciones, con aproximadamente 186 eventos y una tasa de 2{,}38\,\%. El conjunto de prueba contiene 16\,659 observaciones y alrededor de 390 eventos, con una tasa de 2{,}34\,\%. Los cortes temporales se fijan de manera que el entrenamiento utilice meses anteriores, el desarrollo considere los meses inmediatamente previos al periodo de prueba y el conjunto de prueba represente meses recientes, simulando el uso futuro del modelo.
+
+El modelo utiliza ocho fuentes principales de información: \texttt{arpa\_\hspace{0pt}proxy}, \texttt{citas\_\hspace{0pt}30d}, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, \texttt{bloqueos\_\hspace{0pt}90d}, \texttt{tenure\_\hspace{0pt}meses}, \texttt{plan\_\hspace{0pt}nombre}, \texttt{pais} y \texttt{rubro}. Después de las transformaciones definidas en la fase de preparación, cada una de estas fuentes se descompone en varias columnas derivadas, por ejemplo banderas de nulo y de capeo, transformaciones continuas y categorías codificadas. El número total de grados de libertad efectivos del modelo se estima en torno a 35 si se consideran solo las variables numéricas y el plan, y puede llegar a valores entre 41 y 46 cuando se agregan las dummies de país y rubro con categorías agrupadas.
+
+Con estos tamaños de muestra y esta complejidad efectiva se evalúan las condiciones de estabilidad del modelo mediante el criterio de eventos por variable. En el conjunto de entrenamiento, con cerca de 497 eventos de baja, se obtiene un cociente cercano a 62 eventos por cada una de las ocho fuentes de información y alrededor de 14 eventos por grado de libertad cuando se consideran los 35 parámetros efectivos. Incluso en escenarios con más dummies de país y rubro el cociente se mantiene cercano o por sobre 10 eventos por grado de libertad, que es un umbral habitual para la regresión logística en contextos de baja prevalencia. Esta revisión respalda que el tamaño de muestra disponible es suficiente para estimar un modelo estable con la estructura elegida.
+
+\subsubsection{Implementación del flujo de preprocesamiento y del pipeline de modelado}
+
+Las transformaciones definidas en la fase de preparación se encapsulan en un pipeline de modelado que integra, en un mismo flujo, el preprocesamiento y la regresión logística. Este enfoque garantiza que todas las operaciones sobre las variables se ajusten solo con datos de entrenamiento y se apliquen luego de forma idéntica en desarrollo, prueba y producción.
+
+El pipeline se organiza en dos bloques principales. El primero corresponde a un conjunto de transformadores específicos por variable para las columnas numéricas. Entre ellos se encuentran componentes para \texttt{arpa\_\hspace{0pt}proxy}, \texttt{citas\_\hspace{0pt}30d}, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, \texttt{bloqueos\_\hspace{0pt}90d} y \texttt{tenure\_\hspace{0pt}meses}. Cada transformador aplica las reglas descritas en la fase anterior: imputación de valores faltantes, capeo en percentiles altos, creación de indicadores de nulo y de valor capado, cálculo de transformaciones continuas como logaritmos o raíces cuadradas y construcción de bandas ordinales cuando corresponde. Las salidas numéricas se escalan luego con un esquema robusto basado en mediana y rango intercuartílico para reducir la influencia de valores extremos.
+
+El segundo bloque agrupa las variables categóricas \texttt{plan\_\hspace{0pt}nombre}, \texttt{pais} y \texttt{rubro}. Estas columnas se tratan mediante codificación one hot, después de aplicar reglas simples de agrupación de categorías poco frecuentes. De esta manera el modelo recibe un conjunto acotado de dummies que representan los planes principales, los países con presencia relevante y los rubros más frecuentes en la cartera, manteniendo un equilibrio entre granularidad y estabilidad de las estimaciones.
+
+Sobre estos bloques se construye un objeto de transformación conjunto que se aplica a la matriz de entrada. El resultado es una matriz numérica que reúne todas las variables derivadas en un formato adecuado para la regresión logística. El listado de columnas de entrada se mantiene en un arreglo denominado \texttt{\_DEFAULT\_\hspace{0pt}FEATURES}, que asegura que el mismo conjunto de variables se utilice en todas las etapas del proyecto. Antes de cada ajuste o \textit{scoring} se verifican las columnas presentes en los datos mediante una función de chequeo, lo que permite detectar de manera temprana cualquier diferencia entre la base histórica y las bases que se utilicen en el futuro.
+
+\subsubsection{Entrenamiento, calibración y elección del modelo final}
+
+Una vez definidos el algoritmo, la partición temporal y el pipeline de transformaciones, se procede al entrenamiento del modelo. Primero se separa el conjunto de entrenamiento en matrices de entrada y salida mediante las columnas \texttt{\_DEFAULT\_\hspace{0pt}FEATURES} y \texttt{churn\_\hspace{0pt}T1}. Luego se ajusta el pipeline completo sobre estos datos, de modo que en una sola instrucción se aprenden los parámetros de imputación, capeo, escalado, codificación de categorías y la regresión logística con regularización y ponderación de clases.
+
+Después del ajuste inicial se realizan evaluaciones preliminares en el conjunto de prueba sin calibración adicional. Estas evaluaciones se basan en métricas habituales para problemas de baja prevalencia, como el área bajo la curva ROC y el área bajo la curva de precisión contra recall, además de medidas de concentración de eventos en los deciles de mayor probabilidad. El objetivo de esta etapa es verificar que la combinación de variables y transformaciones entrega una capacidad razonable para ordenar a los clientes desde menor a mayor riesgo de baja.
+
+El siguiente paso corresponde a la calibración de probabilidades. El pipeline ajustado en entrenamiento se envuelve en un esquema de calibración fuera de muestra utilizando el conjunto de desarrollo. Se emplea un clasificador calibrado que mantiene fijos los parámetros de la regresión logística y aprende una función de ajuste adicional sobre las probabilidades crudas. Según el número de eventos disponibles en el conjunto de desarrollo se utiliza calibración isotónica, cuando la muestra de bajas es suficiente, o calibración sigmoidal cuando el número de eventos es menor. La evaluación posterior en el conjunto de prueba considera métricas de calibración como el Brier score, la pendiente y el intercepto de calibración y comparaciones entre probabilidades predichas y tasas observadas en grupos de clientes.
+
+Durante el proceso se exploran variantes del modelo en términos de intensidad de regularización y selección de subconjuntos de variables transformadas. Las combinaciones que no mejoran de forma clara la discriminación o la calibración se descartan. El modelo final corresponde a la regresión logística regularizada integrada en el pipeline de transformaciones y envuelta en el calibrador entrenado con el conjunto de desarrollo. Este modelo produce, para cada cliente activo en un mes de corte, una probabilidad mensual de baja que sirve como insumo principal para las fases siguientes de evaluación económica, segmentación conductual y diseño de políticas comerciales.
+
+
+
+
+\section{Antiguo desarrollo}
 
 En esta sección se presentan los resultados alcanzados hasta la fecha y se discute su capacidad para responder a los objetivos del proyecto, identificando ajustes cuando corresponda. El desarrollo se organiza en dos bloques complementarios: (i) una caracterización del cliente a partir de tablas y gráficos descriptivos, y (ii) un análisis exploratorio de la base analítica consolidada que alimentará el modelado. Esta organización se alinea con el marco CRISP–DM, situando el trabajo en la fase de entendimiento del negocio y de los datos, y preparando la transición hacia preparación y modelado.
 
