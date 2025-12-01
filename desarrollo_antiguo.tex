@@ -1,0 +1,81 @@
+\section{Antiguo desarrollo}
+
+En esta sección se presentan los resultados alcanzados hasta la fecha y se discute su capacidad para responder a los objetivos del proyecto, identificando ajustes cuando corresponda. El desarrollo se organiza en dos bloques complementarios: (i) una caracterización del cliente a partir de tablas y gráficos descriptivos, y (ii) un análisis exploratorio de la base analítica consolidada que alimentará el modelado. Esta organización se alinea con el marco CRISP–DM, situando el trabajo en la fase de entendimiento del negocio y de los datos, y preparando la transición hacia preparación y modelado.
+
+La caracterización abordará cobertura y calidad de variables, distribuciones y relaciones clave, así como heterogeneidades por segmentos y patrones temporales relevantes para la definición operativa del problema. El EDA documentará la construcción del dataset, las reglas de depuración y estandarización aplicadas, y la etiqueta de salida utilizada para la evaluación posterior. A partir de estos hallazgos se conectarán resultados con los objetivos del proyecto y se propondrán ajustes concretos (p.\,ej., redefiniciones de variables, enriquecimiento de fuentes, ventanas temporales y métricas de éxito) para robustecer las siguientes iteraciones.
+
+\subsection{Composición por rubro}
+La Figura \ref{img:porc_clientes_por_rubro} muestra la distribución de clientes por rubro. La cartera se concentra en \textbf{Medicina/Salud (70\,\%)}. \textbf{Centro de estética (13\,\%)} y \textbf{Psicología/Psiquiatría (9\,\%)} aportan participaciones secundarias. \textbf{Odontología (6\,\%)} y \textbf{Salón de belleza/Barbería (3\,\%)} presentan baja presencia. La concentración indica foco en servicios clínicos tradicionales. La menor participación de rubros no clínicos abre espacio de crecimiento con propuestas específicas.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
+
+\subsection{Distribución por país}
+La Figura \ref{img:porc_clientes_por_pais} resume la presencia geográfica. \textbf{Chile concentra 86\,\%} de la base. \textbf{México 6\,\%} y \textbf{Colombia 4\,\%} constituyen mercados secundarios. \textbf{Argentina 1\,\%} y \textbf{Otros 2\,\%}. La dependencia de un solo país implica exposición a shocks locales. La expansión regional aparece como palanca de diversificación y crecimiento.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_pais}]{informe2/porc_clientes_por_pais.png}{scale=0.80}{Porcentaje de clientes por país. Fuente: elaboración propia}
+
+\subsection{Distribución por plan}
+La Figura \ref{img:porc_clientes_por_plan} presenta la mezcla de planes. \textbf{Básico 46\,\%} lidera la adopción. \textbf{Reservo 31\,\%} e \textbf{Individual 20\,\%} conforman el grueso restante. \textbf{Enterprise 3\,\%} mantiene presencia acotada. La composición refleja predominio de \textbf{Básico} y \textbf{Reservo}, con participación relevante de \textbf{Individual}. La baja penetración de \textbf{Enterprise} sugiere oportunidad de \textit{upselling} hacia cuentas multiusuario con funcionalidades avanzadas.
+
+% insertar imagen aqui
+\insertimage[\label{img:porc_clientes_por_plan}]{informe2/porc_clientes_por_plan.png}{scale=0.80}{Porcentaje de clientes por plan. Fuente: elaboración propia}
+
+\subsection{Proporción de planes por rubro}
+La Figura \ref{img:prop_plan_por_rubro} muestra la mezcla de planes dentro de cada rubro. \textbf{Básico} predomina en \textbf{Centro de estética (58\,\%)}, \textbf{Odontología (63\,\%)} y \textbf{Salón de belleza/Barbería (81\,\%)}. \textbf{Individual} lidera en \textbf{Psicología/Psiquiatría (57\,\%)}. \textbf{Reservo} alcanza su mayor participación en \textbf{Medicina/Salud (35\,\%)}, con presencias intermedias en \textbf{Centro de estética (28\,\%)} y \textbf{Psicología/Psiquiatría (26\,\%)}. \textbf{Enterprise} es marginal \mbox{(0\,\%–3\,\%)}, con \textbf{0\,\%} en \textbf{Salón de belleza/Barbería}. El mix refleja predominio de \textbf{planes de precio intermedio} (Básico, Reservo) y \textbf{bajo} (Individual), con baja participación de \textbf{planes de alto precio} (Enterprise).
+
+% insertar imagen aqui
+\insertimage[\label{img:prop_plan_por_rubro}]{informe2/prop_plan_por_rubro.png}{scale=0.80}{Proporción de planes por rubro. Fuente: elaboración propia}
+
+\subsection{Proporción de rubros por plan}
+La Figura \ref{img:prop_rubro_por_plan} presenta la composición de rubros dentro de cada plan. \textbf{Medicina/Salud} domina en todos los planes \mbox{(63–78\,\%)}. En \textbf{Individual} destaca el peso de \textbf{Psicología/Psiquiatría (25\,\%)}. En \textbf{Básico} y \textbf{Reservo} se observan aportes complementarios de \textbf{Centro de estética (16\,\% y 11\,\%)} y \textbf{Odontología (8\,\% y 4\,\%)}. En \textbf{Enterprise} la base permanece concentrada en \textbf{Medicina/Salud (78\,\%)} y no incluye \textbf{Salón de belleza/Barbería (0\,\%)}. La composición confirma que los planes superiores se apalancan principalmente en especialidades clínicas.
+
+% insertar imagen aqui
+\insertimage[\label{img:prop_rubro_por_plan}]{informe2/prop_rubro_por_plan.png}{scale=0.80}{Proporción de rubros por plan. Fuente: elaboración propia}
+
+\subsection{Promedio de mensualidad por rubro}
+La tabla del anexo \ref{tab:mensualidad_por_rubro} resume el promedio de mensualidad por rubro. \textbf{Medicina/Salud} presenta el mayor valor (\$ 62.566), seguida de \textbf{Psicología/Psiquiatría} (\$ 54.731) y \textbf{Centro de estética} (\$ 51.366). \textbf{Salón de belleza/Barbería} (\$ 44.906) y \textbf{Odontología} (\$ 40.950) muestran niveles inferiores. El promedio general alcanza \textbf{\$ 58.700}.
+
+\subsection{Comparativa activos vs bloqueados por rubro}
+La Figura \ref{img:act_vs_bloq_rubro} compara la participación de clientes activos y bloqueados por rubro. \textbf{Medicina/Salud} concentra la mayor fracción en ambos grupos (\(\sim\)70\,\% activos; \(\sim\)60\,\% bloqueados). \textbf{Psicología/Psiquiatría} aparece \textbf{sobre–representado} entre bloqueados respecto de su peso en activos. \textbf{Centro de estética} mantiene proporciones similares. \textbf{Salón de belleza/Barbería} muestra mayor participación relativa en bloqueados. \textbf{Odontología} se observa \textbf{sub–representado} entre bloqueados.
+
+% insertar imagen aqui
+\insertimage[\label{img:act_vs_bloq_rubro}]{informe2/act_vs_bloq_rubro.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia}
+
+\subsection{Comparativa activos vs bloqueados por plan}
+La Figura \ref{img:act_vs_bloq_plan} compara la participación por plan. \textbf{Individual} aporta \textbf{20\,\%} de los activos y \textbf{38\,\%} de los bloqueados (\textbf{sobre–representación}). \textbf{Básico} mantiene proporciones cercanas (\textbf{46\,\%} activos; \textbf{41\,\%} bloqueados). \textbf{Reservo} muestra \textbf{sub–representación} en bloqueados (\textbf{31\,\%} activos; \textbf{17\,\%} bloqueados). \textbf{Enterprise} conserva peso marginal en ambos casos.
+
+% insertar imagen aqui
+\insertimage[\label{img:act_vs_bloq_plan}]{informe2/act_vs_bloq_plan.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia}
+
+\subsection{Actividad histórica de bloqueados y activos por rubro}
+La tabla del anexo \ref{tab:citas_bloq_act_rubro} compara volumen y uso promedio. \textbf{Medicina/Salud} concentra el mayor número de bloqueados (\textbf{54}). Entre bloqueados, destacan promedios altos de citas recientes en \textbf{Salón de belleza/Barbería (53)} y \textbf{Odontología (39)}; \textbf{Psicología/Psiquiatría} muestra el menor (\textbf{6}). Entre activos del último año, lideran \textbf{Medicina/Salud (564)} y \textbf{Salón de belleza/Barbería (544)}.
+
+\subsection{Actividad histórica de bloqueados y activos por plan}
+La tabla del anexo \ref{tab:citas_bloq_act_plan} muestra la comparación por plan. Los bloqueados se concentran en \textbf{Básico (39)} e \textbf{Individual (36)}. Los bloqueados de \textbf{Reservo (35)} y \textbf{Enterprise (49)} exhiben mayor uso reciente. En activos del último año, \textbf{Enterprise} presenta el mayor promedio (\textbf{2.524}), seguido por \textbf{Reservo (575)} y \textbf{Básico (470)}; \textbf{Individual} queda rezagado (\textbf{79}).
+
+\subsection{EDA}
+La Figura \ref{img:nulos} en anexos presenta el perfil de valores nulos por variable. Predominan los faltantes en \textbf{días\_desde\_ultimo\_bloqueo (95\,\%)}, seguidos por \textbf{recencia\_uso\_dias (46\,\%)}, \textbf{rubro (37\,\%)}, \textbf{plan\_reservo\_id (33\,\%)} y \textbf{plan\_nombre (33\,\%)}. \textbf{arpa\_proxy} registra \textbf{5\,\%}. El resto no presenta nulos relevantes.
+
+La Figura \ref{img:tipodata} en anexos detalla los tipos de datos. \textbf{id\_cliente} es entero; \textbf{mes\_corte} es fecha; \textbf{pais}, \textbf{plan\_nombre} y \textbf{rubro} son categóricas (texto). \textbf{plan\_reservo\_id} y \textbf{arpa\_proxy} están en \textit{float}; \textbf{recencia\_uso\_dias} y \textbf{dias\_desde\_ultimo\_bloqueo} también en \textit{float}. El resto corresponde a enteros. \textbf{baja\_previa} y \textbf{churn\_T1} son variables binarias.
+
+La Figura \ref{img:estadistic} en anexos resume las estadísticas descriptivas. \textbf{tenure\_meses} muestra mediana \textbf{35} y p75 \textbf{54}. La actividad presenta alta dispersión: \textbf{citas\_30d} con mediana \textbf{2} y máximo \textbf{13{,}164}; \textbf{citas\_60d} con mediana \textbf{5} y máximo \textbf{25{,}716}. \textbf{recencia\_uso\_dias} concentra valores bajos (mediana \textbf{1}). \textbf{bloqueos\_90d} es casi nula (mediana \textbf{0}). \textbf{tendencia\_90d} exhibe amplitud y valores extremos. \textbf{arpa\_proxy} presenta cola larga (mediana \textbf{40{,}000}; p75 \textbf{60{,}000}; máximo \textbf{2{,}370{,}000}). La tasa promedio de \textbf{churn\_T1} es \textbf{1\,\%}; \textbf{baja\_previa} también \textbf{1\,\%}.
+
+\subsection{Distribución de \textit{tenure\_meses}}
+La Figura \ref{img:tenure} muestra el histograma y el boxplot de \textit{tenure\_meses}. \textbf{Definición:} \textit{tenure\_meses} corresponde al número de meses transcurridos desde el inicio del servicio del cliente hasta el mes de corte; esta definición explica la concentración entre \textbf{15–55} meses, la cola derecha asociada a relaciones antiguas y los valores atípicos altos (\(>\)\,\textbf{100}). La distribución es asimétrica a la derecha, con mediana cercana a \textbf{35} y p75 en torno a \textbf{54}; también se observan cohortes recientes con valores \textbf{0–6} meses.
+
+% insertar imagen aqui
+\insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
+
+\subsection{Matriz de correlaciones}
+La Figura \ref{img:correlacion} resume las asociaciones entre variables numéricas. \textbf{citas\_30d} y \textbf{citas\_60d} muestran correlación casi perfecta \textbf{(1{.}00)}. \textbf{cambios\_estado\_90d} se asocia de forma positiva con \textbf{bloqueos\_90d} \textbf{(0{.}43)}. \textbf{días\_desde\_ultimo\_bloqueo} presenta correlaciones negativas con \textbf{tendencia\_90d} \textbf{(-0{.}56)} y con \textbf{bloqueos\_90d} \textbf{(-0{.}40)}. \textbf{tenure\_meses} mantiene relaciones débiles a moderadas con \textbf{citas\_30d/60d} \textbf{(0{.}29)} y negativas con \textbf{recencia\_uso\_dias} \textbf{(-0{.}14)} y \textbf{cambios\_estado\_90d} \textbf{(-0{.}16)}. \textbf{churn\_T1} exhibe asociaciones bajas; destaca una correlación positiva leve con \textbf{citas\_30d} \textbf{(0{.}24)}. \textbf{id\_cliente} registra una correlación fuerte con \textbf{tenure\_meses} \textbf{(-0{.}96)} y se considerará solo como identificador.
+
+% insertar imagen aqui
+\insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
+
+En relación con la capacidad del estudiante para responder a los objetivos, el avance actual demuestra factibilidad técnica y operativa. Ya se cuenta con un marco metodológico claro (CRISP–DM), un EDA inicial que caracteriza datos críticos y una base analítica en construcción con variables de identificación, valor, uso y fricción. Según el cronograma, se dispone de las fuentes necesarias para entrenar y validar el modelo; existen además criterios de éxito definidos y métricas de evaluación consistentes. Con estos insumos, el estudiante está en posición de completar la preparación de datos, entrenar un modelo base interpretable y diseñar la segmentación y políticas asociadas.
+
+Se identifican ajustes necesarios y manejables. Primero, fortalecer la estructuración de datos: estandarizar llaves y catálogos (plan, rubro, país), documentar reglas de imputación y tratamiento de atípicos, y asegurar definiciones operativas robustas para etiqueta y ventanas temporales. Segundo, reforzar calidad y gobernanza: controles de cobertura por corte, prevención de \textit{data leakage} con validación temporal y \textit{pipelines} reproducibles. Tercero, alinear el modelado con uso real: priorizar variables con alta cobertura, mantener interpretabilidad para implementación en Customer Success y planificar iteraciones cortas con revisión de métricas. Con estas acciones, las limitaciones de origen (datos no completamente estructurados) no impiden el logro de los objetivos; permiten una aproximación fiel a la realidad y una entrega utilizable por la empresa.
+
+\newpage

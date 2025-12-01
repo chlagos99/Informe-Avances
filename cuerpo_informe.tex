@@ -80,6 +80,7 @@ Cada líder supervisa a sus respectivos equipos operativos. El área de Desarrol
 % NUEVA SECCIÓN
 % ------------------------------------------------------------------------------
 \newpage
+
 \section{Descripción del problema u oportunidad}
 
 \subsection{Antecedentes}
@@ -278,6 +279,7 @@ Las métricas se medirán al cierre del proyecto y, cuando sea posible, se revis
 
 
 \newpage
+
 \section{Marco Conceptual}
 
 \subsection{Fundamentos de CRM orientado a valor}
@@ -300,61 +302,44 @@ La segmentación conductual combina la tradición del marketing analítico con t
 
 Finalmente, las reglas de decisión y las políticas comerciales derivadas de la analítica pertenecen al ámbito de la ingeniería de decisiones. Su función es traducir scores, segmentos e indicadores en acciones concretas para los equipos de contacto con clientes. Desde el marco conceptual de CRM orientado a valor, estas reglas actúan como un puente entre el análisis cuantitativo y la gestión diaria, al establecer de forma explícita qué tipo de intervención corresponde a cada grupo de clientes y bajo qué condiciones se recomienda su aplicación \citep{Kumar2010}.
 
-
-
 \subsection{Evaluación económica y métricas de desempeño}
 
-La evaluación económica del proyecto se apoya en métricas que relacionan el tamaño de la base de clientes, los ingresos recurrentes y el valor económico asociado a cada cuenta. En primer lugar se define el número de clientes activos como \(N_{\mathrm{activos}}\), que corresponde al total de cuentas con suscripción vigente en un mes determinado. A partir de esta base se calcula el ingreso mensual recurrente o \(\mathrm{MRR}_{\mathrm{base}}\), que es la suma de las mensualidades pagadas por todos los clientes activos. El ingreso promedio por cuenta se resume mediante el indicador \(\mathrm{ARPA}\) (Average Revenue per Account), definido como
-
+La evaluación económica del proyecto se apoya en métricas que relacionan el tamaño de la base de clientes, los ingresos recurrentes y el valor económico asociado a cada cuenta. Se define el número de clientes activos como \(N_{\mathrm{activos}}\), el ingreso mensual recurrente como \(\mathrm{MRR}_{\mathrm{base}}\) (suma de las mensualidades de todos los clientes activos) y el ingreso promedio por cuenta como
 \[
 \mathrm{ARPA} = \frac{\mathrm{MRR}_{\mathrm{base}}}{N_{\mathrm{activos}}}.
 \]
+La tasa de baja mensual \(\mathrm{Churn}_{\mathrm{base}}\) es la proporción de clientes activos que dejan de serlo entre dos meses consecutivos. De forma análoga, la tasa de expansión mide el porcentaje de clientes que aumentan su pago mensual, distinguiendo una tasa de referencia \(\mathrm{TasaExp}_{\mathrm{base}}\) y una tasa posterior a la aplicación de políticas \(\mathrm{TasaExp}_{\mathrm{post}}\).
 
-Con estas métricas se describe el tamaño económico de la cartera y se dispone de una línea base para evaluar cambios futuros. La tasa de baja mensual o \(\mathrm{Churn}_{\mathrm{base}}\) se define como la proporción de clientes activos que dejan de serlo entre dos meses consecutivos, según el criterio operativo de baja adoptado en el proyecto. De forma análoga, se puede definir una tasa de expansión que mide el porcentaje de clientes que aumentan su pago mensual en un periodo, ya sea por cambio de plan o por contratación de servicios adicionales. Se distinguen así una tasa de expansión de referencia \(\mathrm{TasaExp}_{\mathrm{base}}\) y una tasa posterior a la aplicación de políticas \(\mathrm{TasaExp}_{\mathrm{post}}\), lo que permite cuantificar el efecto de las acciones comerciales.
-
-El valor económico de un cliente se resume mediante el concepto de valor de vida del cliente o CLV (Customer Lifetime Value). Bajo supuestos de tasa de baja mensual constante y margen bruto estable, el CLV simple se puede aproximar como
-
+El valor económico de un cliente se resume mediante el valor de vida del cliente o CLV (Customer Lifetime Value). Bajo supuestos de tasa de baja mensual constante y margen bruto estable, se utiliza la aproximación
 \[
 \mathrm{CLV}_{\mathrm{simple}} = \mathrm{ARPA} \times \mathrm{Margen} \times \frac{1}{\mathrm{Churn}_{\mathrm{base}}},
 \]
-
-donde \(\mathrm{Margen}\) corresponde al margen bruto promedio sobre los ingresos recurrentes. Esta expresión refleja que, mientras menor es la tasa de baja, mayor es el número esperado de meses en que el cliente seguirá generando ingresos. Si se incorpora una tasa de descuento mensual \(i\) para reflejar el valor temporal del dinero, se obtiene una versión descontada del CLV:
-
+donde \(\mathrm{Margen}\) es el margen bruto promedio sobre los ingresos recurrentes. Cuando se requiere considerar el valor temporal del dinero, se puede usar una versión descontada con una tasa mensual \(i\):
 \[
 \mathrm{CLV}_{\mathrm{descontado}} = \frac{\mathrm{ARPA} \times \mathrm{Margen}}{\mathrm{Churn}_{\mathrm{base}} + i}.
 \]
 
-En este marco, la salida de un cliente no solo implica dejar de recibir su pago mensual, sino perder el flujo de ingresos futuros asociados a su CLV.
-
-La pérdida económica ligada a las bajas se puede expresar a nivel agregado mediante el \(\mathrm{MRR}_{\mathrm{perdido}}\). Este indicador aproxima cuánto ingreso mensual se deja de percibir debido a la tasa de baja de la cartera y se define como
-
+La pérdida económica ligada a las bajas se expresa a nivel agregado como ingreso mensual perdido por churn,
 \[
 \mathrm{MRR}_{\mathrm{perdido}} = \mathrm{MRR}_{\mathrm{base}} \times \mathrm{Churn}_{\mathrm{base}}.
 \]
-
-Al combinar este valor con el CLV se puede estimar el costo económico de una baja típica y dimensionar el impacto de reducir marginalmente la tasa de salida.
-
-El beneficio incremental del proyecto se mide comparando la situación antes y después de aplicar el modelo y las políticas asociadas. Si la tasa de baja se reduce desde \(\mathrm{Churn}_{\mathrm{base}}\) a \(\mathrm{Churn}_{\mathrm{post}}\), el ingreso mensual retenido adicional se aproxima por
-
+El beneficio incremental del proyecto se mide comparando la situación antes y después del uso del modelo. La reducción de la tasa de baja desde \(\mathrm{Churn}_{\mathrm{base}}\) a \(\mathrm{Churn}_{\mathrm{post}}\) genera ingreso retenido adicional
 \[
-\Delta \mathrm{MRR}_{\mathrm{retenido}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{Churn}_{\mathrm{base}} - \mathrm{Churn}_{\mathrm{post}}).
+\Delta \mathrm{MRR}_{\mathrm{retenido}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{Churn}_{\mathrm{base}} - \mathrm{Churn}_{\mathrm{post}}),
 \]
-
-De manera similar, si la tasa de expansión aumenta desde \(\mathrm{TasaExp}_{\mathrm{base}}\) a \(\mathrm{TasaExp}_{\mathrm{post}}\), el ingreso mensual adicional por expansión se aproxima por
-
+y el aumento de la tasa de expansión desde \(\mathrm{TasaExp}_{\mathrm{base}}\) a \(\mathrm{TasaExp}_{\mathrm{post}}\) genera ingreso adicional por expansión
 \[
 \Delta \mathrm{MRR}_{\mathrm{exp}} = \mathrm{MRR}_{\mathrm{base}} \times (\mathrm{TasaExp}_{\mathrm{post}} - \mathrm{TasaExp}_{\mathrm{base}}).
 \]
-
-La suma de ambos componentes entrega una estimación del ingreso incremental mensual asociado al proyecto. Para evaluar el efecto anual y su contribución al margen, se utiliza la siguiente expresión:
-
+A partir de estos términos se aproxima el beneficio anual esperado como
 \[
 \mathrm{Beneficio\ anual\ esperado} \approx (\Delta \mathrm{MRR}_{\mathrm{retenido}} + \Delta \mathrm{MRR}_{\mathrm{exp}}) \times \mathrm{Margen} \times 12 - \mathrm{Costo\ del\ proyecto}.
 \]
 
-Esta fórmula resume el aporte económico esperado del modelo y de las políticas de retención y expansión, descontando los costos directos de desarrollo e implementación.
+En síntesis, se cuantifican \(N_{\mathrm{activos}}\), \(\mathrm{MRR}_{\mathrm{base}}\), \(\mathrm{ARPA}\), \(\mathrm{Churn}_{\mathrm{base}}\) y \(\mathrm{Margen}\), y se exige que el beneficio anual esperado supere el costo del proyecto y permita recuperar la inversión en un plazo razonable. Estos criterios se alinean con la literatura de CRM orientado a valor económico del cliente y con el uso de CLV como eje para priorizar decisiones de retención y expansión \citep{Kumar2010,Gupta2006}.
 
-A partir de estas definiciones se establece un piso económico para evaluar el proyecto. Se cuantifican \(N_{\mathrm{activos}}\), \(\mathrm{MRR}_{\mathrm{base}}\), \(\mathrm{ARPA}\), \(\mathrm{Churn}_{\mathrm{base}}\) y \(\mathrm{Margen}\), y se exige que el beneficio anual esperado cubra al menos el costo del proyecto y permita recuperar la inversión en un plazo razonable. Estos criterios de payback y de relación beneficio-costo se utilizan como guía para decidir si el proyecto resulta atractivo desde el punto de vista económico. El conjunto de métricas descritas se alinea con la literatura de CRM orientado a valor económico del cliente y con el uso de CLV como eje para priorizar decisiones de retención y expansión \citep{Kumar2010,Gupta2006}.
+
+
 
 
 \subsection{Elección metodológica para el caso de la empresa}
@@ -396,6 +381,7 @@ En esta fase se define el problema desde la perspectiva de la empresa y se aline
     \item Clarificar el problema de gestión asociado a la baja de clientes y a la necesidad de usar mejor la información disponible para prevenirla y aprovechar oportunidades de expansión.
     \item Formular el objetivo general y los objetivos específicos del proyecto, asegurando su conexión con causas identificadas del problema de postventa y con necesidades concretas de gestión.
     \item Definir indicadores de éxito para el modelo, el datamart, la segmentación y el prototipo operativo, y acordar con la empresa el formato de los entregables principales.
+    \item Cuantificar una línea base económica de la cartera mediante el número de clientes activos, el ingreso mensual recurrente, el ingreso promedio por cuenta, la tasa de bajas y la pérdida anual de ingresos asociada, que servirá como referencia para evaluar el impacto del proyecto.
 \end{itemize}
 
 \subsection{Fase 2: Comprensión de los datos}
@@ -453,18 +439,7 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
     \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
 \end{itemize}
 
-\subsection{Recursos e insumos}
-
-La metodología requiere el uso coordinado de recursos de datos, herramientas tecnológicas y conocimiento de negocio.
-
-\begin{itemize}
-    \item Tablas principales de datos, que incluyen información de clientes, uso de la plataforma, cambios de estado administrativos, planes comerciales y rubros de actividad.
-    \item Herramientas de consulta y procesamiento de datos, tanto en la base transaccional como en los entornos utilizados para construir el datamart, el modelo y los artefactos operativos.
-    \item Conocimiento experto de Reservo sobre el funcionamiento del negocio, la interpretación de las variables y las particularidades de cada país y tipo de cliente.
-    \item Tiempo de dedicación del estudiante y de los referentes internos para entrevistas, validaciones de definiciones, revisión de avances y sesiones de traspaso del prototipo operativo.
-\end{itemize}
-
-
+\newpage
 
 \section{Desarrollo y Resultados}
 
@@ -476,7 +451,7 @@ En la primera tarea se levantó el contexto del negocio de Reservo y su modelo d
 
 \subsubsection{Problema de gestión asociado a la baja de clientes}
 
-La segunda tarea consistió en clarificar el problema de gestión que motiva el proyecto. Se analizó el flujo completo del cliente desde la captación hasta la baja, distinguiendo las etapas de adquisición, venta, onboarding, cliente activo y cliente inactivo. Con apoyo de los diagramas de proceso incluidos en los anexos se describió cómo se produce hoy la baja y qué señales previas suelen aparecer. A partir de las métricas internas se constató una tasa de bajas mensuales cercana al 2,5 por ciento, un crecimiento moderado de las expansiones y esfuerzos de postventa concentrados en reaccionar cuando el cliente ya está cerca de abandonar. Este análisis llevó a formular el problema central como una falta de caracterización y segmentación conductual de la cartera activa, que impide diferenciar el trato según riesgo y potencial económico.
+La segunda tarea consistió en clarificar el problema de gestión que motiva el proyecto. Se analizó el flujo completo del cliente desde la captación hasta la baja, distinguiendo las etapas de adquisición, venta, onboarding, cliente activo y cliente inactivo. Con apoyo de los diagramas de proceso incluidos en los anexos se describió cómo se produce hoy la baja y qué señales previas suelen aparecer. A partir de las métricas internas se constató una tasa de bajas mensuales cercana al 2,4 por ciento, un crecimiento moderado de las expansiones y esfuerzos de postventa concentrados en reaccionar cuando el cliente ya está cerca de abandonar. Este análisis llevó a formular el problema central como una falta de caracterización y segmentación conductual de la cartera activa, que impide diferenciar el trato según riesgo y potencial económico.
 
 \subsubsection{Definición del objetivo general y de los objetivos específicos}
 
@@ -484,7 +459,68 @@ En la tercera tarea se tradujo el diagnóstico anterior en objetivos formales pa
 
 \subsubsection{Indicadores de éxito y definición de entregables}
 
-La cuarta tarea se enfocó en definir cómo se medirá el éxito del proyecto y en acordar los entregables principales con la empresa. Se establecieron indicadores para la calidad del modelo, como su capacidad para distinguir entre clientes que se dan de baja y aquellos que se mantienen, y para la cobertura del datamart sobre la cartera activa. También se definieron métricas de focalización, como la concentración de bajas en el grupo de clientes con mayor riesgo estimado, y criterios de adopción del prototipo, como la capacidad del equipo de Customer Success para ejecutar el flujo de uso sin apoyo del estudiante. Finalmente se acordaron los entregables clave: el datamart mensual documentado, el modelo de riesgo ajustado, la propuesta de segmentación conductual, el portafolio de políticas comerciales asociado y la carpeta de uso con tutoriales y materiales de traspaso para los equipos internos.
+La cuarta tarea se enfocó en definir cómo se medirá el éxito del proyecto y en acordar los entregables principales con la empresa. Se establecieron indicadores para la calidad del modelo, como su capacidad para distinguir entre clientes que se dan de baja y aquellos que se mantienen, y para la cobertura del datamart sobre la cartera activa. También se definieron métricas de focalización, como la concentración de bajas en el grupo de clientes con mayor riesgo estimado, y criterios de adopción del prototipo, como la capacidad del equipo de Customer Success para ejecutar el flujo de uso sin apoyo del estudiante.
+
+Finalmente se acordaron los entregables clave del proyecto: el datamart mensual documentado, el modelo de riesgo ajustado, la propuesta de segmentación conductual, el portafolio de políticas comerciales asociado y la carpeta de uso con tutoriales y materiales de traspaso para los equipos internos.
+
+\subsubsection{Línea base económica y evaluación preliminar}
+
+La quinta tarea consistió en cuantificar una línea base económica de la cartera aplicando las métricas definidas en el marco conceptual a los datos internos de la empresa. Primero se fijó el número de clientes activos como \(N_{\mathrm{activos}} \approx 3{.}500\). El ingreso anual recurrente observado se estimó en torno a \$2{.}465{.}400{.}000, por lo que el ingreso mensual recurrente base se aproxima como
+
+\[
+\mathrm{MRR}_{\mathrm{base}} \approx \frac{2{.}465{.}400{.}000}{12} \approx 205{.}450{.}000.
+\]
+
+Con este valor se calculó el ingreso promedio por cuenta mediante
+
+\[
+\mathrm{ARPA} = \frac{\mathrm{MRR}_{\mathrm{base}}}{N_{\mathrm{activos}}}
+              \approx \frac{205{.}450{.}000}{3{.}500}
+              \approx 58{.}700.
+\]
+
+Luego se consideró la tasa de bajas mensuales observada, cercana al 2,4 por ciento, que se interpreta como \(\mathrm{Churn}_{\mathrm{base}} = 0{,}024\). Aplicada sobre la base de clientes, esta tasa implica que cada mes se dan de baja aproximadamente
+
+\[
+N_{\mathrm{bajas}} \approx N_{\mathrm{activos}} \times \mathrm{Churn}_{\mathrm{base}}
+                  \approx 3{.}500 \times 0{,}024
+                  \approx 84.
+\]
+
+El ingreso mensual que se pierde por estas bajas se aproxima mediante
+
+\[
+\mathrm{MRR}_{\mathrm{perdido}} = \mathrm{MRR}_{\mathrm{base}} \times \mathrm{Churn}_{\mathrm{base}}
+                               \approx 205{.}450{.}000 \times 0{,}024
+                               \approx 4{.}930{.}800,
+\]
+
+lo que proyectado a un año corresponde a una pérdida cercana a
+
+\[
+\mathrm{MRR}_{\mathrm{perdido\ anual}} \approx 4{.}930{.}800 \times 12 \approx 59{.}200{.}000.
+\]
+
+Estas cifras entregan el orden de magnitud del problema económico asociado al churn actual de la cartera.
+
+A partir de esta línea base se analizaron escenarios simples de mejora, utilizando la expresión de ingreso retenido incremental. Si el proyecto lograra reducir la tasa de bajas desde \(0{,}024\) a \(0{,}020\), la diferencia sería \(\Delta \mathrm{Churn} = 0{,}004\) y el ingreso mensual adicional retenido se aproximaría por
+
+\[
+\Delta \mathrm{MRR}_{\mathrm{retenido}} = \mathrm{MRR}_{\mathrm{base}} \times \Delta \mathrm{Churn}
+                                       \approx 205{.}450{.}000 \times 0{,}004
+                                       \approx 821{.}800,
+\]
+
+lo que equivale a cerca de \(821{.}800 \times 12 \approx 9{.}861{.}600\) de ingreso retenido en un año. De manera similar, una mejora de solo 0,1 puntos porcentuales en la tasa de bajas (\(\Delta \mathrm{Churn} = 0{,}001\)) representa aproximadamente
+
+\[
+\Delta \mathrm{MRR}_{\mathrm{retenido}} \approx 205{.}450{.}000 \times 0{,}001
+                                       \approx 205{.}450,
+\]
+
+es decir, alrededor de \(205{.}450 \times 12 \approx 2{.}465{.}400\) de ingreso adicional retenido al año.
+
+Estos cálculos aplican de forma directa las definiciones de \(\mathrm{MRR}_{\mathrm{base}}\), \(\mathrm{ARPA}\), \(\mathrm{Churn}_{\mathrm{base}}\) y \(\mathrm{MRR}_{\mathrm{perdido}}\) del marco conceptual y entregan una referencia cuantitativa que se utilizará más adelante para interpretar los resultados del modelo y de las políticas de retención y expansión.
 
 \subsection{Fase 2: Comprensión de los datos}
 
@@ -566,7 +602,7 @@ Las variables de contexto se derivan de la información comercial:
 Las variables de valor económico son:
 
 \begin{itemize}
-    \item \texttt{arpa\_\hspace{0pt}proxy}: aproximación del ingreso mensual por cliente. Se toma desde \texttt{cliente\_\hspace{0pt}cliente.mensualidad} y se reemplazan los valores cero por nulos mediante \texttt{NULLIF(mensualidad, 0)} para evitar confundir promociones o ajustes con ingresos reales.
+    \item \texttt{arpa\_\hspace{0pt}proxy}: aproximación del ingreso mensual por cliente. Se toma desde \texttt{cliente\_\hspace{0pt}cliente.mensualidad} y se reemplazan los valores cero por nulos mediante \texttt{NULLIF\hspace{0pt}(mensualidad, 0)} para evitar confundir promociones o ajustes con ingresos reales.
     \item \texttt{tenure\_\hspace{0pt}meses}: antigüedad del cliente al mes de corte, medida en meses, calculada con \texttt{TIMESTAMPDIFF(MONTH, fecha\_\hspace{0pt}creacion, mes\_\hspace{0pt}corte)}.
 \end{itemize}
 
@@ -705,89 +741,44 @@ Los resultados de discriminación y de focalización cumplen y superan los umbra
 
 Con base en esta evidencia, se considera que el modelo final es suficiente para apoyar decisiones de retención y expansión en la empresa. El score mensual de riesgo de baja puede utilizarse para priorizar clientes en acciones de Customer Success, siempre que se acompañe de monitoreo continuo de métricas clave y de una revisión periódica de la calibración, en particular en segmentos con menor número de clientes. El detalle de las políticas comerciales asociadas a los distintos niveles de riesgo se desarrolla en las fases siguientes de despliegue del prototipo operativo.
 
+\subsection{Fase 6: Despliegue y políticas de negocio}
 
+En esta fase se define cómo se usarán los resultados del modelo en la operación y se concreta un prototipo operativo que conecta el trabajo analítico con la gestión comercial. El diseño considera el flujo mensual de scoring, los artefactos entregados a la empresa, la segmentación conductual asociada a políticas preliminares y los lineamientos de adopción para Customer Success.
 
-\section{Antiguo desarrollo}
+\subsubsection{Flujo mensual de scoring sobre la cartera actualizada}
 
-En esta sección se presentan los resultados alcanzados hasta la fecha y se discute su capacidad para responder a los objetivos del proyecto, identificando ajustes cuando corresponda. El desarrollo se organiza en dos bloques complementarios: (i) una caracterización del cliente a partir de tablas y gráficos descriptivos, y (ii) un análisis exploratorio de la base analítica consolidada que alimentará el modelado. Esta organización se alinea con el marco CRISP–DM, situando el trabajo en la fase de entendimiento del negocio y de los datos, y preparando la transición hacia preparación y modelado.
+El flujo de uso parte en la base de datos transaccional de la empresa. Cada vez que se desea actualizar el modelo se ejecuta el script \texttt{Datamart Principal Memoria\_Act.sql} sobre el esquema \texttt{reservov2}, utilizando una herramienta de consulta MySQL como DataGrip conectada mediante túnel SSH a la base productiva. El único parámetro que el usuario debe modificar es la fecha de corte \texttt{@fin}, que se fija como el primer día del mes siguiente al periodo que se quiere analizar. El script genera un resultado tabular que contiene, para todos los clientes activos al cierre, las columnas necesarias para el modelo en formato cliente–mes.
 
-La caracterización abordará cobertura y calidad de variables, distribuciones y relaciones clave, así como heterogeneidades por segmentos y patrones temporales relevantes para la definición operativa del problema. El EDA documentará la construcción del dataset, las reglas de depuración y estandarización aplicadas, y la etiqueta de salida utilizada para la evaluación posterior. A partir de estos hallazgos se conectarán resultados con los objetivos del proyecto y se propondrán ajustes concretos (p.\,ej., redefiniciones de variables, enriquecimiento de fuentes, ventanas temporales y métricas de éxito) para robustecer las siguientes iteraciones.
+Ese resultado se exporta a un archivo \texttt{CSV}, que se renombra como \texttt{database\_act.csv} y se almacena en la carpeta de trabajo indicada para el modelo. Luego se abre el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb} en Google Colab, donde se cargan dos archivos: \texttt{database\_act.csv} (datamart actualizado) y \texttt{database1.csv} (base histórica usada en el entrenamiento). Con estos insumos se ejecuta la celda de producción del cuaderno, que aplica el modelo calibrado sobre el corte seleccionado, calcula las probabilidades de baja a uno y tres meses, asigna rangos cualitativos de riesgo, construye el ranking global y genera archivos de salida en formato \texttt{CSV}.
 
-\subsection{Composición por rubro}
-La Figura \ref{img:porc_clientes_por_rubro} muestra la distribución de clientes por rubro. La cartera se concentra en \textbf{Medicina/Salud (70\,\%)}. \textbf{Centro de estética (13\,\%)} y \textbf{Psicología/Psiquiatría (9\,\%)} aportan participaciones secundarias. \textbf{Odontología (6\,\%)} y \textbf{Salón de belleza/Barbería (3\,\%)} presentan baja presencia. La concentración indica foco en servicios clínicos tradicionales. La menor participación de rubros no clínicos abre espacio de crecimiento con propuestas específicas.
+El usuario descarga el archivo de salida elegido, lo renombra como \texttt{salida\_modelo\_1.csv} y lo guarda en la carpeta \texttt{Colab py}. Finalmente se abre el Excel \texttt{Clientes en riesgo de fuga - modelo}, se presiona el botón de “Actualizar todo” en la pestaña de datos y el libro actualiza todas sus consultas de Power Query para leer el nuevo \texttt{salida\_modelo\_1.csv}. De este modo el flujo de scoring queda encapsulado en una secuencia de pasos clara: actualización del datamart, ejecución del modelo en Colab y actualización del Excel para la revisión de resultados.
 
-% insertar imagen aqui
-\insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
+\subsubsection{Artefactos operativos y carpeta de uso para Customer Success}
 
-\subsection{Distribución por país}
-La Figura \ref{img:porc_clientes_por_pais} resume la presencia geográfica. \textbf{Chile concentra 86\,\%} de la base. \textbf{México 6\,\%} y \textbf{Colombia 4\,\%} constituyen mercados secundarios. \textbf{Argentina 1\,\%} y \textbf{Otros 2\,\%}. La dependencia de un solo país implica exposición a shocks locales. La expansión regional aparece como palanca de diversificación y crecimiento.
+Para facilitar el despliegue se construye la Carpeta de uso Customer Success, que organiza todos los elementos necesarios en tres subcarpetas principales. La carpeta Archivo \texttt{sql} contiene el script \texttt{Datamart Principal Memoria\_Act.sql}, que encapsula las consultas a las tablas de clientes, uso, cambios de estado, planes y rubros. Esta pieza permite regenerar el datamart mensual sin necesidad de escribir código adicional; los usuarios solo deben ajustar la fecha de corte y exportar el resultado.
 
-% insertar imagen aqui
-\insertimage[\label{img:porc_clientes_por_pais}]{informe2/porc_clientes_por_pais.png}{scale=0.80}{Porcentaje de clientes por país. Fuente: elaboración propia}
+La carpeta \texttt{Colab py} almacena el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb}, el archivo histórico \texttt{database1.csv} y el archivo de salida \texttt{salida\_modelo\_1.csv}. En el cuaderno se concentran las definiciones del pipeline de preprocesamiento, el modelo calibrado y el módulo de scoring operativo descrito en la fase anterior. El diseño separa explícitamente la etapa de entrenamiento, que no se ejecuta en uso diario, de la etapa de inferencia, que es la única que el equipo debe activar. El archivo \texttt{database1.csv} se mantiene fijo como referencia histórica y solo se reemplaza \texttt{database\_act.csv} en cada ciclo.
 
-\subsection{Distribución por plan}
-La Figura \ref{img:porc_clientes_por_plan} presenta la mezcla de planes. \textbf{Básico 46\,\%} lidera la adopción. \textbf{Reservo 31\,\%} e \textbf{Individual 20\,\%} conforman el grueso restante. \textbf{Enterprise 3\,\%} mantiene presencia acotada. La composición refleja predominio de \textbf{Básico} y \textbf{Reservo}, con participación relevante de \textbf{Individual}. La baja penetración de \textbf{Enterprise} sugiere oportunidad de \textit{upselling} hacia cuentas multiusuario con funcionalidades avanzadas.
+La carpeta Excel de resultado contiene el archivo \texttt{Clientes en riesgo de fuga - modelo}, configurado con Power Query para leer siempre el \texttt{salida\_modelo\_1.csv} ubicado en \texttt{Colab py}. En el editor de consultas se deja fijada la ruta al archivo y se documenta cómo modificarla en caso de cambio de ubicación. El Excel presenta tablas y vistas filtrables por país, plan, rubro, rango de riesgo y ranking, lo que permite a Customer Success priorizar clientes sin interactuar con código ni con la base de datos. De esta forma, la carpeta de uso reúne en un solo lugar el script SQL, el cuaderno de modelado y el Excel de explotación, junto con los documentos de apoyo asociados.
 
-% insertar imagen aqui
-\insertimage[\label{img:porc_clientes_por_plan}]{informe2/porc_clientes_por_plan.png}{scale=0.80}{Porcentaje de clientes por plan. Fuente: elaboración propia}
+\subsubsection{Segmentación conductual y políticas preliminares}
 
-\subsection{Proporción de planes por rubro}
-La Figura \ref{img:prop_plan_por_rubro} muestra la mezcla de planes dentro de cada rubro. \textbf{Básico} predomina en \textbf{Centro de estética (58\,\%)}, \textbf{Odontología (63\,\%)} y \textbf{Salón de belleza/Barbería (81\,\%)}. \textbf{Individual} lidera en \textbf{Psicología/Psiquiatría (57\,\%)}. \textbf{Reservo} alcanza su mayor participación en \textbf{Medicina/Salud (35\,\%)}, con presencias intermedias en \textbf{Centro de estética (28\,\%)} y \textbf{Psicología/Psiquiatría (26\,\%)}. \textbf{Enterprise} es marginal \mbox{(0\,\%–3\,\%)}, con \textbf{0\,\%} en \textbf{Salón de belleza/Barbería}. El mix refleja predominio de \textbf{planes de precio intermedio} (Básico, Reservo) y \textbf{bajo} (Individual), con baja participación de \textbf{planes de alto precio} (Enterprise).
+La salida del modelo se utiliza para definir una propuesta de segmentación conductual sencilla, basada en combinaciones de riesgo de baja y valor económico aproximado. A partir de las columnas de probabilidad mensual y trimestral, y de los rangos cualitativos de riesgo, se identifican grupos como “alto riesgo y alto valor”, “alto riesgo y valor medio”, “riesgo medio con alto potencial de expansión” y “riesgo bajo pero valor alto”. Estas combinaciones se construyen utilizando la probabilidad a un mes como referencia principal para priorización inmediata y la probabilidad a tres meses para identificar casos donde la baja puede ocurrir dentro del trimestre.
 
-% insertar imagen aqui
-\insertimage[\label{img:prop_plan_por_rubro}]{informe2/prop_plan_por_rubro.png}{scale=0.80}{Proporción de planes por rubro. Fuente: elaboración propia}
+El valor económico se aproxima mediante la variable \texttt{arpa\_proxy}, derivada de la mensualidad del cliente, y se complementa con la antigüedad en meses y con el plan contratado. Sobre esta base se definen umbrales operativos que permiten ubicar a los clientes en bandas de valor, sin necesidad de cálculos adicionales en las herramientas de negocio. La segmentación incluye también información de país y rubro, de modo que las políticas puedan adaptarse a contextos comerciales distintos cuando sea necesario.
 
-\subsection{Proporción de rubros por plan}
-La Figura \ref{img:prop_rubro_por_plan} presenta la composición de rubros dentro de cada plan. \textbf{Medicina/Salud} domina en todos los planes \mbox{(63–78\,\%)}. En \textbf{Individual} destaca el peso de \textbf{Psicología/Psiquiatría (25\,\%)}. En \textbf{Básico} y \textbf{Reservo} se observan aportes complementarios de \textbf{Centro de estética (16\,\% y 11\,\%)} y \textbf{Odontología (8\,\% y 4\,\%)}. En \textbf{Enterprise} la base permanece concentrada en \textbf{Medicina/Salud (78\,\%)} y no incluye \textbf{Salón de belleza/Barbería (0\,\%)}. La composición confirma que los planes superiores se apalancan principalmente en especialidades clínicas.
+Para cada segmento se propone un conjunto preliminar de líneas de acción. En los clientes de mayor riesgo y mayor valor se priorizan contactos proactivos, revisión de fricciones recientes, ofertas de permanencia y refuerzo de uso de funcionalidades clave. En clientes de alto riesgo pero menor valor se sugieren intervenciones más acotadas, como recordatorios, diagnósticos de uso y ajustes simples en la configuración. En clientes de riesgo medio con alto potencial de expansión se recomiendan acciones orientadas a incrementar uso y explorar planes superiores. Para los segmentos de riesgo bajo se plantea un seguimiento liviano, aprovechando la información de uso y satisfacción para alimentar futuras mejoras del producto. Estas políticas se dejan como guía inicial para el equipo y se complementarán con la experiencia que se acumule en los primeros meses de uso.
 
-% insertar imagen aqui
-\insertimage[\label{img:prop_rubro_por_plan}]{informe2/prop_rubro_por_plan.png}{scale=0.80}{Proporción de rubros por plan. Fuente: elaboración propia}
+\subsubsection{Material de apoyo, pruebas en vivo y adopción del prototipo}
 
-\subsection{Promedio de mensualidad por rubro}
-La tabla del anexo \ref{tab:mensualidad_por_rubro} resume el promedio de mensualidad por rubro. \textbf{Medicina/Salud} presenta el mayor valor (\$ 62.566), seguida de \textbf{Psicología/Psiquiatría} (\$ 54.731) y \textbf{Centro de estética} (\$ 51.366). \textbf{Salón de belleza/Barbería} (\$ 44.906) y \textbf{Odontología} (\$ 40.950) muestran niveles inferiores. El promedio general alcanza \textbf{\$ 58.700}.
+El despliegue del prototipo se acompaña de un conjunto de tutoriales escritos y materiales audiovisuales que documentan el flujo de principio a fin. Se elabora un tutorial de implementación del modelo que describe la estructura de la Carpeta de uso Customer Success y referencia de manera integrada los documentos específicos para conexión a la base de datos, configuración de Colab y uso del Excel. Se redacta un tutorial de uso diario dirigido al equipo de Customer Success, donde se detallan los pasos para ejecutar el script de datamart, exportar \texttt{database\_act.csv}, cargar los archivos en Colab, generar las salidas, renombrar \texttt{salida\_modelo\_1.csv} y actualizar el Excel. Este documento enfatiza que los nombres de archivo y las rutas deben mantenerse fijos y que no se deben modificar las consultas internas ni el código del cuaderno.
 
-\subsection{Comparativa activos vs bloqueados por rubro}
-La Figura \ref{img:act_vs_bloq_rubro} compara la participación de clientes activos y bloqueados por rubro. \textbf{Medicina/Salud} concentra la mayor fracción en ambos grupos (\(\sim\)70\,\% activos; \(\sim\)60\,\% bloqueados). \textbf{Psicología/Psiquiatría} aparece \textbf{sobre–representado} entre bloqueados respecto de su peso en activos. \textbf{Centro de estética} mantiene proporciones similares. \textbf{Salón de belleza/Barbería} muestra mayor participación relativa en bloqueados. \textbf{Odontología} se observa \textbf{sub–representado} entre bloqueados.
+De manera complementaria se preparan tutoriales específicos para cada herramienta: una guía de conexión de DataGrip a la base de datos de producción mediante túnel SSH, con los parámetros de host, puerto, usuario, llave y base por defecto; una guía de configuración de Google Colab y de carga del cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb} en Google Drive; y una guía de uso del Excel de resultados que explica cómo fijar el origen de datos en Power Query y cómo operar el archivo solo con el comando “Actualizar todo”. Cada tutorial incluye versiones en video que muestran el flujo en pantalla, de modo que el equipo pueda seguir los pasos sin necesidad de conocimientos técnicos avanzados.
 
-% insertar imagen aqui
-\insertimage[\label{img:act_vs_bloq_rubro}]{informe2/act_vs_bloq_rubro.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia}
+Durante el cierre del proyecto se realizan pruebas en vivo del flujo completo, utilizando bases actualizadas de producción. Estas pruebas permiten verificar que el datamart se genera correctamente con la fecha de corte deseada, que el cuaderno de Colab acepta los archivos sin errores y que el Excel refleja los cambios una vez cargado el nuevo \texttt{salida\_modelo\_1.csv}. Los resultados de estas ejecuciones se discuten con el equipo de Customer Success, que valida la lectura de las columnas clave y la utilidad de los filtros por riesgo, plan y país.
 
-\subsection{Comparativa activos vs bloqueados por plan}
-La Figura \ref{img:act_vs_bloq_plan} compara la participación por plan. \textbf{Individual} aporta \textbf{20\,\%} de los activos y \textbf{38\,\%} de los bloqueados (\textbf{sobre–representación}). \textbf{Básico} mantiene proporciones cercanas (\textbf{46\,\%} activos; \textbf{41\,\%} bloqueados). \textbf{Reservo} muestra \textbf{sub–representación} en bloqueados (\textbf{31\,\%} activos; \textbf{17\,\%} bloqueados). \textbf{Enterprise} conserva peso marginal en ambos casos.
+Como resultado, se deja instalada una primera versión del prototipo operativo, lista para ser utilizada en un periodo inicial de evaluación interna. La empresa planifica usar el modelo en modo piloto durante los meses de diciembre, enero y febrero, con foco en revisar la coherencia de los clientes priorizados, ajustar las políticas propuestas y detectar necesidades adicionales de segmentación. La implementación completa en los sistemas de la empresa queda fuera del alcance temporal del proyecto, pero todos los elementos necesarios para esa etapa se entregan documentados: scripts, cuadernos, archivos de resultado, tutoriales y recomendaciones de monitoreo. De este modo, el trabajo desarrollado en la memoria deja una base sólida para que la organización avance desde el prototipo hacia una integración más profunda en sus procesos de gestión de clientes.
 
-% insertar imagen aqui
-\insertimage[\label{img:act_vs_bloq_plan}]{informe2/act_vs_bloq_plan.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia}
-
-\subsection{Actividad histórica de bloqueados y activos por rubro}
-La tabla del anexo \ref{tab:citas_bloq_act_rubro} compara volumen y uso promedio. \textbf{Medicina/Salud} concentra el mayor número de bloqueados (\textbf{54}). Entre bloqueados, destacan promedios altos de citas recientes en \textbf{Salón de belleza/Barbería (53)} y \textbf{Odontología (39)}; \textbf{Psicología/Psiquiatría} muestra el menor (\textbf{6}). Entre activos del último año, lideran \textbf{Medicina/Salud (564)} y \textbf{Salón de belleza/Barbería (544)}.
-
-\subsection{Actividad histórica de bloqueados y activos por plan}
-La tabla del anexo \ref{tab:citas_bloq_act_plan} muestra la comparación por plan. Los bloqueados se concentran en \textbf{Básico (39)} e \textbf{Individual (36)}. Los bloqueados de \textbf{Reservo (35)} y \textbf{Enterprise (49)} exhiben mayor uso reciente. En activos del último año, \textbf{Enterprise} presenta el mayor promedio (\textbf{2.524}), seguido por \textbf{Reservo (575)} y \textbf{Básico (470)}; \textbf{Individual} queda rezagado (\textbf{79}).
-
-\subsection{EDA}
-La Figura \ref{img:nulos} en anexos presenta el perfil de valores nulos por variable. Predominan los faltantes en \textbf{días\_desde\_ultimo\_bloqueo (95\,\%)}, seguidos por \textbf{recencia\_uso\_dias (46\,\%)}, \textbf{rubro (37\,\%)}, \textbf{plan\_reservo\_id (33\,\%)} y \textbf{plan\_nombre (33\,\%)}. \textbf{arpa\_proxy} registra \textbf{5\,\%}. El resto no presenta nulos relevantes.
-
-La Figura \ref{img:tipodata} en anexos detalla los tipos de datos. \textbf{id\_cliente} es entero; \textbf{mes\_corte} es fecha; \textbf{pais}, \textbf{plan\_nombre} y \textbf{rubro} son categóricas (texto). \textbf{plan\_reservo\_id} y \textbf{arpa\_proxy} están en \textit{float}; \textbf{recencia\_uso\_dias} y \textbf{dias\_desde\_ultimo\_bloqueo} también en \textit{float}. El resto corresponde a enteros. \textbf{baja\_previa} y \textbf{churn\_T1} son variables binarias.
-
-La Figura \ref{img:estadistic} en anexos resume las estadísticas descriptivas. \textbf{tenure\_meses} muestra mediana \textbf{35} y p75 \textbf{54}. La actividad presenta alta dispersión: \textbf{citas\_30d} con mediana \textbf{2} y máximo \textbf{13{,}164}; \textbf{citas\_60d} con mediana \textbf{5} y máximo \textbf{25{,}716}. \textbf{recencia\_uso\_dias} concentra valores bajos (mediana \textbf{1}). \textbf{bloqueos\_90d} es casi nula (mediana \textbf{0}). \textbf{tendencia\_90d} exhibe amplitud y valores extremos. \textbf{arpa\_proxy} presenta cola larga (mediana \textbf{40{,}000}; p75 \textbf{60{,}000}; máximo \textbf{2{,}370{,}000}). La tasa promedio de \textbf{churn\_T1} es \textbf{1\,\%}; \textbf{baja\_previa} también \textbf{1\,\%}.
-
-\subsection{Distribución de \textit{tenure\_meses}}
-La Figura \ref{img:tenure} muestra el histograma y el boxplot de \textit{tenure\_meses}. \textbf{Definición:} \textit{tenure\_meses} corresponde al número de meses transcurridos desde el inicio del servicio del cliente hasta el mes de corte; esta definición explica la concentración entre \textbf{15–55} meses, la cola derecha asociada a relaciones antiguas y los valores atípicos altos (\(>\)\,\textbf{100}). La distribución es asimétrica a la derecha, con mediana cercana a \textbf{35} y p75 en torno a \textbf{54}; también se observan cohortes recientes con valores \textbf{0–6} meses.
-
-% insertar imagen aqui
-\insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
-
-\subsection{Matriz de correlaciones}
-La Figura \ref{img:correlacion} resume las asociaciones entre variables numéricas. \textbf{citas\_30d} y \textbf{citas\_60d} muestran correlación casi perfecta \textbf{(1{.}00)}. \textbf{cambios\_estado\_90d} se asocia de forma positiva con \textbf{bloqueos\_90d} \textbf{(0{.}43)}. \textbf{días\_desde\_ultimo\_bloqueo} presenta correlaciones negativas con \textbf{tendencia\_90d} \textbf{(-0{.}56)} y con \textbf{bloqueos\_90d} \textbf{(-0{.}40)}. \textbf{tenure\_meses} mantiene relaciones débiles a moderadas con \textbf{citas\_30d/60d} \textbf{(0{.}29)} y negativas con \textbf{recencia\_uso\_dias} \textbf{(-0{.}14)} y \textbf{cambios\_estado\_90d} \textbf{(-0{.}16)}. \textbf{churn\_T1} exhibe asociaciones bajas; destaca una correlación positiva leve con \textbf{citas\_30d} \textbf{(0{.}24)}. \textbf{id\_cliente} registra una correlación fuerte con \textbf{tenure\_meses} \textbf{(-0{.}96)} y se considerará solo como identificador.
-
-% insertar imagen aqui
-\insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
-
-En relación con la capacidad del estudiante para responder a los objetivos, el avance actual demuestra factibilidad técnica y operativa. Ya se cuenta con un marco metodológico claro (CRISP–DM), un EDA inicial que caracteriza datos críticos y una base analítica en construcción con variables de identificación, valor, uso y fricción. Según el cronograma, se dispone de las fuentes necesarias para entrenar y validar el modelo; existen además criterios de éxito definidos y métricas de evaluación consistentes. Con estos insumos, el estudiante está en posición de completar la preparación de datos, entrenar un modelo base interpretable y diseñar la segmentación y políticas asociadas.
-
-Se identifican ajustes necesarios y manejables. Primero, fortalecer la estructuración de datos: estandarizar llaves y catálogos (plan, rubro, país), documentar reglas de imputación y tratamiento de atípicos, y asegurar definiciones operativas robustas para etiqueta y ventanas temporales. Segundo, reforzar calidad y gobernanza: controles de cobertura por corte, prevención de \textit{data leakage} con validación temporal y \textit{pipelines} reproducibles. Tercero, alinear el modelado con uso real: priorizar variables con alta cobertura, mantener interpretabilidad para implementación en Customer Success y planificar iteraciones cortas con revisión de métricas. Con estas acciones, las limitaciones de origen (datos no completamente estructurados) no impiden el logro de los objetivos; permiten una aproximación fiel a la realidad y una entrega utilizable por la empresa.
-
-\newpage
 \section{Discusiones}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus, consequat sapien vitae, auctor turpis. In at fermentum ante, volutpat suscipit quam. Donec blandit nulla quis auctor interdum. Integer in mi orci. Vivamus mollis maximus consectetur. In nec finibus neque, non varius justo. Maecenas aliquet, erat laoreet efficitur lobortis, turpis purus sagittis lorem, eget pulvinar tortor lectus at ante. Ut sollicitudin, magna sed bibendum viverra, massa nisi congue libero, eu viverra eros velit et libero. Cras varius dictum turpis, molestie pretium ex finibus nec. Quisque quam velit, ultricies id consequat nec, vestibulum id odio. Phasellus ultricies lobortis accumsan. Integer semper mauris libero, ac finibus purus dignissim vitae. Nam in egestas odio, vitae tempus leo. Duis dictum dui bibendum fermentum porta.
 
@@ -798,6 +789,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus,
 Nam nec aliquet diam. Praesent mauris metus, dapibus eu nibh sit amet, molestie rutrum lectus. Sed eget lacus eu justo hendrerit posuere vitae ut odio. Donec ac orci sollicitudin, lacinia lorem eget, sodales erat. Nam dictum efficitur ipsum, vestibulum gravida elit congue non. Pellentesque euismod purus ornare nunc tincidunt feugiat. Mauris consectetur ligula vitae nisi rhoncus eleifend. Pellentesque euismod elementum ex, nec blandit metus venenatis sed. Donec tempus odio quis convallis sagittis. Nullam vel orci sit amet risus dictum interdum. Suspendisse dapibus pellentesque justo vel dignissim. Mauris nibh erat, elementum vitae rhoncus vel, mollis ac metus. Sed arcu erat, sodales sed mi ac, ultrices sodales justo. Vestibulum tellus ligula, volutpat at cursus in, eleifend ut arcu.
 
 \newpage
+
 \section{Conclusiones}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis odio tempus, consequat sapien vitae, auctor turpis. In at fermentum ante, volutpat suscipit quam. Donec blandit nulla quis auctor interdum. Integer in mi orci. Vivamus mollis maximus consectetur. In nec finibus neque, non varius justo. Maecenas aliquet, erat laoreet efficitur lobortis, turpis purus sagittis lorem, eget pulvinar tortor lectus at ante. Ut sollicitudin, magna sed bibendum viverra, massa nisi congue libero, eu viverra eros velit et libero. Cras varius dictum turpis, molestie pretium ex finibus nec. Quisque quam velit, ultricies id consequat nec, vestibulum id odio. Phasellus ultricies lobortis accumsan. Integer semper mauris libero, ac finibus purus dignissim vitae. Nam in egestas odio, vitae tempus leo. Duis dictum dui bibendum fermentum porta.
 
@@ -916,6 +908,7 @@ Nam nec aliquet diam. Praesent mauris metus, dapibus eu nibh sit amet, molestie 
 \end{table}
 
 \newpage
+
 \section{Tablas de Desarrollo}
 
 \subsection{}
