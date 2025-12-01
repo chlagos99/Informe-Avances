@@ -453,8 +453,6 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
     \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
 \end{itemize}
 
-
-
 \subsection{Recursos e insumos}
 
 La metodología requiere el uso coordinado de recursos de datos, herramientas tecnológicas y conocimiento de negocio.
@@ -671,6 +669,41 @@ El siguiente paso corresponde a la calibración de probabilidades. El pipeline a
 
 Durante el proceso se exploran variantes del modelo en términos de intensidad de regularización y selección de subconjuntos de variables transformadas. Las combinaciones que no mejoran de forma clara la discriminación o la calibración se descartan. El modelo final corresponde a la regresión logística regularizada integrada en el pipeline de transformaciones y envuelta en el calibrador entrenado con el conjunto de desarrollo. Este modelo produce, para cada cliente activo en un mes de corte, una probabilidad mensual de baja que sirve como insumo principal para las fases siguientes de evaluación económica, segmentación conductual y diseño de políticas comerciales.
 
+\subsection{Fase 5: Evaluación}
+
+En esta fase se analiza el desempeño del modelo y se conecta con los indicadores de éxito definidos en la comprensión del negocio. Se revisa la capacidad de discriminación y de focalización, la calibración de las probabilidades, la estabilidad en segmentos relevantes y la suficiencia del modelo para uso operativo.
+
+\subsubsection{Desempeño global en el conjunto de prueba}
+
+La evaluación principal se realiza sobre el conjunto de prueba definido en la fase de modelado. El modelo calibrado alcanza un valor de ROC–AUC cercano a 0{,}825, lo que indica una capacidad sólida para separar clientes que harán baja efectiva de aquellos que permanecerán activos. La curva de precisión–recall muestra una PR–AUC de aproximadamente 0{,}10 frente a una tasa base de eventos de 0{,}023, por lo que el área bajo la curva es más de cuatro veces superior al nivel que se obtendría con un ranking aleatorio. Esto confirma que el ordenamiento por probabilidad entrega una ganancia clara en priorización de clientes en riesgo.
+
+El análisis por deciles de riesgo en el conjunto de prueba muestra que el primer decil concentra una tasa de baja cercana a 11\,\%, frente a la tasa promedio de 2{,}34\,\%, lo que representa un \textit{lift} cercano a 4{,}8. En ese primer decil se acumula cerca del 48\,\% de todos los eventos de churn. Al considerar el 20\,\% superior del ranking (deciles 1 y 2) la captura acumulada llega a alrededor del 68\,\% de las bajas, el 30\,\% superior captura cerca del 80\,\% y el 40\,\% superior alcanza valores en torno a 86–87\,\%. El 50\,\% superior del ranking concentra aproximadamente el 91\,\% de los eventos. Estos resultados muestran que la masa de bajas se concentra en la parte alta del score y que el modelo permite focalizar la atención en una fracción reducida de la cartera con alta cobertura de eventos.
+
+Desde una perspectiva operativa se revisan dos umbrales de trabajo. El primero corresponde al 20\,\% superior de la cartera en el conjunto de prueba, con un punto de corte cercano a 0{,}043 en probabilidad. En ese umbral el modelo alcanza un recall de alrededor de 0{,}695 y una precisión cercana a 0{,}081, es decir, casi el 70\,\% de las bajas se encuentra dentro de ese grupo y la tasa de eventos en el subconjunto priorizado es más de tres veces la tasa base. El segundo umbral fija un número absoluto de clientes, en torno a 600 casos con probabilidades más altas. En este punto la precisión se eleva a valores cercanos a 0{,}148 y el recall se sitúa alrededor de 0{,}228. Este escenario representa un grupo más acotado de clientes, con una tasa de bajas mucho mayor, útil para acciones intensivas con capacidad limitada.
+
+\subsubsection{Calibración de probabilidades y estabilidad por segmentos}
+
+Además de la discriminación, se analiza la calibración de las probabilidades en el conjunto de prueba. El Brier score global se sitúa en torno a 0{,}022, lo que indica un error cuadrático medio bajo. La pendiente de calibración es cercana a 0{,}89, lo que refleja una ligera sobreconfianza: las probabilidades muy altas y muy bajas tienden a estar un poco más cerca del promedio real. El intercepto se aproxima a −0{,}30 y la probabilidad media predicha (alrededor de 0{,}0229) es muy similar a la observada (en torno a 0{,}0234), con una diferencia absoluta menor a 0{,}001. La tabla de confiabilidad por grupos de probabilidad muestra concordancia razonable en casi todos los tramos; en el grupo de probabilidad más alta la tasa observada de baja es algo superior a la predicha, lo que confirma una leve subpredicción en la cola alta, pero dentro de márgenes manejables.
+
+La calibración se revisa también por tipo de plan, país y rubro. Por plan, las diferencias entre probabilidad media predicha y observada son cercanas a cero en los planes Básico y Reservo. En el plan Individual la tasa real de baja es levemente superior a la estimada, con un error absoluto cercano a 0{,}01, mientras que en el plan Enterprise se observan diferencias pequeñas pero con poca cantidad de casos. Por país, el comportamiento en Chile, que concentra la mayor parte de la muestra, es estable, con probabilidades predichas y observadas prácticamente iguales. En países con pocos clientes de prueba, como algunos mercados secundarios, los errores de calibración son mayores, lo que se interpreta como resultado natural de tamaños muestrales pequeños más que de un problema estructural del modelo.
+
+Por rubro, Medicina/Salud y Centro de estética presentan una calibración muy alineada, con errores absolutos cercanos a cero. En Psicología/Psiquiatría la tasa de baja real es levemente superior a la estimada, con un error en torno a 0{,}01, lo que indica una pequeña subpredicción, pero mantiene un nivel aceptable para uso operativo. En rubros con menos observaciones la variación es mayor, de nuevo por efecto del bajo volumen.
+
+\subsubsection{Pruebas de robustez por país y rubro}
+
+Para evaluar la robustez del modelo se realizan experimentos adicionales en distintos subconjuntos de la cartera, utilizando el mismo modelo entrenado y calibrado. En los segmentos con mayor volumen de datos, como el conjunto global, Chile, Medicina/Salud, Chile más Medicina/Salud y la combinación Chile–México–Colombia, las métricas de discriminación se mantienen en torno a ROC–AUC 0{,}82–0{,}83, con PR–AUC similares al valor global y con un top 20\,\% del ranking que captura alrededor del 70\,\% de las bajas. Esto indica que el modelo conserva su capacidad de ranking en los subsegmentos que representan el núcleo del negocio.
+
+En México, donde el número de observaciones es menor, el modelo muestra un ROC–AUC cercano a 0{,}76. Aunque este valor es algo inferior al global, sigue por encima de 0{,}75, lo que resulta útil para priorización. La PR–AUC es aproximadamente tres veces la tasa base de churn en ese país y el top 20\,\% de clientes por score captura alrededor del 70\,\% de las bajas, con una precisión que supera el 11\,\%. Estos resultados sugieren que, pese al menor volumen, el modelo entrega señales aprovechables para la operación.
+
+Colombia es el único segmento donde el rendimiento baja de manera clara. El ROC–AUC se sitúa en torno a 0{,}62, el top 20\,\% del ranking captura del orden del 23\,\% de las bajas y las métricas de calibración muestran mayor error medio. Este comportamiento coincide con el bajo número de clientes y de eventos disponibles para ese país, lo que limita la capacidad de aprender patrones específicos y genera ruido. En lugar de entrenar un modelo exclusivo para Colombia, se concluye que, con los datos actuales, es preferible utilizar el modelo global como referencia y considerar la mejora de este segmento como trabajo futuro sujeto a mayor volumen de información.
+
+En conjunto, las pruebas por país y rubro muestran que el modelo es estable y consistente en los segmentos principales de la empresa y que las diferencias más marcadas aparecen solo donde el tamaño de muestra es reducido. Esto respalda la decisión de trabajar con un modelo único a nivel regional como piloto.
+
+\subsubsection{Conclusiones sobre suficiencia del modelo para uso operativo}
+
+Los resultados de discriminación y de focalización cumplen y superan los umbrales definidos en los indicadores de éxito. El ROC–AUC se ubica por encima del valor mínimo propuesto para un modelo útil en este contexto y el porcentaje de bajas capturadas en el 20\,\% superior del ranking supera ampliamente el 40\,\% exigido, alcanzando valores cercanos al 70\,\%. La calibración global es adecuada, con diferencias promedio pequeñas entre probabilidades predichas y observadas, y la estabilidad por plan y rubro es buena en los segmentos con mayor volumen. Las pruebas por país confirman que el modelo es sólido en Chile y en el conjunto Latam y que las limitaciones se concentran en mercados de menor tamaño.
+
+Con base en esta evidencia, se considera que el modelo final es suficiente para apoyar decisiones de retención y expansión en la empresa. El score mensual de riesgo de baja puede utilizarse para priorizar clientes en acciones de Customer Success, siempre que se acompañe de monitoreo continuo de métricas clave y de una revisión periódica de la calibración, en particular en segmentos con menor número de clientes. El detalle de las políticas comerciales asociadas a los distintos niveles de riesgo se desarrolla en las fases siguientes de despliegue del prototipo operativo.
 
 
 
