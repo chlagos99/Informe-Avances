@@ -68,22 +68,28 @@
 \contentsline {subsubsection}{\numberline {8.6.1}Flujo mensual de scoring sobre la cartera actualizada}{38}{subsubsection.8.6.1}%
 \contentsline {subsubsection}{\numberline {8.6.2}Artefactos operativos y carpeta de uso para Customer Success}{39}{subsubsection.8.6.2}%
 \contentsline {subsubsection}{\numberline {8.6.3}Segmentación conductual y políticas preliminares}{39}{subsubsection.8.6.3}%
-\contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{40}{subsubsection.8.6.4}%
-\contentsline {section}{\numberline {9}Discusiones}{41}{section.9}%
-\contentsline {section}{\numberline {10}Conclusiones}{43}{section.10}%
-\contentsline {section}{Referencias}{44}{section.10}%
-\contentsline {section}{Anexo \numberline {A}Organigrama}{46}{appendix.1.Alph1}%
-\contentsline {section}{Anexo \numberline {B}Estados del cliente}{46}{appendix.1.Alph2}%
-\contentsline {subsection}{\numberline {B.1}}{47}{subsection.1.Alph2.1}%
-\contentsline {subsection}{\numberline {B.2}}{48}{subsection.1.Alph2.2}%
-\contentsline {subsection}{\numberline {B.3}}{49}{subsection.1.Alph2.3}%
-\contentsline {subsection}{\numberline {B.4}}{50}{subsection.1.Alph2.4}%
-\contentsline {subsection}{\numberline {B.5}}{51}{subsection.1.Alph2.5}%
-\contentsline {section}{Anexo \numberline {C}Indicadores del proceso}{53}{appendix.1.Alph3}%
-\contentsline {section}{Anexo \numberline {D}Tablas de Desarrollo}{54}{appendix.1.Alph4}%
-\contentsline {subsection}{\numberline {D.1}}{54}{subsection.1.Alph4.1}%
-\contentsline {subsection}{\numberline {D.2}}{54}{subsection.1.Alph4.2}%
-\contentsline {subsection}{\numberline {D.3}}{55}{subsection.1.Alph4.3}%
-\contentsline {subsection}{\numberline {D.4}}{55}{subsection.1.Alph4.4}%
-\contentsline {subsection}{\numberline {D.5}}{56}{subsection.1.Alph4.5}%
-\contentsline {subsection}{\numberline {D.6}}{56}{subsection.1.Alph4.6}%
+\contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{41}{subsubsection.8.6.4}%
+\contentsline {section}{\numberline {9}Discusiones}{42}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{42}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Impacto esperado en la operación y rol de Customer Success}{42}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Comportamiento del cliente y límites del modelo}{43}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Limitaciones de datos y riesgos en el uso del prototipo}{44}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Conclusiones}{45}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Cumplimiento de los objetivos e indicadores}{45}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Conclusiones generales}{46}{subsection.10.2}%
+\contentsline {section}{Referencias}{48}{subsection.10.2}%
+\contentsline {section}{Anexo \numberline {A}Organigrama}{50}{appendix.1.Alph1}%
+\contentsline {section}{Anexo \numberline {B}Estados del cliente}{50}{appendix.1.Alph2}%
+\contentsline {subsection}{\numberline {B.1}}{51}{subsection.1.Alph2.1}%
+\contentsline {subsection}{\numberline {B.2}}{52}{subsection.1.Alph2.2}%
+\contentsline {subsection}{\numberline {B.3}}{53}{subsection.1.Alph2.3}%
+\contentsline {subsection}{\numberline {B.4}}{54}{subsection.1.Alph2.4}%
+\contentsline {subsection}{\numberline {B.5}}{55}{subsection.1.Alph2.5}%
+\contentsline {section}{Anexo \numberline {C}Indicadores del proceso}{57}{appendix.1.Alph3}%
+\contentsline {section}{Anexo \numberline {D}Tablas de Desarrollo}{58}{appendix.1.Alph4}%
+\contentsline {subsection}{\numberline {D.1}}{58}{subsection.1.Alph4.1}%
+\contentsline {subsection}{\numberline {D.2}}{58}{subsection.1.Alph4.2}%
+\contentsline {subsection}{\numberline {D.3}}{59}{subsection.1.Alph4.3}%
+\contentsline {subsection}{\numberline {D.4}}{59}{subsection.1.Alph4.4}%
+\contentsline {subsection}{\numberline {D.5}}{60}{subsection.1.Alph4.5}%
+\contentsline {subsection}{\numberline {D.6}}{60}{subsection.1.Alph4.6}%
