@@ -421,7 +421,7 @@ La etiqueta \texttt{churn\_\hspace{0pt}T1} indica si un cliente activo en un cor
 
 \subsubsection{Tratamiento de valores faltantes y valores extremos}
 
-Sobre el panel resultante se revisan valores faltantes y extremos. \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{pais} presentan nulos que se imputan con una categoría explícita de desconocido. \texttt{arpa\_\hspace{0pt}proxy} tiene casos sin mensualidad válida; se imputan con la mediana por plan o la mediana global y se crea un indicador de imputación. En \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, los nulos corresponden a ausencia de uso reciente, se imputan a 90 días y se marca esta situación con un indicador.
+Sobre el panel resultante se revisan valores faltantes y extremos. \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{pais} presentan nulos que se imputan con una categoría explícita de desconocido(anexo~\ref{img:nulos}). \texttt{arpa\_\hspace{0pt}proxy} tiene casos sin mensualidad válida; se imputan con la mediana por plan o la mediana global y se crea un indicador de imputación. En \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, los nulos corresponden a ausencia de uso reciente, se imputan a 90 días y se marca esta situación con un indicador.
 
 Para valores extremos se aplican recortes en percentiles altos. \texttt{arpa\_\hspace{0pt}proxy} se recorta y se transforma con
 \[
@@ -595,30 +595,30 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \newpage
 
 \begin{appendixd}
-\section{Organigrama}
+\section{}
     %insertar imagen aqui
 \insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.5}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
 
-\section{Estados del cliente}
+\section{}
 
-\subsection{}
+\section{}
 \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 \insertimage[\label{img:etapa_cliente_activo1}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
 
 %Tabla con indicadores
 \newpage
-\section{Indicadores del proceso}
+\section{}
 \begin{table}[H]
   \begin{threeparttable}
     \centering
@@ -679,9 +679,7 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 
 \newpage
 
-\section{Tablas de Desarrollo}
-
-\subsection{}
+\section{}
 \begin{table}[H]
     \centering
     \caption{Bloqueados y actividad de citas por rubro. Fuente: elaboración propia}
@@ -699,7 +697,7 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:citas_bloq_act_rubro}
 \end{table}
 
-\subsection{}
+\section{}
 \begin{table}[H]
     \centering
     \caption{Bloqueados y actividad de citas por plan. Fuente: elaboración propia}
@@ -716,7 +714,7 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:citas_bloq_act_plan}
 \end{table}
 
-\subsection{}
+\section{}
 \begin{table}[H]
     \centering
     \caption{Promedio de mensualidad por rubro (CLP). Fuente: elaboración propia}
@@ -736,56 +734,53 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:mensualidad_por_rubro}
 \end{table}
 
-\subsection{}
-
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:nulos}]{informe2/nulos.png}{scale=0.80}{Porcentaje de nulos por variable. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:tipodata}]{informe2/tipodata.png}{scale=0.80}{Tipos de datos de las variables. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:estadistic}]{informe2/estadistic.png}{scale=0.80}{Estadísticas descriptivas de variables numéricas. Fuente: elaboración propia}
 
 \newpage
 
-\section{EDA y resultados}
-
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_pais}]{informe2/porc_clientes_por_pais.png}{scale=0.80}{Porcentaje de clientes por país. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_plan}]{informe2/porc_clientes_por_plan.png}{scale=0.80}{Porcentaje de clientes por plan. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:prop_plan_por_rubro}]{informe2/prop_plan_por_rubro.png}{scale=0.80}{Proporción de planes por rubro. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:prop_rubro_por_plan}]{informe2/prop_rubro_por_plan.png}{scale=0.80}{Proporción de rubros por plan. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:act_vs_bloq_rubro}]{informe2/act_vs_bloq_rubro.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:act_vs_bloq_plan}]{informe2/act_vs_bloq_plan.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
 
-\subsection{}
+\section{}
 % insertar imagen aqui
 \insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
 

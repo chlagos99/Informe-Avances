@@ -1359,16 +1359,17 @@ LaTeX Info: Redefining \% on input line 38.
 ]
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [3.4])
+ [3.4]
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [4.5])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 5.
-LaTeX Info: Redefining \% on input line 5.
- [4.5])
+)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
@@ -1524,109 +1525,77 @@ Overfull \hbox (10.4167pt too wide) in paragraph at lines 605--605
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 606.
-LaTeX Info: Redefining \% on input line 606.
 [35.41]
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
-LaTeX Info: Redefining \. on input line 609.
-LaTeX Info: Redefining \% on input line 609.
  [36.42]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
-LaTeX Info: Redefining \. on input line 612.
-LaTeX Info: Redefining \% on input line 612.
  [37.43]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 615.
-LaTeX Info: Redefining \% on input line 615.
  [38.44]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
-LaTeX Info: Redefining \. on input line 618.
-LaTeX Info: Redefining \% on input line 618.
- [39.45]
-LaTeX Info: Redefining \. on input line 620.
-LaTeX Info: Redefining \% on input line 620.
- [40.46]
+ [39.45] [40.46]
 Overfull \hbox (47.15036pt too wide) in paragraph at lines 624--678
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 680.
-LaTeX Info: Redefining \% on input line 680.
 [41.47]
-Overfull \hbox (28.10564pt too wide) in paragraph at lines 688--700
+Overfull \hbox (28.10564pt too wide) in paragraph at lines 686--698
  [][] 
  []
 
 
-Overfull \hbox (5.48717pt too wide) in paragraph at lines 706--717
+Overfull \hbox (5.48717pt too wide) in paragraph at lines 704--715
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 738.
-LaTeX Info: Redefining \% on input line 738.
 [42.48]
 File: ./img/informe2/nulos.png Graphic file (type bmp)
 <./img/informe2/nulos.png>
 File: ./img/informe2/tipodata.png Graphic file (type bmp)
 <./img/informe2/tipodata.png>
-LaTeX Info: Redefining \. on input line 747.
-LaTeX Info: Redefining \% on input line 747.
  [43.49]
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
 <./img/informe2/estadistic.png>
-LaTeX Info: Redefining \. on input line 752.
-LaTeX Info: Redefining \% on input line 752.
- [44.50]
+ [44.50] [45.51]
 File: ./img/informe2/porc_clientes_por_rubro.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_rubro.png>
 File: ./img/informe2/porc_clientes_por_pais.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_pais.png>
 File: ./img/informe2/porc_clientes_por_plan.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_plan.png>
-LaTeX Info: Redefining \. on input line 767.
-LaTeX Info: Redefining \% on input line 767.
- [45.51]
+ [46.52]
 File: ./img/informe2/prop_plan_por_rubro.png Graphic file (type bmp)
 <./img/informe2/prop_plan_por_rubro.png>
 File: ./img/informe2/prop_rubro_por_plan.png Graphic file (type bmp)
 <./img/informe2/prop_rubro_por_plan.png>
-LaTeX Info: Redefining \. on input line 775.
-LaTeX Info: Redefining \% on input line 775.
- [46.52]
+ [47.53]
 File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_rubro.png>
 File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_plan.png>
-LaTeX Info: Redefining \. on input line 783.
-LaTeX Info: Redefining \% on input line 783.
- [47.53]
+ [48.54]
 File: ./img/informe2/ternure.png Graphic file (type bmp)
 <./img/informe2/ternure.png>
 
-Overfull \hbox (7.27794pt too wide) in paragraph at lines 786--786
+Overfull \hbox (7.27794pt too wide) in paragraph at lines 781--781
  [][] 
  []
 
 File: ./img/informe2/correlacion.png Graphic file (type bmp)
 <./img/informe2/correlacion.png>
-LaTeX Info: Redefining \. on input line 791.
-LaTeX Info: Redefining \% on input line 791.
-[48.54]) (babel-spanish.tex
+[49.55]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-)
-LaTeX Info: Redefining \. on input line 89.
-LaTeX Info: Redefining \% on input line 89.
- [49.55] (main.aux
+) [50.56] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (55 pages, 320712 bytes).
+Output written on main.xdv (56 pages, 311204 bytes).
