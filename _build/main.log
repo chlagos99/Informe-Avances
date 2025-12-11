@@ -1366,8 +1366,8 @@ LaTeX Info: Redefining \% on input line 77.
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 5.
+LaTeX Info: Redefining \% on input line 5.
  [4.5])
 \tf@lof=\write4
 \openout4 = `main.lof'.
@@ -1469,27 +1469,27 @@ LaTeX Info: Redefining \% on input line 392.
 LaTeX Info: Redefining \. on input line 409.
 LaTeX Info: Redefining \% on input line 409.
  [20.26]
-LaTeX Info: Redefining \. on input line 436.
-LaTeX Info: Redefining \% on input line 436.
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
  [21.27]
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 454.
+LaTeX Info: Redefining \% on input line 454.
  [22.28]
-LaTeX Info: Redefining \. on input line 470.
-LaTeX Info: Redefining \% on input line 470.
+LaTeX Info: Redefining \. on input line 467.
+LaTeX Info: Redefining \% on input line 467.
  [23.29]
-LaTeX Info: Redefining \. on input line 486.
-LaTeX Info: Redefining \% on input line 486.
+LaTeX Info: Redefining \. on input line 482.
+LaTeX Info: Redefining \% on input line 482.
  [24.30]
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
+LaTeX Info: Redefining \. on input line 498.
+LaTeX Info: Redefining \% on input line 498.
  [25.31]
-LaTeX Info: Redefining \. on input line 514.
-LaTeX Info: Redefining \% on input line 514.
+LaTeX Info: Redefining \. on input line 513.
+LaTeX Info: Redefining \% on input line 513.
 
 [26.32]
-LaTeX Info: Redefining \. on input line 525.
-LaTeX Info: Redefining \% on input line 525.
+LaTeX Info: Redefining \. on input line 524.
+LaTeX Info: Redefining \% on input line 524.
  [27.33]
 LaTeX Info: Redefining \. on input line 530.
 LaTeX Info: Redefining \% on input line 530.
@@ -1590,46 +1590,37 @@ File: ./img/informe2/porc_clientes_por_rubro.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_rubro.png>
 File: ./img/informe2/porc_clientes_por_pais.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_pais.png>
-LaTeX Info: Redefining \. on input line 770.
-LaTeX Info: Redefining \% on input line 770.
- [46.52]
 File: ./img/informe2/porc_clientes_por_plan.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_plan.png>
-LaTeX Info: Redefining \. on input line 779.
-LaTeX Info: Redefining \% on input line 779.
- [47.53]
+LaTeX Info: Redefining \. on input line 772.
+LaTeX Info: Redefining \% on input line 772.
+ [46.52]
 File: ./img/informe2/prop_plan_por_rubro.png Graphic file (type bmp)
 <./img/informe2/prop_plan_por_rubro.png>
 File: ./img/informe2/prop_rubro_por_plan.png Graphic file (type bmp)
 <./img/informe2/prop_rubro_por_plan.png>
+LaTeX Info: Redefining \. on input line 780.
+LaTeX Info: Redefining \% on input line 780.
+ [47.53]
+File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
+<./img/informe2/act_vs_bloq_rubro.png>
+File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
+<./img/informe2/act_vs_bloq_plan.png>
 LaTeX Info: Redefining \. on input line 788.
 LaTeX Info: Redefining \% on input line 788.
  [48.54]
-File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
-<./img/informe2/act_vs_bloq_rubro.png>
-LaTeX Info: Redefining \. on input line 797.
-LaTeX Info: Redefining \% on input line 797.
- [49.55]
-File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
-<./img/informe2/act_vs_bloq_plan.png>
-LaTeX Info: Redefining \. on input line 806.
-LaTeX Info: Redefining \% on input line 806.
- [50.56]
 File: ./img/informe2/ternure.png Graphic file (type bmp)
 <./img/informe2/ternure.png>
 
-Overfull \hbox (7.27794pt too wide) in paragraph at lines 821--821
+Overfull \hbox (7.27794pt too wide) in paragraph at lines 791--791
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 822.
-LaTeX Info: Redefining \% on input line 822.
-[51.57]
 File: ./img/informe2/correlacion.png Graphic file (type bmp)
 <./img/informe2/correlacion.png>
-LaTeX Info: Redefining \. on input line 828.
-LaTeX Info: Redefining \% on input line 828.
- [52.58]) (babel-spanish.tex
+LaTeX Info: Redefining \. on input line 797.
+LaTeX Info: Redefining \% on input line 797.
+[49.55]) (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
@@ -1639,9 +1630,8 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
- [53.59]
-(main.aux
+ [50.56] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (59 pages, 340132 bytes).
+Output written on main.xdv (56 pages, 322776 bytes).
