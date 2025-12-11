@@ -371,7 +371,7 @@ La cuarta tarea definió cómo medir el éxito del proyecto y qué entregables a
 
 \subsubsection{Línea base económica y evaluación preliminar}
 
-La quinta tarea cuantificó una línea base económica de la cartera. Se fijó \(N_{\mathrm{activos}} \approx 3{.}500\) y un ingreso anual recurrente cercano a \(2{.}465{.}400{.}000\), lo que da \(\mathrm{MRR}_{\mathrm{base}} \approx 205{.}450{.}000\) y un ingreso promedio por cuenta \(\mathrm{ARPA} \approx 58{.}700\). Con una tasa de bajas mensuales \(\mathrm{Churn}_{\mathrm{base}} = 0{,}024\) se estimó que se pierden cerca de \(N_{\mathrm{bajas}} \approx 84\) clientes al mes y un ingreso \(\mathrm{MRR}_{\mathrm{perdido}} \approx 4{.}930{.}800\), equivalente a unos \(59{.}200{.}000\) al año. 
+La quinta tarea cuantificó una línea base económica de la cartera. Se fijó \(N_{\mathrm{activos}} \approx 3{.}500\) y un ingreso anual recurrente cercano a \(2{.}465{.}400{.}000\), lo que da \(\mathrm{MRR}_{\mathrm{base}} \approx 205{.}450{.}000\) y un ingreso promedio por cuenta \(\mathrm{ARPA} \approx 58{.}700\) (anexo ~ \ref{tab:mensualidad_por_rubro}). Con una tasa de bajas mensuales \(\mathrm{Churn}_{\mathrm{base}} = 0{,}024\) se estimó que se pierden cerca de \(N_{\mathrm{bajas}} \approx 84\) clientes al mes y un ingreso \(\mathrm{MRR}_{\mathrm{perdido}} \approx 4{.}930{.}800\), equivalente a unos \(59{.}200{.}000\) al año. 
 
 A partir de esta base se evaluaron escenarios de mejora usando la expresión de ingreso retenido incremental. Reducir la tasa de bajas desde \(0{,}024\) a \(0{,}020\) implica \(\Delta \mathrm{Churn} = 0{,}004\) y un \(\Delta \mathrm{MRR}_{\mathrm{retenido}} \approx 821{.}800\) mensuales, es decir cerca de \(9{.}861{.}600\) al año. Una mejora de \(0{,}001\) punto porcentual en la tasa de bajas representa \(\Delta \mathrm{MRR}_{\mathrm{retenido}} \approx 205{.}450\) al mes, unos \(2{.}465{.}400\) al año. Estas cifras entregan el orden de magnitud del problema económico asociado al churn y servirán para interpretar los resultados del modelo y de las políticas de retención y expansión.
 
@@ -595,31 +595,30 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \newpage
 
 \begin{appendixd}
-
-  \section{Organigrama}
+\section{Organigrama}
     %insertar imagen aqui
-    \insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.5}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
+\insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.5}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
 
-	\section{Estados del cliente}
+\section{Estados del cliente}
 
-    \subsection{}
-    \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo. Fuente: elaboración propia}
-    \subsection{}
-    \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo. Fuente: elaboración propia}
-    \subsection{}
-    \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
-    \subsection{}
-    \insertimage[\label{img:etapa_cliente_activo1}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
-    \subsection{}
-    \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
+\subsection{}
+\insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo. Fuente: elaboración propia}
 
-    	% Imagen, se numerará automáticamente con la letra del anexo según
-	% la configuración \appendixindepobjnum
-	  \insertimage[\label{img:proceso_completo}]{bizagi/proceso_completo.png}{scale=0.05}{Proceso completo de cliente en Reservo. Fuente: elaboración propia}
+\subsection{}
+\insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo. Fuente: elaboración propia}
+
+\subsection{}
+\insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
+
+\subsection{}
+\insertimage[\label{img:etapa_cliente_activo1}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
+
+\subsection{}
+\insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
 
 %Tabla con indicadores
 \newpage
-  \section{Indicadores del proceso}
+\section{Indicadores del proceso}
 \begin{table}[H]
   \begin{threeparttable}
     \centering
@@ -742,7 +741,6 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 % insertar imagen aqui
 \insertimage[\label{img:nulos}]{informe2/nulos.png}{scale=0.80}{Porcentaje de nulos por variable. Fuente: elaboración propia}
 
-
 \subsection{}
 % insertar imagen aqui
 \insertimage[\label{img:tipodata}]{informe2/tipodata.png}{scale=0.80}{Tipos de datos de las variables. Fuente: elaboración propia}
@@ -755,10 +753,7 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 
 \section{EDA y resultados}
 
-
-\subsection{Composición por rubro}
-La Figura \ref{img:porc_clientes_por_rubro} muestra la distribución de clientes por rubro. La cartera se concentra en \textbf{Medicina/Salud (70\,\%)}. \textbf{Centro de estética (13\,\%)} y \textbf{Psicología/Psiquiatría (9\,\%)} aportan participaciones secundarias. \textbf{Odontología (6\,\%)} y \textbf{Salón de belleza/Barbería (3\,\%)} presentan baja presencia. La concentración indica foco en servicios clínicos tradicionales. La menor participación de rubros no clínicos abre espacio de crecimiento con propuestas específicas.
-
+\subsection{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
 
@@ -791,12 +786,9 @@ La Figura \ref{img:porc_clientes_por_rubro} muestra la distribución de clientes
 \insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
 
 \subsection{}
-
 % insertar imagen aqui
 \insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
 
 \end{appendixd}
 
 % --- Fin cuerpo_informe.tex ---
-
-
