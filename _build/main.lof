@@ -3,20 +3,31 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces Churn 3 años (ene-2023 a jul-2025) y tendencia. Fuente: elaboración propia \relax }}{5}{figure.caption.3}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Número de clientes al inicio de cada mes (ene-2023 a jul-2025). Fuente: elaboración propia \relax }}{5}{figure.caption.4}%
 \contentsline {figure}{\numberline {A.1}{\ignorespaces Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia \relax }}{35}{figure.caption.6}%
-\contentsline {figure}{\numberline {C.1}{\ignorespaces Etapa de Adquisición en Reservo. Fuente: elaboración propia \relax }}{36}{figure.caption.7}%
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Etapa de Venta en Reservo. Fuente: elaboración propia \relax }}{37}{figure.caption.8}%
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia \relax }}{38}{figure.caption.9}%
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Etapa de cliente activo en Reservo. Fuente: elaboración propia \relax }}{39}{figure.caption.10}%
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia \relax }}{40}{figure.caption.11}%
-\contentsline {figure}{\numberline {L.1}{\ignorespaces Porcentaje de nulos por variable. Fuente: elaboración propia \relax }}{43}{figure.caption.17}%
-\contentsline {figure}{\numberline {M.1}{\ignorespaces Tipos de datos de las variables. Fuente: elaboración propia \relax }}{44}{figure.caption.18}%
-\contentsline {figure}{\numberline {N.1}{\ignorespaces Estadísticas descriptivas de variables numéricas. Fuente: elaboración propia \relax }}{45}{figure.caption.19}%
-\contentsline {figure}{\numberline {\~N.1}{\ignorespaces Porcentaje de clientes por rubro. Fuente: elaboración propia \relax }}{46}{figure.caption.20}%
-\contentsline {figure}{\numberline {O.1}{\ignorespaces Porcentaje de clientes por país. Fuente: elaboración propia \relax }}{46}{figure.caption.21}%
-\contentsline {figure}{\numberline {P.1}{\ignorespaces Porcentaje de clientes por plan. Fuente: elaboración propia \relax }}{47}{figure.caption.22}%
-\contentsline {figure}{\numberline {Q.1}{\ignorespaces Proporción de planes por rubro. Fuente: elaboración propia \relax }}{47}{figure.caption.23}%
-\contentsline {figure}{\numberline {R.1}{\ignorespaces Proporción de rubros por plan. Fuente: elaboración propia \relax }}{48}{figure.caption.24}%
-\contentsline {figure}{\numberline {S.1}{\ignorespaces Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia \relax }}{48}{figure.caption.25}%
-\contentsline {figure}{\numberline {T.1}{\ignorespaces Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia \relax }}{49}{figure.caption.26}%
-\contentsline {figure}{\numberline {U.1}{\ignorespaces Distribución y boxplot de \textit {tenure\_meses}. Fuente: elaboración propia \relax }}{49}{figure.caption.27}%
-\contentsline {figure}{\numberline {V.1}{\ignorespaces Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia \relax }}{50}{figure.caption.28}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Etapa de Adquisición en Reservo. Fuente: elaboración propia \relax }}{35}{figure.caption.7}%
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Etapa de Venta en Reservo. Fuente: elaboración propia \relax }}{36}{figure.caption.8}%
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia \relax }}{37}{figure.caption.9}%
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Etapa de cliente activo en Reservo. Fuente: elaboración propia \relax }}{38}{figure.caption.10}%
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia \relax }}{39}{figure.caption.11}%
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Porcentaje de nulos por variable. Fuente: elaboración propia \relax }}{42}{figure.caption.17}%
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Tipos de datos de las variables. Fuente: elaboración propia \relax }}{42}{figure.caption.18}%
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Estadísticas descriptivas de variables numéricas. Fuente: elaboración propia \relax }}{43}{figure.caption.19}%
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Porcentaje de clientes por rubro. Fuente: elaboración propia \relax }}{43}{figure.caption.20}%
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Porcentaje de clientes por país. Fuente: elaboración propia \relax }}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Porcentaje de clientes por plan. Fuente: elaboración propia \relax }}{44}{figure.caption.22}%
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Proporción de planes por rubro. Fuente: elaboración propia \relax }}{44}{figure.caption.23}%
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Proporción de rubros por plan. Fuente: elaboración propia \relax }}{45}{figure.caption.24}%
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia \relax }}{45}{figure.caption.25}%
+\contentsline {figure}{\numberline {D.10}{\ignorespaces Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia \relax }}{46}{figure.caption.26}%
+\contentsline {figure}{\numberline {D.11}{\ignorespaces Distribución y boxplot de \textit {tenure\_meses}. Fuente: elaboración propia \relax }}{46}{figure.caption.27}%
+\contentsline {figure}{\numberline {D.12}{\ignorespaces Distribución y boxplot de \textit {arpa\_proxy}. Fuente: elaboración propia \relax }}{46}{figure.caption.28}%
+\contentsline {figure}{\numberline {D.13}{\ignorespaces Distribución y boxplot de \textit {bloqueos\_90d}. Fuente: elaboración propia \relax }}{47}{figure.caption.29}%
+\contentsline {figure}{\numberline {D.14}{\ignorespaces Distribución y boxplot de \textit {citas\_30d}. Fuente: elaboración propia \relax }}{47}{figure.caption.30}%
+\contentsline {figure}{\numberline {D.15}{\ignorespaces Distribución y boxplot de \textit {recencia\_uso\_dias}. Fuente: elaboración propia \relax }}{47}{figure.caption.31}%
+\contentsline {figure}{\numberline {D.16}{\ignorespaces Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia \relax }}{48}{figure.caption.32}%
+\contentsline {figure}{\numberline {D.17}{\ignorespaces Resultado python capacidad de discriminación del modelo. Fuente: elaboración propia \relax }}{48}{figure.caption.33}%
+\contentsline {figure}{\numberline {D.18}{\ignorespaces Resultado python captura acumulada. Fuente: elaboración propia \relax }}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {D.19}{\ignorespaces Resultado python métricas operativas. Fuente: elaboración propia \relax }}{49}{figure.caption.35}%
+\contentsline {figure}{\numberline {D.20}{\ignorespaces Resultado python calibración global. Fuente: elaboración propia \relax }}{49}{figure.caption.36}%
+\contentsline {figure}{\numberline {D.21}{\ignorespaces Resultado python calibración por país. Fuente: elaboración propia \relax }}{50}{figure.caption.37}%
+\contentsline {figure}{\numberline {D.22}{\ignorespaces Resultado python calibración por plan. Fuente: elaboración propia \relax }}{50}{figure.caption.38}%
+\contentsline {figure}{\numberline {D.23}{\ignorespaces Resultado python calibración por rubro. Fuente: elaboración propia \relax }}{51}{figure.caption.39}%

@@ -357,6 +357,10 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
 
 En la primera tarea se levantó el contexto del negocio y del modelo de suscripción de Reservo. Se revisaron los planes de servicio, los rubros atendidos y la presencia geográfica, y se confirmó que la empresa opera como proveedor de software como servicio para profesionales y centros de salud pequeños y medianos en Chile, Argentina, Colombia y México, con una cartera cercana a 3.500 clientes activos distribuidos en cuatro planes de precio mensual. Se describió el rol de los equipos de Customer Success y Post-venta en soporte, acompañamiento y retención.
 
+Junto a lo anterior también se analizaron las distribuciones demográficas y comerciales de la cartera. La operación muestra una fuerte concentración geográfica en Chile(anexo \ref{img:porc_clientes_por_pais}), que agrupa al 86\% de los clientes, mientras que el resto se reparte marginalmente entre México, Colombia y otros territorios. A nivel de industria, el rubro de Medicina y Salud abarca el 70\% de la base(anexo \ref{img:porc_clientes_por_rubro}), posicionándose como el segmento \textit{core} del negocio, seguido de lejos por Centros de Estética (13\%) y Psicología (9\%). Respecto a la facturación, los planes Básico y Reservo concentran la mayor parte de las suscripciones (77\% combinado), relegando al plan Enterprise a una participación minoritaria del 3\%.(anexo \ref{img:porc_clientes_por_plan})
+
+El comportamiento cruzado entre planes y rubros revela patrones de riesgo distintivos. Los profesionales de Psicología tienden a optar mayoritariamente por el plan Individual (anexos \ref{img:prop_plan_por_rubro} y \ref{img:prop_rubro_por_plan}), segmento que presenta una proporción de cuentas bloqueadas (38\%) superior a su participación de clientes activos (20\%) (anexo \ref{img:act_vs_bloq_plan}), lo que sugiere una mayor volatilidad o riesgo de impago en este perfil. Por el contrario, los planes de mayor valor están dominados por el sector médico y muestran tasas de bloqueo considerablemente menores(anexo \ref{img:act_vs_bloq_rubro}). Esta segmentación indica que la estabilidad de la suscripción y la probabilidad de bloqueo están correlacionadas tanto con la categoría del plan contratado como con la actividad económica del usuario.
+
 \subsubsection{Problema de gestión asociado a la baja de clientes}
 
 La segunda tarea clarificó el problema de gestión que motiva el proyecto. Se analizó el ciclo del cliente desde la captación hasta la baja, distinguiendo adquisición, venta, onboarding, cliente activo y cliente inactivo, y se describió el proceso actual de baja y sus señales previas. Las métricas internas mostraron una tasa de bajas mensuales cercana al 2,4 por ciento, un crecimiento moderado de expansiones y esfuerzos de postventa centrados en reaccionar cuando el cliente ya está cerca de abandonar. El problema central se formuló como una falta de caracterización y segmentación conductual de la cartera activa, que impide diferenciar el trato según riesgo y potencial económico.
@@ -421,23 +425,23 @@ La etiqueta \texttt{churn\_\hspace{0pt}T1} indica si un cliente activo en un cor
 
 \subsubsection{Tratamiento de valores faltantes y valores extremos}
 
-Sobre el panel resultante se revisan valores faltantes y extremos. \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{pais} presentan nulos que se imputan con una categoría explícita de desconocido(anexo~\ref{img:nulos}). \texttt{arpa\_\hspace{0pt}proxy} tiene casos sin mensualidad válida; se imputan con la mediana por plan o la mediana global y se crea un indicador de imputación. En \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, los nulos corresponden a ausencia de uso reciente, se imputan a 90 días y se marca esta situación con un indicador.
+El tipo de datos de las variables se puede encontrar en el anexo~\ref{img:tipodata}. Sobre el panel resultante (anexo \ref{img:estadistic}) se revisan valores faltantes y extremos. \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{pais} presentan nulos que se imputan con una categoría explícita de desconocido(anexo~\ref{img:nulos}). \texttt{arpa\_\hspace{0pt}proxy} tiene casos sin mensualidad válida; se imputan con la mediana por plan o la mediana global y se crea un indicador de imputación. En \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, los nulos corresponden a ausencia de uso reciente, se imputan a 90 días y se marca esta situación con un indicador. No se observan correlaciones altas en ninguna combinación de variables tal como se observa en el anexo \ref{img:correlacion}
 
-Para valores extremos se aplican recortes en percentiles altos. \texttt{arpa\_\hspace{0pt}proxy} se recorta y se transforma con
+Para valores extremos (anexo \ref{img:dist_arpa}) se aplican recortes en percentiles altos. \texttt{arpa\_\hspace{0pt}proxy} se recorta y se transforma con
 \[
 \log\bigl(1 + \texttt{arpa\_\hspace{0pt}proxy}\bigr),
 \]
-manteniendo un indicador de recorte. \texttt{tenure\_\hspace{0pt}meses} se capa y se agrupa en bandas de antigüedad, además de considerar una transformación de raíz cuadrada sobre la versión capada. \texttt{citas\_\hspace{0pt}30d} se recorta y se transforma con
+manteniendo un indicador de recorte. \texttt{tenure\_\hspace{0pt}meses} se capa y se agrupa en bandas de antigüedad (anexo \ref{img:tenure}), además de considerar una transformación de raíz cuadrada sobre la versión capada. \texttt{citas\_\hspace{0pt}30d} (anexo \ref{img:dist_citas}) se recorta y se transforma con
 \[
 \log\bigl(1 + \texttt{citas\_\hspace{0pt}30d}\bigr),
 \]
 junto con indicadores para actividad muy baja y para valores recortados.
 
-\texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} se capa en 90 días, se imputan nulos a ese valor y se generan bandas operativas y un puntaje continuo
+\texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} (anexo \ref{img:dist_rec}) se capa en 90 días, se imputan nulos a ese valor y se generan bandas operativas y un puntaje continuo
 \[
 \texttt{fresh} = \frac{1}{1 + \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}}.
 \]
-\texttt{bloqueos\_\hspace{0pt}90d} se trata como conteo discreto pequeño, capando en tres y generando indicadores para al menos un bloqueo y para dos o más. Todas las imputaciones, recortes y transformaciones se definen usando solo información disponible hasta \texttt{mes\_\hspace{0pt}corte} y no utilizan la etiqueta \texttt{churn\_\hspace{0pt}T1}, de modo que la matriz final queda lista para el modelado sin fuga temporal.
+\texttt{bloqueos\_\hspace{0pt}90d} se trata como conteo discreto pequeño (anexo \ref{img:dist_bloq}), capando en tres y generando indicadores para al menos un bloqueo y para dos o más. Todas las imputaciones, recortes y transformaciones se definen usando solo información disponible hasta \texttt{mes\_\hspace{0pt}corte} y no utilizan la etiqueta \texttt{churn\_\hspace{0pt}T1}, de modo que la matriz final queda lista para el modelado sin fuga temporal.
 
 
 \subsection{Fase 4: Modelado}
@@ -595,30 +599,23 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \newpage
 
 \begin{appendixd}
-\section{}
+\section{Contexto y Problema}
     %insertar imagen aqui
 \insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.5}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
 
-\section{}
-
-\section{}
 \insertimage[\label{img:captacion}]{bizagi/captacion.png}{scale=0.27}{Etapa de Adquisición en Reservo. Fuente: elaboración propia}
 
-\section{}
 \insertimage[\label{img:etapa_venta}]{bizagi/venta.png}{scale=0.25}{Etapa de Venta en Reservo. Fuente: elaboración propia}
 
-\section{}
 \insertimage[\label{img:etapa_onboarding}]{bizagi/onboarding.png}{scale=0.19}{Etapa de Onboarding del cliente en Reservo. Fuente: elaboración propia}
 
-\section{}
 \insertimage[\label{img:etapa_cliente_activo1}]{bizagi/cliente_activo.png}{scale=0.15}{Etapa de cliente activo en Reservo. Fuente: elaboración propia}
 
-\section{}
 \insertimage[\label{img:etapa_cliente_inactivo}]{bizagi/cliente_inactivo.png}{scale=0.30}{Etapa de Cliente inactivo en Reservo. Fuente: elaboración propia}
 
 %Tabla con indicadores
 \newpage
-\section{}
+\section{Indicadores}
 \begin{table}[H]
   \begin{threeparttable}
     \centering
@@ -679,7 +676,8 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 
 \newpage
 
-\section{}
+\section{Tablas de desarrollo}
+
 \begin{table}[H]
     \centering
     \caption{Bloqueados y actividad de citas por rubro. Fuente: elaboración propia}
@@ -697,7 +695,6 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:citas_bloq_act_rubro}
 \end{table}
 
-\section{}
 \begin{table}[H]
     \centering
     \caption{Bloqueados y actividad de citas por plan. Fuente: elaboración propia}
@@ -714,7 +711,6 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:citas_bloq_act_plan}
 \end{table}
 
-\section{}
 \begin{table}[H]
     \centering
     \caption{Promedio de mensualidad por rubro (CLP). Fuente: elaboración propia}
@@ -734,55 +730,75 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:mensualidad_por_rubro}
 \end{table}
 
-\section{}
+\section{Imágenes de desarrollo}
 % insertar imagen aqui
 \insertimage[\label{img:nulos}]{informe2/nulos.png}{scale=0.80}{Porcentaje de nulos por variable. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:tipodata}]{informe2/tipodata.png}{scale=0.80}{Tipos de datos de las variables. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:estadistic}]{informe2/estadistic.png}{scale=0.80}{Estadísticas descriptivas de variables numéricas. Fuente: elaboración propia}
 
-\newpage
-
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_rubro}]{informe2/porc_clientes_por_rubro.png}{scale=0.80}{Porcentaje de clientes por rubro. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_pais}]{informe2/porc_clientes_por_pais.png}{scale=0.80}{Porcentaje de clientes por país. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:porc_clientes_por_plan}]{informe2/porc_clientes_por_plan.png}{scale=0.80}{Porcentaje de clientes por plan. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:prop_plan_por_rubro}]{informe2/prop_plan_por_rubro.png}{scale=0.80}{Proporción de planes por rubro. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:prop_rubro_por_plan}]{informe2/prop_rubro_por_plan.png}{scale=0.80}{Proporción de rubros por plan. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:act_vs_bloq_rubro}]{informe2/act_vs_bloq_rubro.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por rubro. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
 \insertimage[\label{img:act_vs_bloq_plan}]{informe2/act_vs_bloq_plan.png}{scale=0.80}{Comparativa de proporciones de activos vs bloqueados por plan. Fuente: elaboración propia}
 
-\section{}
 % insertar imagen aqui
-\insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.37}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
+\insertimage[\label{img:tenure}]{informe2/ternure.png}{scale=0.25}{Distribución y boxplot de \textit{tenure\_meses}. Fuente: elaboración propia}
 
-\section{}
+% insertar imagen aqui
+\insertimage[\label{img:dist_arpa}]{informe2/dist_arpa.png}{scale=0.25}{Distribución y boxplot de \textit{arpa\_proxy}. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:dist_bloq}]{informe2/dist_bloq.png}{scale=0.25}{Distribución y boxplot de \textit{bloqueos\_90d}. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:dist_citas}]{informe2/dist_citas.png}{scale=0.25}{Distribución y boxplot de \textit{citas\_30d}. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:dist_rec}]{informe2/dist_rec.png}{scale=0.25}{Distribución y boxplot de \textit{recencia\_uso\_dias}. Fuente: elaboración propia}
+
 % insertar imagen aqui
 \insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:discrim}]{informe4/discrim.png}{scale=0.75}{Resultado python capacidad de discriminación del modelo. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:lift}]{informe4/lift.png}{scale=0.6}{Resultado python captura acumulada. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:met_oper}]{informe4/met_oper.png}{scale=0.65}{Resultado python métricas operativas. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:calib_glob}]{informe4/calib_glob.png}{scale=0.65}{Resultado python calibración global. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:calib_pais}]{informe4/calib_pais.png}{scale=0.65}{Resultado python calibración por país. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:calib_plan}]{informe4/calib_plan.png}{scale=0.65}{Resultado python calibración por plan. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:calib_rub}]{informe4/calib_rub.png}{scale=0.65}{Resultado python calibración por rubro. Fuente: elaboración propia}
 
 \end{appendixd}
 

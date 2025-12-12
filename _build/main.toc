@@ -42,33 +42,33 @@
 \contentsline {subsubsection}{\numberline {8.1.1}Contexto de Reservo y modelo de suscripción}{18}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Problema de gestión asociado a la baja de clientes}{18}{subsubsection.8.1.2}%
 \contentsline {subsubsection}{\numberline {8.1.3}Definición del objetivo general y de los objetivos específicos}{18}{subsubsection.8.1.3}%
-\contentsline {subsubsection}{\numberline {8.1.4}Indicadores de éxito y definición de entregables}{18}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.4}Indicadores de éxito y definición de entregables}{19}{subsubsection.8.1.4}%
 \contentsline {subsubsection}{\numberline {8.1.5}Línea base económica y evaluación preliminar}{19}{subsubsection.8.1.5}%
 \contentsline {subsection}{\numberline {8.2}Fase 2: Comprensión de los datos}{19}{subsection.8.2}%
 \contentsline {subsubsection}{\numberline {8.2.1}Inventario de fuentes y tablas principales}{19}{subsubsection.8.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2}Estructura y calidad de las tablas}{19}{subsubsection.8.2.2}%
+\contentsline {subsubsection}{\numberline {8.2.2}Estructura y calidad de las tablas}{20}{subsubsection.8.2.2}%
 \contentsline {subsubsection}{\numberline {8.2.3}Calendario de cortes mensuales}{20}{subsubsection.8.2.3}%
 \contentsline {subsubsection}{\numberline {8.2.4}Definiciones operativas de estados de cliente}{20}{subsubsection.8.2.4}%
 \contentsline {subsection}{\numberline {8.3}Fase 3: Preparación de los datos}{20}{subsection.8.3}%
-\contentsline {subsubsection}{\numberline {8.3.1}Diseño de la estructura del datamart mensual}{20}{subsubsection.8.3.1}%
+\contentsline {subsubsection}{\numberline {8.3.1}Diseño de la estructura del datamart mensual}{21}{subsubsection.8.3.1}%
 \contentsline {subsubsection}{\numberline {8.3.2}Construcción de variables de contexto, valor, uso y fricción}{21}{subsubsection.8.3.2}%
 \contentsline {subsubsection}{\numberline {8.3.3}Definición de la etiqueta de baja a horizonte mensual}{21}{subsubsection.8.3.3}%
-\contentsline {subsubsection}{\numberline {8.3.4}Tratamiento de valores faltantes y valores extremos}{21}{subsubsection.8.3.4}%
+\contentsline {subsubsection}{\numberline {8.3.4}Tratamiento de valores faltantes y valores extremos}{22}{subsubsection.8.3.4}%
 \contentsline {subsection}{\numberline {8.4}Fase 4: Modelado}{22}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Selección del algoritmo y definición del problema de clasificación}{22}{subsubsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.2}Partición temporal y tamaño muestral para entrenamiento y calibración}{22}{subsubsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.1}Selección del algoritmo y definición del problema de clasificación}{23}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.2}Partición temporal y tamaño muestral para entrenamiento y calibración}{23}{subsubsection.8.4.2}%
 \contentsline {subsubsection}{\numberline {8.4.3}Implementación del flujo de preprocesamiento y del pipeline de modelado}{23}{subsubsection.8.4.3}%
 \contentsline {subsubsection}{\numberline {8.4.4}Entrenamiento, calibración y elección del modelo final}{23}{subsubsection.8.4.4}%
-\contentsline {subsection}{\numberline {8.5}Fase 5: Evaluación}{23}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.5}Fase 5: Evaluación}{24}{subsection.8.5}%
 \contentsline {subsubsection}{\numberline {8.5.1}Desempeño global en el conjunto de prueba}{24}{subsubsection.8.5.1}%
 \contentsline {subsubsection}{\numberline {8.5.2}Calibración de probabilidades y estabilidad por segmentos}{24}{subsubsection.8.5.2}%
-\contentsline {subsubsection}{\numberline {8.5.3}Pruebas de robustez por país y rubro}{24}{subsubsection.8.5.3}%
-\contentsline {subsubsection}{\numberline {8.5.4}Conclusiones sobre suficiencia del modelo para uso operativo}{24}{subsubsection.8.5.4}%
+\contentsline {subsubsection}{\numberline {8.5.3}Pruebas de robustez por país y rubro}{25}{subsubsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.4}Conclusiones sobre suficiencia del modelo para uso operativo}{25}{subsubsection.8.5.4}%
 \contentsline {subsection}{\numberline {8.6}Fase 6: Despliegue y políticas de negocio}{25}{subsection.8.6}%
 \contentsline {subsubsection}{\numberline {8.6.1}Flujo mensual de scoring sobre la cartera actualizada}{25}{subsubsection.8.6.1}%
-\contentsline {subsubsection}{\numberline {8.6.2}Artefactos operativos y carpeta de uso para Customer Success}{25}{subsubsection.8.6.2}%
+\contentsline {subsubsection}{\numberline {8.6.2}Artefactos operativos y carpeta de uso para Customer Success}{26}{subsubsection.8.6.2}%
 \contentsline {subsubsection}{\numberline {8.6.3}Segmentación conductual y políticas preliminares}{26}{subsubsection.8.6.3}%
-\contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{27}{subsubsection.8.6.4}%
+\contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{28}{subsubsection.8.6.4}%
 \contentsline {section}{\numberline {9}Discusiones}{29}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{29}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Impacto esperado en la operación y rol de Customer Success}{29}{subsection.9.2}%
@@ -78,26 +78,7 @@
 \contentsline {subsection}{\numberline {10.1}Cumplimiento de los objetivos e indicadores}{31}{subsection.10.1}%
 \contentsline {subsection}{\numberline {10.2}Conclusiones generales}{32}{subsection.10.2}%
 \contentsline {section}{Referencias}{33}{subsection.10.2}%
-\contentsline {section}{Anexo \numberline {A}}{35}{appendix.1.Alph1}%
-\contentsline {section}{Anexo \numberline {B}}{35}{appendix.1.Alph2}%
-\contentsline {section}{Anexo \numberline {C}}{36}{appendix.1.Alph3}%
-\contentsline {section}{Anexo \numberline {D}}{37}{appendix.1.Alph4}%
-\contentsline {section}{Anexo \numberline {E}}{38}{appendix.1.Alph5}%
-\contentsline {section}{Anexo \numberline {F}}{39}{appendix.1.Alph6}%
-\contentsline {section}{Anexo \numberline {G}}{40}{appendix.1.Alph7}%
-\contentsline {section}{Anexo \numberline {H}}{41}{appendix.1.Alph8}%
-\contentsline {section}{Anexo \numberline {I}}{42}{appendix.1.Alph9}%
-\contentsline {section}{Anexo \numberline {J}}{42}{appendix.1.Alph10}%
-\contentsline {section}{Anexo \numberline {K}}{43}{appendix.1.Alph11}%
-\contentsline {section}{Anexo \numberline {L}}{43}{appendix.1.Alph12}%
-\contentsline {section}{Anexo \numberline {M}}{44}{appendix.1.Alph13}%
-\contentsline {section}{Anexo \numberline {N}}{45}{appendix.1.Alph14}%
-\contentsline {section}{Anexo \numberline {\~N}}{46}{appendix.1.Alph15}%
-\contentsline {section}{Anexo \numberline {O}}{46}{appendix.1.Alph16}%
-\contentsline {section}{Anexo \numberline {P}}{47}{appendix.1.Alph17}%
-\contentsline {section}{Anexo \numberline {Q}}{47}{appendix.1.Alph18}%
-\contentsline {section}{Anexo \numberline {R}}{48}{appendix.1.Alph19}%
-\contentsline {section}{Anexo \numberline {S}}{48}{appendix.1.Alph20}%
-\contentsline {section}{Anexo \numberline {T}}{49}{appendix.1.Alph21}%
-\contentsline {section}{Anexo \numberline {U}}{49}{appendix.1.Alph22}%
-\contentsline {section}{Anexo \numberline {V}}{50}{appendix.1.Alph23}%
+\contentsline {section}{Anexo \numberline {A}Contexto y Problema}{35}{appendix.1.Alph1}%
+\contentsline {section}{Anexo \numberline {B}Indicadores}{40}{appendix.1.Alph2}%
+\contentsline {section}{Anexo \numberline {C}Tablas de desarrollo}{41}{appendix.1.Alph3}%
+\contentsline {section}{Anexo \numberline {D}Imágenes de desarrollo}{42}{appendix.1.Alph4}%
