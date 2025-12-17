@@ -67,7 +67,7 @@
 \contentsline {subsection}{\numberline {8.6}Fase 6: Despliegue y políticas de negocio}{25}{subsection.8.6}%
 \contentsline {subsubsection}{\numberline {8.6.1}Flujo mensual de scoring sobre la cartera actualizada}{25}{subsubsection.8.6.1}%
 \contentsline {subsubsection}{\numberline {8.6.2}Artefactos operativos y carpeta de uso para Customer Success}{26}{subsubsection.8.6.2}%
-\contentsline {subsubsection}{\numberline {8.6.3}Segmentación conductual y políticas preliminares}{26}{subsubsection.8.6.3}%
+\contentsline {subsubsection}{\numberline {8.6.3}Segmentación conductual y políticas preliminares}{27}{subsubsection.8.6.3}%
 \contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{28}{subsubsection.8.6.4}%
 \contentsline {section}{\numberline {9}Discusiones}{30}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{30}{subsection.9.1}%
@@ -82,3 +82,4 @@
 \contentsline {section}{Anexo \numberline {B}Indicadores}{41}{appendix.1.Alph2}%
 \contentsline {section}{Anexo \numberline {C}Tablas de desarrollo}{42}{appendix.1.Alph3}%
 \contentsline {section}{Anexo \numberline {D}Imágenes de desarrollo}{43}{appendix.1.Alph4}%
+\contentsline {section}{Anexo \numberline {E}Implementación}{58}{appendix.1.Alph5}%

@@ -24,21 +24,26 @@
 \contentsline {figure}{\numberline {D.14}{\ignorespaces Distribución y boxplot de \textit {citas\_30d}. Fuente: elaboración propia \relax }}{48}{figure.caption.30}%
 \contentsline {figure}{\numberline {D.15}{\ignorespaces Distribución y boxplot de \textit {recencia\_uso\_dias}. Fuente: elaboración propia \relax }}{48}{figure.caption.31}%
 \contentsline {figure}{\numberline {D.16}{\ignorespaces Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia \relax }}{49}{figure.caption.32}%
-\contentsline {figure}{\numberline {D.17}{\ignorespaces Resultado python capacidad de discriminación del modelo. Fuente: elaboración propia \relax }}{49}{figure.caption.33}%
-\contentsline {figure}{\numberline {D.18}{\ignorespaces Resultado python captura acumulada. Fuente: elaboración propia \relax }}{50}{figure.caption.34}%
-\contentsline {figure}{\numberline {D.19}{\ignorespaces Resultado python métricas operativas. Fuente: elaboración propia \relax }}{50}{figure.caption.35}%
-\contentsline {figure}{\numberline {D.20}{\ignorespaces Resultado python calibración global. Fuente: elaboración propia \relax }}{50}{figure.caption.36}%
-\contentsline {figure}{\numberline {D.21}{\ignorespaces Resultado python calibración por país. Fuente: elaboración propia \relax }}{51}{figure.caption.37}%
-\contentsline {figure}{\numberline {D.22}{\ignorespaces Resultado python calibración por plan. Fuente: elaboración propia \relax }}{51}{figure.caption.38}%
-\contentsline {figure}{\numberline {D.23}{\ignorespaces Resultado python calibración por rubro. Fuente: elaboración propia \relax }}{52}{figure.caption.39}%
-\contentsline {figure}{\numberline {D.24}{\ignorespaces Gráfico de curva ROC. Fuente: elaboración propia \relax }}{52}{figure.caption.40}%
-\contentsline {figure}{\numberline {D.25}{\ignorespaces Gráfico curva de calibración. Fuente: elaboración propia \relax }}{53}{figure.caption.41}%
-\contentsline {figure}{\numberline {D.26}{\ignorespaces Gráfico curva de captura acumulada. Fuente: elaboración propia \relax }}{53}{figure.caption.42}%
-\contentsline {figure}{\numberline {D.27}{\ignorespaces Gráfico curva precisión-recall. Fuente: elaboración propia \relax }}{54}{figure.caption.43}%
-\contentsline {figure}{\numberline {D.28}{\ignorespaces Gráfico curva ROC Chile-México-Colombia. Fuente: elaboración propia \relax }}{54}{figure.caption.44}%
-\contentsline {figure}{\numberline {D.29}{\ignorespaces Gráfico curva ROC Chile + Medicina. Fuente: elaboración propia \relax }}{55}{figure.caption.45}%
-\contentsline {figure}{\numberline {D.30}{\ignorespaces Gráfico curva ROC medicina. Fuente: elaboración propia \relax }}{55}{figure.caption.46}%
-\contentsline {figure}{\numberline {D.31}{\ignorespaces Gráfico curva ROC México. Fuente: elaboración propia \relax }}{56}{figure.caption.47}%
-\contentsline {figure}{\numberline {D.32}{\ignorespaces Gráfico curva ROC Colombia. Fuente: elaboración propia \relax }}{56}{figure.caption.48}%
-\contentsline {figure}{\numberline {D.33}{\ignorespaces Gráfico curva captura acumulada Colombia. Fuente: elaboración propia \relax }}{57}{figure.caption.49}%
-\contentsline {figure}{\numberline {D.34}{\ignorespaces Gráfico curva captura acumulada México. Fuente: elaboración propia \relax }}{57}{figure.caption.50}%
+\contentsline {figure}{\numberline {D.17}{\ignorespaces Diagrama de Datamart construido. Fuente: elaboración propia \relax }}{49}{figure.caption.33}%
+\contentsline {figure}{\numberline {D.18}{\ignorespaces Resultado python capacidad de discriminación del modelo. Fuente: elaboración propia \relax }}{50}{figure.caption.34}%
+\contentsline {figure}{\numberline {D.19}{\ignorespaces Resultado python captura acumulada. Fuente: elaboración propia \relax }}{50}{figure.caption.35}%
+\contentsline {figure}{\numberline {D.20}{\ignorespaces Resultado python métricas operativas. Fuente: elaboración propia \relax }}{50}{figure.caption.36}%
+\contentsline {figure}{\numberline {D.21}{\ignorespaces Resultado python calibración global. Fuente: elaboración propia \relax }}{51}{figure.caption.37}%
+\contentsline {figure}{\numberline {D.22}{\ignorespaces Resultado python calibración por país. Fuente: elaboración propia \relax }}{51}{figure.caption.38}%
+\contentsline {figure}{\numberline {D.23}{\ignorespaces Resultado python calibración por plan. Fuente: elaboración propia \relax }}{52}{figure.caption.39}%
+\contentsline {figure}{\numberline {D.24}{\ignorespaces Resultado python calibración por rubro. Fuente: elaboración propia \relax }}{52}{figure.caption.40}%
+\contentsline {figure}{\numberline {D.25}{\ignorespaces Gráfico de curva ROC. Fuente: elaboración propia \relax }}{52}{figure.caption.41}%
+\contentsline {figure}{\numberline {D.26}{\ignorespaces Gráfico curva de calibración. Fuente: elaboración propia \relax }}{53}{figure.caption.42}%
+\contentsline {figure}{\numberline {D.27}{\ignorespaces Gráfico curva de captura acumulada. Fuente: elaboración propia \relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {D.28}{\ignorespaces Gráfico curva precisión-recall. Fuente: elaboración propia \relax }}{54}{figure.caption.44}%
+\contentsline {figure}{\numberline {D.29}{\ignorespaces Gráfico curva ROC Chile-México-Colombia. Fuente: elaboración propia \relax }}{54}{figure.caption.45}%
+\contentsline {figure}{\numberline {D.30}{\ignorespaces Gráfico curva ROC Chile + Medicina. Fuente: elaboración propia \relax }}{55}{figure.caption.46}%
+\contentsline {figure}{\numberline {D.31}{\ignorespaces Gráfico curva ROC medicina. Fuente: elaboración propia \relax }}{55}{figure.caption.47}%
+\contentsline {figure}{\numberline {D.32}{\ignorespaces Gráfico curva ROC México. Fuente: elaboración propia \relax }}{56}{figure.caption.48}%
+\contentsline {figure}{\numberline {D.33}{\ignorespaces Gráfico curva ROC Colombia. Fuente: elaboración propia \relax }}{56}{figure.caption.49}%
+\contentsline {figure}{\numberline {D.34}{\ignorespaces Gráfico curva captura acumulada Colombia. Fuente: elaboración propia \relax }}{57}{figure.caption.50}%
+\contentsline {figure}{\numberline {D.35}{\ignorespaces Gráfico curva captura acumulada México. Fuente: elaboración propia \relax }}{57}{figure.caption.51}%
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Carpetas entregadas a Customer Success. Fuente: elaboración propia \relax }}{58}{figure.caption.52}%
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Página de Notion elaborada para Customer Success. Fuente: elaboración propia \relax }}{59}{figure.caption.53}%
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Extracto guía de implementación y uso elaborada para Customer Success. Fuente: elaboración propia \relax }}{60}{figure.caption.54}%
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Tutorial en video elaborado para Customer Success. Fuente: elaboración propia \relax }}{61}{figure.caption.55}%

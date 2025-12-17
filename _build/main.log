@@ -1366,8 +1366,8 @@ LaTeX Info: Redefining \% on input line 77.
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 23.
+LaTeX Info: Redefining \% on input line 23.
  [4.5])
 \tf@lof=\write4
 \openout4 = `main.lof'.
@@ -1472,8 +1472,8 @@ LaTeX Info: Redefining \% on input line 409.
 LaTeX Info: Redefining \. on input line 425.
 LaTeX Info: Redefining \% on input line 425.
  [21.27]
-LaTeX Info: Redefining \. on input line 451.
-LaTeX Info: Redefining \% on input line 451.
+LaTeX Info: Redefining \. on input line 450.
+LaTeX Info: Redefining \% on input line 450.
  [22.28]
 LaTeX Info: Redefining \. on input line 466.
 LaTeX Info: Redefining \% on input line 466.
@@ -1481,33 +1481,33 @@ LaTeX Info: Redefining \% on input line 466.
 LaTeX Info: Redefining \. on input line 478.
 LaTeX Info: Redefining \% on input line 478.
  [24.30]
-LaTeX Info: Redefining \. on input line 496.
-LaTeX Info: Redefining \% on input line 496.
+LaTeX Info: Redefining \. on input line 495.
+LaTeX Info: Redefining \% on input line 495.
  [25.31]
-LaTeX Info: Redefining \. on input line 512.
-LaTeX Info: Redefining \% on input line 512.
+LaTeX Info: Redefining \. on input line 511.
+LaTeX Info: Redefining \% on input line 511.
 
 [26.32]
-LaTeX Info: Redefining \. on input line 523.
-LaTeX Info: Redefining \% on input line 523.
+LaTeX Info: Redefining \. on input line 519.
+LaTeX Info: Redefining \% on input line 519.
  [27.33]
+LaTeX Info: Redefining \. on input line 532.
+LaTeX Info: Redefining \% on input line 532.
+ [28.34]
 LaTeX Info: Redefining \. on input line 533.
 LaTeX Info: Redefining \% on input line 533.
- [28.34]
-LaTeX Info: Redefining \. on input line 534.
-LaTeX Info: Redefining \% on input line 534.
  [29.35]
-LaTeX Info: Redefining \. on input line 549.
-LaTeX Info: Redefining \% on input line 549.
+LaTeX Info: Redefining \. on input line 548.
+LaTeX Info: Redefining \% on input line 548.
  [30.36]
-LaTeX Info: Redefining \. on input line 555.
-LaTeX Info: Redefining \% on input line 555.
+LaTeX Info: Redefining \. on input line 554.
+LaTeX Info: Redefining \% on input line 554.
  [31.37]
-LaTeX Info: Redefining \. on input line 570.
-LaTeX Info: Redefining \% on input line 570.
+LaTeX Info: Redefining \. on input line 569.
+LaTeX Info: Redefining \% on input line 569.
  [32.38]
-LaTeX Info: Redefining \. on input line 583.
-LaTeX Info: Redefining \% on input line 583.
+LaTeX Info: Redefining \. on input line 582.
+LaTeX Info: Redefining \% on input line 582.
  [33.39] (main.bbl
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
@@ -1515,73 +1515,73 @@ LaTeX Info: Redefining \% on input line 109.
 [34.40
 
 ])
-LaTeX Info: Redefining \. on input line 599.
-LaTeX Info: Redefining \% on input line 599.
+LaTeX Info: Redefining \. on input line 598.
+LaTeX Info: Redefining \% on input line 598.
  [35.41]
 File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 <./img/imagenes/organigrama.png>
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (10.4167pt too wide) in paragraph at lines 606--606
+Overfull \hbox (10.4167pt too wide) in paragraph at lines 605--605
  [][] 
  []
 
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
-LaTeX Info: Redefining \. on input line 609.
-LaTeX Info: Redefining \% on input line 609.
+LaTeX Info: Redefining \. on input line 608.
+LaTeX Info: Redefining \% on input line 608.
 [36.42]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
-LaTeX Info: Redefining \. on input line 611.
-LaTeX Info: Redefining \% on input line 611.
+LaTeX Info: Redefining \. on input line 610.
+LaTeX Info: Redefining \% on input line 610.
  [37.43]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
-LaTeX Info: Redefining \. on input line 613.
-LaTeX Info: Redefining \% on input line 613.
+LaTeX Info: Redefining \. on input line 612.
+LaTeX Info: Redefining \% on input line 612.
  [38.44]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
-LaTeX Info: Redefining \. on input line 615.
-LaTeX Info: Redefining \% on input line 615.
+LaTeX Info: Redefining \. on input line 614.
+LaTeX Info: Redefining \% on input line 614.
  [39.45]
-LaTeX Info: Redefining \. on input line 617.
-LaTeX Info: Redefining \% on input line 617.
+LaTeX Info: Redefining \. on input line 616.
+LaTeX Info: Redefining \% on input line 616.
  [40.46]
-Overfull \hbox (47.15036pt too wide) in paragraph at lines 621--675
+Overfull \hbox (47.15036pt too wide) in paragraph at lines 620--674
  [] 
  []
 
-LaTeX Info: Redefining \. on input line 677.
-LaTeX Info: Redefining \% on input line 677.
+LaTeX Info: Redefining \. on input line 676.
+LaTeX Info: Redefining \% on input line 676.
 [41.47]
-Overfull \hbox (28.10564pt too wide) in paragraph at lines 684--696
+Overfull \hbox (28.10564pt too wide) in paragraph at lines 683--695
  [][] 
  []
 
 
-Overfull \hbox (5.48717pt too wide) in paragraph at lines 701--712
+Overfull \hbox (5.48717pt too wide) in paragraph at lines 700--711
  [][] 
  []
 
 File: ./img/informe2/nulos.png Graphic file (type bmp)
 <./img/informe2/nulos.png>
-LaTeX Info: Redefining \. on input line 736.
-LaTeX Info: Redefining \% on input line 736.
+LaTeX Info: Redefining \. on input line 735.
+LaTeX Info: Redefining \% on input line 735.
 [42.48]
 File: ./img/informe2/tipodata.png Graphic file (type bmp)
 <./img/informe2/tipodata.png>
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
 <./img/informe2/estadistic.png>
 
-Overfull \hbox (4.28217pt too wide) in paragraph at lines 741--741
+Overfull \hbox (4.28217pt too wide) in paragraph at lines 740--740
  [][] 
  []
 
-LaTeX Info: Redefining \. on input line 742.
-LaTeX Info: Redefining \% on input line 742.
+LaTeX Info: Redefining \. on input line 741.
+LaTeX Info: Redefining \% on input line 741.
 [43.49]
 File: ./img/informe2/porc_clientes_por_rubro.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_rubro.png>
@@ -1589,22 +1589,22 @@ File: ./img/informe2/porc_clientes_por_pais.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_pais.png>
 File: ./img/informe2/porc_clientes_por_plan.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_plan.png>
-LaTeX Info: Redefining \. on input line 751.
-LaTeX Info: Redefining \% on input line 751.
+LaTeX Info: Redefining \. on input line 750.
+LaTeX Info: Redefining \% on input line 750.
  [44.50]
 File: ./img/informe2/prop_plan_por_rubro.png Graphic file (type bmp)
 <./img/informe2/prop_plan_por_rubro.png>
 File: ./img/informe2/prop_rubro_por_plan.png Graphic file (type bmp)
 <./img/informe2/prop_rubro_por_plan.png>
-LaTeX Info: Redefining \. on input line 757.
-LaTeX Info: Redefining \% on input line 757.
+LaTeX Info: Redefining \. on input line 756.
+LaTeX Info: Redefining \% on input line 756.
  [45.51]
 File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_rubro.png>
 File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_plan.png>
-LaTeX Info: Redefining \. on input line 763.
-LaTeX Info: Redefining \% on input line 763.
+LaTeX Info: Redefining \. on input line 762.
+LaTeX Info: Redefining \% on input line 762.
  [46.52]
 File: ./img/informe2/ternure.png Graphic file (type bmp)
 <./img/informe2/ternure.png>
@@ -1612,8 +1612,8 @@ File: ./img/informe2/dist_arpa.png Graphic file (type bmp)
 <./img/informe2/dist_arpa.png>
 File: ./img/informe2/dist_bloq.png Graphic file (type bmp)
 <./img/informe2/dist_bloq.png>
-LaTeX Info: Redefining \. on input line 772.
-LaTeX Info: Redefining \% on input line 772.
+LaTeX Info: Redefining \. on input line 771.
+LaTeX Info: Redefining \% on input line 771.
  [47.53]
 File: ./img/informe2/dist_citas.png Graphic file (type bmp)
 <./img/informe2/dist_citas.png>
@@ -1621,83 +1621,104 @@ File: ./img/informe2/dist_rec.png Graphic file (type bmp)
 <./img/informe2/dist_rec.png>
 File: ./img/informe2/correlacion.png Graphic file (type bmp)
 <./img/informe2/correlacion.png>
-LaTeX Info: Redefining \. on input line 781.
-LaTeX Info: Redefining \% on input line 781.
+LaTeX Info: Redefining \. on input line 780.
+LaTeX Info: Redefining \% on input line 780.
  [48.54]
+File: ./img/informe4/diag_dm.png Graphic file (type bmp)
+<./img/informe4/diag_dm.png>
 File: ./img/informe4/discrim.png Graphic file (type bmp)
 <./img/informe4/discrim.png>
+LaTeX Info: Redefining \. on input line 786.
+LaTeX Info: Redefining \% on input line 786.
+ [49.55]
 File: ./img/informe4/lift.png Graphic file (type bmp)
 <./img/informe4/lift.png>
-LaTeX Info: Redefining \. on input line 787.
-LaTeX Info: Redefining \% on input line 787.
- [49.55]
 File: ./img/informe4/met_oper.png Graphic file (type bmp)
 <./img/informe4/met_oper.png>
 File: ./img/informe4/calib_glob.png Graphic file (type bmp)
 <./img/informe4/calib_glob.png>
+LaTeX Info: Redefining \. on input line 795.
+LaTeX Info: Redefining \% on input line 795.
+ [50.56]
 File: ./img/informe4/calib_pais.png Graphic file (type bmp)
 <./img/informe4/calib_pais.png>
-LaTeX Info: Redefining \. on input line 796.
-LaTeX Info: Redefining \% on input line 796.
- [50.56]
 File: ./img/informe4/calib_plan.png Graphic file (type bmp)
 <./img/informe4/calib_plan.png>
+LaTeX Info: Redefining \. on input line 801.
+LaTeX Info: Redefining \% on input line 801.
+ [51.57]
 File: ./img/informe4/calib_rub.png Graphic file (type bmp)
 <./img/informe4/calib_rub.png>
-LaTeX Info: Redefining \. on input line 802.
-LaTeX Info: Redefining \% on input line 802.
- [51.57]
 File: ./img/informe4/graf_roc.png Graphic file (type bmp)
 <./img/informe4/graf_roc.png>
 File: ./img/informe4/graf_reliab.png Graphic file (type bmp)
 <./img/informe4/graf_reliab.png>
-LaTeX Info: Redefining \. on input line 808.
-LaTeX Info: Redefining \% on input line 808.
+LaTeX Info: Redefining \. on input line 810.
+LaTeX Info: Redefining \% on input line 810.
 
 [52.58]
 File: ./img/informe4/graf_gains.png Graphic file (type bmp)
 <./img/informe4/graf_gains.png>
 File: ./img/informe4/graf_precis.png Graphic file (type bmp)
 <./img/informe4/graf_precis.png>
-LaTeX Info: Redefining \. on input line 814.
-LaTeX Info: Redefining \% on input line 814.
+LaTeX Info: Redefining \. on input line 816.
+LaTeX Info: Redefining \% on input line 816.
  [53.59]
 File: ./img/informe4/roc_chmc.png Graphic file (type bmp)
 <./img/informe4/roc_chmc.png>
 File: ./img/informe4/roc_chmed.png Graphic file (type bmp)
 <./img/informe4/roc_chmed.png>
-LaTeX Info: Redefining \. on input line 820.
-LaTeX Info: Redefining \% on input line 820.
+LaTeX Info: Redefining \. on input line 822.
+LaTeX Info: Redefining \% on input line 822.
  [54.60]
 File: ./img/informe4/roc_med.png Graphic file (type bmp)
 <./img/informe4/roc_med.png>
 File: ./img/informe4/roc_mexi.png Graphic file (type bmp)
 <./img/informe4/roc_mexi.png>
-LaTeX Info: Redefining \. on input line 826.
-LaTeX Info: Redefining \% on input line 826.
+LaTeX Info: Redefining \. on input line 828.
+LaTeX Info: Redefining \% on input line 828.
  [55.61]
 File: ./img/informe4/roc_col.png Graphic file (type bmp)
 <./img/informe4/roc_col.png>
 File: ./img/informe4/gain_col.png Graphic file (type bmp)
 <./img/informe4/gain_col.png>
-LaTeX Info: Redefining \. on input line 832.
-LaTeX Info: Redefining \% on input line 832.
+LaTeX Info: Redefining \. on input line 834.
+LaTeX Info: Redefining \% on input line 834.
  [56.62]
 File: ./img/informe4/gain_mex.png Graphic file (type bmp)
 <./img/informe4/gain_mex.png>
-) (babel-spanish.tex
+File: ./img/informe4/carp_cs.png Graphic file (type bmp)
+<./img/informe4/carp_cs.png>
+LaTeX Info: Redefining \. on input line 842.
+LaTeX Info: Redefining \% on input line 842.
+ [57.63]
+File: ./img/informe4/not_cs.png Graphic file (type bmp)
+<./img/informe4/not_cs.png>
+LaTeX Info: Redefining \. on input line 845.
+LaTeX Info: Redefining \% on input line 845.
+ [58.64]
+File: ./img/informe4/gui_cs.png Graphic file (type bmp)
+<./img/informe4/gui_cs.png>
+LaTeX Info: Redefining \. on input line 848.
+LaTeX Info: Redefining \% on input line 848.
+ [59.65]
+File: ./img/informe4/tut_cs.png Graphic file (type bmp)
+<./img/informe4/tut_cs.png>
+LaTeX Info: Redefining \. on input line 851.
+LaTeX Info: Redefining \% on input line 851.
+ [60.66])
+(babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
 ) (se-utf32be.def
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
-)
-(se-pdfdoc.def
+) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 )
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
- [57.63] (main.aux
+ [61.67] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (63 pages, 335424 bytes).
+Output written on main.xdv (67 pages, 343476 bytes).

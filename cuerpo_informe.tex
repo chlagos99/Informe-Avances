@@ -417,7 +417,7 @@ Las variables se calculan en el script principal y se documentan en el datamart.
 
 \texttt{id\_\hspace{0pt}cliente} identifica la cuenta y \texttt{mes\_\hspace{0pt}corte} es el primer día del mes de referencia. \texttt{pais}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{rubro} provienen de las tablas comerciales y describen el contexto. \texttt{arpa\_\hspace{0pt}proxy} se toma desde \texttt{mensualidad}, reemplazando ceros por nulos con \texttt{NULLIF\hspace{0pt}(mensualidad,0)}, y \texttt{tenure\_\hspace{0pt}meses} mide la antigüedad con \texttt{TIMESTAMPDIFF(MONTH, fecha\_\hspace{0pt}creacion, mes\_\hspace{0pt}corte)}.
 
-Las variables de uso reciente se construyen agrupando citas por cliente en \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. \texttt{citas\_\hspace{0pt}30d} cuenta las citas en los 30 días previos al corte y toma valor cero si no hay registros; \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} mide días desde la última cita en los 90 días anteriores y queda nula cuando no hay uso en ese periodo. La fricción se resume con \texttt{bloqueos\_\hspace{0pt}90d}, que cuenta eventos \texttt{'Bloqueo'} en los 90 días previos y toma cero cuando no existen. El bloqueo es relevante ya que como se observa en los anexos \ref{tab:citas_bloq_act_rubro} y \ref{tab:citas_bloq_act_plan}  existe una relación directa entre el aumento del bloqueo y la disminución del uso del software. Se decide utilizar 90 días como periodo ya que debido a la naturaleza de los bloqueos, se obtiene una mayor cantidad de datos en 3 meses, ya que el bloqueo se da una sola vez al mes, por lo tanto un periodo menor no sería suficiente para el modelo.
+Las variables de uso reciente se construyen agrupando citas por cliente en \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. \texttt{citas\_\hspace{0pt}30d} cuenta las citas en los 30 días previos al corte y toma valor cero si no hay registros; \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} mide días desde la última cita en los 90 días anteriores y queda nula cuando no hay uso en ese periodo. La fricción se resume con \texttt{bloqueos\_\hspace{0pt}90d}, que cuenta eventos \texttt{'Bloqueo'} en los 90 días previos y toma cero cuando no existen. El bloqueo es relevante ya que como se observa en los anexos \ref{tab:citas_bloq_act_rubro} y \ref{tab:citas_bloq_act_plan}  existe una relación directa entre el aumento del bloqueo y la disminución del uso del software. Se decide utilizar 90 días como periodo ya que debido a la naturaleza de los bloqueos, se obtiene una mayor cantidad de datos en 3 meses, ya que el bloqueo se da una sola vez al mes, por lo tanto un periodo menor no sería suficiente para el modelo. Se puede observar un diagrama ilustrativo del datamart en el anexo \ref{img:diag_dm}.
 
 \subsubsection{Definición de la etiqueta de baja a horizonte mensual}
 
@@ -498,13 +498,12 @@ El usuario descarga el archivo de salida elegido, lo renombra como \texttt{salid
 
 \subsubsection{Artefactos operativos y carpeta de uso para Customer Success}
 
-Para facilitar el despliegue se construye la Carpeta de uso Customer Success, que organiza todos los elementos necesarios en tres subcarpetas principales. La carpeta Archivo \texttt{sql} contiene el script \texttt{Datamart Principal Memoria\_Act.sql}, que encapsula las consultas a las tablas de clientes, uso, cambios de estado, planes y rubros. Esta pieza permite regenerar el datamart mensual sin necesidad de escribir código adicional; los usuarios solo deben ajustar la fecha de corte y exportar el resultado.
+Para facilitar el despliegue se construye la Carpeta de uso Customer Success (anexo \ref{img:carp_cs}), que organiza todos los elementos necesarios en tres subcarpetas principales. La carpeta Archivo \texttt{sql} contiene el script \texttt{Datamart Principal Memoria\_Act.sql}, que encapsula las consultas a las tablas de clientes, uso, cambios de estado, planes y rubros. Esta pieza permite regenerar el datamart mensual sin necesidad de escribir código adicional; los usuarios solo deben ajustar la fecha de corte y exportar el resultado.
 
 La carpeta \texttt{Colab py} almacena el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb}, el archivo histórico \texttt{database1.csv} y el archivo de salida \texttt{salida\_modelo\_1.csv}. En el cuaderno se concentran las definiciones del pipeline de preprocesamiento, el modelo calibrado y el módulo de scoring operativo descrito en la fase anterior. El diseño separa explícitamente la etapa de entrenamiento, que no se ejecuta en uso diario, de la etapa de inferencia, que es la única que el equipo debe activar. El archivo \texttt{database1.csv} se mantiene fijo como referencia histórica y solo se reemplaza \texttt{database\_act.csv} en cada ciclo.
 
 La carpeta Excel de resultado contiene el archivo \texttt{Clientes en riesgo de fuga - modelo}, configurado con Power Query para leer siempre el \texttt{salida\_modelo\_1.csv} ubicado en \texttt{Colab py}. En el editor de consultas se deja fijada la ruta al archivo y se documenta cómo modificarla en caso de cambio de ubicación. El Excel presenta tablas y vistas filtrables por país, plan, rubro, rango de riesgo y ranking, lo que permite a Customer Success priorizar clientes sin interactuar con código ni con la base de datos. De esta forma, la carpeta de uso reúne en un solo lugar el script SQL, el cuaderno de modelado y el Excel de explotación, junto con los documentos de apoyo asociados.
 
-```latex
 
 \subsubsection{Segmentación conductual y políticas preliminares}
 
@@ -523,7 +522,7 @@ En segmentos de riesgo medio con alto potencial de expansión, especialmente en 
 
 \subsubsection{Material de apoyo, pruebas en vivo y adopción del prototipo}
 
-El despliegue del prototipo se acompaña de un conjunto de tutoriales escritos y materiales audiovisuales que documentan el flujo de principio a fin. Se elabora un tutorial de implementación del modelo que describe la estructura de la Carpeta de uso Customer Success y referencia de manera integrada los documentos específicos para conexión a la base de datos, configuración de Colab y uso del Excel. Se redacta un tutorial de uso diario dirigido al equipo de Customer Success, donde se detallan los pasos para ejecutar el script de datamart, exportar \texttt{database\_act.csv}, cargar los archivos en Colab, generar las salidas, renombrar \texttt{salida\_modelo\_1.csv} y actualizar el Excel. Este documento enfatiza que los nombres de archivo y las rutas deben mantenerse fijos y que no se deben modificar las consultas internas ni el código del cuaderno.
+El despliegue del prototipo se acompaña de un conjunto de tutoriales escritos y materiales audiovisuales que documentan el flujo de principio a fin. Se elabora un tutorial de implementación del modelo que describe la estructura de la Carpeta de uso Customer Success y referencia de manera integrada los documentos específicos para conexión a la base de datos, configuración de Colab y uso del Excel. Se redacta un tutorial de uso diario dirigido al equipo de Customer Success, donde se detallan los pasos para ejecutar el script de datamart, exportar \texttt{database\_act.csv}, cargar los archivos en Colab, generar las salidas, renombrar \texttt{salida\_modelo\_1.csv} y actualizar el Excel. Este documento enfatiza que los nombres de archivo y las rutas deben mantenerse fijos y que no se deben modificar las consultas internas ni el código del cuaderno (anexos \ref{img:not_cs}, \ref{img:gui_cs}, \ref{img:tut_cs}).
 
 De manera complementaria se preparan tutoriales específicos para cada herramienta: una guía de conexión de DataGrip a la base de datos de producción mediante túnel SSH, con los parámetros de host, puerto, usuario, llave y base por defecto; una guía de configuración de Google Colab y de carga del cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb} en Google Drive; y una guía de uso del Excel de resultados que explica cómo fijar el origen de datos en Power Query y cómo operar el archivo solo con el comando “Actualizar todo”. Cada tutorial incluye versiones en video que muestran el flujo en pantalla, de modo que el equipo pueda seguir los pasos sin necesidad de conocimientos técnicos avanzados.
 
@@ -780,6 +779,9 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \insertimage[\label{img:correlacion}]{informe2/correlacion.png}{scale=0.5}{Matriz de correlaciones entre variables numéricas. Fuente: elaboración propia}
 
 % insertar imagen aqui
+\insertimage[\label{img:diag_dm}]{informe4/diag_dm.png}{scale=0.25}{Diagrama de Datamart construido. Fuente: elaboración propia}
+
+% insertar imagen aqui
 \insertimage[\label{img:discrim}]{informe4/discrim.png}{scale=0.75}{Resultado python capacidad de discriminación del modelo. Fuente: elaboración propia}
 
 % insertar imagen aqui
@@ -832,6 +834,20 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 
 % insertar imagen aqui
 \insertimage[\label{img:gain_mex}]{informe4/gain_mex.png}{scale=0.65}{Gráfico curva captura acumulada México. Fuente: elaboración propia}
+
+\section{Implementación}
+
+% insertar imagen aqui
+\insertimage[\label{img:carp_cs}]{informe4/carp_cs.png}{scale=0.5}{Carpetas entregadas a Customer Success. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:not_cs}]{informe4/not_cs.png}{scale=0.65}{Página de Notion elaborada para Customer Success. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:gui_cs}]{informe4/gui_cs.png}{scale=0.65}{Extracto guía de implementación y uso elaborada para Customer Success. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:tut_cs}]{informe4/tut_cs.png}{scale=0.65}{Tutorial en video elaborado para Customer Success. Fuente: elaboración propia}
 
 \end{appendixd}
 
