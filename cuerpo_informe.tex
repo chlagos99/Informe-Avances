@@ -155,11 +155,11 @@ Las razones estratégicas se basan en tres pilares principales:
 
 \subsection{Evaluación económica}
 
-La cartera actual de Reservo está compuesta por cerca de 3.500 clientes activos distribuidos en cuatro planes de suscripción mensual, con valores que van desde \$30.000 hasta \$150.000 por cliente. Con esta estructura de precios, el ingreso mensual por suscripciones se sitúa en torno a \$205.450.000 y el ingreso anual aproximado alcanza los \$2.465.400.000 pesos chilenos, según la base de datos utilizada en esta memoria. Esto implica un pago promedio cercano a \$58.700 mensuales por cliente.
+La operación actual de Reservo cuenta con una cartera aproximada de 3.500 clientes activos. Estos generan un ingreso mensual recurrente cercano a los \$205 millones, lo que proyecta una facturación anual en torno a los \$2.400 millones de pesos. El pago promedio por cliente (ARPA) se sitúa en \$58.700 mensuales.
 
-La tasa de bajas mensuales se estima en torno a 2{,}4\,\%. Con este nivel, la empresa pierde alrededor de 80 clientes al mes, lo que equivale a cerca de 1.000 clientes en un año. En términos de ingresos, esta dinámica se traduce en una pérdida anual cercana a \$59.000.000 de pesos en suscripciones que dejan de cobrarse. Cada décima de punto porcentual de reducción en la tasa de bajas representa del orden de \$2.500.000 de pesos anuales en ingresos conservados, lo que entrega una referencia directa sobre cuánto vale económicamente mejorar la retención.
+Históricamente, la tasa de cancelación (churn) es del 2,4\% mensual, lo que implica la pérdida de más de 80 clientes cada mes. Desde una perspectiva financiera, la salida de un cliente no representa solo la pérdida de su mensualidad, sino la destrucción de un activo de largo plazo. Se estima que cada cliente que abandona la compañía representa una pérdida de valor patrimonial cercana a \$1,28 millones, considerando los flujos futuros que deja de aportar.
 
-El proyecto busca reducir estas pérdidas mediante un uso más focalizado de los recursos comerciales. El modelo permite ordenar la cartera según probabilidad de baja y entregar al equipo de Customer Success un listado priorizado, de modo que se concentren los esfuerzos en quienes generan mayor riesgo económico. Si el uso del modelo y de las políticas asociadas permitiera reducir la tasa mensual desde 2{,}4\,\% a 2{,}0\,\%, la empresa dejaría de perder cerca de \$10.000.000 de pesos al año en ingresos por suscripciones, solo por efecto de una menor cantidad de clientes que se dan de baja. La segmentación por comportamiento también abre espacio para acciones de expansión comercial: un subconjunto de clientes puede estar en condiciones de aumentar de plan o contratar servicios adicionales y, si una fracción pequeña de la cartera incrementa su pago mensual, el ingreso adicional anual puede ser comparable al monto ahorrado por una mejor retención. Los detalles de las métricas, las fórmulas y los supuestos que permiten cuantificar el valor económico por cliente y proyectar escenarios más completos de ingresos se desarrollan en el marco conceptual y en el capítulo metodológico, siguiendo la literatura de analítica de clientes y gestión basada en valor \citep{Kumar2010,Gupta2006,Chapman2000}.
+El proyecto implementa un modelo predictivo para frenar esta pérdida de valor. Al identificar preventivamente a los clientes en riesgo, el equipo de \textit{Customer Success} puede ejecutar acciones de retención focalizadas. Las proyecciones indican que, en un escenario de efectividad media, esta gestión permite rescatar el valor de 120 clientes al año. Esto se traduce en la preservación de activos por un monto aproximado de \$154 millones anuales. Esta cifra demuestra que la retención de clientes tiene un impacto financiero significativo y directo sobre la rentabilidad de la empresa, complementando las estrategias de adquisición de nuevas cuentas.
 
 \subsection{Razones prácticas y técnicas}
 
@@ -373,12 +373,61 @@ En la tercera tarea se tradujo este diagnóstico en objetivos formales. Se defin
 
 La cuarta tarea definió cómo medir el éxito del proyecto y qué entregables acordar con la empresa. Se fijaron indicadores para la calidad del modelo, como su capacidad para distinguir entre clientes que se dan de baja y los que se mantienen, y para la cobertura del datamart sobre la cartera activa. Se establecieron métricas de focalización, como la concentración de bajas en el grupo de mayor riesgo estimado, y criterios de adopción del prototipo, como que el equipo de Customer Success pueda ejecutar el flujo sin apoyo del estudiante. Se acordaron como entregables clave el datamart mensual documentado, el modelo de riesgo ajustado, la propuesta de segmentación conductual, el portafolio de políticas comerciales asociado y una carpeta de uso con tutoriales y materiales de traspaso para los equipos internos.
 
-\subsubsection{Línea base económica y evaluación preliminar}
+\subsubsection{Línea base económica y evaluación basada en el Valor de Vida (CLV)}
 
-La quinta tarea cuantificó una línea base económica de la cartera. Se fijó \(N_{\mathrm{activos}} \approx 3{.}500\) y un ingreso anual recurrente cercano a \(2{.}465{.}400{.}000\), lo que da \(\mathrm{MRR}_{\mathrm{base}} \approx 205{.}450{.}000\) y un ingreso promedio por cuenta \(\mathrm{ARPA} \approx 58{.}700\) (anexo ~ \ref{tab:mensualidad_por_rubro}). Con una tasa de bajas mensuales \(\mathrm{Churn}_{\mathrm{base}} = 0{,}024\) se estimó que se pierden cerca de \(N_{\mathrm{bajas}} \approx 84\) clientes al mes y un ingreso \(\mathrm{MRR}_{\mathrm{perdido}} \approx 4{.}930{.}800\), equivalente a unos \(59{.}200{.}000\) al año. 
+Se utiliza el enfoque de \textit{Customer Lifetime Value} (CLV) para medir el impacto económico del proyecto. Este método cuantifica el valor presente de los flujos de caja futuros que se preservan al evitar la fuga de un cliente, permitiendo valorar el activo financiero que representa la cartera.
 
-A partir de esta base se evaluaron escenarios de mejora usando la expresión de ingreso retenido incremental. Reducir la tasa de bajas desde \(0{,}024\) a \(0{,}020\) implica \(\Delta \mathrm{Churn} = 0{,}004\) y un \(\Delta \mathrm{MRR}_{\mathrm{retenido}} \approx 821{.}800\) mensuales, es decir cerca de \(9{.}861{.}600\) al año. Una mejora de \(0{,}001\) punto porcentual en la tasa de bajas representa \(\Delta \mathrm{MRR}_{\mathrm{retenido}} \approx 205{.}450\) al mes, unos \(2{.}465{.}400\) al año. Estas cifras entregan el orden de magnitud del problema económico asociado al churn y servirán para interpretar los resultados del modelo y de las políticas de retención y expansión.
+\paragraph{Determinación de Parámetros y CLV Base}
 
+Para el cálculo se utilizan los datos históricos de facturación y se asumen estándares financieros de la industria SaaS (Software as a Service) para los márgenes operativos:
+
+\begin{itemize}
+    \item \textbf{Ingreso Promedio (ARPA):} \$58.700 CLP.
+    \item \textbf{Churn mensual ($c$):} 2,4\% ($0{,}024$).
+    \item \textbf{Tasa de descuento anual ($WACC$):} 10\% ($i \approx 0{,}008$ mensual).
+    \item \textbf{Margen Bruto ($m$):} 70\% ($0{,}70$). Este valor corresponde al estándar de la industria SaaS B2B, donde los costos directos de venta (servidores y soporte) son bajos respecto al ingreso recurrente.
+    \item \textbf{Margen Neto Estimado:} 10\% ($0{,}10$). Se utiliza como referencia conservadora para estimar la utilidad final de la empresa.
+\end{itemize}
+
+El valor del activo cliente se obtiene mediante la fórmula de perpetuidad con crecimiento negativo:
+
+\begin{equation}
+    CLV = \frac{\text{ARPA} \times m}{c + i} \approx \$1.284.062
+\end{equation}
+
+Cada cliente retenido implica la preservación de un activo valorado en aproximadamente \$1,28 millones.
+
+\paragraph{Escenarios de Retención y Capacidad Operativa}
+
+El modelo predictivo opera con ventanas trimestrales. El impacto económico anual depende de la capacidad del equipo de \textit{Customer Success} para gestionar las alertas generadas en cada ciclo y evitar la baja efectiva.
+
+Se proyectan tres escenarios de efectividad basados en el volumen de clientes rescatados por trimestre:
+
+\begin{itemize}
+    \item \textbf{Pesimista:} Capacidad baja de gestión. Se retienen 20 clientes por trimestre (80 clientes anuales).
+    \item \textbf{Neutro:} Capacidad media. Se retienen 30 clientes por trimestre (120 clientes anuales).
+    \item \textbf{Optimista:} Capacidad alta. Se retienen 40 clientes por trimestre (160 clientes anuales).
+\end{itemize}
+
+\paragraph{Evaluación de Impacto Económico}
+
+La Tabla \ref{tab:escenarios_clv} detalla el Valor Patrimonial Total preservado en cada escenario. Para dimensionar la magnitud de estas cifras, se debe considerar que la facturación anual de la empresa es cercana a los \$2.400 millones.
+
+\begin{table}[H]
+    \centering
+    \caption{Valor Patrimonial Retenido (CLV acumulado) según escenarios de efectividad operativa.}
+    \label{tab:escenarios_clv}
+    \small
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Escenario} & \textbf{Retención Anual} & \textbf{Valor Preservado (CLV)} \\ \hline
+    Pesimista          & 80 clientes              & \$102.724.960                   \\ \hline
+    Neutro             & 120 clientes             & \$154.087.440                   \\ \hline
+    Optimista          & 160 clientes             & \$205.449.920                   \\ \hline
+    \end{tabular}
+\end{table}
+
+Los resultados indican que, en un escenario de efectividad media (Neutro), el modelo permite retener un valor patrimonial de \$154 millones. Dado el volumen de facturación de la compañía, la preservación de este capital mediante la gestión del churn representa una optimización financiera significativa sobre los activos de la empresa.
 
 \subsection{Fase 2: Comprensión de los datos}
 
@@ -401,7 +450,7 @@ Por último se establecieron definiciones operativas de estados de cliente. El u
 
 \subsection{Fase 3: Preparación de los datos}
 
-En esta fase se construye el datamart analítico cliente–mes y se generan las variables que alimentan la matriz de características. El trabajo se organiza en cuatro tareas: diseño del panel mensual, cálculo de variables de contexto, valor, uso y fricción, definición de la etiqueta de baja a horizonte mensual y tratamiento de valores faltantes y extremos.
+En esta fase se construye el datamart analítico cliente–mes y se generan las variables que alimentan la matriz de características. El trabajo se organiza en cuatro tareas: diseño del panel mensual, cálculo de variables de contexto, valor, uso y fricción, definición de la etiqueta de baja a horizonte mensual y tratamiento de valores faltantes y extremos. En el anexo \ref{img:cod_dg} se puede observar un extracto del código SQL usado para la construcción del datamart.
 
 \subsubsection{Diseño de la estructura del datamart mensual}
 
@@ -413,15 +462,54 @@ Sobre la combinación \texttt{mes\_\hspace{0pt}corte}–\texttt{id\_\hspace{0pt}
 
 \subsubsection{Construcción de variables de contexto, valor, uso y fricción}
 
-Las variables se calculan en el script principal y se documentan en el datamart. El panel contiene once columnas: \texttt{id\_\hspace{0pt}cliente}, \texttt{mes\_\hspace{0pt}corte}, \texttt{pais}, \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre}, \texttt{arpa\_\hspace{0pt}proxy}, \texttt{tenure\_\hspace{0pt}meses}, \texttt{citas\_\hspace{0pt}30d}, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, \texttt{bloqueos\_\hspace{0pt}90d} y \texttt{churn\_\hspace{0pt}T1}.
+La segunda tarea consiste en definir las variables que describen a cada cliente en cada mes de corte. Estas variables se calculan en el script principal y se detallan en el documento de variables del datamart. El panel resultante contiene once columnas principales: \texttt{id\_\hspace{0pt}cliente}, \texttt{mes\_\hspace{0pt}corte}, \texttt{pais}, \texttt{rubro}, \texttt{plan\_\hspace{0pt}nombre}, \texttt{arpa\_\hspace{0pt}proxy}, \texttt{tenure\_\hspace{0pt}meses}, \texttt{citas\_\hspace{0pt}30d}, \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}, \texttt{bloqueos\_\hspace{0pt}90d} y \texttt{churn\_\hspace{0pt}T1}.
 
-\texttt{id\_\hspace{0pt}cliente} identifica la cuenta y \texttt{mes\_\hspace{0pt}corte} es el primer día del mes de referencia. \texttt{pais}, \texttt{plan\_\hspace{0pt}nombre} y \texttt{rubro} provienen de las tablas comerciales y describen el contexto. \texttt{arpa\_\hspace{0pt}proxy} se toma desde \texttt{mensualidad}, reemplazando ceros por nulos con \texttt{NULLIF\hspace{0pt}(mensualidad,0)}, y \texttt{tenure\_\hspace{0pt}meses} mide la antigüedad con \texttt{TIMESTAMPDIFF(MONTH, fecha\_\hspace{0pt}creacion, mes\_\hspace{0pt}corte)}.
+Las variables de identificación y calendario son:
 
-Las variables de uso reciente se construyen agrupando citas por cliente en \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. \texttt{citas\_\hspace{0pt}30d} cuenta las citas en los 30 días previos al corte y toma valor cero si no hay registros; \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias} mide días desde la última cita en los 90 días anteriores y queda nula cuando no hay uso en ese periodo. La fricción se resume con \texttt{bloqueos\_\hspace{0pt}90d}, que cuenta eventos \texttt{'Bloqueo'} en los 90 días previos y toma cero cuando no existen. El bloqueo es relevante ya que como se observa en los anexos \ref{tab:citas_bloq_act_rubro} y \ref{tab:citas_bloq_act_plan}  existe una relación directa entre el aumento del bloqueo y la disminución del uso del software. Se decide utilizar 90 días como periodo ya que debido a la naturaleza de los bloqueos, se obtiene una mayor cantidad de datos en 3 meses, ya que el bloqueo se da una sola vez al mes, por lo tanto un periodo menor no sería suficiente para el modelo. Se puede observar un diagrama ilustrativo del datamart en el anexo \ref{img:diag_dm}.
+\begin{itemize}
+    \item \texttt{id\_\hspace{0pt}cliente}: identificador único del cliente, tomado desde \texttt{cliente\_\hspace{0pt}cliente.id}.
+    \item \texttt{mes\_\hspace{0pt}corte}: primer día del mes de referencia.
+\end{itemize}
+
+Las variables de contexto se derivan de la información comercial:
+
+\begin{itemize}
+    \item \texttt{pais}: país del cliente, proveniente de \texttt{cliente\_\hspace{0pt}cliente.pais}.
+    \item \texttt{plan\_\hspace{0pt}nombre}: nombre del plan vigente, obtenido mediante la relación \texttt{cliente\_\hspace{0pt}cliente.plan\_\hspace{0pt}reservo\_\hspace{0pt}id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}planreservo.id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}planreservo.nombre}.
+    \item \texttt{rubro}: rubro asociado al plan, calculado como \texttt{cliente\_\hspace{0pt}planreservo.rubro\_\hspace{0pt}id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}rubro.id} $\rightarrow$ \texttt{cliente\_\hspace{0pt}rubro.nombre}.
+\end{itemize}
+
+Las variables de valor económico son:
+
+\begin{itemize}
+    \item \texttt{arpa\_\hspace{0pt}proxy}: aproximación del ingreso mensual por cliente. Se toma desde \texttt{cliente\_\hspace{0pt}cliente.mensualidad} y se reemplazan los valores cero por nulos mediante \texttt{NULLIF\hspace{0pt}(mensualidad, 0)} para evitar confundir promociones o ajustes con ingresos reales.
+    \item \texttt{tenure\_\hspace{0pt}meses}: antigüedad del cliente al mes de corte, medida en meses, calculada con \texttt{TIMESTAMPDIFF(MONTH, fecha\_\hspace{0pt}creacion, mes\_\hspace{0pt}corte)}.
+\end{itemize}
+
+Las variables de uso reciente de la plataforma se obtienen a partir de las tablas \texttt{appointment\_\hspace{0pt}ticket} y \texttt{cliente\_\hspace{0pt}servicio}. Primero se agrupa el uso diario por cliente, y luego se calculan:
+
+\begin{itemize}
+    \item \texttt{citas\_\hspace{0pt}30d}: número de citas en los 30 días previos al corte. Para cada combinación \texttt{mes\_\hspace{0pt}corte}, \texttt{id\_\hspace{0pt}cliente} se suman las citas diarias en el intervalo de 30 días anteriores. Si no hay registros de uso en esa ventana, el resultado se define como cero.
+    \item \texttt{recencia\_\hspace{0pt}uso\_\hspace{0pt}dias}: días desde la última cita registrada antes del corte. Se calcula como la diferencia entre \texttt{mes\_\hspace{0pt}corte} y la máxima fecha de uso en los 90 días anteriores. Si no hubo uso en los 90 días previos, el valor queda nulo en esta etapa.
+\end{itemize}
+
+La fricción reciente se resume a partir de los cambios de estado administrativos:
+
+\begin{itemize}
+    \item \texttt{bloqueos\_\hspace{0pt}90d}: número de bloqueos en los 90 días previos al corte. Para cada cliente activo y corte se cuentan los eventos con \texttt{tipo\_\hspace{0pt}cambio = 'Bloqueo'} en la ventana de 90 días anteriores; si no existen bloqueos en ese periodo, se asigna cero.
+\end{itemize}
+
+La combinación de estas variables permite describir, para cada cliente y mes, su contexto comercial, su aporte económico aproximado, su nivel de uso reciente y sus eventos de fricción, manteniendo una estructura mensual uniforme.
 
 \subsubsection{Definición de la etiqueta de baja a horizonte mensual}
 
-La etiqueta \texttt{churn\_\hspace{0pt}T1} indica si un cliente activo en un corte presenta una baja efectiva en el mes siguiente. Para cada cliente se buscan eventos \texttt{'Baja'} entre \texttt{mes\_\hspace{0pt}corte} y el mismo día del mes siguiente; si hay varios, se toma la primera fecha. Luego se verifica si en ese mes aparece un \texttt{'Desbloqueo'} posterior a la baja. Si hay desbloqueo, la baja se considera revertida y no genera etiqueta; si no lo hay, se clasifica como baja efectiva. Así, \texttt{churn\_\hspace{0pt}T1} vale 1 cuando existe una baja efectiva en el mes siguiente y 0 en caso contrario, usando solo información disponible hasta el corte para las variables explicativas. Se definió el uso de un periodo igual a un mes debido a las necesidades del negocio y la estructura lógica que permite construir la base de datos. La suscripción es medida en mensualidades y se descarta una medida diaria debido al overfitting que genera esta decisión en el modelo.
+La tercera tarea consiste en definir la etiqueta binaria que se usará como resultado en el modelamiento. Esta etiqueta, llamada \texttt{churn\_\hspace{0pt}T1}, indica si un cliente activo en un corte determinado presenta una baja efectiva en el mes siguiente.
+
+El cálculo se apoya en dos pasos conceptuales. Primero se identifican las bajas registradas en el mes siguiente a cada corte. Para cada cliente se revisan los eventos de tipo \texttt{'Baja'} en \texttt{ReservoInterno\_\hspace{0pt}cambioestadocliente} cuya fecha cae entre \texttt{mes\_\hspace{0pt}corte} y el mismo día del mes siguiente. Si hay varias bajas en el periodo, se toma la primera fecha de baja del mes.
+
+En segundo lugar se distingue entre bajas registradas y bajas efectivas. Para cada baja registrada se verifica si existe un evento de tipo \texttt{'Desbloqueo'} para el mismo cliente con fecha posterior a la baja y anterior al término del mes. Si existe un desbloqueo en esa ventana, la baja se considera revertida y se descarta a efectos de la etiqueta. Si no existe, la baja se clasifica como efectiva.
+
+Con esta definición se construye la etiqueta \texttt{churn\_\hspace{0pt}T1}. Para cada cliente activo en un corte dado se pregunta si en el mes siguiente existe una baja efectiva según la regla anterior. Si la respuesta es afirmativa, \texttt{churn\_\hspace{0pt}T1} toma valor 1; en caso contrario, toma valor 0. Esta construcción asegura que todas las variables explicativas de un registro usan solo información observada hasta el mes de corte, mientras que el resultado se define con lo que ocurre en el mes siguiente, evitando fuga temporal.
 
 \subsubsection{Tratamiento de valores faltantes y valores extremos}
 
@@ -446,7 +534,7 @@ junto con indicadores para actividad muy baja y para valores recortados.
 
 \subsection{Fase 4: Modelado}
 
-En esta fase se construyen los modelos que estiman el riesgo de baja mensual y que sirven de base para la segmentación conductual. El trabajo se organiza en cuatro tareas: selección del algoritmo, definición de la partición temporal y tamaño muestral, implementación del pipeline de preprocesamiento y entrenamiento con calibración de probabilidades.
+En esta fase se construyen los modelos que estiman el riesgo de baja mensual y que sirven de base para la segmentación conductual. El trabajo se organiza en cuatro tareas: selección del algoritmo, definición de la partición temporal y tamaño muestral, implementación del pipeline de preprocesamiento y entrenamiento con calibración de probabilidades. En el anexo \ref{img:colb_pt} se puede observar un extracto del código utilizado en Colab/Python.
 
 \subsubsection{Selección del algoritmo y definición del problema de clasificación}
 
@@ -492,7 +580,7 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
 
 El flujo de uso parte en la base de datos transaccional de la empresa. Cada vez que se desea actualizar el modelo se ejecuta el script \texttt{Datamart Principal Memoria\_Act.sql} sobre el esquema \texttt{reservov2}, utilizando una herramienta de consulta MySQL como DataGrip conectada mediante túnel SSH a la base productiva. El único parámetro que el usuario debe modificar es la fecha de corte \texttt{@fin}, que se fija como el primer día del mes siguiente al periodo que se quiere analizar. El script genera un resultado tabular que contiene, para todos los clientes activos al cierre, las columnas necesarias para el modelo en formato cliente–mes.
 
-Ese resultado se exporta a un archivo \texttt{CSV}, que se renombra como \texttt{database\_act.csv} y se almacena en la carpeta de trabajo indicada para el modelo. Luego se abre el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb} en Google Colab, donde se cargan dos archivos: \texttt{database\_act.csv} (datamart actualizado) y \texttt{database1.csv} (base histórica usada en el entrenamiento). Con estos insumos se ejecuta la celda de producción del cuaderno, que aplica el modelo calibrado sobre el corte seleccionado, calcula las probabilidades de baja a uno y tres meses, asigna rangos cualitativos de riesgo, construye el ranking global y genera archivos de salida en formato \texttt{CSV}.
+Ese resultado se exporta a un archivo \texttt{CSV}, que se renombra como \texttt{database\_act.csv} y se almacena en la carpeta de trabajo indicada para el modelo. Luego se abre el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb} en Google Colab (anexo \ref{img:colb_cs}), donde se cargan dos archivos: \texttt{database\_act.csv} (datamart actualizado) y \texttt{database1.csv} (base histórica usada en el entrenamiento). Con estos insumos se ejecuta la celda de producción del cuaderno, que aplica el modelo calibrado sobre el corte seleccionado, calcula las probabilidades de baja a uno y tres meses, asigna rangos cualitativos de riesgo, construye el ranking global y genera archivos de salida en formato \texttt{CSV}.
 
 El usuario descarga el archivo de salida elegido, lo renombra como \texttt{salida\_modelo\_1.csv} y lo guarda en la carpeta \texttt{Colab py}. Finalmente se abre el Excel \texttt{Clientes en riesgo de fuga - modelo}, se presiona el botón de “Actualizar todo” en la pestaña de datos y el libro actualiza todas sus consultas de Power Query para leer el nuevo \texttt{salida\_modelo\_1.csv}. De este modo el flujo de scoring queda encapsulado en una secuencia de pasos clara: actualización del datamart, ejecución del modelo en Colab y actualización del Excel para la revisión de resultados.
 
@@ -502,7 +590,7 @@ Para facilitar el despliegue se construye la Carpeta de uso Customer Success (an
 
 La carpeta \texttt{Colab py} almacena el cuaderno \texttt{Colab\_para\_Customer\_Success.ipynb}, el archivo histórico \texttt{database1.csv} y el archivo de salida \texttt{salida\_modelo\_1.csv}. En el cuaderno se concentran las definiciones del pipeline de preprocesamiento, el modelo calibrado y el módulo de scoring operativo descrito en la fase anterior. El diseño separa explícitamente la etapa de entrenamiento, que no se ejecuta en uso diario, de la etapa de inferencia, que es la única que el equipo debe activar. El archivo \texttt{database1.csv} se mantiene fijo como referencia histórica y solo se reemplaza \texttt{database\_act.csv} en cada ciclo.
 
-La carpeta Excel de resultado contiene el archivo \texttt{Clientes en riesgo de fuga - modelo}, configurado con Power Query para leer siempre el \texttt{salida\_modelo\_1.csv} ubicado en \texttt{Colab py}. En el editor de consultas se deja fijada la ruta al archivo y se documenta cómo modificarla en caso de cambio de ubicación. El Excel presenta tablas y vistas filtrables por país, plan, rubro, rango de riesgo y ranking, lo que permite a Customer Success priorizar clientes sin interactuar con código ni con la base de datos. De esta forma, la carpeta de uso reúne en un solo lugar el script SQL, el cuaderno de modelado y el Excel de explotación, junto con los documentos de apoyo asociados.
+La carpeta Excel de resultado contiene el archivo \texttt{Clientes en riesgo de fuga - modelo}, configurado con Power Query para leer siempre el \texttt{salida\_modelo\_1.csv} ubicado en \texttt{Colab py} (anexo \ref{img:xls_res}). En el editor de consultas se deja fijada la ruta al archivo y se documenta cómo modificarla en caso de cambio de ubicación. El Excel presenta tablas y vistas filtrables por país, plan, rubro, rango de riesgo y ranking, lo que permite a Customer Success priorizar clientes sin interactuar con código ni con la base de datos. De esta forma, la carpeta de uso reúne en un solo lugar el script SQL, el cuaderno de modelado y el Excel de explotación, junto con los documentos de apoyo asociados.
 
 
 \subsubsection{Segmentación conductual y políticas preliminares}
@@ -570,14 +658,11 @@ El quinto objetivo, la implementación de un prototipo operativo del modelo anal
 
 El proyecto “Diseño de políticas comerciales para una empresa de tecnología para servicios de salud basado en el comportamiento de sus clientes” articula en una sola propuesta los componentes analíticos y operativos necesarios para que Reservo gestione de manera más proactiva la retención y la expansión de su cartera. A partir de un datamart mensual estructurado se construye un modelo de regresión logística calibrado que estima la probabilidad de churn a horizonte T+1 y permite derivar probabilidades a T+3, en coherencia con la dinámica mensual del negocio y con la necesidad de contar con señales tanto de corto como de mediano plazo.
 
-Las métricas obtenidas muestran que el modelo discrimina con solidez entre clientes que se darán de baja y clientes que permanecerán activos, y que el 20\,\% de la cartera con mayor probabilidad estimada concentra cerca del 70\,\% de las bajas. Esta capacidad de focalización, combinada con la línea base económica levantada en la fase inicial, indica que reducciones moderadas en la tasa de bajas pueden traducirse en montos anuales de ingresos retenidos relevantes para la empresa y suficientes para justificar el esfuerzo de implementación y mantenimiento del sistema.
+Las métricas obtenidas muestran que el modelo discrimina con solidez entre clientes que se darán de baja y clientes que permanecerán activos, y que el 20\,\% de la cartera con mayor probabilidad estimada concentra cerca del 70\,\% de las bajas. Esta capacidad de focalización se vincula directamente con la evaluación económica realizada bajo el enfoque de \textit{Customer Lifetime Value} (CLV), la cual evidenció que la fuga de clientes implica una destrucción de valor patrimonial significativa. Los análisis indican que, en un escenario de efectividad operativa media, la gestión focalizada permite preservar activos por un valor cercano a los \$154 millones anuales, demostrando que la retención es una palanca de rentabilidad crítica y suficiente para justificar el esfuerzo de implementación y mantenimiento del sistema.
 
-El prototipo operativo integra el modelo en el flujo real de trabajo mediante tres piezas principales: el script SQL que genera el datamart, el cuaderno de scoring en Google Colab y el archivo de Excel que presenta los resultados en un formato familiar para Customer Success. Sobre esta base, los equipos de Marketing, Ventas y Customer Success disponen de un repositorio de datos estructurado, de un modelo analítico validado, de segmentos de clientes definidos según riesgo, valor, rubro y plan, y de un procedimiento documentado para aplicar el modelo de forma periódica. La información de motivos de baja por rubro y plan se incorpora como insumo adicional para interpretar los segmentos y ajustar las acciones sugeridas en cada contexto, lo que refuerza el vínculo entre la salida del modelo y la experiencia de los equipos que trabajan con los clientes.
+El prototipo operativo integra el modelo en el flujo real de trabajo mediante tres piezas principales: el script SQL que genera el datamart, el cuaderno de scoring en Google Colab y el archivo de Excel que presenta los resultados en un formato familiar para el usuario final. Sobre esta base, el equipo de Customer Success dispone de un repositorio de datos estructurado, de un modelo analítico validado, de segmentos de clientes definidos según riesgo, valor, rubro y plan, y de un procedimiento documentado para aplicar el modelo de forma periódica. La información de motivos de baja por rubro y plan se incorpora como insumo adicional para interpretar los segmentos y ajustar las acciones sugeridas en cada contexto, lo que refuerza el vínculo entre la salida del modelo y la experiencia del equipo que trabaja directamente con los clientes.
 
-En conjunto, estos elementos permiten avanzar en el objetivo general de desarrollar un modelo de segmentación conductual que habilite políticas comerciales diferenciadas. El proyecto deja trazada una ruta para el trabajo posterior de la empresa: incorporar nuevas fuentes de información, como registros sistemáticos de visitas a los centros y métricas de satisfacción; profundizar en el análisis comparativo con la competencia; automatizar gradualmente el despliegue en la infraestructura propia; y diseñar pilotos que midan de manera conjunta la efectividad y el costo de las políticas de retención y expansión basadas en los scores del modelo. De este modo, Reservo queda en posición de transformar la analítica de churn en un componente estable de su estrategia comercial, utilizando el comportamiento de sus clientes y los motivos de baja observados como eje para decidir cómo, cuándo y con qué intensidad intervenir cada relación, y conectando de forma explícita las decisiones de Customer Success con el impacto económico observado en la cartera.
-
-
-
+En conjunto, estos elementos permiten avanzar en el objetivo general de desarrollar un modelo de segmentación conductual que habilite políticas de fidelización diferenciadas. El proyecto deja trazada una ruta para el trabajo posterior de la empresa: incorporar nuevas fuentes de información, como registros sistemáticos de visitas a los centros y métricas de satisfacción; profundizar en el análisis comparativo con la competencia; automatizar gradualmente el despliegue en la infraestructura propia; y diseñar pilotos que midan de manera conjunta la efectividad y el costo de las acciones de retención basadas en los scores del modelo. De este modo, Reservo queda en posición de transformar la analítica de churn en un componente estable de su estrategia, utilizando el comportamiento de sus clientes y los motivos de baja observados como eje para decidir cómo, cuándo y con qué intensidad intervenir, conectando de forma explícita las decisiones de Customer Success con el impacto económico real en el valor de la compañía.
 
 \newpage
 
@@ -598,6 +683,8 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \newpage
 
 \begin{appendixd}
+
+\newpage
 \section{Contexto y Problema}
     %insertar imagen aqui
 \insertimage[\label{img:organigrama}]{imagenes/organigrama.png}{scale=0.5}{Organigrama de Reservo, Agosto 2025. Fuente: elaboración propia}
@@ -729,7 +816,225 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
     \label{tab:mensualidad_por_rubro}
 \end{table}
 
+\newpage
+
+\section{Código}
+
+\begin{lstlisting}[language=SQL, caption={Script SQL para la construcción del Datamart y cálculo de variables.}, label={cod:datamart_sql}]
+/* ========= Parámetros del panel ========= */
+SET @inicio       := DATE('2024-01-01');   -- primer corte (inicio de mes)
+SET @fin          := DATE('2025-12-01');   -- último corte (inicio de mes, inclusive)
+SET @hist_inicio  := DATE_SUB(@inicio, INTERVAL 90 DAY);  -- ventanas 90d previas
+SET @inicio_buf   := DATE_SUB(@inicio, INTERVAL 90 DAY);  -- buffer de uso
+SET @fin_mas1     := DATE_ADD(@fin,    INTERVAL 2 MONTH); -- cubrir T+1 del último
+
+/* ========= Calendario de cortes ========= */
+WITH RECURSIVE cortes AS (
+  SELECT @inicio AS corte
+  UNION ALL
+  SELECT DATE_ADD(corte, INTERVAL 1 MONTH)
+  FROM cortes
+  WHERE corte < @fin
+),
+
+/* ========= Clientes candidatos (reales) ========= */
+candidatos AS (
+  SELECT
+    cc.id             AS id_cliente,
+    cc.fecha_creacion AS alta
+  FROM cliente_cliente cc
+  WHERE cc.demo = 0
+    AND cc.cuenta_lista = 1
+    AND cc.fecha_creacion IS NOT NULL
+),
+
+/* ========= Cambios de estado en rango ========= */
+cambios_src AS (
+  SELECT
+    cec.cliente_id  AS id_cliente,
+    cec.fecha       AS fecha_cambio,
+    cec.tipo        AS tipo_cambio
+  FROM ReservoInterno_cambioestadocliente cec
+  JOIN candidatos ca
+    ON ca.id_cliente = cec.cliente_id
+  WHERE cec.fecha >= @hist_inicio
+    AND cec.fecha <  @fin_mas1
+),
+
+/* ========= BASE cliente x mes por ÚLTIMA ACTIVIDAD PREVIA ========= */
+base AS (
+  SELECT co.corte, ca.id_cliente
+  FROM cortes co
+  JOIN candidatos ca
+    ON EXISTS (
+         SELECT 1
+         FROM cambios_src cs
+         WHERE cs.id_cliente = ca.id_cliente
+           AND cs.fecha_cambio < co.corte
+       )
+),
+
+/* ========= Activos al corte: última BAJA previa no revertida ========= */
+activos AS (
+  SELECT b.corte, b.id_cliente
+  FROM base b
+  WHERE NOT EXISTS (
+    SELECT 1
+    FROM cambios_src xb
+    WHERE xb.id_cliente   = b.id_cliente
+      AND xb.tipo_cambio  = 'Baja'
+      AND xb.fecha_cambio = (
+        SELECT MAX(x2.fecha_cambio)
+        FROM cambios_src x2
+        WHERE x2.id_cliente  = b.id_cliente
+          AND x2.tipo_cambio = 'Baja'
+          AND x2.fecha_cambio < b.corte
+      )
+      AND NOT EXISTS (
+        SELECT 1
+        FROM cambios_src d
+        WHERE d.id_cliente   = b.id_cliente
+          AND d.tipo_cambio  = 'Desbloqueo'
+          AND d.fecha_cambio >= xb.fecha_cambio
+          AND d.fecha_cambio <  b.corte
+      )
+  )
+),
+
+/* ========= Bajas del mes y churn efectivo ========= */
+bajas_mes AS (
+  SELECT
+    b.corte AS mes,
+    cs.id_cliente,
+    MIN(cs.fecha_cambio) AS fecha_baja
+  FROM base b
+  JOIN cambios_src cs
+    ON cs.id_cliente   = b.id_cliente
+   AND cs.tipo_cambio  = 'Baja'
+   AND cs.fecha_cambio >= b.corte
+   AND cs.fecha_cambio <  DATE_ADD(b.corte, INTERVAL 1 MONTH)
+  GROUP BY b.corte, cs.id_cliente
+),
+churn_efectivo AS (
+  SELECT bm.mes, bm.id_cliente
+  FROM bajas_mes bm
+  WHERE NOT EXISTS (
+    SELECT 1
+    FROM cambios_src d
+    WHERE d.id_cliente   = bm.id_cliente
+      AND d.tipo_cambio  = 'Desbloqueo'
+      AND d.fecha_cambio >  bm.fecha_baja
+      AND d.fecha_cambio <  DATE_ADD(bm.mes, INTERVAL 1 MONTH)
+  )
+),
+
+/* ========= Etiqueta T+1 para activos ========= */
+label_churn AS (
+  SELECT
+    a.corte,
+    a.id_cliente,
+    CASE WHEN c.id_cliente IS NOT NULL THEN 1 ELSE 0 END AS churn_T1
+  FROM activos a
+  LEFT JOIN churn_efectivo c
+    ON c.mes = DATE_ADD(a.corte, INTERVAL 1 MONTH)  -- T+1 real
+   AND c.id_cliente = a.id_cliente
+),
+
+/* ========= USO: tickets por día (sin duplicados) ========= */
+uso_dia AS (
+  SELECT
+    cs.cliente_id,
+    DATE(at.fecha)        AS fecha_dia,
+    COUNT(DISTINCT at.id) AS citas_dia
+  FROM appointment_ticket at
+  JOIN cliente_servicio cs
+    ON cs.id = at.ofertante_id
+  WHERE at.fecha >= @inicio_buf
+    AND at.fecha <  @fin
+  GROUP BY cs.cliente_id, DATE(at.fecha)
+),
+
+/* ========= USO LITE por corte: 30d + recencia ========= */
+uso AS (
+  SELECT
+    a.corte,
+    a.id_cliente,
+    COALESCE(SUM(CASE WHEN ud.fecha_dia >= DATE_SUB(a.corte, INTERVAL 30 DAY)
+                       AND ud.fecha_dia <  a.corte THEN ud.citas_dia END),0) AS citas_30d,
+    DATEDIFF(a.corte, MAX(ud.fecha_dia)) AS recencia_uso_dias
+  FROM activos a
+  LEFT JOIN uso_dia ud
+    ON ud.cliente_id = a.id_cliente
+   AND ud.fecha_dia  < a.corte
+   AND ud.fecha_dia  >= DATE_SUB(a.corte, INTERVAL 90 DAY)
+  GROUP BY a.corte, a.id_cliente
+),
+
+/* ========= Fricción LITE: solo bloqueos_90d ========= */
+friccion AS (
+  SELECT
+    a.corte,
+    a.id_cliente,
+    COALESCE(SUM(CASE WHEN cs.tipo_cambio = 'Bloqueo'
+                        AND cs.fecha_cambio >= DATE_SUB(a.corte, INTERVAL 90 DAY)
+                        AND cs.fecha_cambio <  a.corte THEN 1 END),0) AS bloqueos_90d
+  FROM activos a
+  LEFT JOIN cambios_src cs
+    ON cs.id_cliente = a.id_cliente
+   AND cs.fecha_cambio <  a.corte
+   AND cs.fecha_cambio >= DATE_SUB(a.corte, INTERVAL 90 DAY)
+  GROUP BY a.corte, a.id_cliente
+),
+
+/* ========= Valor / contexto (añade país y rubro) ========= */
+valor AS (
+  SELECT
+    a.corte,
+    a.id_cliente,
+    cc.pais,
+    cpr.nombre                                       AS plan_nombre,
+    cr.nombre                                        AS rubro,
+    NULLIF(cc.mensualidad,0)                         AS arpa_proxy,
+    TIMESTAMPDIFF(MONTH, cc.fecha_creacion, a.corte) AS tenure_meses
+  FROM activos a
+  JOIN cliente_cliente cc
+    ON cc.id = a.id_cliente
+  LEFT JOIN cliente_planreservo cpr
+    ON cpr.id = cc.plan_reservo_id
+  LEFT JOIN cliente_rubro cr
+    ON cr.id = cpr.rubro_id
+)
+
+/* ========= Panel final LITE ========= */
+SELECT
+  v.id_cliente,
+  v.corte        AS mes_corte,
+  v.pais,
+  v.rubro,
+  v.plan_nombre,
+  v.arpa_proxy,
+  v.tenure_meses,
+  u.citas_30d,
+  u.recencia_uso_dias,
+  f.bloqueos_90d,
+  l.churn_T1
+FROM valor v
+LEFT JOIN uso        u ON u.corte = v.corte AND u.id_cliente = v.id_cliente
+LEFT JOIN friccion   f ON f.corte = v.corte AND f.id_cliente = v.id_cliente
+LEFT JOIN label_churn l ON l.corte = v.corte AND l.id_cliente = v.id_cliente
+WHERE v.corte < @fin;
+\end{lstlisting}
+
+\newpage
+
 \section{Imágenes de desarrollo}
+
+% insertar imagen aqui
+\insertimage[\label{img:cod_dg}]{informe4/cod_dg.png}{scale=0.60}{Extracto código SQL construcción de datamart. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:colb_pt}]{informe4/colb_pt.png}{scale=0.60}{Extracto de código modelo Python/Colab. Fuente: elaboración propia}
+
 % insertar imagen aqui
 \insertimage[\label{img:nulos}]{informe2/nulos.png}{scale=0.80}{Porcentaje de nulos por variable. Fuente: elaboración propia}
 
@@ -836,6 +1141,12 @@ En conjunto, estos elementos permiten avanzar en el objetivo general de desarrol
 \insertimage[\label{img:gain_mex}]{informe4/gain_mex.png}{scale=0.65}{Gráfico curva captura acumulada México. Fuente: elaboración propia}
 
 \section{Implementación}
+
+% insertar imagen aqui
+\insertimage[\label{img:colb_cs}]{informe4/colb_cs.png}{scale=0.6}{Colab de uso Customer Success. Fuente: elaboración propia}
+
+% insertar imagen aqui
+\insertimage[\label{img:xls_res}]{informe4/xls_res.png}{scale=0.5}{Excel de salida del modelo. Fuente: elaboración propia}
 
 % insertar imagen aqui
 \insertimage[\label{img:carp_cs}]{informe4/carp_cs.png}{scale=0.5}{Carpetas entregadas a Customer Success. Fuente: elaboración propia}
