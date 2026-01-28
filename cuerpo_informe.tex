@@ -58,7 +58,6 @@ La organización se estructura de forma jerárquica bajo la dirección del CEO, 
 
 Este informe se redactó con apoyo de inteligencia artificial para la exploración de conceptos, generación de ideas y síntesis de contenidos. El uso de esta herramienta se enfocó en optimizar el estilo y la claridad de los textos. El análisis técnico, los datos y los resultados son de autoría del estudiante.
 
-\newpage
 \section{Descripción del problema u oportunidad}
 
 \subsection{Antecedentes}
@@ -131,8 +130,6 @@ El origen del problema no está en la falta de datos, sino en cómo se utilizan 
     \item \textbf{Enfoque operativo reactivo.} El trabajo de Customer Success se organiza para responder a eventos negativos (quejas, impagos, bloqueos) más que para anticiparse al riesgo. No existe un esquema sistemático que combine datos de comportamiento y valor económico para priorizar acciones personalizadas sobre la cartera activa.
 \end{itemize}
 
-\newpage
-
 \section{Descripción y Justificación del Proyecto} 
 
 \subsection{Definición y resultado del proyecto}
@@ -178,9 +175,6 @@ Se elige un modelo analítico de segmentación conductual con scoring y reglas d
 
 Frente a alternativas centradas solo en reportes descriptivos, este enfoque agrega una capa de predicción y ordenamiento que entrega listas accionables. Frente a reglas puramente heurísticas, aporta criterios construidos a partir de datos históricos y actualizables en el tiempo. Al mismo tiempo mantiene una estructura sencilla: variables comprensibles para el negocio, reglas claras de interpretación y resultados que se pueden revisar en herramientas habituales como hojas de cálculo. De este modo, el enfoque combina impacto esperado en retención y expansión, interpretabilidad para los equipos comerciales y compatibilidad con la infraestructura actual, en línea con la literatura de CRM y gestión del ciclo de vida del cliente \citep{Kumar2010}.
 
-
-\newpage
-
 \section{Alcance}
 
 El alcance del proyecto abarca el ciclo de vida del cliente desde su primera facturación e incorporación a la plataforma hasta su estado de uso activo. El modelo y las políticas diseñadas se aplican exclusivamente a clientes que se encuentran en proceso de \textit{onboarding} o en estado de vigencia, utilizando como base el comportamiento histórico registrado en las bases de datos de la empresa.
@@ -192,8 +186,6 @@ Respecto a la población analizada, quedan fuera del alcance los clientes que ya
 En cuanto a la implementación técnica y comercial, se excluye el despliegue productivo en los sistemas centrales de la empresa, la automatización en tiempo real y las integraciones directas con herramientas externas. No se abordan el diseño de campañas de marketing, la compra de medios ni cambios en la estructura de precios o planes comerciales. Los procesos de facturación y cobranza se consideran solo como fuente de información para el análisis, sin intervenir en su operación.
 
 Finalmente, no forma parte del alcance la definición formal de gobierno de datos ni aspectos de cumplimiento regulatorio más allá de lo requerido para el uso interno. Tampoco se desarrollan experimentos causales a gran escala, como pruebas A/B, ni nuevas interfaces de usuario. La capacitación se limita a las sesiones de traspaso técnico con los equipos definidos, sin considerar programas de formación extensiva para otras áreas de la organización.
-
-\newpage
 
 \section{Objetivos del proyecto}
 
@@ -229,11 +221,6 @@ Desarrollar un modelo analítico de segmentación conductual para la cartera de 
 
     \item Para el prototipo operativo, el indicador será que al menos una persona de Customer Success pueda ejecutar el flujo completo (generar el datamart, correr el notebook de \emph{scoring} y actualizar el Excel de resultados) siguiendo los tutoriales entregados.
 \end{itemize}
-
-
-
-
-\newpage
 
 \section{Marco Conceptual}
 
@@ -279,9 +266,6 @@ La elección metodológica se apoya en la necesidad de contar con un marco está
 CRISP-DM define seis fases principales, concebidas como etapas iterativas. En comprensión del negocio se define el problema desde la perspectiva de la organización, se clarifican los objetivos y se fijan criterios de éxito. En comprensión de los datos se identifican las fuentes de información relevantes, se revisan sus estructuras y se exploran sus contenidos, detectando problemas de calidad y formulando hipótesis iniciales. En preparación de los datos se seleccionan variables, se integran fuentes distintas, se limpian registros y se dejan los datos en un formato adecuado para el modelamiento. La fase de modelado consiste en elegir técnicas apropiadas, ajustar parámetros y evaluar resultados preliminares, en interacción con la preparación de datos. En evaluación se analizan métricas cuantitativas y se revisa la coherencia de los modelos con los objetivos de negocio. En despliegue se define cómo se incorporan los resultados en la operación mediante reportes, flujos de scoring, generación de listados y planificación de actualizaciones y monitoreo \citep{Chapman2000,Kumar2010}.
 
 Como marco alternativo se considera el proceso de descubrimiento de conocimiento en bases de datos, conocido como KDD (Knowledge Discovery in Databases). Este enfoque organiza el trabajo en etapas de selección, preprocesamiento, transformación, minería de datos y evaluación de patrones, con un énfasis fuerte en las operaciones técnicas de preparación y en la aplicación de algoritmos. La decisión de adoptar CRISP-DM por sobre KDD responde a la naturaleza del problema y a las necesidades de gestión de la empresa. En un contexto de CRM orientado a valor, resulta clave contar con un marco que otorgue un espacio explícito a la comprensión del negocio, a la definición de criterios de éxito y al despliegue operativo de los resultados. CRISP-DM ofrece una estructura más detallada en estas fases, lo que facilita la alineación con los objetivos de gestión de clientes, la comunicación con usuarios de negocio y la planificación de ciclos recurrentes de uso del modelo, mientras que KDD se considera como referencia conceptual para las tareas de minería de datos pero no como guía principal del proyecto \citep{Chapman2000,Kumar2010}.
-
-
-\newpage
 
 \section{Metodología}
 
@@ -353,8 +337,6 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
     \item Definir una propuesta de segmentación conductual que combine riesgo, valor económico y variables de uso, y asociar a cada segmento un conjunto preliminar de políticas comerciales recomendadas.
     \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
 \end{itemize}
-
-\newpage
 
 \section{Desarrollo y Resultados}
 
@@ -630,8 +612,6 @@ Durante el cierre del proyecto se realizan pruebas en vivo del flujo completo, u
 
 Como resultado, se deja instalada una primera versión del prototipo operativo, lista para ser utilizada en un periodo inicial de evaluación interna. La empresa planifica usar el modelo en modo piloto durante los meses de diciembre, enero y febrero, con foco en revisar la coherencia de los clientes priorizados, ajustar las políticas propuestas y detectar necesidades adicionales de segmentación. La implementación completa en los sistemas de la empresa queda fuera del alcance temporal del proyecto, pero todos los elementos necesarios para esa etapa se entregan documentados: scripts, cuadernos, archivos de resultado, tutoriales y recomendaciones de monitoreo. De este modo, el trabajo desarrollado en la memoria deja una base sólida para que la organización avance desde el prototipo hacia una integración más profunda en sus procesos de gestión de clientes.
 
-\newpage
-
 \section{Discusiones}
 
 \subsection{Decisiones de diseño del modelo}
@@ -649,9 +629,6 @@ El modelo se construye con variables de uso de la plataforma, bloqueos, antigüe
 \subsection{Limitaciones de datos y riesgos en el uso del prototipo}
 
 El prototipo depende de la calidad de los registros de bajas y bloqueos, que definen la etiqueta de salida; errores en la codificación de estados o inconsistencias en la identificación de clientes activos pueden distorsionar la estimación del riesgo. Un riesgo operativo relevante es la posibilidad de errores en la salida del modelo al incluir clientes que no sean reales en la base de producción por problemas de limpieza de datos, lo que generaría una pérdida de tiempo valiosa para el equipo al intentar gestionar casos inexistentes. Por ello, se requiere una mejora en la depuración de la base de producción antes de automatizar el proceso. El flujo operativo actual exige varios pasos manuales, como ejecutar el script SQL y actualizar el Excel, y cada paso abre una posible fuente de error humano, de modo que se requiere designar responsables y documentar procedimientos. El entorno de Reservo es dinámico; nuevos competidores, cambios de plan, ajustes de precio o modificaciones en la propuesta de valor pueden alterar los patrones de fuga y hacer que el modelo pierda vigencia si no se reentrena, por lo que el proyecto se limita a dejar herramientas funcionales y el mantenimiento futuro dependerá de que la empresa incorpore la gestión activa de estos riesgos y la recalibración periódica en su ciclo de trabajo.
-
-
-\newpage
 
 \section{Conclusiones}
 
