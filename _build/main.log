@@ -1232,15 +1232,15 @@ LaTeX Info: Redefining \nameref on input line 50.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.2698pt, 469.75539pt, 72.2698pt)
-* v-part:(T,H,B)=(85.35826pt, 632.78938pt, 76.82234pt)
+* h-part:(L,W,R)=(85.35826pt, 472.03123pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 638.47984pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75539pt
-* \textheight=632.78938pt
-* \oddsidemargin=-0.00018pt
-* \evensidemargin=-0.00018pt
-* \topmargin=-75.91173pt
+* \textwidth=472.03123pt
+* \textheight=638.47984pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-90.1381pt
 * \headheight=64.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1319,15 +1319,15 @@ LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.2698pt, 469.75539pt, 72.2698pt)
-* v-part:(T,H,B)=(85.35826pt, 632.78938pt, 76.82234pt)
+* h-part:(L,W,R)=(85.35826pt, 472.03123pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 638.47984pt, 85.35826pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75539pt
-* \textheight=632.78938pt
-* \oddsidemargin=-0.00018pt
-* \evensidemargin=-0.00018pt
-* \topmargin=-75.91173pt
+* \textwidth=472.03123pt
+* \textheight=638.47984pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-90.1381pt
 * \headheight=64.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -1356,8 +1356,8 @@ LaTeX Info: Redefining \% on input line 38.
  [2.3
 
 ]
-LaTeX Info: Redefining \. on input line 80.
-LaTeX Info: Redefining \% on input line 80.
+LaTeX Info: Redefining \. on input line 81.
+LaTeX Info: Redefining \% on input line 81.
  [3.4])
 \tf@toc=\write3
 \openout3 = `main.toc'.
@@ -1375,13 +1375,13 @@ LaTeX Info: Redefining \% on input line 23.
 (main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
- [5.6])
+)
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
- [6.7] (cuerpo_informe.tex
+LaTeX Info: Redefining \. on input line 76.
+LaTeX Info: Redefining \% on input line 76.
+ [5.6] [6.7] (cuerpo_informe.tex
 LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 38.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1411,8 +1411,8 @@ File: ./img/imagenes/proceso.png Graphic file (type bmp)
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
  [3.10]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
  [4.11]
 File: ./img/imagenes/churn-3-anios.png Graphic file (type bmp)
 <./img/imagenes/churn-3-anios.png>
@@ -1452,8 +1452,8 @@ LaTeX Info: Redefining \% on input line 284.
 LaTeX Info: Redefining \. on input line 311.
 LaTeX Info: Redefining \% on input line 311.
  [15.22]
-LaTeX Info: Redefining \. on input line 341.
-LaTeX Info: Redefining \% on input line 341.
+LaTeX Info: Redefining \. on input line 342.
+LaTeX Info: Redefining \% on input line 342.
 
 [16.23]
 LaTeX Info: Redefining \. on input line 357.
@@ -1479,8 +1479,8 @@ LaTeX Info: Redefining \% on input line 444.
 LaTeX Info: Redefining \. on input line 461.
 LaTeX Info: Redefining \% on input line 461.
  [21.28]
-LaTeX Info: Redefining \. on input line 493.
-LaTeX Info: Redefining \% on input line 493.
+LaTeX Info: Redefining \. on input line 494.
+LaTeX Info: Redefining \% on input line 494.
  [22.29]
 LaTeX Info: Redefining \. on input line 521.
 LaTeX Info: Redefining \% on input line 521.
@@ -1492,17 +1492,17 @@ LaTeX Info: Redefining \. on input line 561.
 LaTeX Info: Redefining \% on input line 561.
 
 [25.32]
-LaTeX Info: Redefining \. on input line 574.
-LaTeX Info: Redefining \% on input line 574.
+LaTeX Info: Redefining \. on input line 577.
+LaTeX Info: Redefining \% on input line 577.
  [26.33]
 LaTeX Info: Redefining \. on input line 591.
 LaTeX Info: Redefining \% on input line 591.
  [27.34]
-LaTeX Info: Redefining \. on input line 605.
-LaTeX Info: Redefining \% on input line 605.
+LaTeX Info: Redefining \. on input line 609.
+LaTeX Info: Redefining \% on input line 609.
  [28.35]
-LaTeX Info: Redefining \. on input line 617.
-LaTeX Info: Redefining \% on input line 617.
+LaTeX Info: Redefining \. on input line 619.
+LaTeX Info: Redefining \% on input line 619.
  [29.36]
 LaTeX Info: Redefining \. on input line 630.
 LaTeX Info: Redefining \% on input line 630.
@@ -1536,7 +1536,7 @@ File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (10.4167pt too wide) in paragraph at lines 699--699
+Overfull \hbox (8.14085pt too wide) in paragraph at lines 699--699
  [][] 
  []
 
@@ -1563,19 +1563,19 @@ LaTeX Info: Redefining \% on input line 708.
 LaTeX Info: Redefining \. on input line 710.
 LaTeX Info: Redefining \% on input line 710.
  [42.49]
-Overfull \hbox (47.15036pt too wide) in paragraph at lines 714--768
+Overfull \hbox (44.87451pt too wide) in paragraph at lines 714--768
  [] 
  []
 
 LaTeX Info: Redefining \. on input line 770.
 LaTeX Info: Redefining \% on input line 770.
 [43.50]
-Overfull \hbox (28.10564pt too wide) in paragraph at lines 777--789
+Overfull \hbox (25.82979pt too wide) in paragraph at lines 777--789
  [][] 
  []
 
 
-Overfull \hbox (5.48717pt too wide) in paragraph at lines 794--805
+Overfull \hbox (3.21132pt too wide) in paragraph at lines 794--805
  [][] 
  []
 
@@ -1616,7 +1616,7 @@ File: ./img/informe2/tipodata.png Graphic file (type bmp)
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
 <./img/informe2/estadistic.png>
 
-Overfull \hbox (4.28217pt too wide) in paragraph at lines 1052--1052
+Overfull \hbox (2.00632pt too wide) in paragraph at lines 1052--1052
  [][] 
  []
 
@@ -1765,4 +1765,4 @@ LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (76 pages, 439336 bytes).
+Output written on main.xdv (76 pages, 440368 bytes).
