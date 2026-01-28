@@ -58,14 +58,14 @@
 \contentsline {subsubsection}{\numberline {8.3.3}Definición de la etiqueta de baja a horizonte mensual}{23}{subsubsection.8.3.3}%
 \contentsline {subsubsection}{\numberline {8.3.4}Tratamiento de valores faltantes y valores extremos}{24}{subsubsection.8.3.4}%
 \contentsline {subsection}{\numberline {8.4}Fase 4: Modelado}{24}{subsection.8.4}%
-\contentsline {subsubsection}{\numberline {8.4.1}Selección del algoritmo y definición del problema de clasificación}{24}{subsubsection.8.4.1}%
+\contentsline {subsubsection}{\numberline {8.4.1}Selección del algoritmo y definición del problema de clasificación}{25}{subsubsection.8.4.1}%
 \contentsline {subsubsection}{\numberline {8.4.2}Partición temporal y tamaño muestral para entrenamiento y calibración}{25}{subsubsection.8.4.2}%
 \contentsline {subsubsection}{\numberline {8.4.3}Implementación del flujo de preprocesamiento y del pipeline de modelado}{25}{subsubsection.8.4.3}%
 \contentsline {subsubsection}{\numberline {8.4.4}Entrenamiento, calibración y elección del modelo final}{25}{subsubsection.8.4.4}%
 \contentsline {subsection}{\numberline {8.5}Fase 5: Evaluación}{26}{subsection.8.5}%
 \contentsline {subsubsection}{\numberline {8.5.1}Desempeño global en el conjunto de prueba}{26}{subsubsection.8.5.1}%
 \contentsline {subsubsection}{\numberline {8.5.2}Calibración de probabilidades y estabilidad por segmentos}{26}{subsubsection.8.5.2}%
-\contentsline {subsubsection}{\numberline {8.5.3}Pruebas de robustez por país y rubro}{26}{subsubsection.8.5.3}%
+\contentsline {subsubsection}{\numberline {8.5.3}Pruebas de robustez por país y rubro}{27}{subsubsection.8.5.3}%
 \contentsline {subsubsection}{\numberline {8.5.4}Conclusiones sobre suficiencia del modelo para uso operativo}{27}{subsubsection.8.5.4}%
 \contentsline {subsection}{\numberline {8.6}Fase 6: Despliegue y políticas de negocio}{27}{subsection.8.6}%
 \contentsline {subsubsection}{\numberline {8.6.1}Flujo mensual de scoring sobre la cartera actualizada}{27}{subsubsection.8.6.1}%
