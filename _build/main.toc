@@ -2,6 +2,7 @@
 \contentsline {section}{\numberline {1}Antecedentes generales}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Industria y ambiente competitivo}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Características de la empresa u organización}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Consideraciones sobre la elaboración del informe}{2}{subsection.1.3}%
 \contentsline {section}{\numberline {2}Descripción del problema u oportunidad}{3}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Antecedentes}{3}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Proceso general}{3}{subsubsection.2.1.1}%
@@ -70,8 +71,9 @@
 \contentsline {subsection}{\numberline {8.6}Fase 6: Despliegue y políticas de negocio}{27}{subsection.8.6}%
 \contentsline {subsubsection}{\numberline {8.6.1}Flujo mensual de scoring sobre la cartera actualizada}{27}{subsubsection.8.6.1}%
 \contentsline {subsubsection}{\numberline {8.6.2}Artefactos operativos y carpeta de uso para Customer Success}{28}{subsubsection.8.6.2}%
-\contentsline {subsubsection}{\numberline {8.6.3}Segmentación conductual y políticas operativas}{28}{subsubsection.8.6.3}%
-\contentsline {subsubsection}{\numberline {8.6.4}Material de apoyo, pruebas en vivo y adopción del prototipo}{30}{subsubsection.8.6.4}%
+\contentsline {subsubsection}{\numberline {8.6.3}Gobernanza del proceso y soporte técnico}{28}{subsubsection.8.6.3}%
+\contentsline {subsubsection}{\numberline {8.6.4}Segmentación conductual y políticas operativas}{29}{subsubsection.8.6.4}%
+\contentsline {subsubsection}{\numberline {8.6.5}Material de apoyo, pruebas en vivo y adopción del prototipo}{30}{subsubsection.8.6.5}%
 \contentsline {section}{\numberline {9}Discusiones}{32}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{32}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Impacto esperado en la operación y rol de Customer Success}{32}{subsection.9.2}%

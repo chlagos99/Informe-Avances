@@ -6674,8 +6674,8 @@
 		\checkextravarexist{\portraitimageparamsG}{[portrait-style5] Defina los parametros de la imagen extra de la portada}
 		
 		% Escribe el header
-		\coreinsertkeyimage{\portraitimageparamsG}{\portraitimageG}
-		\hspace{-0.2cm}
+		\coreinsertkeyimage{\portraitimageparamsF}{\portraitimageF}
+		\hspace{-0.05cm}
 		\begin{tabular}{l}
 			% Inserta nuevas lineas independiente de si tiene texto o no
 			\COREwriteheaderitemsc[~ \\]{\universityname}
@@ -6685,23 +6685,23 @@
 		\end{tabular}
 		
 		% Título informe - tema
-		\vfill
+		\vspace{2.5cm}
 		\begin{center}
-			\fontsize{8mm}{9mm}\selectfont
+			\fontsize{4.2mm}{6.2mm}\selectfont
 			\textcolor{\portraittitlecolor}{%
 				\noindent \documenttitle ~ \\
 			}
-			\vspace*{0.35cm}
-			\Large{\noindent \textcolor{\portraittitlecolor}{\documentsubject}} ~ \\
+			\vspace*{1.5cm}
+			\normalsize{\noindent \textcolor{\portraittitlecolor}{\documentsubject}} ~ \\
 			\vspace*{1cm}
 			\footnotesize{\coursecode\ \hfpdashcharstyle\ \coursename} ~ \\
-			\vspace*{1.4cm}
+			\vspace*{1cm}
 		\end{center}
 		
 		% Tabla de integrantes
-		\vfill
+		\vspace{1cm}
 		\begin{center}%
-			\noindent \normalsize{\authortable}%
+			\noindent \small{\authortable}%
 		\end{center}
 		\end{spacing}
 	}{%

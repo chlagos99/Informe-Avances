@@ -54,6 +54,10 @@ El problema que RESERVO busca resolver es que muchos profesionales destinan una 
 
 La organización se estructura de forma jerárquica bajo la dirección del CEO, con liderazgos en Post-venta, Customer Success, Comercial, Marketing y Desarrollo. Esta configuración combina capacidades técnicas, comerciales y de acompañamiento al cliente, y sostiene el crecimiento de la plataforma con equipos ajustados al tamaño actual de la empresa.
 
+\subsection{Consideraciones sobre la elaboración del informe}
+
+Este informe se redactó con apoyo de inteligencia artificial para la exploración de conceptos, generación de ideas y síntesis de contenidos. El uso de esta herramienta se enfocó en optimizar el estilo y la claridad de los textos. El análisis técnico, los datos y los resultados son de autoría del estudiante.
+
 \newpage
 \section{Descripción del problema u oportunidad}
 
@@ -61,7 +65,7 @@ La organización se estructura de forma jerárquica bajo la dirección del CEO, 
 
 \subsubsection{Proceso general}
 
-La Figura \ref{img:proceso} muestra el flujo general del cliente a lo largo de su ciclo de vida en Reservo, desde el primer contacto con Marketing hasta su permanencia o pérdida. El recorrido incluye las etapas de captación y venta (SDR y ejecutivos comerciales), incorporación a la plataforma (Onboarding a cargo de Customer Success), atención de Soporte y gestión de Retención, donde se define si el cliente se mantiene activo o se produce churn.
+La Figura \ref{img:proceso} muestra el flujo general del cliente a lo largo de su ciclo de vida en Reservo, desde el primer contacto con Marketing hasta su permanencia o pérdida. El recorrido incluye las etapas de captación y venta (SDR y ejecutivos comerciales), incorporación a la plataforma (Onboarding a cargo de Customer Success), atención de Soporte y gestión de Retención, donde se define si el cliente se mantiene activo o se produce su fuga.
 
 \insertimage[\label{img:proceso}]{imagenes/proceso.png}{scale=0.65}{Flujo General del Cliente por Área. Fuente: elaboración propia}
 
@@ -98,7 +102,7 @@ Los resultados actuales de la gestión del ciclo de vida del cliente se reflejan
 
     \item \textbf{Expansión y reactivación no sistemáticas.} La empresa genera valor adicional, pero sin un crecimiento acelerado. En 2024 se registraron \textbf{57 upsellings} y en 2025 se han concretado \textbf{60} hasta la fecha. Respecto de la reactivación, en 2024 se recuperaron \textbf{100 clientes} y en 2025 van \textbf{89}\footnote{Datos de upsellings y reactivaciones según registros internos. Fuente: Base de datos de Reservo.}. Las cifras indican un avance moderado en expansión y una posible pérdida de fuerza en reactivación, lo que sugiere ausencia de una estrategia proactiva y repetible.
 
-    \item \textbf{Asignación ineficiente de recursos de postventa.} El equipo de Customer Success suele intervenir tarde y con ofertas poco ajustadas al perfil del cliente en riesgo. No existe una clasificación operativa de riesgo durante la etapa activa (más allá del Onboarding), por lo que muchas acciones se disparan cuando la probabilidad de abandono ya es alta. Se termina priorizando la contención de clientes al borde del churn y se desaprovechan intervenciones tempranas con mayor potencial de retención o expansión.
+    \item \textbf{Asignación ineficiente de recursos de postventa.} El equipo de Customer Success suele intervenir tarde y con ofertas poco ajustadas al perfil del cliente en riesgo. No existe una clasificación operativa de riesgo durante la etapa activa (más allá del Onboarding), por lo que muchas acciones se disparan cuando la probabilidad de abandono ya es alta. Se termina priorizando la contención de clientes al borde de la fuga y se desaprovechan intervenciones tempranas con mayor potencial de retención o expansión.
 \end{itemize}
 
 \insertimage[\label{img:churn3anios}]{imagenes/churn-3-anios.png}{scale=0.75}{Churn 3 años (ene-2023 a jul-2025) y tendencia. Fuente: elaboración propia}
@@ -430,7 +434,7 @@ La Tabla \ref{tab:escenarios_clv} detalla el Valor Patrimonial Total preservado 
     \end{tabular}
 \end{table}
 
-Los resultados indican que, en un escenario de efectividad media (Neutro), el modelo permite retener un valor patrimonial de \$154 millones. Dado el volumen de facturación de la compañía, la preservación de este capital mediante la gestión del churn representa una optimización financiera significativa sobre los activos de la empresa.
+Los resultados indican que, en un escenario de efectividad media (Neutro), el modelo permite retener un valor patrimonial de \$154 millones. Dado el volumen de facturación de la compañía, la preservación de este capital mediante la gestión de la fuga de clientes representa una optimización financiera significativa sobre los activos de la empresa.
 
 \subsection{Fase 2: Comprensión de los datos}
 
@@ -595,6 +599,9 @@ La carpeta \texttt{Colab py} almacena el cuaderno \texttt{Colab\_para\_Customer\
 
 La carpeta Excel de resultado contiene el archivo \texttt{Clientes en riesgo de fuga - modelo}, configurado con Power Query para leer siempre el \texttt{salida\_modelo\_1.csv} ubicado en \texttt{Colab py} (anexo \ref{img:xls_res}). En el editor de consultas se deja fijada la ruta al archivo y se documenta cómo modificarla en caso de cambio de ubicación. El Excel presenta tablas y vistas filtrables por país, plan, rubro, rango de riesgo y ranking, lo que permite a Customer Success priorizar clientes sin interactuar con código ni con la base de datos. De esta forma, la carpeta de uso reúne en un solo lugar el script SQL, el cuaderno de modelado y el Excel de explotación, junto con los documentos de apoyo asociados.
 
+\subsubsection{Gobernanza del proceso y soporte técnico}
+
+La jefa de Customer Success asume la propiedad del proceso y es la responsable de liderar la ejecución del flujo operativo mensual. Para la resolución de problemas técnicos asociados al modelo, así como para proponer y evaluar ideas de recalibración, el área se apoya en los conocimientos técnicos del equipo de TI. Esta coordinación entre departamentos asegura que la herramienta mantenga su integridad operativa y que los ajustes sugeridos sean factibles dentro de la infraestructura tecnológica de Reservo.
 
 \subsubsection{Segmentación conductual y políticas operativas}
 
@@ -641,7 +648,7 @@ El modelo se construye con variables de uso de la plataforma, bloqueos, antigüe
 
 \subsection{Limitaciones de datos y riesgos en el uso del prototipo}
 
-El prototipo depende de la calidad de los registros de bajas y bloqueos, que definen la etiqueta de salida; errores en la codificación de estados o inconsistencias en la identificación de clientes activos pueden distorsionar la estimación del riesgo. Un riesgo operativo relevante es la posibilidad de errores en la salida del modelo al incluir clientes que no sean reales en la base de producción por problemas de limpieza de datos, lo que generaría una pérdida de tiempo valiosa para el equipo al intentar gestionar casos inexistentes. Por ello, se requiere una mejora en la depuración de la base de producción antes de automatizar el proceso. El flujo operativo actual exige varios pasos manuales, como ejecutar el script SQL y actualizar el Excel, y cada paso abre una posible fuente de error humano, de modo que se requiere designar responsables y documentar procedimientos. El entorno de Reservo es dinámico; nuevos competidores, cambios de plan, ajustes de precio o modificaciones en la propuesta de valor pueden alterar los patrones de churn y hacer que el modelo pierda vigencia si no se reentrena, por lo que el proyecto se limita a dejar herramientas funcionales y el mantenimiento futuro dependerá de que la empresa incorpore la gestión activa de estos riesgos y la recalibración periódica en su ciclo de trabajo.
+El prototipo depende de la calidad de los registros de bajas y bloqueos, que definen la etiqueta de salida; errores en la codificación de estados o inconsistencias en la identificación de clientes activos pueden distorsionar la estimación del riesgo. Un riesgo operativo relevante es la posibilidad de errores en la salida del modelo al incluir clientes que no sean reales en la base de producción por problemas de limpieza de datos, lo que generaría una pérdida de tiempo valiosa para el equipo al intentar gestionar casos inexistentes. Por ello, se requiere una mejora en la depuración de la base de producción antes de automatizar el proceso. El flujo operativo actual exige varios pasos manuales, como ejecutar el script SQL y actualizar el Excel, y cada paso abre una posible fuente de error humano, de modo que se requiere designar responsables y documentar procedimientos. El entorno de Reservo es dinámico; nuevos competidores, cambios de plan, ajustes de precio o modificaciones en la propuesta de valor pueden alterar los patrones de fuga y hacer que el modelo pierda vigencia si no se reentrena, por lo que el proyecto se limita a dejar herramientas funcionales y el mantenimiento futuro dependerá de que la empresa incorpore la gestión activa de estos riesgos y la recalibración periódica en su ciclo de trabajo.
 
 
 \newpage
@@ -662,7 +669,7 @@ Para asegurar la continuidad de estos resultados, la validez del modelo se suste
 
 Bajo este contexto, se establece que el modelo debe ser recalibrado obligatoriamente de forma trimestral para evitar la obsolescencia del entrenamiento. Adicionalmente, se requiere una recalibración extraordinaria ante los siguientes eventos: cambios de precios considerables en la totalidad de los planes, un aumento significativo de clientes en mercados internacionales que permita mejorar la precisión del modelo, o modificaciones en el proceso de bloqueo de suscriptores por impago. Este último punto es crítico, pues un cambio en los periodos definidos para la baja administrativa exigiría modificar los límites y la construcción de la variable de bloqueo en el ingreso de datos.
 
-Finalmente, la integración de estos componentes sustenta la validación de la hipótesis económica del proyecto bajo el enfoque de valor de vida del cliente (CLV). Los análisis de impacto financiero sugieren que la focalización de esfuerzos de retención permite preservar un valor patrimonial significativo. En un escenario de efectividad operativa media, los resultados indican que el modelo contribuye a retener activos por un monto cercano a los \$154 millones anuales. Esta cifra indica que la gestión analítica del churn se constituye como una palanca de rentabilidad crítica, justificando plenamente el esfuerzo de implementación y posicionando a la retención como un eje central de la estrategia comercial de Reservo.
+Finalmente, la integración de estos componentes sustenta la validación de la hipótesis económica del proyecto bajo el enfoque de valor de vida del cliente (CLV). Los análisis de impacto financiero sugieren que la focalización de esfuerzos de retención permite preservar un valor patrimonial significativo. En un escenario de efectividad operativa media, los resultados indican que el modelo contribuye a retener activos por un monto cercano a los \$154 millones anuales. Esta cifra indica que la gestión analítica de la fuga se constituye como una palanca de rentabilidad crítica, justificando plenamente el esfuerzo de implementación y posicionando a la retención como un eje central de la estrategia comercial de Reservo.
 
 \newpage
 
