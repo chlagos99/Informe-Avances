@@ -81,9 +81,9 @@
 \contentsline {subsection}{\numberline {9.4}Limitaciones de datos y riesgos en el uso del prototipo}{32}{subsection.9.4}%
 \contentsline {section}{\numberline {10}Conclusiones}{33}{section.10}%
 \contentsline {section}{Referencias}{35}{section.10}%
-\contentsline {section}{Anexo \numberline {A}Contexto y Problema}{37}{appendix.1.Alph1}%
-\contentsline {section}{Anexo \numberline {B}Indicadores}{43}{appendix.1.Alph2}%
-\contentsline {section}{Anexo \numberline {C}Tablas de desarrollo}{44}{appendix.1.Alph3}%
-\contentsline {section}{Anexo \numberline {D}Código}{45}{appendix.1.Alph4}%
-\contentsline {section}{Anexo \numberline {E}Imágenes de desarrollo}{50}{appendix.1.Alph5}%
+\contentsline {section}{Anexo \numberline {A}}{37}{appendix.1.Alph1}%
+\contentsline {section}{Anexo \numberline {B}}{43}{appendix.1.Alph2}%
+\contentsline {section}{Anexo \numberline {C}}{44}{appendix.1.Alph3}%
+\contentsline {section}{Anexo \numberline {D}}{45}{appendix.1.Alph4}%
+\contentsline {section}{Anexo \numberline {E}}{50}{appendix.1.Alph5}%
 \contentsline {section}{Anexo \numberline {F}Implementación}{65}{appendix.1.Alph6}%
