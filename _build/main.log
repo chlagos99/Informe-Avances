@@ -1075,7 +1075,16 @@ Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5773.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 577
 3.
 Package hyperref Info: Option `pdffitwindow' set `false' on input line 5773.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5773.
+
 Package hyperref Info: Option `pdfmenubar' set `true' on input line 5773.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 5773.
+
 Package hyperref Info: Option `pdftoolbar' set `true' on input line 5773.
 Package hyperref Info: Option `colorlinks' set `true' on input line 5832.
 \cftbeforelistingsskip=\skip152
@@ -1096,7 +1105,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 5832.
 \c@totalcount@templateIndexEquations=\count421
 LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 
 6118.
- (t1lmvtt.fd
+(t1lmvtt.fd
 File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 \c@subsubsubsection=\count422
@@ -1128,8 +1137,7 @@ LaTeX Font Info:    ... okay on input line 50.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 0.
-
-(ts1cmr.fd
+ (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 50.
@@ -1179,12 +1187,12 @@ Package gensymb Info: Using \textohm for \ohm on input line 50.
 Package gensymb Info: Using \textmu for \micro on input line 50.
 \c@lstlisting=\count430
 Package hyperref Info: Link coloring ON on input line 50.
- (nameref.sty
+
+(nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-)
-(gettitlestring.sty
+) (gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count431
@@ -1767,4 +1775,4 @@ LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (75 pages, 426612 bytes).
+Output written on main.xdv (75 pages, 426636 bytes).
