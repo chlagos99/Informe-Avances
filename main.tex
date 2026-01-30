@@ -11,14 +11,14 @@
 
 % CREACIÓN DEL DOCUMENTO
 \documentclass[
-	spanish, % Idioma: spanish, english, etc.
-	letterpaper, oneside
+    spanish, % Idioma: spanish, english, etc.
+    letterpaper, oneside
 ]{article}
 
 % INFORMACIÓN DEL DOCUMENTO
 \def\documenttitle {DISEÑO DE POLÍTICAS COMERCIALES PARA UNA EMPRESA DE TECNOLOGÍA PARA SERVICIOS DE SALUD BASADO EN EL COMPORTAMIENTO DE SUS CLIENTES}
-\def\documentsubtitle {MEMORIA PARA OPTAR AL TÍTULO DE INGENIERO CIVIL INDUSTRIAL}
-\def\documentsubject {MEMORIA PARA OPTAR AL \\ TÍTULO DE INGENIERO CIVIL INDUSTRIAL}
+\def\documentsubtitle {MEMORIA PARA OPTAR AL TÍTULO DE INGENIERÍA CIVIL INDUSTRIAL}
+\def\documentsubject {MEMORIA PARA OPTAR AL \\ TÍTULO DE INGENIERÍA CIVIL INDUSTRIAL}
 
 \def\documentauthor {Christopher Lagos}
 \def\coursename {}
@@ -43,30 +43,106 @@
     SANTIAGO DE CHILE \\
     2026
 }
+
 % IMPORTACIÓN DEL TEMPLATE
 \input{template}
 
-% INICIO DE PÁGINAS
+% -----------------------------------------------------------------------------
+% DEFINICIÓN DE ENTORNOS PERSONALIZADOS (MODIFICADOS PARA FORZAR SIN LÍNEA)
+% -----------------------------------------------------------------------------
+
+% 1. RESUMEN (ABSTRACT)
+\renewenvironment{abstractd}{%
+    % Forzamos el estilo plano globalmente al entrar al entorno
+    \pagestyle{plain} 
+    
+    % Bloque de datos a la derecha
+    \vspace*{-1cm} 
+    \noindent\hfill 
+    \begin{minipage}{0.5\textwidth} 
+        \normalsize 
+        RESUMEN DE LA MEMORIA PARA OPTAR\\
+        AL TÍTULO DE\\
+        INGENIERÍA CIVIL INDUSTRIAL\\
+        POR: CHRISTOPHER LAGOS\\
+        FECHA: 2026\\
+        PROF. GUÍA: MAXIMO BOSCH
+    \end{minipage}
+    \vspace{0.5cm} 
+    
+    % Título oficial
+    \sectionfont{\color{\sectioncolor} \sectionfontsize \sectionfontstyle \selectfont}%
+    \sectionanumnoiheadless{\nameabstract}%
+    
+    % REFUERZO: Forzar estilo sin línea justo después del título
+    \thispagestyle{plain} 
+}{%
+    \pagestyle{plain} % Mantiene el estilo plano al salir
+}
+
+% 2. DEDICATORIA
+\newenvironment{dedicatoria}{%
+    \pagestyle{plain} % Apaga la línea negra para todo el entorno
+    \sectionfont{\color{\sectioncolor} \sectionfontsize \sectionfontstyle \selectfont}%
+    \sectionanumnoiheadless{Dedicatoria}%
+    \thispagestyle{plain} % Asegura que ESTA página no tenga línea
+}{%
+}
+
+% 3. AGRADECIMIENTOS
+\newenvironment{agradecimientos}{%
+    \pagestyle{plain} % Apaga la línea negra para todo el entorno
+    \sectionfont{\color{\sectioncolor} \sectionfontsize \sectionfontstyle \selectfont}%
+    \sectionanumnoiheadless{Agradecimientos}%
+    \thispagestyle{plain} % Asegura que ESTA página no tenga línea
+}{%
+}
+
+
+% ======================= INICIO DEL DOCUMENTO =======================
 \begin{document}
 
 % PORTADA
 \templatePortrait
 
-% CONFIGURACIÓN DE PÁGINA Y ENCABEZADOS
-\templatePagecfg
+% ------------------------------------------------------------------
+% CONFIGURACIÓN DE PÁGINAS PRELIMINARES
+% ------------------------------------------------------------------
+\templatePagecfg % Inicia numeración romana (i, ii...)
+\pagestyle{plain} % Apaga la línea negra inmediatamente
+
 
 % RESUMEN O ABSTRACT
 \begin{abstractd}
-La memoria desarrolla el proyecto ``Diseño de políticas comerciales para una empresa de tecnología para servicios de salud basado en el comportamiento de sus clientes'', en Reservo, proveedor chileno de software como servicio para centros de salud en Chile, Argentina, Colombia y México. La empresa opera con 3.500 clientes activos bajo suscripción mensual y enfrenta una tasa de bajas de 2,4 por ciento junto a una gestión de postventa reactiva. El problema central es una segmentación conductual insuficiente de la cartera, lo que dificulta priorizar acciones según riesgo y valor económico. El proyecto se realiza como memoria profesional en coordinación con Customer Success.
+La memoria desarrolla el proyecto ``Diseño de políticas comerciales para una empresa de tecnología para servicios de salud basado en el comportamiento de sus clientes'' en Reservo, proveedor chileno de SaaS con presencia regional. Con 3.500 clientes y una tasa de bajas del 2,4 por ciento, el problema central es la insuficiente segmentación de la cartera para priorizar acciones de retención. El trabajo se realiza como memoria profesional en coordinación con el equipo de Customer Success.
 
-El objetivo es construir un modelo de segmentación conductual para gestionar proactivamente estrategias de retención y expansión. Se sigue la metodología CRISP-DM y se diseña un datamart mensual cliente–mes que integra información de contexto, valor, uso y fricción. Las variables incluyen país, rubro, plan comercial, ingreso mensual estimado, antigüedad, citas recientes, recencia de uso y bloqueos. La etiqueta de salida es la baja efectiva en el mes siguiente al corte, lo que plantea un problema de clasificación binaria con horizonte T+1.
+El objetivo es construir un modelo de segmentación conductual bajo la metodología CRISP-DM. Se diseña un datamart cliente–mes con variables de contexto, uso y valor económico. La etiqueta de salida se define como la baja efectiva en el mes siguiente al corte, lo que plantea un problema de clasificación binaria con horizonte T+1.
 
-El panel resultante contiene 43.965 observaciones y 1.073 eventos de baja. Sobre esta base se entrena una regresión logística binaria con regularización y ponderación de clases, en un flujo reproducible de preprocesamiento y transformaciones. Las probabilidades se calibran fuera de muestra y se evalúan en un conjunto de prueba reciente. El modelo alcanza un ROC–AUC cercano a 0,825: el 20 por ciento de clientes con mayor riesgo concentra el 70 por ciento de las bajas observadas, con desempeño estable en los segmentos principales.
+Sobre un panel de 43.965 observaciones y 1.073 bajas, se entrena una regresión logística binaria con regularización. El modelo alcanza un ROC–AUC de 0,825 y una alta capacidad de focalización: el 20 por ciento de los clientes con mayor riesgo concentra el 70 por ciento de las bajas reales, manteniendo un desempeño estable en los segmentos principales.
 
-El estudiante implementa un prototipo operativo compuesto por un script SQL, un cuaderno en Google Colab y un Excel con probabilidades, rangos de riesgo y contexto comercial. Se propone una segmentación que combina riesgo, valor, rubro, plan y motivos de baja, junto con un portafolio de políticas diferenciadas. Con efectividad operativa media de Customer Success, el modelo permite preservar activos por 154 millones de pesos anuales, justificando el impacto financiero y la implementación. El trabajo concluye que el sistema entrega una herramienta para priorizar clientes según riesgo y valor, y deja abiertas líneas en nuevas fuentes de datos, automatización y pilotos controlados para medir la efectividad de las acciones de retención.
+Se implementa un prototipo operativo basado en SQL, Python y una planilla de gestión comercial. La propuesta integra riesgo y contexto en un portafolio de políticas diferenciadas, permitiendo preservar activos por 154 millones de pesos anuales. El trabajo concluye que el sistema entrega una herramienta concreta para priorizar la cartera y establece líneas futuras en automatización y pilotos controlados para medir la efectividad de las acciones.
 \end{abstractd}
 
 
+% DEDICATORIA
+\newpage
+\begin{dedicatoria}
+Aquí escribe tu dedicatoria. Por ejemplo: Dedico este trabajo a mis padres...
+\end{dedicatoria}
+
+
+% AGRADECIMIENTOS
+\newpage
+\begin{agradecimientos}
+Aquí escribe tus agradecimientos. Por ejemplo: Agradezco a la Universidad de Chile y a mis profesores...
+\end{agradecimientos}
+
+
+% ------------------------------------------------------------------
+% RESTAURACIÓN DEL ESTILO DE INGENIERÍA (ÍNDICES)
+% ------------------------------------------------------------------
+\newpage
+\pagestyle{fancy} % <--- IMPORTANTE: AQUÍ VUELVE A APARECER LA LÍNEA (CORRECTO)
 
 
 % TABLA DE CONTENIDOS - ÍNDICE
@@ -75,9 +151,8 @@ El estudiante implementa un prototipo operativo compuesto por un script SQL, un 
 % CONFIGURACIONES FINALES
 \templateFinalcfg
 
-% ======================= INICIO DEL DOCUMENTO =======================
-
-\input{cuerpo_informe.tex} % Ejemplo, se puede borrar
+% CUERPO DEL INFORME
+\input{cuerpo_informe.tex} 
 
 % FIN DEL DOCUMENTO
 \end{document}

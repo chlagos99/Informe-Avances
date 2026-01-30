@@ -1126,33 +1126,33 @@ LaTeX Info: Redefining \% on input line 29.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-0.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 103.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+03.
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 103.
+LaTeX Font Info:    ... okay on input line 103.
+LaTeX Info: Redefining \. on input line 103.
+LaTeX Info: Redefining \% on input line 103.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -1176,17 +1176,17 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 )
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 50.
-Package gensymb Info: Math companion symbols declared on input line 50.
-LaTeX Info: Redefining \degree on input line 50.
-LaTeX Info: Redefining \celsius on input line 50.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 103.
+Package gensymb Info: Math companion symbols declared on input line 103.
+LaTeX Info: Redefining \degree on input line 103.
+LaTeX Info: Redefining \celsius on input line 103.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 50.
-LaTeX Info: Redefining \ohm on input line 50.
-Package gensymb Info: Using \textohm for \ohm on input line 50.
-Package gensymb Info: Using \textmu for \micro on input line 50.
+erthousand on input line 103.
+LaTeX Info: Redefining \ohm on input line 103.
+Package gensymb Info: Using \textohm for \ohm on input line 103.
+Package gensymb Info: Using \textmu for \micro on input line 103.
 \c@lstlisting=\count430
-Package hyperref Info: Link coloring ON on input line 50.
+Package hyperref Info: Link coloring ON on input line 103.
 
 (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1197,9 +1197,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count431
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 103.
+LaTeX Info: Redefining \pageref on input line 103.
+LaTeX Info: Redefining \nameref on input line 103.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1270,52 +1270,52 @@ LaTeX Info: Redefining \nameref on input line 50.
 File: ./img/departamentos/uchile2.pdf Graphic file (type pdf)
 <use ./img/departamentos/uchile2.pdf>
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 53.
+ 106.
 (ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 53.
+ 106.
  (omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 53.
+ 106.
  (omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 53.
+ 106.
  (omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 53
-.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+6.
  (ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 53
-.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 10
+6.
  (uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
-3.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+06.
 
 (ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 53.
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
-3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+06.
  (Ustmry.fd)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-3.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+06.
  (ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1.1
@@ -1358,30 +1358,20 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
  [1.2
 
 
-] (main.toc
+] [2.3] [3.4] (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 35.
-LaTeX Info: Redefining \% on input line 35.
- [2.3
+ [4.5
 
 ]
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
- [3.4])
+[5.6])
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
-
-(main.lof
+ (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-LaTeX Info: Redefining \. on input line 15.
-LaTeX Info: Redefining \% on input line 15.
- [4.5]
-LaTeX Info: Redefining \. on input line 50.
-LaTeX Info: Redefining \% on input line 50.
- [5.6])
+ [6.7] [7.8])
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
@@ -1392,12 +1382,7 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
-LaTeX Info: Redefining \. on input line 76.
-LaTeX Info: Redefining \% on input line 76.
- [6.7] (cuerpo_informe.tex
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
- [1.8
+ [8.9] (cuerpo_informe.tex [1.10
 
 ]
 LaTeX Font Info:    Calculating math sizes for size <10.00012> on input line 45
@@ -1408,13 +1393,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.40013> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.00012> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 45.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
- [2.9]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
 
-[3.10]
+[2.11] [3.12]
 LaTeX Font Info:    Calculating math sizes for size <8.00006> on input line 93.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.00006> not available
@@ -1423,55 +1403,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.92007> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.80008> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [4.11]
-LaTeX Info: Redefining \. on input line 114.
-LaTeX Info: Redefining \% on input line 114.
- [5.12]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
- [6.13]
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
- [7.14]
-LaTeX Info: Redefining \. on input line 159.
-LaTeX Info: Redefining \% on input line 159.
- [8.15]
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
- [9.16]
-LaTeX Info: Redefining \. on input line 206.
-LaTeX Info: Redefining \% on input line 206.
- [10.17]
-LaTeX Info: Redefining \. on input line 223.
-LaTeX Info: Redefining \% on input line 223.
- [11.18]
-LaTeX Info: Redefining \. on input line 235.
-LaTeX Info: Redefining \% on input line 235.
- [12.19]
-LaTeX Info: Redefining \. on input line 254.
-LaTeX Info: Redefining \% on input line 254.
-
-[13.20]
-LaTeX Info: Redefining \. on input line 268.
-LaTeX Info: Redefining \% on input line 268.
- [14.21]
-LaTeX Info: Redefining \. on input line 292.
-LaTeX Info: Redefining \% on input line 292.
- [15.22]
-LaTeX Info: Redefining \. on input line 316.
-LaTeX Info: Redefining \% on input line 316.
- [16.23]
-LaTeX Info: Redefining \. on input line 338.
-LaTeX Info: Redefining \% on input line 338.
- [17.24]
-LaTeX Info: Redefining \. on input line 353.
-LaTeX Info: Redefining \% on input line 353.
- [18.25]
-LaTeX Info: Redefining \. on input line 381.
-LaTeX Info: Redefining \% on input line 381.
- [19.26]
+ [4.13] [5.14] [6.15] [7.16] [8.17] [9.18] [10.19] [11.20]
+[12.21] [13.22] [14.23] [15.24] [16.25] [17.26] [18.27] [19.28]
 LaTeX Font Info:    Calculating math sizes for size <10.95007> on input line 39
 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95007> not available
@@ -1480,61 +1413,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.1031> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 399.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.5701> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 399.
-LaTeX Info: Redefining \. on input line 415.
-LaTeX Info: Redefining \% on input line 415.
- [20.27]
-LaTeX Info: Redefining \. on input line 427.
-LaTeX Info: Redefining \% on input line 427.
- [21.28]
-LaTeX Info: Redefining \. on input line 450.
-LaTeX Info: Redefining \% on input line 450.
+ [20.29]
+[21.30] [22.31] [23.32] [24.33] [25.34] [26.35] [27.36] [28.37] [29.38]
+[30.39] [31.40] [32.41] [33.42] [34.43] (main.bbl [35.44
 
-[22.29]
-LaTeX Info: Redefining \. on input line 485.
-LaTeX Info: Redefining \% on input line 485.
- [23.30]
-LaTeX Info: Redefining \. on input line 506.
-LaTeX Info: Redefining \% on input line 506.
- [24.31]
-LaTeX Info: Redefining \. on input line 524.
-LaTeX Info: Redefining \% on input line 524.
- [25.32]
-LaTeX Info: Redefining \. on input line 537.
-LaTeX Info: Redefining \% on input line 537.
- [26.33]
-LaTeX Info: Redefining \. on input line 549.
-LaTeX Info: Redefining \% on input line 549.
- [27.34]
-LaTeX Info: Redefining \. on input line 566.
-LaTeX Info: Redefining \% on input line 566.
- [28.35]
-LaTeX Info: Redefining \. on input line 582.
-LaTeX Info: Redefining \% on input line 582.
- [29.36]
-LaTeX Info: Redefining \. on input line 593.
-LaTeX Info: Redefining \% on input line 593.
- [30.37]
-LaTeX Info: Redefining \. on input line 603.
-LaTeX Info: Redefining \% on input line 603.
-
-[31.38]
-LaTeX Info: Redefining \. on input line 611.
-LaTeX Info: Redefining \% on input line 611.
- [32.39]
-LaTeX Info: Redefining \. on input line 621.
-LaTeX Info: Redefining \% on input line 621.
- [33.40]
-LaTeX Info: Redefining \. on input line 630.
-LaTeX Info: Redefining \% on input line 630.
- [34.41] (main.bbl
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
- [35.42
-
-])
-LaTeX Info: Redefining \. on input line 646.
-LaTeX Info: Redefining \% on input line 646.
- [36.43]
+]) [36.45]
 File: ./img/imagenes/proceso.png Graphic file (type bmp)
 <./img/imagenes/proceso.png>
 File: ./img/imagenes/churn-3-anios.png Graphic file (type bmp)
@@ -1543,7 +1426,7 @@ File: ./img/imagenes/clientes_por_mes.png Graphic file (type bmp)
 <./img/imagenes/clientes_por_mes.png>
 File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 <./img/imagenes/organigrama.png>
- [37.44]
+ [37.46]
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
@@ -1553,21 +1436,21 @@ Overfull \hbox (8.14085pt too wide) in paragraph at lines 662--662
 
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
-[38.45]
+[38.47]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
- [39.46]
+ [39.48]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
- [40.47]
+ [40.49]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
- [41.48] [42.49]
+ [41.50] [42.51]
 Overfull \hbox (32.77736pt too wide) in paragraph at lines 677--731
  [] 
  []
 
-[43.50]
+[43.52]
 Overfull \hbox (15.79474pt too wide) in paragraph at lines 740--752
  [][] 
  []
@@ -1577,11 +1460,11 @@ Overfull \hbox (1.25708pt too wide) in paragraph at lines 757--768
  [][] 
  []
 
-[44.51] (lstlang1.sty
+[44.53] (lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [45.52] [46.53] [47.54] [48.55] [49.56]
+) [45.54] [46.55] [47.56] [48.57] [49.58]
 File: ./img/informe4/cod_dg.png Graphic file (type bmp)
 <./img/informe4/cod_dg.png>
 File: ./img/informe4/colb_pt.png Graphic file (type bmp)
@@ -1589,7 +1472,7 @@ File: ./img/informe4/colb_pt.png Graphic file (type bmp)
 File: ./img/informe2/nulos.png Graphic file (type bmp)
 <./img/informe2/nulos.png>
 
-[50.57]
+[50.59]
 File: ./img/informe2/tipodata.png Graphic file (type bmp)
 <./img/informe2/tipodata.png>
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
@@ -1599,24 +1482,24 @@ Overfull \hbox (2.00632pt too wide) in paragraph at lines 1015--1015
  [][] 
  []
 
-[51.58]
+[51.60]
 File: ./img/informe2/porc_clientes_por_rubro.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_rubro.png>
 File: ./img/informe2/porc_clientes_por_pais.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_pais.png>
 File: ./img/informe2/porc_clientes_por_plan.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_plan.png>
- [52.59]
+ [52.61]
 File: ./img/informe2/prop_plan_por_rubro.png Graphic file (type bmp)
 <./img/informe2/prop_plan_por_rubro.png>
 File: ./img/informe2/prop_rubro_por_plan.png Graphic file (type bmp)
 <./img/informe2/prop_rubro_por_plan.png>
- [53.60]
+ [53.62]
 File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_rubro.png>
 File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_plan.png>
- [54.61]
+ [54.63]
 File: ./img/informe2/ternure.png Graphic file (type bmp)
 <./img/informe2/ternure.png>
 File: ./img/informe2/dist_arpa.png Graphic file (type bmp)
@@ -1625,80 +1508,74 @@ File: ./img/informe2/dist_bloq.png Graphic file (type bmp)
 <./img/informe2/dist_bloq.png>
 File: ./img/informe2/dist_citas.png Graphic file (type bmp)
 <./img/informe2/dist_citas.png>
- [55.62]
+ [55.64]
 File: ./img/informe2/dist_rec.png Graphic file (type bmp)
 <./img/informe2/dist_rec.png>
 File: ./img/informe2/correlacion.png Graphic file (type bmp)
 <./img/informe2/correlacion.png>
 File: ./img/informe4/diag_dm.png Graphic file (type bmp)
 <./img/informe4/diag_dm.png>
- [56.63]
+ [56.65]
 File: ./img/informe4/discrim.png Graphic file (type bmp)
 <./img/informe4/discrim.png>
 File: ./img/informe4/lift.png Graphic file (type bmp)
 <./img/informe4/lift.png>
 File: ./img/informe4/met_oper.png Graphic file (type bmp)
 <./img/informe4/met_oper.png>
- [57.64]
+ [57.66]
 File: ./img/informe4/calib_glob.png Graphic file (type bmp)
 <./img/informe4/calib_glob.png>
 File: ./img/informe4/calib_pais.png Graphic file (type bmp)
 <./img/informe4/calib_pais.png>
 File: ./img/informe4/calib_plan.png Graphic file (type bmp)
 <./img/informe4/calib_plan.png>
- [58.65]
+ [58.67]
 File: ./img/informe4/calib_rub.png Graphic file (type bmp)
 <./img/informe4/calib_rub.png>
 File: ./img/informe4/graf_roc.png Graphic file (type bmp)
 <./img/informe4/graf_roc.png>
 File: ./img/informe4/graf_reliab.png Graphic file (type bmp)
 <./img/informe4/graf_reliab.png>
- [59.66]
+ [59.68]
 File: ./img/informe4/graf_gains.png Graphic file (type bmp)
 <./img/informe4/graf_gains.png>
 File: ./img/informe4/graf_precis.png Graphic file (type bmp)
 <./img/informe4/graf_precis.png>
 
-[60.67]
+[60.69]
 File: ./img/informe4/roc_chmc.png Graphic file (type bmp)
 <./img/informe4/roc_chmc.png>
 File: ./img/informe4/roc_chmed.png Graphic file (type bmp)
 <./img/informe4/roc_chmed.png>
- [61.68]
+ [61.70]
 File: ./img/informe4/roc_med.png Graphic file (type bmp)
 <./img/informe4/roc_med.png>
 File: ./img/informe4/roc_mexi.png Graphic file (type bmp)
 <./img/informe4/roc_mexi.png>
- [62.69]
+ [62.71]
 File: ./img/informe4/roc_col.png Graphic file (type bmp)
 <./img/informe4/roc_col.png>
 File: ./img/informe4/gain_col.png Graphic file (type bmp)
 <./img/informe4/gain_col.png>
- [63.70]
+ [63.72]
 File: ./img/informe4/gain_mex.png Graphic file (type bmp)
 <./img/informe4/gain_mex.png>
 File: ./img/informe4/colb_cs.png Graphic file (type bmp)
 <./img/informe4/colb_cs.png>
- [64.71]
+ [64.73]
 File: ./img/informe4/xls_res.png Graphic file (type bmp)
 <./img/informe4/xls_res.png>
 File: ./img/informe4/carp_cs.png Graphic file (type bmp)
 <./img/informe4/carp_cs.png>
-LaTeX Info: Redefining \. on input line 1123.
-LaTeX Info: Redefining \% on input line 1123.
- [65.72]
+ [65.74]
 File: ./img/informe4/not_cs.png Graphic file (type bmp)
 <./img/informe4/not_cs.png>
 File: ./img/informe4/gui_cs.png Graphic file (type bmp)
 <./img/informe4/gui_cs.png>
-LaTeX Info: Redefining \. on input line 1129.
-LaTeX Info: Redefining \% on input line 1129.
- [66.73]
+ [66.75]
 File: ./img/informe4/tut_cs.png Graphic file (type bmp)
 <./img/informe4/tut_cs.png>
-LaTeX Info: Redefining \. on input line 1132.
-LaTeX Info: Redefining \% on input line 1132.
- [67.74])
+ [67.76])
 (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -1706,11 +1583,8 @@ Package babel Info: Importing font and identification data for spanish
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-)
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
- [68.75] (main.aux
+) [68.77] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (75 pages, 425096 bytes).
+Output written on main.xdv (77 pages, 422432 bytes).
