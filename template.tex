@@ -65,6 +65,7 @@
 % Librerías del núcleo
 % -----------------------------------------------------------------------------
 % Manejo de condicionales
+
 \usepackage{iftex}
 \usepackage{ifthen}
 
@@ -852,6 +853,13 @@
 % -----------------------------------------------------------------------------
 % Finales
 % -----------------------------------------------------------------------------
+% --- PEGAR ESTO AQUÍ ---
+\usepackage{etoolbox}
+\AtBeginDocument{%
+    \renewcommand{\harvardand}{\&} 
+}
+% -----------------------
+
 \usepackage[T1]{fontenc} % Caracteres acentuados
 \ifthenelse{\equal{\showlayoutlines}{true}}{% Muestra las líneas del layout
 	\usepackage{showframe}}{

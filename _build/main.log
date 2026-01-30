@@ -1066,27 +1066,27 @@ File: csquotes.cfg
 \coregluevarcm=\skip149
 \corefontwidth=\skip150
 \coreimageshspace=\skip151
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 5773.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 5781.
  (se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5773.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 577
-3.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 5773.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5781.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 578
+1.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 5781.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 5773.
+(hyperref)                removing `\\' on input line 5781.
 
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 5773.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 5781.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 5773.
+(hyperref)                removing `\\' on input line 5781.
 
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 5773.
-Package hyperref Info: Option `colorlinks' set `true' on input line 5832.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 5781.
+Package hyperref Info: Option `colorlinks' set `true' on input line 5840.
 \cftbeforelistingsskip=\skip152
 \cftlistingsindent=\skip153
 \cftlistingsnumwidth=\skip154
@@ -1104,7 +1104,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 5832.
 \cftafterequtitleskip=\skip164
 \c@totalcount@templateIndexEquations=\count421
 LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 
-6118.
+6126.
 (t1lmvtt.fd
 File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1126,33 +1126,33 @@ LaTeX Info: Redefining \% on input line 29.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-07.
+02.
  (ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
-LaTeX Font Info:    ... okay on input line 107.
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: floatrow package is loaded.
@@ -1176,17 +1176,17 @@ Package: fr-longtable 2007/11/28 v0.1b (beta) floatrow: additions for longtable
 )
 \symgns@font=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 107.
-Package gensymb Info: Math companion symbols declared on input line 107.
-LaTeX Info: Redefining \degree on input line 107.
-LaTeX Info: Redefining \celsius on input line 107.
+(Font)                  TS1/ptm/m/n --> TS1/ptm/b/n on input line 102.
+Package gensymb Info: Math companion symbols declared on input line 102.
+LaTeX Info: Redefining \degree on input line 102.
+LaTeX Info: Redefining \celsius on input line 102.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 107.
-LaTeX Info: Redefining \ohm on input line 107.
-Package gensymb Info: Using \textohm for \ohm on input line 107.
-Package gensymb Info: Using \textmu for \micro on input line 107.
+erthousand on input line 102.
+LaTeX Info: Redefining \ohm on input line 102.
+Package gensymb Info: Using \textohm for \ohm on input line 102.
+Package gensymb Info: Using \textmu for \micro on input line 102.
 \c@lstlisting=\count430
-Package hyperref Info: Link coloring ON on input line 107.
+Package hyperref Info: Link coloring ON on input line 102.
 
 (nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1197,9 +1197,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count431
 )
-LaTeX Info: Redefining \ref on input line 107.
-LaTeX Info: Redefining \pageref on input line 107.
-LaTeX Info: Redefining \nameref on input line 107.
+LaTeX Info: Redefining \ref on input line 102.
+LaTeX Info: Redefining \pageref on input line 102.
+LaTeX Info: Redefining \nameref on input line 102.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1270,52 +1270,52 @@ LaTeX Info: Redefining \nameref on input line 107.
 File: ./img/departamentos/uchile2.pdf Graphic file (type pdf)
 <use ./img/departamentos/uchile2.pdf>
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 110.
+ 105.
 (ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 110.
+ 105.
  (omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 110.
+ 105.
  (omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 110.
+ 105.
  (omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 11
-0.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 10
+5.
  (ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+wasy on input line 11
-0.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 10
+5.
  (uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-10.
+05.
 
 (ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
 LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
-10.
+05.
  (Ustmry.fd)
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-10.
+05.
  (ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [1.1
