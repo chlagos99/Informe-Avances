@@ -7,10 +7,4 @@ Illegal, another \bibstyle command---line 153 of file main.aux
  :          {apalike}
 I'm skipping whatever remains of this command
 Database file #1: library.bib
-Repeated entry---line 125 of file library.bib
- : @book{Lemmens2008
- :                  ,
-I'm skipping whatever remains of this entry
-Warning--can't use both volume and number fields in Gupta2006
-Warning--can't use both volume and number fields in Lemmens2008
-(There were 2 error messages)
+(There was 1 error message)

@@ -98,6 +98,10 @@
 }{%
 }
 
+% Agrega esto justo antes de \begin{document} en main.tex
+\AtBeginDocument{
+  \renewcommand{\harvardand}{y} % Cambia el "and" por "y" en las citas del texto
+}
 
 % ======================= INICIO DEL DOCUMENTO =======================
 \begin{document}

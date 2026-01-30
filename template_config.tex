@@ -98,30 +98,30 @@
 \def\showindexofcontents {true}    % Activa la lista de contenidos en el índice
 
 % ANEXO, CITAS, REFERENCIAS
-\def\apacitebothers {et al.}       % Etiqueta usada en (y otros) con \shortcite
-\def\apaciterefcitecharclose {]}   % Carácter final cita apacite
-\def\apaciterefcitecharopen {[}    % Carácter inicial cita apacite
-\def\apaciterefnumber {false}      % Lista de referencias con números
-\def\apaciterefsep {5}             % Separación entre refs. {apacite} [pt]
-\def\apaciteshowurl {false}        % Muestra las url en las referencias
-\def\apacitestyle {apacite}        % Formato refs. apacite {apa,ieeetr,etc..}
-\def\appendixindepobjnum {true}    % Anexo usa n° objetos independientes
-\def\backrefpagecite {false}       % Las citas en bibliografía poseen nº de pag.
-\def\bibtexenvrefsecnum {false}    % Entorno references es una sección numerada
-\def\bibtexindexbibliography{true} % Función \bibliography se inserta en índice
-\def\bibtexrefsep {5}              % Separación entre refs. {bibtex} [pt]
-\def\bibtexstyle {ieeetr}          % Formato refs. bibtex {apa,ieeetr,etc...}
-\def\bibtextextalign {justify}     % Alineac. bibtex {justify,left,right,center}
-\def\fontsizerefbibl {\normalsize} % Tamaño fuente al usar \bibliography{file}
-\def\natbibrefcitecharclose {)}    % Carácter final cita natbib
-\def\natbibrefcitecharopen {(}     % Carácter inicial cita natbib
-\def\natbibrefcitecompress {true}  % Comprime refererencias al citar
-\def\natbibrefcitesepcomma {true}  % Separador en coma (,) o punto y coma (;)
-\def\natbibrefcitetype {authoryear}   % Tipo citación {authoryear,numbers,super}
-\def\natbibrefsep {5}              % Separación entre referencia {natbib} [pt]
-\def\natbibrefstyle {apalike}      % Formato refs. natbib {apa,ieeetr,etc...}
-\def\stylecitereferences {natbib}  % Estilo refs. {apacite,bibtex,natbib,custom}
-\def\twocolumnreferences {false}   % Referencias en dos columnas
+\def\apacitebothers {et al.}       
+\def\apaciterefcitecharclose {)}   
+\def\apaciterefcitecharopen {(}    
+\def\apaciterefnumber {false}      
+\def\apaciterefsep {5}             
+\def\apaciteshowurl {false}        
+\def\apacitestyle {apacite}        
+\def\appendixindepobjnum {true}
+\def\backrefpagecite {false}
+\def\bibtexenvrefsecnum {false}
+\def\bibtexindexbibliography {true}
+\def\bibtexrefsep {5}
+\def\bibtexstyle {apalike}         % <--- ESTABLE
+\def\bibtextextalign {justify}
+\def\fontsizerefbibl {\normalsize}
+\def\natbibrefcitecharclose {)}
+\def\natbibrefcitecharopen {(}
+\def\natbibrefcitecompress {true}
+\def\natbibrefcitesepcomma {false} % <--- False para usar ";"
+\def\natbibrefcitetype {authoryear}
+\def\natbibrefsep {5}
+\def\natbibrefstyle {apalike}      % <--- ESTABLE
+\def\stylecitereferences {natbib}  % <--- MOTOR SEGURO
+\def\twocolumnreferences {false}
 
 % CONFIGURACIONES DE OBJETOS
 \def\animatedimageautoplay {true}  % Autoplay en imágenes animadas
