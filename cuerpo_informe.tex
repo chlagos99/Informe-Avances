@@ -173,6 +173,7 @@ En cuanto a la implementación técnica y comercial, se excluye el despliegue pr
 
 Finalmente, no forma parte del alcance la definición formal de gobierno de datos ni aspectos de cumplimiento regulatorio más allá de lo requerido para el uso interno. Tampoco se desarrollan experimentos causales a gran escala, como pruebas A/B, ni nuevas interfaces de usuario. La capacitación se limita a las sesiones de traspaso técnico con los equipos definidos, sin considerar programas de formación extensiva para otras áreas de la organización.
 
+\newpage
 \section{Objetivos del proyecto}
 
 \subsection{Objetivo general}
@@ -320,6 +321,7 @@ En esta fase se define cómo se usarán los resultados del modelo en la operaci�
     \item Preparar material de apoyo y lineamientos de adopción, como tutoriales y sesiones de explicación con los equipos de Customer Success y Post-venta, junto con criterios básicos para el monitoreo del prototipo.
 \end{itemize}
 
+\newpage
 \section{Desarrollo y Resultados}
 
 \subsection{Fase 1: Comprensión del negocio}
@@ -590,7 +592,7 @@ Como resultado, se deja instalada una primera versión del prototipo operativo, 
 
 \subsection{Decisiones de diseño del modelo}
 
-Las decisiones de diseño del modelo se toman en un contexto donde la empresa requiere resultados accionables y comprensibles. Se elige regresión logística como algoritmo principal porque permite leer coeficientes y efectos de cada variable, lo que facilita que equipos no técnicos entiendan por qué un cliente tiene mayor probabilidad de baja y cómo se vincula ese riesgo con su uso de la plataforma, su plan y sus bloqueos, aun con un posible sacrificio de desempeño frente a modelos más complejos. El horizonte mensual T+1 se alinea con la gestión de cartera basada en facturación y decisiones comerciales mensuales, y la probabilidad T+3 derivada de T+1 entrega una señal adicional para acciones que requieren más tiempo sin entrenar un modelo distinto ni aumentar la complejidad operativa. Se adopta un modelo global para toda la región para reducir la complejidad y aprovechar información de todos los países, pero se mantiene abierta la opción de modelos por país o por rubro cuando la base sea mayor y se requiera más precisión en segmentos específicos. Sin embargo, un factor crítico a considerar para la vigencia futura del diseño es el aumento de precios en los planes ajustados al IPC; esto implica que el nivel de mensualidad con el que fue entrenado el modelo puede variar debido a variables externas, lo que obligará a reentrenar el modelo para incorporar los nuevos niveles de precios y asegurar su validez en el año 2026. El prototipo se implementa con un flujo SQL, Colab y Excel que usa herramientas conocidas y evita cambios en infraestructura, aunque genera dependencia de la disciplina operativa y se plantea como trabajo futuro una integración directa con sistemas de la empresa.
+Las decisiones de diseño del modelo se toman en un contexto donde la empresa requiere resultados accionables y comprensibles. Se elige regresión logística como algoritmo principal porque facilita que equipos no técnicos entiendan por qué un cliente tiene mayor probabilidad de baja y cómo se vincula ese riesgo con su uso de la plataforma, aun con un posible sacrificio de desempeño frente a modelos más complejos. El horizonte mensual T+1 se alinea con la gestión de cartera basada en facturación y decisiones comerciales mensuales, y la probabilidad T+3 derivada de T+1 entrega una señal adicional para acciones que requieren más tiempo sin entrenar un modelo distinto ni aumentar la complejidad operativa. Se adopta un modelo global para toda la región para reducir la complejidad y aprovechar información de todos los países, pero se mantiene abierta la opción de modelos por país o por rubro cuando la base sea mayor y se requiera más precisión en segmentos específicos. Sin embargo, un factor crítico a considerar para la vigencia futura del diseño es el aumento de precios en los planes ajustados al IPC; esto implica que el nivel de mensualidad con el que fue entrenado el modelo puede variar debido a variables externas, lo que obligará a reentrenar el modelo para incorporar los nuevos niveles de precios y asegurar su validez en el año 2026. El prototipo se implementa con un flujo SQL, Colab y Excel que usa herramientas conocidas y evita cambios en infraestructura, aunque genera dependencia de la disciplina operativa y se plantea como trabajo futuro una integración directa con sistemas de la empresa.
 
 \subsection{Impacto esperado en la operación y rol de Customer Success}
 

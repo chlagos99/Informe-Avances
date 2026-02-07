@@ -22,7 +22,7 @@
 \contentsline {subsection}{\numberline {3.4}Razones prácticas y técnicas}{8}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Elección del enfoque}{8}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Alcance}{9}{section.4}%
-\contentsline {section}{\numberline {5}Objetivos del proyecto}{9}{section.5}%
+\contentsline {section}{\numberline {5}Objetivos del proyecto}{10}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Objetivo general}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Objetivos específicos}{10}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Indicadores de éxito}{10}{subsection.5.3}%
@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {7.4}Fase 4: Modelado}{15}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Fase 5: Evaluación}{16}{subsection.7.5}%
 \contentsline {subsection}{\numberline {7.6}Fase 6: Despliegue y políticas de negocio}{16}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Desarrollo y Resultados}{16}{section.8}%
+\contentsline {section}{\numberline {8}Desarrollo y Resultados}{17}{section.8}%
 \contentsline {subsection}{\numberline {8.1}Fase 1: Comprensión del negocio}{17}{subsection.8.1}%
 \contentsline {subsubsection}{\numberline {8.1.1}Contexto de Reservo y modelo de suscripción}{17}{subsubsection.8.1.1}%
 \contentsline {subsubsection}{\numberline {8.1.2}Problema de gestión asociado a la baja de clientes}{17}{subsubsection.8.1.2}%
@@ -74,12 +74,12 @@
 \contentsline {subsubsection}{\numberline {8.6.3}Gobernanza del proceso y soporte técnico}{28}{subsubsection.8.6.3}%
 \contentsline {subsubsection}{\numberline {8.6.4}Segmentación conductual y políticas operativas}{28}{subsubsection.8.6.4}%
 \contentsline {subsubsection}{\numberline {8.6.5}Material de apoyo, pruebas en vivo y adopción del prototipo}{29}{subsubsection.8.6.5}%
-\contentsline {section}{\numberline {9}Discusiones}{30}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{30}{subsection.9.1}%
+\contentsline {section}{\numberline {9}Discusiones}{31}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Decisiones de diseño del modelo}{31}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Impacto esperado en la operación y rol de Customer Success}{31}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Comportamiento del cliente y límites del modelo}{31}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.3}Comportamiento del cliente y límites del modelo}{32}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}Limitaciones de datos y riesgos en el uso del prototipo}{32}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Conclusiones}{32}{section.10}%
+\contentsline {section}{\numberline {10}Conclusiones}{33}{section.10}%
 \contentsline {section}{Referencias}{35}{section.10}%
 \contentsline {section}{Anexo \numberline {A}}{37}{appendix.1.Alph1}%
 \contentsline {section}{Anexo \numberline {B}}{43}{appendix.1.Alph2}%

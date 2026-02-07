@@ -1406,13 +1406,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <4.80008> not available
  [4.13] [5.14] [6.15] [7.16] [8.17] [9.18] [10.19] [11.20]
 [12.21] [13.22] [14.23] [15.24] [16.25] [17.26] [18.27]
 LaTeX Font Info:    Calculating math sizes for size <10.95007> on input line 39
-2.
+4.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 392.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 394.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.1031> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 392.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 394.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.5701> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 392.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 394.
  [19.28] [20.29]
 [21.30] [22.31] [23.32] [24.33] [25.34] [26.35] [27.36] [28.37] [29.38]
 [30.39] [31.40] [32.41] [33.42] [34.43] (main.bbl [35.44
@@ -1430,7 +1430,7 @@ File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (8.14085pt too wide) in paragraph at lines 655--655
+Overfull \hbox (8.14085pt too wide) in paragraph at lines 660--660
  [][] 
  []
 
@@ -1446,17 +1446,17 @@ File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
  [41.50] [42.51]
-Overfull \hbox (32.77736pt too wide) in paragraph at lines 670--724
+Overfull \hbox (32.77736pt too wide) in paragraph at lines 675--729
  [] 
  []
 
 [43.52]
-Overfull \hbox (15.79474pt too wide) in paragraph at lines 733--745
+Overfull \hbox (15.79474pt too wide) in paragraph at lines 738--750
  [][] 
  []
 
 
-Overfull \hbox (1.25708pt too wide) in paragraph at lines 750--761
+Overfull \hbox (1.25708pt too wide) in paragraph at lines 755--766
  [][] 
  []
 
@@ -1478,7 +1478,7 @@ File: ./img/informe2/tipodata.png Graphic file (type bmp)
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
 <./img/informe2/estadistic.png>
 
-Overfull \hbox (2.00632pt too wide) in paragraph at lines 1008--1008
+Overfull \hbox (2.00632pt too wide) in paragraph at lines 1013--1013
  [][] 
  []
 
@@ -1587,4 +1587,4 @@ File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (77 pages, 424452 bytes).
+Output written on main.xdv (77 pages, 424236 bytes).
