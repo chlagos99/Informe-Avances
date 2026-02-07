@@ -84,7 +84,6 @@
 \newenvironment{dedicatoria}{%
     \pagestyle{plain} % Apaga la línea negra para todo el entorno
     \sectionfont{\color{\sectioncolor} \sectionfontsize \sectionfontstyle \selectfont}%
-    \sectionanumnoiheadless{Dedicatoria}%
     \thispagestyle{plain} % Asegura que ESTA página no tenga línea
 }{%
 }
@@ -126,7 +125,13 @@ Se implementa un prototipo operativo basado en SQL, Python y una planilla de ges
 % DEDICATORIA
 \newpage
 \begin{dedicatoria}
-Aquí escribe tu dedicatoria. Por ejemplo: Dedico este trabajo a mis padres...
+    \vspace*{2cm}
+    \begin{flushright}
+        \textit{A mis padres, por su apoyo incondicional\\
+        a mi hermana, por ser un ejemplo para mí\\
+        a Paula, por su comprensión y compañía\\
+        a mi tía y abuelos, por el cariño.}
+    \end{flushright}
 \end{dedicatoria}
 
 
