@@ -1066,27 +1066,27 @@ File: csquotes.cfg
 \coregluevarcm=\skip149
 \corefontwidth=\skip150
 \coreimageshspace=\skip151
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 5781.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 5782.
  (se-ascii-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5781.
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 5782.
 Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 578
-1.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 5781.
+2.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 5782.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 5781.
+(hyperref)                removing `\\' on input line 5782.
 
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 5781.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 5782.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 5781.
+(hyperref)                removing `\\' on input line 5782.
 
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 5781.
-Package hyperref Info: Option `colorlinks' set `true' on input line 5840.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 5782.
+Package hyperref Info: Option `colorlinks' set `true' on input line 5841.
 \cftbeforelistingsskip=\skip152
 \cftlistingsindent=\skip153
 \cftlistingsnumwidth=\skip154
@@ -1104,7 +1104,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 5840.
 \cftafterequtitleskip=\skip164
 \c@totalcount@templateIndexEquations=\count421
 LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 
-6126.
+6127.
 (t1lmvtt.fd
 File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1371,14 +1371,14 @@ LaTeX Info: Redefining \% on input line 1.
  (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [6.7] [7.8])
+ [6.7])
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
  (main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [7.8])
 \tf@lot=\write5
 \openout5 = `main.lot'.
 
@@ -1424,48 +1424,47 @@ File: ./img/imagenes/churn-3-anios.png Graphic file (type bmp)
 <./img/imagenes/churn-3-anios.png>
 File: ./img/imagenes/clientes_por_mes.png Graphic file (type bmp)
 <./img/imagenes/clientes_por_mes.png>
- [37.46]
 File: ./img/imagenes/organigrama.png Graphic file (type bmp)
 <./img/imagenes/organigrama.png>
+ [37.46]
 File: ./img/bizagi/captacion.png Graphic file (type bmp)
 <./img/bizagi/captacion.png>
 
-Overfull \hbox (8.14085pt too wide) in paragraph at lines 659--659
+Overfull \hbox (8.14085pt too wide) in paragraph at lines 657--657
  [][] 
  []
 
-[38.47]
 File: ./img/bizagi/venta.png Graphic file (type bmp)
 <./img/bizagi/venta.png>
- [39.48]
+[38.47]
 File: ./img/bizagi/onboarding.png Graphic file (type bmp)
 <./img/bizagi/onboarding.png>
- [40.49]
+ [39.48]
 File: ./img/bizagi/cliente_activo.png Graphic file (type bmp)
 <./img/bizagi/cliente_activo.png>
- [41.50]
+ [40.49]
 File: ./img/bizagi/cliente_inactivo.png Graphic file (type bmp)
 <./img/bizagi/cliente_inactivo.png>
- [42.51] [43.52]
-Overfull \hbox (32.77736pt too wide) in paragraph at lines 674--728
+ [41.50] [42.51]
+Overfull \hbox (32.77736pt too wide) in paragraph at lines 672--726
  [] 
  []
 
-[44.53]
-Overfull \hbox (15.79474pt too wide) in paragraph at lines 737--749
+[43.52]
+Overfull \hbox (15.79474pt too wide) in paragraph at lines 735--747
  [][] 
  []
 
 
-Overfull \hbox (1.25708pt too wide) in paragraph at lines 754--765
+Overfull \hbox (1.25708pt too wide) in paragraph at lines 752--763
  [][] 
  []
 
-[45.54] (lstlang1.sty
+[44.53] (lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) [46.55] [47.56] [48.57] [49.58] [50.59]
+) [45.54] [46.55] [47.56] [48.57] [49.58]
 File: ./img/informe4/cod_dg.png Graphic file (type bmp)
 <./img/informe4/cod_dg.png>
 File: ./img/informe4/colb_pt.png Graphic file (type bmp)
@@ -1473,34 +1472,34 @@ File: ./img/informe4/colb_pt.png Graphic file (type bmp)
 File: ./img/informe2/nulos.png Graphic file (type bmp)
 <./img/informe2/nulos.png>
 
-[51.60]
+[50.59]
 File: ./img/informe2/tipodata.png Graphic file (type bmp)
 <./img/informe2/tipodata.png>
 File: ./img/informe2/estadistic.png Graphic file (type bmp)
 <./img/informe2/estadistic.png>
 
-Overfull \hbox (2.00632pt too wide) in paragraph at lines 1012--1012
+Overfull \hbox (2.00632pt too wide) in paragraph at lines 1010--1010
  [][] 
  []
 
-[52.61]
+[51.60]
 File: ./img/informe2/porc_clientes_por_rubro.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_rubro.png>
 File: ./img/informe2/porc_clientes_por_pais.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_pais.png>
 File: ./img/informe2/porc_clientes_por_plan.png Graphic file (type bmp)
 <./img/informe2/porc_clientes_por_plan.png>
- [53.62]
+ [52.61]
 File: ./img/informe2/prop_plan_por_rubro.png Graphic file (type bmp)
 <./img/informe2/prop_plan_por_rubro.png>
 File: ./img/informe2/prop_rubro_por_plan.png Graphic file (type bmp)
 <./img/informe2/prop_rubro_por_plan.png>
- [54.63]
+ [53.62]
 File: ./img/informe2/act_vs_bloq_rubro.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_rubro.png>
 File: ./img/informe2/act_vs_bloq_plan.png Graphic file (type bmp)
 <./img/informe2/act_vs_bloq_plan.png>
- [55.64]
+ [54.63]
 File: ./img/informe2/ternure.png Graphic file (type bmp)
 <./img/informe2/ternure.png>
 File: ./img/informe2/dist_arpa.png Graphic file (type bmp)
@@ -1509,74 +1508,74 @@ File: ./img/informe2/dist_bloq.png Graphic file (type bmp)
 <./img/informe2/dist_bloq.png>
 File: ./img/informe2/dist_citas.png Graphic file (type bmp)
 <./img/informe2/dist_citas.png>
- [56.65]
+ [55.64]
 File: ./img/informe2/dist_rec.png Graphic file (type bmp)
 <./img/informe2/dist_rec.png>
 File: ./img/informe2/correlacion.png Graphic file (type bmp)
 <./img/informe2/correlacion.png>
 File: ./img/informe4/diag_dm.png Graphic file (type bmp)
 <./img/informe4/diag_dm.png>
- [57.66]
+ [56.65]
 File: ./img/informe4/discrim.png Graphic file (type bmp)
 <./img/informe4/discrim.png>
 File: ./img/informe4/lift.png Graphic file (type bmp)
 <./img/informe4/lift.png>
 File: ./img/informe4/met_oper.png Graphic file (type bmp)
 <./img/informe4/met_oper.png>
- [58.67]
+ [57.66]
 File: ./img/informe4/calib_glob.png Graphic file (type bmp)
 <./img/informe4/calib_glob.png>
 File: ./img/informe4/calib_pais.png Graphic file (type bmp)
 <./img/informe4/calib_pais.png>
 File: ./img/informe4/calib_plan.png Graphic file (type bmp)
 <./img/informe4/calib_plan.png>
- [59.68]
+ [58.67]
 File: ./img/informe4/calib_rub.png Graphic file (type bmp)
 <./img/informe4/calib_rub.png>
 File: ./img/informe4/graf_roc.png Graphic file (type bmp)
 <./img/informe4/graf_roc.png>
 File: ./img/informe4/graf_reliab.png Graphic file (type bmp)
 <./img/informe4/graf_reliab.png>
- [60.69]
+ [59.68]
 File: ./img/informe4/graf_gains.png Graphic file (type bmp)
 <./img/informe4/graf_gains.png>
 File: ./img/informe4/graf_precis.png Graphic file (type bmp)
 <./img/informe4/graf_precis.png>
 
-[61.70]
+[60.69]
 File: ./img/informe4/roc_chmc.png Graphic file (type bmp)
 <./img/informe4/roc_chmc.png>
 File: ./img/informe4/roc_chmed.png Graphic file (type bmp)
 <./img/informe4/roc_chmed.png>
- [62.71]
+ [61.70]
 File: ./img/informe4/roc_med.png Graphic file (type bmp)
 <./img/informe4/roc_med.png>
 File: ./img/informe4/roc_mexi.png Graphic file (type bmp)
 <./img/informe4/roc_mexi.png>
- [63.72]
+ [62.71]
 File: ./img/informe4/roc_col.png Graphic file (type bmp)
 <./img/informe4/roc_col.png>
 File: ./img/informe4/gain_col.png Graphic file (type bmp)
 <./img/informe4/gain_col.png>
- [64.73]
+ [63.72]
 File: ./img/informe4/gain_mex.png Graphic file (type bmp)
 <./img/informe4/gain_mex.png>
 File: ./img/informe4/colb_cs.png Graphic file (type bmp)
 <./img/informe4/colb_cs.png>
- [65.74]
+ [64.73]
 File: ./img/informe4/xls_res.png Graphic file (type bmp)
 <./img/informe4/xls_res.png>
 File: ./img/informe4/carp_cs.png Graphic file (type bmp)
 <./img/informe4/carp_cs.png>
- [66.75]
+ [65.74]
 File: ./img/informe4/not_cs.png Graphic file (type bmp)
 <./img/informe4/not_cs.png>
 File: ./img/informe4/gui_cs.png Graphic file (type bmp)
 <./img/informe4/gui_cs.png>
- [67.76]
+ [66.75]
 File: ./img/informe4/tut_cs.png Graphic file (type bmp)
 <./img/informe4/tut_cs.png>
- [68.77])
+ [67.76])
 (babel-spanish.tex
 Package babel Info: Importing font and identification data for spanish
 (babel)             from babel-es.ini. Reported on input line 11.
@@ -1584,8 +1583,8 @@ Package babel Info: Importing font and identification data for spanish
 File: se-utf32be.def 2019/11/29 v1.12 stringenc: UTF-32BE
 ) (se-pdfdoc.def
 File: se-pdfdoc.def 2019/11/29 v1.12 stringenc: PDFDocEncoding
-) [69.78] (main.aux
+) [68.77] (main.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
 ) )
-Output written on main.xdv (78 pages, 425688 bytes).
+Output written on main.xdv (77 pages, 422268 bytes).
