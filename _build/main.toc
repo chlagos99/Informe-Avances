@@ -1,5 +1,5 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {1}Antecedentes generales}{1}{section.1}%
+\contentsline {section}{\numberline {1}Introducción}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}Industria y ambiente competitivo}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Características de la empresa u organización}{2}{subsection.1.2}%
 \contentsline {subsection}{\numberline {1.3}Consideraciones sobre la elaboración del informe}{3}{subsection.1.3}%
@@ -80,10 +80,11 @@
 \contentsline {subsection}{\numberline {9.3}Comportamiento del cliente y límites del modelo}{32}{subsection.9.3}%
 \contentsline {subsection}{\numberline {9.4}Limitaciones de datos y riesgos en el uso del prototipo}{32}{subsection.9.4}%
 \contentsline {section}{\numberline {10}Conclusiones}{33}{section.10}%
-\contentsline {section}{Referencias}{35}{section.10}%
+\contentsline {section}{Bibliografía}{35}{section.10}%
+\contentsline {section}{\numberline {11}Anexos}{37}{section.11}%
 \contentsline {section}{Anexo \numberline {A}}{37}{appendix.1.Alph1}%
-\contentsline {section}{Anexo \numberline {B}}{43}{appendix.1.Alph2}%
-\contentsline {section}{Anexo \numberline {C}}{44}{appendix.1.Alph3}%
-\contentsline {section}{Anexo \numberline {D}}{45}{appendix.1.Alph4}%
-\contentsline {section}{Anexo \numberline {E}}{50}{appendix.1.Alph5}%
-\contentsline {section}{Anexo \numberline {F}Implementación}{65}{appendix.1.Alph6}%
+\contentsline {section}{Anexo \numberline {B}}{44}{appendix.1.Alph2}%
+\contentsline {section}{Anexo \numberline {C}}{45}{appendix.1.Alph3}%
+\contentsline {section}{Anexo \numberline {D}}{46}{appendix.1.Alph4}%
+\contentsline {section}{Anexo \numberline {E}}{51}{appendix.1.Alph5}%
+\contentsline {section}{Anexo \numberline {F}}{66}{appendix.1.Alph6}%
